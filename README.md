@@ -1,5 +1,3 @@
-[TOC]
-
 ## Ajedrez Los_Ewoks
 
 #### Participantes
