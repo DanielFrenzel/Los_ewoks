@@ -1,0 +1,4 @@
+﻿  Piezas.cpp
+C:\Users\danie\Desktop\PRUEBA_BUENA\src\Piezas.cpp(7,15): warning C4244: '=': conversión de 'int' a 'float'; posible pérdida de datos
+C:\Users\danie\Desktop\PRUEBA_BUENA\src\Piezas.cpp(8,15): warning C4244: '=': conversión de 'int' a 'float'; posible pérdida de datos
+  Pang.vcxproj -> C:\Users\danie\Desktop\PRUEBA_BUENA\bin\Pang.exe
