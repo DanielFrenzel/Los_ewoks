@@ -1,6 +1,11 @@
-C:\Users\danie\Desktop\PRUEBA_BUENA\src\Ajedrez.cpp;C:\Users\danie\Desktop\PRUEBA_BUENA\Ajedrez.obj
-C:\Users\danie\Desktop\PRUEBA_BUENA\src\Casilla.cpp;C:\Users\danie\Desktop\PRUEBA_BUENA\Casilla.obj
-C:\Users\danie\Desktop\PRUEBA_BUENA\src\Movimiento.cpp;C:\Users\danie\Desktop\PRUEBA_BUENA\Movimiento.obj
-C:\Users\danie\Desktop\PRUEBA_BUENA\src\Peon.cpp;C:\Users\danie\Desktop\PRUEBA_BUENA\Peon.obj
-C:\Users\danie\Desktop\PRUEBA_BUENA\src\Piezas.cpp;C:\Users\danie\Desktop\PRUEBA_BUENA\Piezas.obj
-C:\Users\danie\Desktop\PRUEBA_BUENA\src\Tablero.cpp;C:\Users\danie\Desktop\PRUEBA_BUENA\Tablero.obj
+C:\Users\ferni\OneDrive\Documentos\universidad\cuarto\info\trabajo\Tablero\src\Ajedrez.cpp;C:\Users\ferni\OneDrive\Documentos\universidad\cuarto\info\trabajo\Tablero\Ajedrez.obj
+C:\Users\ferni\OneDrive\Documentos\universidad\cuarto\info\trabajo\Tablero\src\Alfil.cpp;C:\Users\ferni\OneDrive\Documentos\universidad\cuarto\info\trabajo\Tablero\Alfil.obj
+C:\Users\ferni\OneDrive\Documentos\universidad\cuarto\info\trabajo\Tablero\src\Caballo.cpp;C:\Users\ferni\OneDrive\Documentos\universidad\cuarto\info\trabajo\Tablero\Caballo.obj
+C:\Users\ferni\OneDrive\Documentos\universidad\cuarto\info\trabajo\Tablero\src\Casilla.cpp;C:\Users\ferni\OneDrive\Documentos\universidad\cuarto\info\trabajo\Tablero\Casilla.obj
+C:\Users\ferni\OneDrive\Documentos\universidad\cuarto\info\trabajo\Tablero\src\Movimiento.cpp;C:\Users\ferni\OneDrive\Documentos\universidad\cuarto\info\trabajo\Tablero\Movimiento.obj
+C:\Users\ferni\OneDrive\Documentos\universidad\cuarto\info\trabajo\Tablero\src\MovPiezas.cpp;C:\Users\ferni\OneDrive\Documentos\universidad\cuarto\info\trabajo\Tablero\MovPiezas.obj
+C:\Users\ferni\OneDrive\Documentos\universidad\cuarto\info\trabajo\Tablero\src\Peon.cpp;C:\Users\ferni\OneDrive\Documentos\universidad\cuarto\info\trabajo\Tablero\Peon.obj
+C:\Users\ferni\OneDrive\Documentos\universidad\cuarto\info\trabajo\Tablero\src\Piezas.cpp;C:\Users\ferni\OneDrive\Documentos\universidad\cuarto\info\trabajo\Tablero\Piezas.obj
+C:\Users\ferni\OneDrive\Documentos\universidad\cuarto\info\trabajo\Tablero\src\Rey.cpp;C:\Users\ferni\OneDrive\Documentos\universidad\cuarto\info\trabajo\Tablero\Rey.obj
+C:\Users\ferni\OneDrive\Documentos\universidad\cuarto\info\trabajo\Tablero\src\Tablero.cpp;C:\Users\ferni\OneDrive\Documentos\universidad\cuarto\info\trabajo\Tablero\Tablero.obj
+C:\Users\ferni\OneDrive\Documentos\universidad\cuarto\info\trabajo\Tablero\src\Torre.cpp;C:\Users\ferni\OneDrive\Documentos\universidad\cuarto\info\trabajo\Tablero\Torre.obj

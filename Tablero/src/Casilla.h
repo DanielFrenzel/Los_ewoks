@@ -15,6 +15,7 @@ private:
 	int fila;//fila del tablero
 	int columna;//columna del tablero
 
+
 public:
 	Casilla();
 	Casilla(int &f, int &c,int fich, char col);

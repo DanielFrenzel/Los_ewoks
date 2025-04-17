@@ -1,7 +1,8 @@
 #pragma once
 #include <iostream>
 #include"ETSIDI.h"
-#include"Peon.h"
+
+
 
 using namespace std;
 using namespace ETSIDI;

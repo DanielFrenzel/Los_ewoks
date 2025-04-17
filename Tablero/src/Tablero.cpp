@@ -49,7 +49,7 @@ void Tablero::mueve( int fil1, int col1, int fil2, int col2)
 {
 	if (not (fil1==fil2 && col1==col2))
 	{
-		mover.movimiento(casilla[fil1][col1], casilla[fil2][col2]);
+		mover.movimiento(casilla, fil1, col1, fil2, col2);
 	}
 
 }
