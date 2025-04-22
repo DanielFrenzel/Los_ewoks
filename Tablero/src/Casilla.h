@@ -14,6 +14,7 @@ private:
 	Sprite casilla_seleccionada{ "imagenes/casilla_seleccionada.png",0,0,8,8 };
 	int fila;//fila del tablero
 	int columna;//columna del tablero
+	bool memoriaPeon = true; //true es que ya se ha movido, false que no
 
 
 public:
@@ -26,6 +27,8 @@ public:
 	int getfila();
 	int getcolumna();
 	void Casilla_seleccionada();
+	bool GetMemoriaPeon();
+	void SetMemoriaPeon(bool);
 
 };
 

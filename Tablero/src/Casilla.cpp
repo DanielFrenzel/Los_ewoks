@@ -58,8 +58,15 @@ void Casilla::Casilla_seleccionada()
 	
 }
 
+bool Casilla::GetMemoriaPeon()
+{
+	return memoriaPeon;
+}
 
-
+void Casilla::SetMemoriaPeon(bool estado)
+{
+	memoriaPeon = estado;
+}
 
 
 

@@ -2,6 +2,9 @@
 
 Tablero::Tablero()
 {
+	casilla = new Casilla * [8]; //reservamos memoria
+	for (int i = 0; i < 8; i++)
+		casilla[i] = new Casilla[8];
 	for (int i = 0;i < 8;i++)
 	{
 		for (int j = 0;j < 8;j++)
@@ -13,10 +16,12 @@ Tablero::Tablero()
 			else if (i == 1)
 			{
 				casilla[i][j] = Casilla(i, j, patron2[j], 'B');
+				casilla[i][j].SetMemoriaPeon(0);
 			}
 			else if (i == 6)
 			{
 				casilla[i][j] = Casilla(i, j, patron2[j], 'N');
+				casilla[i][j].SetMemoriaPeon(0);
 			}
 			else if (i == 7)
 			{
@@ -28,6 +33,7 @@ Tablero::Tablero()
 			}
 		}
 	}
+
 }
 void Tablero::dibuja()
 {

@@ -1,7 +1,7 @@
 #include "Alfil.h"
 #include <math.h>
 
-bool Alfil::ComprobarMov(Casilla casillas[8][8], int fil1, int col1, int fil2, int col2)
+bool Alfil::ComprobarMov(Casilla** casillas, int fil1, int col1, int fil2, int col2)
 {
 	int direccionFil = (fil1 < fil2) ? 1 : -1;
 	int direccionCol = (col1 < col2) ? 1 : -1;

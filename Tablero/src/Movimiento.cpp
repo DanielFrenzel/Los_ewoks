@@ -1,7 +1,7 @@
 #include "Movimiento.h"
 
 
-void Movimiento::movimiento(Casilla (&cas)[8][8], int fil1, int col1, int fil2, int col2)
+void Movimiento::movimiento(Casilla** cas, int fil1, int col1, int fil2, int col2)
 {
 	int fich = cas[fil1][col1].getficha();
 	if (pieza.compMov(cas, fil1, col1, fil2, col2))

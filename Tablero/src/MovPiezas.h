@@ -15,6 +15,6 @@ private:
 	Caballo caballo;
 	Alfil alfil;
 public:
-	bool compMov(Casilla casilla[8][8], int fil1, int col1, int fil2, int col2);
+	bool compMov(Casilla** casillas, int fil1, int col1, int fil2, int col2);
 };
 

@@ -9,7 +9,7 @@ static bool comer(char color1, char color2)
 }
 
 
-bool Torre::ComprobarMov(Casilla casillas[8][8], int fil1, int col1, int fil2, int col2)
+bool Torre::ComprobarMov(Casilla** casillas, int fil1, int col1, int fil2, int col2)
 {
 	if (col1 == col2 && fil1 == fil2) // si se le pulsa en el mismo sitio no se ueve
 	{

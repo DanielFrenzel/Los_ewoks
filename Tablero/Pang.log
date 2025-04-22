@@ -1,3 +1,9 @@
-﻿  Peon.cpp
-C:\Users\ferni\OneDrive\Documentos\universidad\cuarto\info\trabajo\Tablero\src\Peon.cpp(45,1): warning C4715: 'Peon::ComprobarMov': no todas las rutas de acceso de control devuelven un valor
+﻿  Ajedrez.cpp
+  MovPiezas.cpp
+  Movimiento.cpp
+  Peon.cpp
+  Tablero.cpp
+  Generando código...
+C:\Users\ferni\OneDrive\Documentos\universidad\cuarto\info\trabajo\Tablero\src\Peon.cpp(47,1): warning C4715: 'Peon::ComprobarMov': no todas las rutas de acceso de control devuelven un valor
+C:\Users\ferni\OneDrive\Documentos\universidad\cuarto\info\trabajo\Tablero\src\MovPiezas.cpp(22,1): warning C4715: 'MovPiezas::compMov': no todas las rutas de acceso de control devuelven un valor
   Pang.vcxproj -> C:\Users\ferni\OneDrive\Documentos\universidad\cuarto\info\trabajo\Tablero\bin\Pang.exe

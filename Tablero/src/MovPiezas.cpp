@@ -1,6 +1,6 @@
 #include "MovPiezas.h"
 
-bool MovPiezas::compMov(Casilla casilla[8][8], int fil1, int col1, int fil2, int col2)
+bool MovPiezas::compMov(Casilla** casilla, int fil1, int col1, int fil2, int col2)
 {
 	ficha = casilla[fil1][col1].getficha();
 	switch(ficha)
