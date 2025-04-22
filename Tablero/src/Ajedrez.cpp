@@ -2,8 +2,10 @@
 #include "Tablero.h"
 #include "freeglut.h"
 #include<iostream>
+#include "Coordinador.h"
 
 Tablero tab; //centralizamos la información en este objeto
+Coordinador coordinador;
 int fil1, fil2, col1, col2, fil3, col3;
 bool flag = false;
 
@@ -36,6 +38,7 @@ int main(int argc,char* argv[])
 	glMatrixMode(GL_PROJECTION);
 	gluPerspective( 30.0, 800/600.0f, 0.1, 150);
 
+	coordinador.setTablero(&tab);
 	//Registrar los callbacks
 	glutDisplayFunc(OnDraw);
 	glutTimerFunc(25,OnTimer,0);//le decimos que dentro de 25ms llame 1 vez a la funcion OnTimer()
@@ -72,21 +75,7 @@ void OnDraw(void)
 
 void mouseMotion(int x, int y)
 {
-	if ((x >= 100 || x <= 700) && (y >= 0 || y <= 600))
-	{
-		for (int i = 0;i < 8;i++)
-		{
-			if ((x >= 100 + (75 * (i))) && (x <= 100 + (75 * (i + 1))))
-			{
-				col3 = i;
-			}
-			if ((y >= 0 + (75 * (i))) && (y <= 0 + (75 * (i + 1))))
-			{
-				fil3 = (7 - i);
-			}
-		}
-		tab.seleccion(fil3, col3);
-	}
+	coordinador.MovRaton(x, y);
 }
 
 void OnMouseClick(int button, int state, int x, int y) 
@@ -129,7 +118,7 @@ void OnMouseClick(int button, int state, int x, int y)
 					fil2 = (7 - i);
 				}
 			}
-			tab.mueve(fil1, col1, fil2, col2);
+			coordinador.movimiento(fil1, col1, fil2, col2);
 		}
 	}
 

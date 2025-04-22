@@ -1,32 +1,11 @@
-﻿  Ajedrez.cpp
-C:\Users\danie\Desktop\Tablero\src\Piezas.h(23,15): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
-  (compilando archivo de origen "src/Ajedrez.cpp")
+﻿  Coordinador.cpp
+C:\Users\ferni\OneDrive\Documentos\universidad\cuarto\info\trabajo\dani\Tablero\src\Piezas.h(23,15): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
+  (compilando archivo de origen "src/Coordinador.cpp")
   
-C:\Users\danie\Desktop\Tablero\src\Piezas.h(26,15): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
-  (compilando archivo de origen "src/Ajedrez.cpp")
+C:\Users\ferni\OneDrive\Documentos\universidad\cuarto\info\trabajo\dani\Tablero\src\Piezas.h(26,15): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
+  (compilando archivo de origen "src/Coordinador.cpp")
   
-C:\Users\danie\Desktop\Tablero\src\Piezas.h(26,28): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
-  (compilando archivo de origen "src/Ajedrez.cpp")
+C:\Users\ferni\OneDrive\Documentos\universidad\cuarto\info\trabajo\dani\Tablero\src\Piezas.h(26,28): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
+  (compilando archivo de origen "src/Coordinador.cpp")
   
-  Tablero.cpp
-C:\Users\danie\Desktop\Tablero\src\Piezas.h(23,15): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
-  (compilando archivo de origen "src/Tablero.cpp")
-  
-C:\Users\danie\Desktop\Tablero\src\Piezas.h(26,15): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
-  (compilando archivo de origen "src/Tablero.cpp")
-  
-C:\Users\danie\Desktop\Tablero\src\Piezas.h(26,28): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
-  (compilando archivo de origen "src/Tablero.cpp")
-  
-  Torre.cpp
-C:\Users\danie\Desktop\Tablero\src\Piezas.h(23,15): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
-  (compilando archivo de origen "src/Torre.cpp")
-  
-C:\Users\danie\Desktop\Tablero\src\Piezas.h(26,15): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
-  (compilando archivo de origen "src/Torre.cpp")
-  
-C:\Users\danie\Desktop\Tablero\src\Piezas.h(26,28): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
-  (compilando archivo de origen "src/Torre.cpp")
-  
-  Generando código...
-  Pang.vcxproj -> C:\Users\danie\Desktop\Tablero\bin\Pang.exe
+  Pang.vcxproj -> C:\Users\ferni\OneDrive\Documentos\universidad\cuarto\info\trabajo\dani\Tablero\bin\Pang.exe
