@@ -1,9 +1,32 @@
 ﻿  Ajedrez.cpp
-  MovPiezas.cpp
-  Movimiento.cpp
-  Peon.cpp
+C:\Users\danie\Desktop\Tablero\src\Piezas.h(23,15): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
+  (compilando archivo de origen "src/Ajedrez.cpp")
+  
+C:\Users\danie\Desktop\Tablero\src\Piezas.h(26,15): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
+  (compilando archivo de origen "src/Ajedrez.cpp")
+  
+C:\Users\danie\Desktop\Tablero\src\Piezas.h(26,28): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
+  (compilando archivo de origen "src/Ajedrez.cpp")
+  
   Tablero.cpp
+C:\Users\danie\Desktop\Tablero\src\Piezas.h(23,15): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
+  (compilando archivo de origen "src/Tablero.cpp")
+  
+C:\Users\danie\Desktop\Tablero\src\Piezas.h(26,15): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
+  (compilando archivo de origen "src/Tablero.cpp")
+  
+C:\Users\danie\Desktop\Tablero\src\Piezas.h(26,28): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
+  (compilando archivo de origen "src/Tablero.cpp")
+  
+  Torre.cpp
+C:\Users\danie\Desktop\Tablero\src\Piezas.h(23,15): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
+  (compilando archivo de origen "src/Torre.cpp")
+  
+C:\Users\danie\Desktop\Tablero\src\Piezas.h(26,15): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
+  (compilando archivo de origen "src/Torre.cpp")
+  
+C:\Users\danie\Desktop\Tablero\src\Piezas.h(26,28): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
+  (compilando archivo de origen "src/Torre.cpp")
+  
   Generando código...
-C:\Users\ferni\OneDrive\Documentos\universidad\cuarto\info\trabajo\Tablero\src\Peon.cpp(47,1): warning C4715: 'Peon::ComprobarMov': no todas las rutas de acceso de control devuelven un valor
-C:\Users\ferni\OneDrive\Documentos\universidad\cuarto\info\trabajo\Tablero\src\MovPiezas.cpp(22,1): warning C4715: 'MovPiezas::compMov': no todas las rutas de acceso de control devuelven un valor
-  Pang.vcxproj -> C:\Users\ferni\OneDrive\Documentos\universidad\cuarto\info\trabajo\Tablero\bin\Pang.exe
+  Pang.vcxproj -> C:\Users\danie\Desktop\Tablero\bin\Pang.exe

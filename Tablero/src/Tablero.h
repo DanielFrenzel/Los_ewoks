@@ -4,6 +4,7 @@
 #include<vector>
 #include<iostream>
 #include"Movimiento.h"
+#include"Imagen.h"
 
 using namespace ETSIDI;
 
@@ -17,6 +18,8 @@ private:
 	int patron2[8] = { 6, 6, 6, 6, 6, 6, 6, 6 };
 	Movimiento mover;
 	int f=0, c=0;
+	Imagen im;
+	float _x = 0, _y = 0, tamx = 64, tamy = 64;
 
 public:
 	Tablero();
@@ -24,6 +27,7 @@ public:
 	void mueve(int fil1, int col1, int fil2, int col2);
 	void seleccion(int f1, int c1);
 	friend class Movimiento;
+	friend class Imagen;
 
 };
 

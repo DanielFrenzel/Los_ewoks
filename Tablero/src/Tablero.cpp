@@ -47,7 +47,8 @@ void Tablero::dibuja()
 	
 	casilla[f][c].Casilla_seleccionada();
 
-	tablero.draw();
+	Sprite* tablero = im.crearImagen("imagenes/tablero.png", _x, _y, tamx, tamy);
+	im.liberaImagen(tablero);
 	
 }
 

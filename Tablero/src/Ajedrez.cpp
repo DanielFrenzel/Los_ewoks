@@ -34,7 +34,7 @@ int main(int argc,char* argv[])
 	glEnable(GL_DEPTH_TEST);
 	glEnable(GL_COLOR_MATERIAL);	
 	glMatrixMode(GL_PROJECTION);
-	gluPerspective( 40.0, 800/600.0f, 0.1, 150);
+	gluPerspective( 30.0, 800/600.0f, 0.1, 150);
 
 	//Registrar los callbacks
 	glutDisplayFunc(OnDraw);
@@ -72,15 +72,15 @@ void OnDraw(void)
 
 void mouseMotion(int x, int y)
 {
-	if ((x >= 180 || x <= 618) && (y >= 80 || y <= 518))
+	if ((x >= 100 || x <= 700) && (y >= 0 || y <= 600))
 	{
 		for (int i = 0;i < 8;i++)
 		{
-			if ((x >= 180 + (54.75 * (i))) && (x <= 180 + (54.75 * (i + 1))))
+			if ((x >= 100 + (75 * (i))) && (x <= 100 + (75 * (i + 1))))
 			{
 				col3 = i;
 			}
-			if ((y >= 80 + (54.75 * (i))) && (y <= 80 + (54.75 * (i + 1))))
+			if ((y >= 0 + (75 * (i))) && (y <= 0 + (75 * (i + 1))))
 			{
 				fil3 = (7 - i);
 			}
@@ -93,37 +93,38 @@ void OnMouseClick(int button, int state, int x, int y)
 {
 	if (button == GLUT_LEFT_BUTTON && state == GLUT_DOWN && flag == false)
 	{
-		if ((x >= 180 || x <= 618) && (y >= 80 || y <= 518))
+		//cout << x << "," << y<<endl;
+		if ((x >= 100 || x <= 700) && (y >= 0 || y <= 600))
 		{
 			for (int i = 0;i < 8;i++)
 			{
-				if ((x >= 180+(54.75*(i))) && (x <= 180+(54.75 * (i + 1))))
+				if ((x >= 100 + (75 * (i))) && (x <= 100 + (75 * (i + 1))))
 				{
 					flag = true;
 					col1 = i;
 				}
-				if ((y >= 80 + (54.75 * (i))) && (y <= 80 + (54.75 * (i + 1))))
+				if ((y >= 00 + (75 * (i))) && (y <= 0 + (75 * (i + 1))))
 				{
-					fil1 = (7-i);
+					fil1 = (7 - i);
 				}
 			}
 			tab.seleccion(fil1, col1);
 		}
 	}
-	
+
 
 	else if (button == GLUT_LEFT_BUTTON && state == GLUT_DOWN && flag == true)
 	{
-		if ((x >= 180 || x <= 618) && (y >= 80 || y <= 518))
+		if ((x >= 100 || x <= 700) && (y >= 0 || y <= 600))
 		{
 			for (int i = 0;i < 8;i++)
 			{
-				if ((x >= 180 + (54.75 * (i))) && (x <= 180 + (54.75 * (i + 1))))
+				if ((x >= 100 + (75 * (i))) && (x <= 100 + (75 * (i + 1))))
 				{
 					flag = false;
 					col2 = i;
 				}
-				if ((y >= 80 + (54.75 * (i))) && (y <= 80 + (54.75 * (i + 1))))
+				if ((y >= 0 + (75 * (i))) && (y <= 0 + (75 * (i + 1))))
 				{
 					fil2 = (7 - i);
 				}

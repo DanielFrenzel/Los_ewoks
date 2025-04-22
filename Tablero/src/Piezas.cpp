@@ -47,13 +47,16 @@ void Piezas::dibujar()
 	{
 		if (color == 'B')
 		{
-			Sprite peonB{ "imagenes/WhitePawn.png",_x,_y,5,5 };
-			peonB.draw();
+			//Sprite peonB{ "imagenes/R2D2.png",_x,_y,5,5 };
+			//peonB.draw();
+			Sprite* peonB = imagen.crearImagen("imagenes/R2D2.png", _x, _y, tam, tam5);
+			imagen.liberaImagen(peonB);
+			//imagen.muestraImagen();
 		}
 		else if (color == 'N')
 		{
-			Sprite peonN{ "imagenes/BlackPawn.png",_x,_y,5,5 };
-			peonN.draw();
+			Sprite* peonN = imagen.crearImagen("imagenes/Droide.png", _x, _y, tam2, tam3);
+			imagen.liberaImagen(peonN);
 		}
 		break;
 	}
@@ -61,13 +64,13 @@ void Piezas::dibujar()
 	{
 		if (color == 'B')
 		{
-			caballoB = Sprite{ "imagenes/WhiteKnight.png", _x, _y, 5, 5 };
-			caballoB.draw();
+			Sprite* caballoB = imagen.crearImagen("imagenes/Windu.png", _x, _y, tam, tam);
+			imagen.liberaImagen(caballoB);
 		}
 		else if (color == 'N')
 		{
-			caballoN = Sprite{ "imagenes/BlackKnight.png", _x, _y, 5, 5 };
-			caballoN.draw();
+			Sprite* caballoN = imagen.crearImagen("imagenes/BobaFet.png", _x, _y, tam, tam);
+			imagen.liberaImagen(caballoN);
 		}
 		break;
 	}
@@ -76,13 +79,13 @@ void Piezas::dibujar()
 	{
 		if (color == 'B')
 		{
-			Sprite torreB{ "imagenes/WhiteRook.png",_x,_y,5,5 };
-			torreB.draw();
+			Sprite* torreB = imagen.crearImagen("imagenes/Chewy.png", _x, _y, tam, tam);
+			imagen.liberaImagen(torreB);
 		}
 		else if (color == 'N')
 		{
-			Sprite torreN{ "imagenes/BlackRook.png",_x,_y,5,5 };
-			torreN.draw();
+			Sprite* torreN = imagen.crearImagen("imagenes/Superdroide.png", _x, _y, tam7, tam8);
+			imagen.liberaImagen(torreN);
 		}
 		break;
 	}
@@ -90,13 +93,13 @@ void Piezas::dibujar()
 	{
 		if (color == 'B')
 		{
-			Sprite alfilB{ "imagenes/WhiteBishop.png",_x,_y,5,5 };
-			alfilB.draw();
+			Sprite* alfilB = imagen.crearImagen("imagenes/Yoda.png", _x, _y, tam, tam);
+			imagen.liberaImagen(alfilB);
 		}
 		else if (color == 'N')
 		{
-			Sprite alfilN{ "imagenes/BlackBishop.png",_x,_y,5,5 };
-			alfilN.draw();
+			Sprite* alfilN = imagen.crearImagen("imagenes/Doku_1.png", _x, _y, tam9, tam10);
+			imagen.liberaImagen(alfilN);
 		}
 		break;
 	}
@@ -104,13 +107,13 @@ void Piezas::dibujar()
 	{
 		if (color == 'B')
 		{
-			Sprite reyB{ "imagenes/WhiteKing.png",_x,_y,5,5 };
-			reyB.draw();
+			Sprite* reyB = imagen.crearImagen("imagenes/Obiwan.png", _x, _y, tam, tam);
+			imagen.liberaImagen(reyB);
 		}
 		else if (color == 'N')
 		{
-			Sprite reyN{ "imagenes/BlackKing.png",_x,_y,5,5 };
-			reyN.draw();
+			Sprite* reyN = imagen.crearImagen("imagenes/Palpatine.png", _x, _y, tam, tam);
+			imagen.liberaImagen(reyN);
 		}
 		break;
 	}
@@ -118,13 +121,13 @@ void Piezas::dibujar()
 	{
 		if (color == 'B')
 		{
-			Sprite reinaB{ "imagenes/WhiteQueen.png",_x,_y,5,5 };
-			reinaB.draw();
+			Sprite* reinaB = imagen.crearImagen("imagenes/Rey.png", _x, _y, tam, tam);
+			imagen.liberaImagen(reinaB);
 		}
 		else if (color == 'N')
 		{
-			Sprite reinaN{ "imagenes/BlackQueen.png",_x,_y,5,5 };
-			reinaN.draw();
+			Sprite* reinaN = imagen.crearImagen("imagenes/Vader_or.png", _x, _y, tam5, tam6);
+			imagen.liberaImagen(reinaN);
 		}
 		break;
 	}
