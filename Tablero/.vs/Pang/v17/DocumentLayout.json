@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "C:\\Users\\ferni\\OneDrive\\Documentos\\universidad\\cuarto\\info\\trabajo\\dani\\Tablero\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{E575FADE-B6EB-4154-A1ED-8067A12EAE98}|Pang.vcxproj|C:\\Users\\ferni\\OneDrive\\Documentos\\universidad\\cuarto\\info\\trabajo\\dani\\Tablero\\src\\Coordinador.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{E575FADE-B6EB-4154-A1ED-8067A12EAE98}|Pang.vcxproj|solutionrelative:src\\Coordinador.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{E575FADE-B6EB-4154-A1ED-8067A12EAE98}|Pang.vcxproj|C:\\Users\\ferni\\OneDrive\\Documentos\\universidad\\cuarto\\info\\trabajo\\dani\\Tablero\\src\\Coordinador.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{E575FADE-B6EB-4154-A1ED-8067A12EAE98}|Pang.vcxproj|solutionrelative:src\\Coordinador.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
@@ -13,10 +17,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{E575FADE-B6EB-4154-A1ED-8067A12EAE98}|Pang.vcxproj|C:\\Users\\ferni\\OneDrive\\Documentos\\universidad\\cuarto\\info\\trabajo\\dani\\Tablero\\src\\Tablero.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{E575FADE-B6EB-4154-A1ED-8067A12EAE98}|Pang.vcxproj|solutionrelative:src\\Tablero.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E575FADE-B6EB-4154-A1ED-8067A12EAE98}|Pang.vcxproj|C:\\Users\\ferni\\OneDrive\\Documentos\\universidad\\cuarto\\info\\trabajo\\dani\\Tablero\\src\\Coordinador.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{E575FADE-B6EB-4154-A1ED-8067A12EAE98}|Pang.vcxproj|solutionrelative:src\\Coordinador.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{E575FADE-B6EB-4154-A1ED-8067A12EAE98}|Pang.vcxproj|C:\\Users\\ferni\\OneDrive\\Documentos\\universidad\\cuarto\\info\\trabajo\\dani\\Tablero\\src\\Alfil.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
@@ -94,7 +94,7 @@
       "DocumentGroups": [
         {
           "DockedHeight": 200,
-          "SelectedChildIndex": 7,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Bookmark",
@@ -110,8 +110,7 @@
               "RelativeToolTip": "src\\Imagen.cpp",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAALAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-04-22T10:34:57.072Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-22T10:34:57.072Z"
             },
             {
               "$type": "Document",
@@ -123,8 +122,7 @@
               "RelativeToolTip": "src\\Imagen.h",
               "ViewState": "AgIAAAAAAAAAAAAAAAAuwBIAAAAQAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-04-22T10:34:17.391Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-22T10:34:17.391Z"
             },
             {
               "$type": "Document",
@@ -136,8 +134,7 @@
               "RelativeToolTip": "src\\Piezas.h",
               "ViewState": "AgIAAA8AAAAAAAAAAAAAACkAAAA2AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-03-31T21:23:20.839Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-31T21:23:20.839Z"
             },
             {
               "$type": "Document",
@@ -149,25 +146,24 @@
               "RelativeToolTip": "src\\Piezas.cpp",
               "ViewState": "AgIAACoAAAAAAAAAAAAAAIAAAAAKAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-03-31T21:24:20.208Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-31T21:24:20.208Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 0,
               "Title": "Coordinador.cpp",
               "DocumentMoniker": "C:\\Users\\ferni\\OneDrive\\Documentos\\universidad\\cuarto\\info\\trabajo\\dani\\Tablero\\src\\Coordinador.cpp",
               "RelativeDocumentMoniker": "src\\Coordinador.cpp",
               "ToolTip": "C:\\Users\\ferni\\OneDrive\\Documentos\\universidad\\cuarto\\info\\trabajo\\dani\\Tablero\\src\\Coordinador.cpp",
               "RelativeToolTip": "src\\Coordinador.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACsAAAAiAAAAAAAAAA==",
+              "ViewState": "AgIAABgAAAAAAAAAAAAAACsAAAAiAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2025-04-22T11:01:08.302Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "Tablero.cpp",
               "DocumentMoniker": "C:\\Users\\ferni\\OneDrive\\Documentos\\universidad\\cuarto\\info\\trabajo\\dani\\Tablero\\src\\Tablero.cpp",
               "RelativeDocumentMoniker": "src\\Tablero.cpp",
@@ -175,12 +171,11 @@
               "RelativeToolTip": "src\\Tablero.cpp",
               "ViewState": "AgIAABUAAAAAAAAAAAAAAAQAAAAdAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-03-28T08:46:05.718Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-28T08:46:05.718Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "Coordinador.h",
               "DocumentMoniker": "C:\\Users\\ferni\\OneDrive\\Documentos\\universidad\\cuarto\\info\\trabajo\\dani\\Tablero\\src\\Coordinador.h",
               "RelativeDocumentMoniker": "src\\Coordinador.h",
@@ -188,8 +183,7 @@
               "RelativeToolTip": "src\\Coordinador.h",
               "ViewState": "AgIAAAkAAAAAAAAAAAAAABkAAAA2AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-04-22T10:59:33.868Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-22T10:59:33.868Z"
             },
             {
               "$type": "Document",
@@ -201,8 +195,7 @@
               "RelativeToolTip": "src\\Casilla.h",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAHAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-03-21T19:05:24.69Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-21T19:05:24.69Z"
             },
             {
               "$type": "Document",
@@ -214,12 +207,11 @@
               "RelativeToolTip": "src\\Ajedrez.cpp",
               "ViewState": "AgIAAAwAAAAAAAAAAAAAADYAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-03-21T18:35:52.092Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-21T18:35:52.092Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "Tablero.h",
               "DocumentMoniker": "C:\\Users\\ferni\\OneDrive\\Documentos\\universidad\\cuarto\\info\\trabajo\\dani\\Tablero\\src\\Tablero.h",
               "RelativeDocumentMoniker": "src\\Tablero.h",
@@ -227,8 +219,7 @@
               "RelativeToolTip": "src\\Tablero.h",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAA0AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-03-21T18:36:38.44Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-21T18:36:38.44Z"
             },
             {
               "$type": "Document",
@@ -240,8 +231,7 @@
               "RelativeToolTip": "src\\Alfil.cpp",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAeAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-04-17T21:14:20.711Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-17T21:14:20.711Z"
             },
             {
               "$type": "Document",
@@ -253,8 +243,7 @@
               "RelativeToolTip": "src\\Caballo.h",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-04-17T21:03:51.103Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-17T21:03:51.103Z"
             },
             {
               "$type": "Document",
@@ -266,8 +255,7 @@
               "RelativeToolTip": "src\\Caballo.cpp",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-04-17T21:03:21.96Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-17T21:03:21.96Z"
             },
             {
               "$type": "Document",
@@ -279,8 +267,7 @@
               "RelativeToolTip": "src\\Rey.h",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-04-17T15:48:35.801Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-17T15:48:35.801Z"
             },
             {
               "$type": "Document",
@@ -292,8 +279,7 @@
               "RelativeToolTip": "src\\Casilla.cpp",
               "ViewState": "AgIAACcAAAAAAAAAAAAAADkAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-03-28T09:06:14.7Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-28T09:06:14.7Z"
             },
             {
               "$type": "Document",
