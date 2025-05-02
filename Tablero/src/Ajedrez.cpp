@@ -128,6 +128,7 @@ void OnMouseClick(int button, int state, int x, int y)
 	{
 		flag = false;
 	}
+	coordinador.mouse(button, state, x, y);
 	glutPostRedisplay();
 }
 

@@ -12,6 +12,16 @@ class Coordinador
 private:
 	Sprite Estrella{ "imagenes/inicio/ESTRELLA.png", 0, 0, 20, 25 };
 	Sprite MenuInicial{ "imagenes/inicio/MENU4.png", 0, 0, 96, 64 };
+
+	Sprite BotonSalida{ "imagenes/inicio/Boton_salida.png", 0, 0, 20, 20 };
+	Sprite BotonSalida2{ "imagenes/inicio/Boton_salida2.png", 0, 0, 20, 20 };
+
+	Sprite BotonSonido{ "imagenes/inicio/BOTON_ALTAVOZ.png", 0, 0, 5, 5 };
+	Sprite BotonSonido1_5{ "imagenes/inicio/BOTON_ALTAVOZ1.5.png", 0, 0, 5, 5 };
+	Sprite BotonSonido2{ "imagenes/inicio/BOTON_ALTAVOZ2.png", 0, 0, 5, 5 };
+	Sprite BotonSonido2_5{ "imagenes/inicio/BOTON_ALTAVOZ2.5.png", 0, 0, 5, 5 };
+
+	//Primera Pantalla menu---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 	Sprite BotonDuelo{ "imagenes/inicio/BOTON_DUELO.png", 0, 0, 15, 15 };
 	Sprite BotonDuelo2{ "imagenes/inicio/BOTON_DUELO2.png", 0, 0, 15, 15 };
 	Sprite BotonIA{ "imagenes/inicio/BOTON_IA.png", 0, 0, 15, 15 };
@@ -19,11 +29,15 @@ private:
 	Sprite BotonAJUSTES{ "imagenes/inicio/BOTON_AJUSTES.png", 0, 0, 15, 15 };
 	Sprite BotonAJUSTES2{ "imagenes/inicio/BOTON_AJUSTES2.png", 0, 0, 15, 15 };
 
-	Sprite BotonSalida{ "imagenes/inicio/Boton_salida.png", 0, 0, 20, 20 };
-	Sprite BotonSalida2{ "imagenes/inicio/Boton_salida2.png", 0, 0, 20, 20 };
-
-	Sprite BotonSonido{ "imagenes/inicio/BOTON_ALTAVOZ.png", 0, 0, 5, 5 };
-	Sprite BotonSonido2{ "imagenes/inicio/BOTON_ALTAVOZ2.png", 0, 0, 5, 5 };
+	//Segunda Pantalla menu---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+	Sprite BotonSonidoGeneral{ "imagenes/inicio/BOTON_SONIDO.png", 0, 0, 15, 15 };
+	Sprite BotonSonidoGeneral2{ "imagenes/inicio/BOTON_SONIDO2.png", 0, 0, 15, 15 };
+	Sprite BotonMusica{ "imagenes/inicio/BOTON_MUSICA.png", 0, 0, 15, 15 };
+	Sprite BotonMusica2{ "imagenes/inicio/BOTON_MUSICA2.png", 0, 0, 15, 15 };
+	Sprite BotonAyuda{ "imagenes/inicio/BOTON_AYUDA.png", 0, 0, 15, 15 };
+	Sprite BotonAyuda2{ "imagenes/inicio/BOTON_AYUDA2.png", 0, 0, 15, 15 };
+	Sprite BotonCreditos{ "imagenes/inicio/BOTON_CREDITOS.png", 0, 0, 15, 15 };
+	Sprite BotonCreditos2{ "imagenes/inicio/BOTON_CREDITOS2.png", 0, 0, 15, 15 };
 private:
 	Tablero* tablero = nullptr;
 	int ficha;
@@ -38,6 +52,11 @@ private:
 	bool resaltar_ajustes = 0;
 	bool resaltar_salida = 0;
 	bool resaltar_altavoz = 0;
+	bool resaltar_sonido = 0;
+	bool resaltar_musica = 0;
+	bool resaltar_ayuda = 0;
+	bool resaltar_creditos = 0;
+	bool pulsado_sonido = 0; //Servira para cambiar el icono de sonido
 	float bote = 0.0f;
 	float angulo_bote = 0.0f;
 	bool subiendo_bote = 1;
@@ -45,6 +64,7 @@ private:
 public:
 	void setTablero(Tablero* t);
 	void MovRaton(int x, int y);
+	void mouse(int button, int state, int x, int y);
 	void movimiento(int fil1, int col1, int fil2, int col2);
 	bool compMov(int fil1, int col1, int fil2, int col2);
 	Coordinador();

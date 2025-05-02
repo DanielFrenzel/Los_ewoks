@@ -1,22 +1,11 @@
-﻿  Ajedrez.cpp
-C:\Users\david\Documents\Universidad\Info2\TrabajoDavid\arnaiz\Tablerofer\src\Piezas.h(23,15): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
-  (compilando archivo de origen "src/Ajedrez.cpp")
-  
-C:\Users\david\Documents\Universidad\Info2\TrabajoDavid\arnaiz\Tablerofer\src\Piezas.h(26,15): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
-  (compilando archivo de origen "src/Ajedrez.cpp")
-  
-C:\Users\david\Documents\Universidad\Info2\TrabajoDavid\arnaiz\Tablerofer\src\Piezas.h(26,28): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
-  (compilando archivo de origen "src/Ajedrez.cpp")
-  
-  Coordinador.cpp
-C:\Users\david\Documents\Universidad\Info2\TrabajoDavid\arnaiz\Tablerofer\src\Piezas.h(23,15): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
+﻿  Coordinador.cpp
+C:\Users\david\Documents\Universidad\Info2\TrabajoDavid\arnaiz\Tablero\src\Piezas.h(23,15): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
   (compilando archivo de origen "src/Coordinador.cpp")
   
-C:\Users\david\Documents\Universidad\Info2\TrabajoDavid\arnaiz\Tablerofer\src\Piezas.h(26,15): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
+C:\Users\david\Documents\Universidad\Info2\TrabajoDavid\arnaiz\Tablero\src\Piezas.h(26,15): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
   (compilando archivo de origen "src/Coordinador.cpp")
   
-C:\Users\david\Documents\Universidad\Info2\TrabajoDavid\arnaiz\Tablerofer\src\Piezas.h(26,28): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
+C:\Users\david\Documents\Universidad\Info2\TrabajoDavid\arnaiz\Tablero\src\Piezas.h(26,28): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
   (compilando archivo de origen "src/Coordinador.cpp")
   
-  Generando código...
-  Pang.vcxproj -> C:\Users\david\Documents\Universidad\Info2\TrabajoDavid\arnaiz\Tablerofer\bin\Pang.exe
+  Pang.vcxproj -> C:\Users\david\Documents\Universidad\Info2\TrabajoDavid\arnaiz\Tablero\bin\Pang.exe
