@@ -11,7 +11,7 @@ using namespace ETSIDI;
 class Tablero
 {
 private:
-	Sprite tablero{ "imagenes/tablero.png",0,0,64,64 };
+	//Sprite tablero{ "imagenes/tablero.png",0,0,64,64 };
 	Casilla** casilla;  //lo pasamos por punteros a las piezas para optimizar el juego
 	int patron1[8]= { 1, 2, 3, 5, 4, 3, 2, 1 };
 	int patron2[8] = { 6, 6, 6, 6, 6, 6, 6, 6 };

@@ -26,9 +26,11 @@ int main(int argc,char* argv[])
 	//Inicializar el gestor de ventanas GLUT
 	//y crear la ventana
 	glutInit(&argc, argv);
-	glutInitWindowSize(800,600);
+	
+	glutInitWindowSize(1920, 1080);
 	glutInitDisplayMode(GLUT_DOUBLE | GLUT_RGB | GLUT_DEPTH);
 	glutCreateWindow("MiJuego");
+	glutFullScreen();
 
 	//habilitar luces y definir perspectiva
 	glEnable(GL_LIGHT0);
@@ -67,8 +69,8 @@ void OnDraw(void)
 		0, 0, 0, // hacia que punto mira (0,0,0)
 		0.0, 1.0, 0.0); // definimos hacia arriba (eje Y)*/
 	
-	tab.dibuja();
-
+	//tab.dibuja();
+	coordinador.dibuja();
 	//no borrar esta linea ni poner nada despues
 	glutSwapBuffers();
 }
@@ -82,7 +84,7 @@ void OnMouseClick(int button, int state, int x, int y)
 {
 	if (button == GLUT_LEFT_BUTTON && state == GLUT_DOWN && flag == false)
 	{
-		//cout << x << "," << y<<endl;
+		cout << x << "," << y<<endl;
 		if ((x >= 100 || x <= 700) && (y >= 0 || y <= 600))
 		{
 			for (int i = 0;i < 8;i++)
@@ -140,7 +142,7 @@ void OnKeyboardDown(unsigned char key, int x, int y)
 void OnTimer(int value)
 {
 //poner aqui el código de animacion
-
+	coordinador.boteEstrella();
 	//no borrar estas lineas
 	glutTimerFunc(25,OnTimer,0);
 	glutPostRedisplay();

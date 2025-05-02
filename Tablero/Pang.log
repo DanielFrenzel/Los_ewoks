@@ -1,117 +1,22 @@
 ﻿  Ajedrez.cpp
-  Alfil.cpp
-C:\Users\Usuario\Documents\GitHub\Los_ewoks\Tablero\src\Piezas.h(23,15): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
+C:\Users\david\Documents\Universidad\Info2\TrabajoDavid\arnaiz\Tablerofer\src\Piezas.h(23,15): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
   (compilando archivo de origen "src/Ajedrez.cpp")
   
-C:\Users\Usuario\Documents\GitHub\Los_ewoks\Tablero\src\Piezas.h(26,15): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
+C:\Users\david\Documents\Universidad\Info2\TrabajoDavid\arnaiz\Tablerofer\src\Piezas.h(26,15): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
   (compilando archivo de origen "src/Ajedrez.cpp")
   
-C:\Users\Usuario\Documents\GitHub\Los_ewoks\Tablero\src\Piezas.h(26,28): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
+C:\Users\david\Documents\Universidad\Info2\TrabajoDavid\arnaiz\Tablerofer\src\Piezas.h(26,28): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
   (compilando archivo de origen "src/Ajedrez.cpp")
   
-C:\Users\Usuario\Documents\GitHub\Los_ewoks\Tablero\src\Piezas.h(23,15): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
-  (compilando archivo de origen "src/Alfil.cpp")
-  
-C:\Users\Usuario\Documents\GitHub\Los_ewoks\Tablero\src\Piezas.h(26,15): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
-  (compilando archivo de origen "src/Alfil.cpp")
-  
-C:\Users\Usuario\Documents\GitHub\Los_ewoks\Tablero\src\Piezas.h(26,28): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
-  (compilando archivo de origen "src/Alfil.cpp")
-  
-  Boton.cpp
-C:\Users\Usuario\Documents\GitHub\Los_ewoks\Tablero\src\Boton.cpp(48,92): warning C4244: 'argumento': conversión de 'const GLdouble' a 'float'; posible pérdida de datos
-C:\Users\Usuario\Documents\GitHub\Los_ewoks\Tablero\src\Boton.cpp(48,85): warning C4244: 'argumento': conversión de 'const GLdouble' a 'float'; posible pérdida de datos
-C:\Users\Usuario\Documents\GitHub\Los_ewoks\Tablero\src\Boton.cpp(48,82): warning C4244: 'argumento': conversión de 'const GLdouble' a 'float'; posible pérdida de datos
-C:\Users\Usuario\Documents\GitHub\Los_ewoks\Tablero\src\Boton.cpp(48,79): warning C4244: 'argumento': conversión de 'const GLdouble' a 'float'; posible pérdida de datos
-C:\Users\Usuario\Documents\GitHub\Los_ewoks\Tablero\src\Boton.cpp(49,53): warning C4244: 'argumento': conversión de 'const GLdouble' a 'float'; posible pérdida de datos
-C:\Users\Usuario\Documents\GitHub\Los_ewoks\Tablero\src\Boton.cpp(49,46): warning C4244: 'argumento': conversión de 'const GLdouble' a 'float'; posible pérdida de datos
-C:\Users\Usuario\Documents\GitHub\Los_ewoks\Tablero\src\Boton.cpp(49,43): warning C4244: 'argumento': conversión de 'const GLdouble' a 'float'; posible pérdida de datos
-C:\Users\Usuario\Documents\GitHub\Los_ewoks\Tablero\src\Boton.cpp(49,40): warning C4244: 'argumento': conversión de 'const GLdouble' a 'float'; posible pérdida de datos
-  Caballo.cpp
-C:\Users\Usuario\Documents\GitHub\Los_ewoks\Tablero\src\Piezas.h(23,15): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
-  (compilando archivo de origen "src/Caballo.cpp")
-  
-C:\Users\Usuario\Documents\GitHub\Los_ewoks\Tablero\src\Piezas.h(26,15): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
-  (compilando archivo de origen "src/Caballo.cpp")
-  
-C:\Users\Usuario\Documents\GitHub\Los_ewoks\Tablero\src\Piezas.h(26,28): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
-  (compilando archivo de origen "src/Caballo.cpp")
-  
-  Casilla.cpp
-C:\Users\Usuario\Documents\GitHub\Los_ewoks\Tablero\src\Piezas.h(23,15): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
-  (compilando archivo de origen "src/Casilla.cpp")
-  
-C:\Users\Usuario\Documents\GitHub\Los_ewoks\Tablero\src\Piezas.h(26,15): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
-  (compilando archivo de origen "src/Casilla.cpp")
-  
-C:\Users\Usuario\Documents\GitHub\Los_ewoks\Tablero\src\Piezas.h(26,28): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
-  (compilando archivo de origen "src/Casilla.cpp")
-  
-C:\Users\Usuario\Documents\GitHub\Los_ewoks\Tablero\src\Casilla.cpp(51,11): warning C4244: 'inicializando': conversión de 'int' a 'float'; posible pérdida de datos
-C:\Users\Usuario\Documents\GitHub\Los_ewoks\Tablero\src\Casilla.cpp(52,11): warning C4244: 'inicializando': conversión de 'int' a 'float'; posible pérdida de datos
   Coordinador.cpp
-C:\Users\Usuario\Documents\GitHub\Los_ewoks\Tablero\src\Piezas.h(23,15): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
+C:\Users\david\Documents\Universidad\Info2\TrabajoDavid\arnaiz\Tablerofer\src\Piezas.h(23,15): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
   (compilando archivo de origen "src/Coordinador.cpp")
   
-C:\Users\Usuario\Documents\GitHub\Los_ewoks\Tablero\src\Piezas.h(26,15): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
+C:\Users\david\Documents\Universidad\Info2\TrabajoDavid\arnaiz\Tablerofer\src\Piezas.h(26,15): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
   (compilando archivo de origen "src/Coordinador.cpp")
   
-C:\Users\Usuario\Documents\GitHub\Los_ewoks\Tablero\src\Piezas.h(26,28): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
+C:\Users\david\Documents\Universidad\Info2\TrabajoDavid\arnaiz\Tablerofer\src\Piezas.h(26,28): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
   (compilando archivo de origen "src/Coordinador.cpp")
-  
-  Imagen.cpp
-  Peon.cpp
-C:\Users\Usuario\Documents\GitHub\Los_ewoks\Tablero\src\Piezas.h(23,15): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
-  (compilando archivo de origen "src/Peon.cpp")
-  
-C:\Users\Usuario\Documents\GitHub\Los_ewoks\Tablero\src\Piezas.h(26,15): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
-  (compilando archivo de origen "src/Peon.cpp")
-  
-C:\Users\Usuario\Documents\GitHub\Los_ewoks\Tablero\src\Piezas.h(26,28): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
-  (compilando archivo de origen "src/Peon.cpp")
-  
-  Piezas.cpp
-C:\Users\Usuario\Documents\GitHub\Los_ewoks\Tablero\src\Piezas.h(23,15): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
-  (compilando archivo de origen "src/Piezas.cpp")
-  
-C:\Users\Usuario\Documents\GitHub\Los_ewoks\Tablero\src\Piezas.h(26,15): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
-  (compilando archivo de origen "src/Piezas.cpp")
-  
-C:\Users\Usuario\Documents\GitHub\Los_ewoks\Tablero\src\Piezas.h(26,28): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
-  (compilando archivo de origen "src/Piezas.cpp")
-  
-C:\Users\Usuario\Documents\GitHub\Los_ewoks\Tablero\src\Piezas.cpp(7,15): warning C4244: '=': conversión de 'int' a 'float'; posible pérdida de datos
-C:\Users\Usuario\Documents\GitHub\Los_ewoks\Tablero\src\Piezas.cpp(8,15): warning C4244: '=': conversión de 'int' a 'float'; posible pérdida de datos
-  Rey.cpp
-C:\Users\Usuario\Documents\GitHub\Los_ewoks\Tablero\src\Piezas.h(23,15): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
-  (compilando archivo de origen "src/Rey.cpp")
-  
-C:\Users\Usuario\Documents\GitHub\Los_ewoks\Tablero\src\Piezas.h(26,15): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
-  (compilando archivo de origen "src/Rey.cpp")
-  
-C:\Users\Usuario\Documents\GitHub\Los_ewoks\Tablero\src\Piezas.h(26,28): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
-  (compilando archivo de origen "src/Rey.cpp")
-  
-  Tablero.cpp
-C:\Users\Usuario\Documents\GitHub\Los_ewoks\Tablero\src\Piezas.h(23,15): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
-  (compilando archivo de origen "src/Tablero.cpp")
-  
-C:\Users\Usuario\Documents\GitHub\Los_ewoks\Tablero\src\Piezas.h(26,15): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
-  (compilando archivo de origen "src/Tablero.cpp")
-  
-C:\Users\Usuario\Documents\GitHub\Los_ewoks\Tablero\src\Piezas.h(26,28): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
-  (compilando archivo de origen "src/Tablero.cpp")
-  
-  Torre.cpp
-C:\Users\Usuario\Documents\GitHub\Los_ewoks\Tablero\src\Piezas.h(23,15): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
-  (compilando archivo de origen "src/Torre.cpp")
-  
-C:\Users\Usuario\Documents\GitHub\Los_ewoks\Tablero\src\Piezas.h(26,15): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
-  (compilando archivo de origen "src/Torre.cpp")
-  
-C:\Users\Usuario\Documents\GitHub\Los_ewoks\Tablero\src\Piezas.h(26,28): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
-  (compilando archivo de origen "src/Torre.cpp")
   
   Generando código...
-C:\Users\Usuario\Documents\GitHub\Los_ewoks\Tablero\src\Peon.cpp(47,1): warning C4715: 'Peon::ComprobarMov': no todas las rutas de acceso de control devuelven un valor
-  Pang.vcxproj -> C:\Users\Usuario\Documents\GitHub\Los_ewoks\Tablero\bin\Pang.exe
+  Pang.vcxproj -> C:\Users\david\Documents\Universidad\Info2\TrabajoDavid\arnaiz\Tablerofer\bin\Pang.exe
