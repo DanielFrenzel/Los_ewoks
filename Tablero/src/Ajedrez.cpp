@@ -3,6 +3,7 @@
 #include "freeglut.h"
 #include<iostream>
 #include "Coordinador.h"
+#include "ETSIDI.h"
 
 Tablero tab; //centralizamos la información en este objeto
 Coordinador coordinador;
@@ -41,6 +42,7 @@ int main(int argc,char* argv[])
 	gluPerspective( 30.0, 800/600.0f, 0.1, 150);
 
 	coordinador.setTablero(&tab);
+	coordinador.musica();
 	//Registrar los callbacks
 	glutDisplayFunc(OnDraw);
 	glutTimerFunc(25,OnTimer,0);//le decimos que dentro de 25ms llame 1 vez a la funcion OnTimer()

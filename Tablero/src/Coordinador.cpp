@@ -1,5 +1,6 @@
 #include "Coordinador.h"
 #include "freeglut.h"
+#include "ETSIDI.h"
 void Coordinador::setTablero(Tablero* t)
 {
 	tablero = t;
@@ -74,9 +75,11 @@ void Coordinador::mouse(int button, int state, int x, int y)
 			if (pulsado_sonido == 0)
 			{
 				pulsado_sonido = true;
+				musica();
 			}
 			else {
 				pulsado_sonido = false;
+				musica();
 			}
 		}
 		if (x >= 1702 && x <= 1783 && y >= 26 && y <= 74) estado=estado_anterior;
@@ -222,7 +225,21 @@ void Coordinador::boteEstrella()
 	bote = sin(angulo_bote) * 1.0f;
 
 }
-
+//Musica-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+void Coordinador::musica()
+{
+	if (pulsado_sonido == 0)
+	{
+		playMusica("sonidos/Musica1.mp3", true);
+	}
+	else
+	{
+		stopMusica();
+	}
+		
+	
+}
+ 
 //Para dibujar-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 void Coordinador::dibuja()
 {
@@ -401,4 +418,23 @@ void Coordinador::dibuja()
 	}
 	//Fondo
 	MenuInicial.draw();
+}
+//Getters (Por si hiciera falta)---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Coordinador::Estado Coordinador::getEstado() const 
+{
+	return estado;
+}
+
+Coordinador::Estado Coordinador::getEstadoAnterior() const 
+{
+	return estado_anterior;
+}
+
+//Setters (Por si hicera falta)---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+void Coordinador::setEstado(Estado nuevo_estado) {
+	estado = nuevo_estado;
+}
+
+void Coordinador::setEstadoAnterior(Estado nuevo_estado_anterior) {
+	estado_anterior = nuevo_estado_anterior;
 }

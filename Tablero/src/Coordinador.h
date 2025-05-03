@@ -52,6 +52,13 @@ private:
 	Sprite BotonMovimientos{ "imagenes/inicio/BOTON_MOVIMIENTOS.png", 0, 0, 15, 15 };
 	Sprite BotonMovimientos2{ "imagenes/inicio/BOTON_MOVIMIENTOS2.png", 0, 0, 15, 15 };
 
+protected:
+	enum Estado { INICIO, DUELO, IA, AJUSTES, SONIDO, MUSICA, AYUDA, CREDITOS, NORMAS, MOVIMIENTOS };
+
+private:
+	Estado estado;
+	Estado estado_anterior;
+
 private:
 	Tablero* tablero = nullptr;
 	int ficha;
@@ -78,7 +85,7 @@ private:
 	float bote = 0.0f;
 	float angulo_bote = 0.0f;
 	bool subiendo_bote = 1;
-		
+	
 public:
 	void setTablero(Tablero* t);
 	void MovRaton(int x, int y);
@@ -88,11 +95,16 @@ public:
 	Coordinador();
 	void dibuja();
 	void boteEstrella();
+	void musica();
 
-protected:
-	enum Estado { INICIO, DUELO, IA, AJUSTES, SONIDO, MUSICA, AYUDA, CREDITOS, NORMAS, MOVIMIENTOS };
-	Estado estado;
-	Estado estado_anterior;
+	//Getters
+	Estado getEstado() const;
+	Estado getEstadoAnterior() const;
+
+	//Setters
+	void setEstado(Estado nuevo_estado);
+	void setEstadoAnterior(Estado nuevo_estado_anterior);
+
 
 };
 
