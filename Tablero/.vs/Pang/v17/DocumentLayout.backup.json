@@ -3,12 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\david\\Documents\\Universidad\\Info2\\TrabajoDavid\\arnaiz\\Tablero\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{E575FADE-B6EB-4154-A1ED-8067A12EAE98}|Pang.vcxproj|C:\\Users\\david\\Documents\\Universidad\\Info2\\TrabajoDavid\\arnaiz\\Tablero\\src\\Coordinador.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{E575FADE-B6EB-4154-A1ED-8067A12EAE98}|Pang.vcxproj|solutionrelative:src\\Coordinador.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{E575FADE-B6EB-4154-A1ED-8067A12EAE98}|Pang.vcxproj|C:\\Users\\david\\Documents\\Universidad\\Info2\\TrabajoDavid\\arnaiz\\Tablero\\src\\Coordinador.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{E575FADE-B6EB-4154-A1ED-8067A12EAE98}|Pang.vcxproj|solutionrelative:src\\Coordinador.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E575FADE-B6EB-4154-A1ED-8067A12EAE98}|Pang.vcxproj|C:\\Users\\david\\Documents\\Universidad\\Info2\\TrabajoDavid\\arnaiz\\Tablero\\src\\Coordinador.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{E575FADE-B6EB-4154-A1ED-8067A12EAE98}|Pang.vcxproj|solutionrelative:src\\Coordinador.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{E575FADE-B6EB-4154-A1ED-8067A12EAE98}|Pang.vcxproj|C:\\Users\\david\\Documents\\Universidad\\Info2\\TrabajoDavid\\arnaiz\\Tablero\\src\\Ajedrez.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
@@ -94,7 +94,7 @@
       "DocumentGroups": [
         {
           "DockedHeight": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Bookmark",
@@ -138,26 +138,26 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "Coordinador.h",
               "DocumentMoniker": "C:\\Users\\david\\Documents\\Universidad\\Info2\\TrabajoDavid\\arnaiz\\Tablero\\src\\Coordinador.h",
               "RelativeDocumentMoniker": "src\\Coordinador.h",
               "ToolTip": "C:\\Users\\david\\Documents\\Universidad\\Info2\\TrabajoDavid\\arnaiz\\Tablero\\src\\Coordinador.h",
               "RelativeToolTip": "src\\Coordinador.h",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAABUAAAA5AAAAAAAAAA==",
+              "ViewState": "AgIAAEsAAAAAAAAAAAAAAF0AAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2025-04-22T10:59:33.868Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "Coordinador.cpp",
               "DocumentMoniker": "C:\\Users\\david\\Documents\\Universidad\\Info2\\TrabajoDavid\\arnaiz\\Tablero\\src\\Coordinador.cpp",
               "RelativeDocumentMoniker": "src\\Coordinador.cpp",
               "ToolTip": "C:\\Users\\david\\Documents\\Universidad\\Info2\\TrabajoDavid\\arnaiz\\Tablero\\src\\Coordinador.cpp",
               "RelativeToolTip": "src\\Coordinador.cpp",
-              "ViewState": "AgIAAI8AAAAAAAAAAAAswMkAAAAeAAAAAAAAAA==",
+              "ViewState": "AgIAABUAAAAAAAAAAADgv0sAAAAaAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2025-04-22T11:01:08.302Z",
               "EditorCaption": ""
@@ -170,7 +170,7 @@
               "RelativeDocumentMoniker": "src\\Ajedrez.cpp",
               "ToolTip": "C:\\Users\\david\\Documents\\Universidad\\Info2\\TrabajoDavid\\arnaiz\\Tablero\\src\\Ajedrez.cpp",
               "RelativeToolTip": "src\\Ajedrez.cpp",
-              "ViewState": "AgIAABIAAAAAAAAAAAAAAIcAAAABAAAAAAAAAA==",
+              "ViewState": "AgIAAC0AAAAAAAAAAAAAAIcAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2025-03-21T18:35:52.092Z",
               "EditorCaption": ""
