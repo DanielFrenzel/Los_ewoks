@@ -145,8 +145,7 @@ void Coordinador::mouse(int button, int state, int x, int y)
 				estado = MOVIMIENTOS;
 				return;
 			}
-		}
-		
+		}		
 		
 	}
 }
@@ -244,9 +243,12 @@ void Coordinador::musica()
 void Coordinador::dibuja()
 {
 	//Estella de la muerte
-	Estrella.draw();
-	Estrella.setPos(-16, 0 + bote);
-	Estrella.setSize(20, 25);
+	if (estado != CREDITOS)
+	{
+		Estrella.draw();
+		Estrella.setPos(-16, 0 + bote);
+		Estrella.setSize(20, 25);
+	}
 
 	//Boton de sonido
 	if (pulsado_sonido == 0)
@@ -415,9 +417,23 @@ void Coordinador::dibuja()
 			BotonMovimientos2.draw();
 			BotonMovimientos2.setPos(30, -25);
 		}
+
 	}
 	//Fondo
-	MenuInicial.draw();
+	if (estado != CREDITOS)
+	{
+		MenuInicial.draw();	
+	}
+	
+
+	//Creditos
+	if (estado == CREDITOS)
+	{
+		ChessWarsCreditos.draw();
+		ChessWarsCreditos.setSize(60,56);
+		ChessWarsCreditos.setPos(-20, -20);
+
+	}
 }
 //Getters (Por si hiciera falta)---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 Coordinador::Estado Coordinador::getEstado() const 

@@ -6,6 +6,7 @@
 #include "Torre.h"
 #include "Caballo.h"
 #include "Alfil.h"
+#include "ETSIDI.h"
 
 class Coordinador
 {
@@ -52,6 +53,13 @@ private:
 	Sprite BotonMovimientos{ "imagenes/inicio/BOTON_MOVIMIENTOS.png", 0, 0, 15, 15 };
 	Sprite BotonMovimientos2{ "imagenes/inicio/BOTON_MOVIMIENTOS2.png", 0, 0, 15, 15 };
 
+
+	
+	//Creditos---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+	//Sprite Titulo1Creditos{ "imagenes/recursos/T1.png", 0, 0, 15, 15 };
+	//Sprite Titulo2Creditos{ "imagenes/creditos/TITULO2_CREDITOS.png", 0, 0, 15, 15 };
+	Sprite ChessWarsCreditos{ "imagenes/recursos/CW3.png", 0, 0, 19, 15 };
+
 protected:
 	enum Estado { INICIO, DUELO, IA, AJUSTES, SONIDO, MUSICA, AYUDA, CREDITOS, NORMAS, MOVIMIENTOS };
 
@@ -84,6 +92,7 @@ private:
 	bool pulsado_sonido = 0; //Servira para cambiar el icono de sonido
 	float bote = 0.0f;
 	float angulo_bote = 0.0f;
+	float anim_CW = 0.0f;
 	bool subiendo_bote = 1;
 	
 public:

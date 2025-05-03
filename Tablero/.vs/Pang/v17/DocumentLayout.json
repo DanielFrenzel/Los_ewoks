@@ -7,12 +7,12 @@
       "RelativeMoniker": "D:0:0:{E575FADE-B6EB-4154-A1ED-8067A12EAE98}|Pang.vcxproj|solutionrelative:src\\Coordinador.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E575FADE-B6EB-4154-A1ED-8067A12EAE98}|Pang.vcxproj|C:\\Users\\david\\Documents\\Universidad\\Info2\\TrabajoDavid\\arnaiz\\Tablero\\src\\Ajedrez.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{E575FADE-B6EB-4154-A1ED-8067A12EAE98}|Pang.vcxproj|solutionrelative:src\\Ajedrez.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{E575FADE-B6EB-4154-A1ED-8067A12EAE98}|Pang.vcxproj|C:\\Users\\david\\Documents\\Universidad\\Info2\\TrabajoDavid\\arnaiz\\Tablero\\src\\Coordinador.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{E575FADE-B6EB-4154-A1ED-8067A12EAE98}|Pang.vcxproj|solutionrelative:src\\Coordinador.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E575FADE-B6EB-4154-A1ED-8067A12EAE98}|Pang.vcxproj|C:\\Users\\david\\Documents\\Universidad\\Info2\\TrabajoDavid\\arnaiz\\Tablero\\src\\Ajedrez.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{E575FADE-B6EB-4154-A1ED-8067A12EAE98}|Pang.vcxproj|solutionrelative:src\\Ajedrez.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{E575FADE-B6EB-4154-A1ED-8067A12EAE98}|Pang.vcxproj|C:\\Users\\david\\Documents\\Universidad\\Info2\\TrabajoDavid\\arnaiz\\Tablero\\src\\Piezas.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
@@ -134,17 +134,18 @@
               "RelativeToolTip": "src\\Piezas.cpp",
               "ViewState": "AgIAAB4AAAAAAAAAAAAAAIAAAAAKAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-03-31T21:24:20.208Z"
+              "WhenOpened": "2025-03-31T21:24:20.208Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "Coordinador.h",
               "DocumentMoniker": "C:\\Users\\david\\Documents\\Universidad\\Info2\\TrabajoDavid\\arnaiz\\Tablero\\src\\Coordinador.h",
               "RelativeDocumentMoniker": "src\\Coordinador.h",
               "ToolTip": "C:\\Users\\david\\Documents\\Universidad\\Info2\\TrabajoDavid\\arnaiz\\Tablero\\src\\Coordinador.h",
               "RelativeToolTip": "src\\Coordinador.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAGEAAAABAAAAAAAAAA==",
+              "ViewState": "AgIAACQAAAAAAAAAAAAAAGAAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2025-04-22T10:59:33.868Z",
               "EditorCaption": ""
@@ -157,20 +158,20 @@
               "RelativeDocumentMoniker": "src\\Coordinador.cpp",
               "ToolTip": "C:\\Users\\david\\Documents\\Universidad\\Info2\\TrabajoDavid\\arnaiz\\Tablero\\src\\Coordinador.cpp",
               "RelativeToolTip": "src\\Coordinador.cpp",
-              "ViewState": "AgIAADoAAAAAAAAAAAAlwFEAAAANAAAAAAAAAA==",
+              "ViewState": "AgIAACIAAAAAAAAAAAAvwN8AAAAgAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2025-04-22T11:01:08.302Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "Ajedrez.cpp",
               "DocumentMoniker": "C:\\Users\\david\\Documents\\Universidad\\Info2\\TrabajoDavid\\arnaiz\\Tablero\\src\\Ajedrez.cpp",
               "RelativeDocumentMoniker": "src\\Ajedrez.cpp",
               "ToolTip": "C:\\Users\\david\\Documents\\Universidad\\Info2\\TrabajoDavid\\arnaiz\\Tablero\\src\\Ajedrez.cpp",
               "RelativeToolTip": "src\\Ajedrez.cpp",
-              "ViewState": "AgIAABUAAAAAAAAAAAAAACwAAAAWAAAAAAAAAA==",
+              "ViewState": "AgIAAIoAAAAAAAAAAAAAACwAAAAWAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2025-03-21T18:35:52.092Z",
               "EditorCaption": ""
