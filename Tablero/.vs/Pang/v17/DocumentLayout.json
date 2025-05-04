@@ -11,12 +11,12 @@
       "RelativeMoniker": "D:0:0:{E575FADE-B6EB-4154-A1ED-8067A12EAE98}|Pang.vcxproj|solutionrelative:src\\Coordinador.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E575FADE-B6EB-4154-A1ED-8067A12EAE98}|Pang.vcxproj|C:\\Users\\david\\Documents\\Universidad\\Info2\\TrabajoDavid\\arnaiz\\Tablero\\src\\Ajedrez.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{E575FADE-B6EB-4154-A1ED-8067A12EAE98}|Pang.vcxproj|solutionrelative:src\\Ajedrez.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{E575FADE-B6EB-4154-A1ED-8067A12EAE98}|Pang.vcxproj|C:\\Users\\david\\Documents\\Universidad\\Info2\\TrabajoDavid\\arnaiz\\Tablero\\src\\Piezas.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{E575FADE-B6EB-4154-A1ED-8067A12EAE98}|Pang.vcxproj|solutionrelative:src\\Piezas.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E575FADE-B6EB-4154-A1ED-8067A12EAE98}|Pang.vcxproj|C:\\Users\\david\\Documents\\Universidad\\Info2\\TrabajoDavid\\arnaiz\\Tablero\\src\\Ajedrez.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{E575FADE-B6EB-4154-A1ED-8067A12EAE98}|Pang.vcxproj|solutionrelative:src\\Ajedrez.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{E575FADE-B6EB-4154-A1ED-8067A12EAE98}|Pang.vcxproj|C:\\Users\\david\\Documents\\Universidad\\Info2\\TrabajoDavid\\arnaiz\\Tablero\\src\\Rey.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
@@ -126,7 +126,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 2,
               "Title": "Piezas.cpp",
               "DocumentMoniker": "C:\\Users\\david\\Documents\\Universidad\\Info2\\TrabajoDavid\\arnaiz\\Tablero\\src\\Piezas.cpp",
               "RelativeDocumentMoniker": "src\\Piezas.cpp",
@@ -145,7 +145,7 @@
               "RelativeDocumentMoniker": "src\\Coordinador.h",
               "ToolTip": "C:\\Users\\david\\Documents\\Universidad\\Info2\\TrabajoDavid\\arnaiz\\Tablero\\src\\Coordinador.h",
               "RelativeToolTip": "src\\Coordinador.h",
-              "ViewState": "AgIAACQAAAAAAAAAAAAAAGAAAAABAAAAAAAAAA==",
+              "ViewState": "AgIAAFgAAAAAAAAAAAAvwGQAAAAjAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2025-04-22T10:59:33.868Z",
               "EditorCaption": ""
@@ -158,20 +158,20 @@
               "RelativeDocumentMoniker": "src\\Coordinador.cpp",
               "ToolTip": "C:\\Users\\david\\Documents\\Universidad\\Info2\\TrabajoDavid\\arnaiz\\Tablero\\src\\Coordinador.cpp",
               "RelativeToolTip": "src\\Coordinador.cpp",
-              "ViewState": "AgIAACIAAAAAAAAAAAAvwN8AAAAgAAAAAAAAAA==",
+              "ViewState": "AgIAAPYBAAAAAAAAAAAvwPsBAAA6AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2025-04-22T11:01:08.302Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "Ajedrez.cpp",
               "DocumentMoniker": "C:\\Users\\david\\Documents\\Universidad\\Info2\\TrabajoDavid\\arnaiz\\Tablero\\src\\Ajedrez.cpp",
               "RelativeDocumentMoniker": "src\\Ajedrez.cpp",
               "ToolTip": "C:\\Users\\david\\Documents\\Universidad\\Info2\\TrabajoDavid\\arnaiz\\Tablero\\src\\Ajedrez.cpp",
               "RelativeToolTip": "src\\Ajedrez.cpp",
-              "ViewState": "AgIAAIoAAAAAAAAAAAAAACwAAAAWAAAAAAAAAA==",
+              "ViewState": "AgIAAIcAAAAAAAAAAAAAAJgAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2025-03-21T18:35:52.092Z",
               "EditorCaption": ""

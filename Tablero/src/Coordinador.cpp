@@ -128,6 +128,12 @@ void Coordinador::mouse(int button, int state, int x, int y)
 			{
 				estado_anterior = estado;
 				estado = CREDITOS;
+				activacion_titulo1 = true;
+				activacion_titulo2 = false;
+				tiempo_titulo1 = 0.0f;
+				flote_titulo = 0.0f;
+				musica_creditos_activada = false;
+				musica();
 				return;
 			}
 		}
@@ -145,7 +151,7 @@ void Coordinador::mouse(int button, int state, int x, int y)
 				estado = MOVIMIENTOS;
 				return;
 			}
-		}		
+		}
 		
 	}
 }
@@ -211,31 +217,82 @@ Coordinador::Coordinador()
 	resaltar_movimientos = false;
 	resaltar_atras = false;
 	resaltar_interrogacion = false;
+	activacion_titulo2 = false;
+	tamx = 0, tamy = 0;
+	activacion_titulo1 = false;
+	musica_creditos_activada = false;
+	activacion_titulo3 = false;
+	
 }
 
-//bote de la estrella y aumento del tamaño-----------------------------------------------------------------------------------------------------------------------------------------------------------------
-void Coordinador::boteEstrella()
+//Animaciones varias de los menus-----------------------------------------------------------------------------------------------------------------------------------------------------------------
+void Coordinador::animaciones()
 {
-
+	//bote estrella
 	angulo_bote += 0.05f; // velocidad del bote
 	if (angulo_bote > 2 * 3.14159f)
 		angulo_bote = 0.0f;
 
 	bote = sin(angulo_bote) * 1.0f;
 
+	//Creditos
+	if (estado == CREDITOS)
+	{
+		
+		if (activacion_titulo1==1)
+		{
+			tiempo_titulo1 += 0.025f;  
+			if (tiempo_titulo1 >= 5.0f) {
+				activacion_titulo1 = false;
+				activacion_titulo2 = true;
+				activacion_titulo3 = true;
+				movimiento_titulo3 = 0.0f;
+				playMusica("sonidos/MusicaCreditos.mp3", true);
+			}
+		}
+		if(activacion_titulo2==1)
+		{
+			flote_titulo += 0.25f;
+			if (flote_titulo >= 60.0f)
+			{
+				activacion_titulo2 = false;    
+			
+			}
+		}
+		if (activacion_titulo3 == 1)
+		{
+			movimiento_titulo3 += 0.07f;
+			if (-120+movimiento_titulo3>100)
+			{
+				activacion_titulo3 = false;
+			}
+		
+		}
+	}
+	
 }
 //Musica-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 void Coordinador::musica()
 {
-	if (pulsado_sonido == 0)
-	{
-		playMusica("sonidos/Musica1.mp3", true);
-	}
-	else
+
+	if (pulsado_sonido != 0)
 	{
 		stopMusica();
+		musica_actual = -1;
+		return;
 	}
-		
+
+	if (estado == CREDITOS &&  musica_actual != 1)
+	{
+		stopMusica();
+		musica_actual = 1;
+	}
+	else if (estado != CREDITOS && musica_actual != 0)
+	{
+		playMusica("sonidos/Musica1.mp3", true);
+		musica_actual = 0;
+	}
+
 	
 }
  
@@ -245,8 +302,8 @@ void Coordinador::dibuja()
 	//Estella de la muerte
 	if (estado != CREDITOS)
 	{
-		Estrella.draw();
 		Estrella.setPos(-16, 0 + bote);
+		Estrella.draw();
 		Estrella.setSize(20, 25);
 	}
 
@@ -255,45 +312,45 @@ void Coordinador::dibuja()
 	{
 		if (resaltar_altavoz == 0)
 		{
-			BotonSonido.draw();
 			BotonSonido.setPos(40, 29);
+			BotonSonido.draw();
 		}
 		else
 		{
-			BotonSonido1_5.draw();
 			BotonSonido1_5.setPos(40, 29);
+			BotonSonido1_5.draw();
 		}
-		BotonSonido.draw();
 		BotonSonido.setPos(40, 29);
+		BotonSonido.draw();
 		BotonSonido.setSize(5, 5);
 	}
 	else
 	{
 		if (resaltar_altavoz == 0)
 		{
-			BotonSonido2.draw();
 			BotonSonido2.setPos(40, 29);
+			BotonSonido2.draw();
 		}
 		else
 		{
-			BotonSonido2_5.draw();
 			BotonSonido2_5.setPos(40, 29);
+			BotonSonido2_5.draw();
 		}
-		BotonSonido2.draw();
 		BotonSonido2.setPos(40, 29);
+		BotonSonido2.draw();
 	}
 
 	//Boton de exit
 	if (resaltar_salida == 0)
 	{
-		BotonSalida.draw();
 		BotonSalida.setPos(-32, 38);
+		BotonSalida.draw();
 		BotonSalida.setSize(5, 5);
 	}
 	else
 	{
-		BotonSalida2.draw();
 		BotonSalida2.setPos(-32, 38);
+		BotonSalida2.draw();
 		BotonSalida2.setSize(5, 5);
 	}
 	//Boton de atras
@@ -301,13 +358,13 @@ void Coordinador::dibuja()
 	{
 		if (resaltar_atras == 0)
 		{
-			BotonAtras.draw();
 			BotonAtras.setPos(35, 29);
+			BotonAtras.draw();
 		}
 		else
 		{
-			BotonAtras2.draw();
 			BotonAtras2.setPos(35, 29);
+			BotonAtras2.draw();
 		}
 	}
 
@@ -316,35 +373,35 @@ void Coordinador::dibuja()
 
 		if (resaltar_duelo == 0)
 		{
-			BotonDuelo.draw();
 			BotonDuelo.setPos(-30, -25);
+			BotonDuelo.draw();
 		}
 		else
 		{
-			BotonDuelo2.draw();
 			BotonDuelo2.setPos(-30, -25);
+			BotonDuelo2.draw();
 		}
 
 		if (resaltar_ia == 0)
 		{
-			BotonIA.draw();
 			BotonIA.setPos(0, -25);
+			BotonIA.draw();
 		}
 		else
 		{
-			BotonIA2.draw();
 			BotonIA2.setPos(0, -25);
+			BotonIA2.draw();
 		}
 
 		if (resaltar_ajustes == 0)
 		{
-			BotonAJUSTES.draw();
 			BotonAJUSTES.setPos(30, -25);
+			BotonAJUSTES.draw();
 		}
 		else
 		{
-			BotonAJUSTES2.draw();
 			BotonAJUSTES2.setPos(30, -25);
+			BotonAJUSTES2.draw();
 		}
 	}
 	//Botones AJUSTES
@@ -352,45 +409,45 @@ void Coordinador::dibuja()
 
 		if (resaltar_sonido == 0)
 		{
-			BotonSonidoGeneral.draw();
 			BotonSonidoGeneral.setPos(-30, -25);
+			BotonSonidoGeneral.draw();
 		}
 		else
 		{
-			BotonSonidoGeneral2.draw();
 			BotonSonidoGeneral2.setPos(-30, -25);
+			BotonSonidoGeneral2.draw();
 		}
 
 		if (resaltar_musica == 0)
 		{
-			BotonMusica.draw();
 			BotonMusica.setPos(0, -25);
+			BotonMusica.draw();
 		}
 		else
 		{
-			BotonMusica2.draw();
 			BotonMusica2.setPos(0, -25);
+			BotonMusica2.draw();
 		}
 
 		if (resaltar_ayuda == 0)
 		{
-			BotonAyuda.draw();
 			BotonAyuda.setPos(30, -25);
+			BotonAyuda.draw();
 		}
 		else
 		{
-			BotonAyuda2.draw();
 			BotonAyuda2.setPos(30, -25);
+			BotonAyuda2.draw();
 		}
 		if (resaltar_creditos == 0)
 		{
-			BotonCreditos.draw();
 			BotonCreditos.setPos(0, -10);
+			BotonCreditos.draw();
 		}
 		else
 		{
-			BotonCreditos2.draw();
 			BotonCreditos2.setPos(0, -10);
+			BotonCreditos2.draw();
 		}
 	}
 	//Botones AYUDA
@@ -398,24 +455,24 @@ void Coordinador::dibuja()
 
 		if (resaltar_normas == 0)
 		{
-			BotonNormas.draw();
 			BotonNormas.setPos(-30, -25);
+			BotonNormas.draw();
 		}
 		else
 		{
-			BotonNormas2.draw();
 			BotonNormas2.setPos(-30, -25);
+			BotonNormas2.draw();
 		}
 
 		if (resaltar_movimientos == 0)
 		{
-			BotonMovimientos.draw();
 			BotonMovimientos.setPos(30, -25);
+			BotonMovimientos.draw();
 		}
 		else
 		{
-			BotonMovimientos2.draw();
 			BotonMovimientos2.setPos(30, -25);
+			BotonMovimientos2.draw();
 		}
 
 	}
@@ -429,9 +486,31 @@ void Coordinador::dibuja()
 	//Creditos
 	if (estado == CREDITOS)
 	{
-		ChessWarsCreditos.draw();
-		ChessWarsCreditos.setSize(60,56);
-		ChessWarsCreditos.setPos(-20, -20);
+		if (activacion_titulo1 == 1)
+		{
+			Titulo1Creditos.setPos(-40, 0);
+			Titulo1Creditos.setCenter(0, 0);
+			Titulo1Creditos.draw();
+			Titulo1Creditos.setSize(80, 20);
+		}
+		if (activacion_titulo2 == 1)
+		{
+			tamx = 60 - flote_titulo;
+			tamy = 56 - flote_titulo;
+			ChessWarsCreditos.setPos(-tamx / 2.0f, -tamy / 2.0f);
+			ChessWarsCreditos.draw();
+			ChessWarsCreditos.setCenter(0, 0);
+			ChessWarsCreditos.setSize(60 - flote_titulo, 60 - flote_titulo);
+		}
+		if (activacion_titulo3 == 1)
+		{
+			Titulo1Creditos.setCenter(0, 0);
+			Titulo3Creditos.setPos(-37, -125 + movimiento_titulo3);
+			Titulo3Creditos.draw();
+			Titulo3Creditos.setSize(90, 110);
+		}
+		
+		FondoEstrellas.draw();
 
 	}
 }

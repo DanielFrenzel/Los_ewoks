@@ -145,7 +145,7 @@ void OnKeyboardDown(unsigned char key, int x, int y)
 void OnTimer(int value)
 {
 //poner aqui el código de animacion
-	coordinador.boteEstrella();
+	coordinador.animaciones();
 	//no borrar estas lineas
 	glutTimerFunc(25,OnTimer,0);
 	glutPostRedisplay();

@@ -52,13 +52,12 @@ private:
 	Sprite BotonNormas2{ "imagenes/inicio/BOTON_NORMAS2.png", 0, 0, 15, 15 };
 	Sprite BotonMovimientos{ "imagenes/inicio/BOTON_MOVIMIENTOS.png", 0, 0, 15, 15 };
 	Sprite BotonMovimientos2{ "imagenes/inicio/BOTON_MOVIMIENTOS2.png", 0, 0, 15, 15 };
-
-
 	
 	//Creditos---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-	//Sprite Titulo1Creditos{ "imagenes/recursos/T1.png", 0, 0, 15, 15 };
-	//Sprite Titulo2Creditos{ "imagenes/creditos/TITULO2_CREDITOS.png", 0, 0, 15, 15 };
+	Sprite Titulo1Creditos{ "imagenes/recursos/T1.png", 0, 0, 15, 15 };
+	Sprite Titulo3Creditos{ "imagenes/recursos/T3.png", 0, 0, 15, 15 };
 	Sprite ChessWarsCreditos{ "imagenes/recursos/CW3.png", 0, 0, 19, 15 };
+	Sprite FondoEstrellas{ "imagenes/recursos/FONDO_ESTRELLAS.png", 0, 0, 96, 64 };
 
 protected:
 	enum Estado { INICIO, DUELO, IA, AJUSTES, SONIDO, MUSICA, AYUDA, CREDITOS, NORMAS, MOVIMIENTOS };
@@ -94,6 +93,16 @@ private:
 	float angulo_bote = 0.0f;
 	float anim_CW = 0.0f;
 	bool subiendo_bote = 1;
+	float flote_titulo = 0.0f;
+	float tamx, tamy;
+	bool activacion_titulo2 = 0;
+	float tiempo_titulo1 = 0.0f;
+	bool activacion_titulo1 = 0;
+	bool musica_creditos_activada = 0;
+	bool activacion_titulo3 = 0;
+	float movimiento_titulo3 = 0.0f;
+	float tiempoespera_titulo3 = 0.0f;
+	int musica_actual = -1; // -1: ninguna, 0: menu, 1: creditos
 	
 public:
 	void setTablero(Tablero* t);
@@ -103,7 +112,7 @@ public:
 	bool compMov(int fil1, int col1, int fil2, int col2);
 	Coordinador();
 	void dibuja();
-	void boteEstrella();
+	void animaciones();
 	void musica();
 
 	//Getters
