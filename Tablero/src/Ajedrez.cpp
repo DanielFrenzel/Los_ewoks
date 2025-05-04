@@ -19,7 +19,7 @@ void OnKeyboardDown(unsigned char key, int x, int y); //cuando se pulse una tecl
 void onSpecialKeyboardDown(int key, int x, int y);
 void OnMouseClick(int button, int state, int x, int y);
 void mouseMotion(int x, int y);
-
+void reshape(int w, int h);
 
 
 int main(int argc,char* argv[])
@@ -43,12 +43,14 @@ int main(int argc,char* argv[])
 
 	coordinador.setTablero(&tab);
 	coordinador.musica();
+	coordinador.actualizarEscalaVentana(1920, 1080);
 	//Registrar los callbacks
 	glutDisplayFunc(OnDraw);
 	glutTimerFunc(25,OnTimer,0);//le decimos que dentro de 25ms llame 1 vez a la funcion OnTimer()
 	glutKeyboardFunc(OnKeyboardDown);
 	glutMouseFunc(OnMouseClick);
 	glutSpecialFunc(onSpecialKeyboardDown); //gestion de los cursores
+	glutReshapeFunc(reshape);
 
 	//mundo.inicializa();
 	glutPassiveMotionFunc(mouseMotion);
@@ -155,4 +157,9 @@ void onSpecialKeyboardDown(int key, int x, int y)
 {
 
 	
+}
+void reshape(int w, int h)
+{
+	glViewport(0, 0, w, h);
+	coordinador.actualizarEscalaVentana(w, h);
 }

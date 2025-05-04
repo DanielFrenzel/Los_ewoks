@@ -8,16 +8,18 @@ void Coordinador::setTablero(Tablero* t)
 //Movimiento del raton----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 void Coordinador::MovRaton(int x, int y)  //Indica que casilla se ha pulsado según 
 {
+	float x_base = x / escalaX;
+	float y_base = y / escalaY;
 	int fil3 = 0, col3 = 0;
-	if ((x >= 100 || x <= 700) && (y >= 0 || y <= 600))
+	if ((x_base >= 100 || x_base <= 700) && (y_base >= 0 || y_base <= 600))
 	{
 		for (int i = 0; i < 8; i++)
 		{
-			if ((x >= 100 + (75 * i)) && (x <= 100 + (75 * (i + 1))))
+			if ((x_base >= 100 + (75 * i)) && (x_base <= 100 + (75 * (i + 1))))
 			{
 				col3 = i;
 			}
-			if ((y >= 0 + (75 * i)) && (y <= 0 + (75 * (i + 1))))
+			if ((y_base >= 0 + (75 * i)) && (y_base <= 0 + (75 * (i + 1))))
 			{
 				fil3 = (7 - i);
 			}
@@ -40,25 +42,25 @@ void Coordinador::MovRaton(int x, int y)  //Indica que casilla se ha pulsado seg
 	resaltar_atras = false;
 	resaltar_interrogacion = false;
 
-	if (x >= 21 && x <= 127 && y >= 18 && y <= 38) resaltar_salida = true;
-	if (x >= 1816 && x <= 1895 && y >= 23 && y <= 76) resaltar_altavoz = true;
-	if (x >= 1702 && x <= 1783 && y >= 26 && y <= 74) resaltar_atras = true;
+	if (x_base >= 21 && x_base <= 127 && y_base >= 18 && y_base <= 38) resaltar_salida = true;
+	if (x_base >= 1816 && x_base <= 1895 && y_base >= 23 && y_base <= 76) resaltar_altavoz = true;
+	if (x_base >= 1702 && x_base <= 1783 && y_base >= 26 && y_base <= 74) resaltar_atras = true;
 	switch (estado)
 	{
 	case INICIO:
-		if (x >= 122 && x <= 452 && y >= 915 && y <= 1024) resaltar_duelo = true;
-		if (x >= 795 && x <= 1125 && y >= 916 && y <= 1025) resaltar_ia = true;
-		if (x >= 1466 && x <= 1796 && y >= 917 && y <= 1025) resaltar_ajustes = true;
+		if (x_base >= 122 && x_base <= 452 && y_base >= 915 && y_base <= 1024) resaltar_duelo = true;
+		if (x_base >= 795 && x_base <= 1125 && y_base >= 916 && y_base <= 1025) resaltar_ia = true;
+		if (x_base >= 1466 && x_base <= 1796 && y_base >= 917 && y_base <= 1025) resaltar_ajustes = true;
 		break;
 	case AJUSTES:
-		if (x >= 122 && x <= 452 && y >= 915 && y <= 1024) resaltar_sonido = true;
-		if (x >= 795 && x <= 1125 && y >= 916 && y <= 1025) resaltar_musica = true;
-		if (x >= 1466 && x <= 1796 && y >= 917 && y <= 1025) resaltar_ayuda = true;
-		if (x >= 795 && x <= 1125 && y >= 664 && y <= 773) resaltar_creditos = true;
+		if (x_base >= 122 && x_base <= 452 && y_base >= 915 && y_base <= 1024) resaltar_sonido = true;
+		if (x_base >= 795 && x_base <= 1125 && y_base >= 916 && y_base <= 1025) resaltar_musica = true;
+		if (x_base >= 1466 && x_base <= 1796 && y_base >= 917 && y_base <= 1025) resaltar_ayuda = true;
+		if (x_base >= 795 && x_base <= 1125 && y_base >= 664 && y_base <= 773) resaltar_creditos = true;
 		break;
 	case AYUDA:
-		if (x >= 122 && x <= 452 && y >= 915 && y <= 1024) resaltar_normas = true;
-		if (x >= 1466 && x <= 1796 && y >= 917 && y <= 1025) resaltar_movimientos = true;
+		if (x_base >= 122 && x_base <= 452 && y_base >= 915 && y_base <= 1024) resaltar_normas = true;
+		if (x_base >= 1466 && x_base <= 1796 && y_base >= 917 && y_base <= 1025) resaltar_movimientos = true;
 		break;
 	}
 
@@ -67,10 +69,12 @@ void Coordinador::MovRaton(int x, int y)  //Indica que casilla se ha pulsado seg
 //para controlar el click--------------------------------------------------------------------------------------------------------------------------------------------------------------------
 void Coordinador::mouse(int button, int state, int x, int y)
 {
+	float x_base = x / escalaX;
+	float y_base = y / escalaY;
 	if (button == GLUT_LEFT_BUTTON && state == GLUT_DOWN)
 	{
-		if (x >= 21 && x <= 127 && y >= 18 && y <= 38) exit(0);
-		if (x >= 1816 && x <= 1895 && y >= 23 && y <= 76)
+		if (x_base >= 21 && x_base <= 127 && y_base >= 18 && y_base <= 38) exit(0);
+		if (x_base >= 1816 && x_base <= 1895 && y_base >= 23 && y_base <= 76)
 		{
 			if (pulsado_sonido == 0)
 			{
@@ -82,22 +86,22 @@ void Coordinador::mouse(int button, int state, int x, int y)
 				musica();
 			}
 		}
-		if (x >= 1702 && x <= 1783 && y >= 26 && y <= 74) estado=estado_anterior;
+		if (x_base >= 1702 && x_base <= 1783 && y_base >= 26 && y_base <= 74) estado=estado_anterior;
 		if (estado == INICIO)
 		{
-			if (x >= 122 && x <= 452 && y >= 915 && y <= 1024)
+			if (x_base >= 122 && x_base <= 452 && y_base >= 915 && y_base <= 1024)
 			{
 				estado_anterior = estado;
 				estado = DUELO;
 				return;
 			}
-			if (x >= 795 && x <= 1125 && y >= 916 && y <= 1025)
+			if (x_base >= 795 && x_base <= 1125 && y_base >= 916 && y_base <= 1025)
 			{
 				estado_anterior = estado;
 				estado = IA;
 				return;
 			}
-			if (x >= 1466 && x <= 1796 && y >= 917 && y <= 1025)
+			if (x_base >= 1466 && x_base <= 1796 && y_base >= 917 && y_base <= 1025)
 			{
 				estado_anterior = estado;
 				estado = AJUSTES;
@@ -106,25 +110,25 @@ void Coordinador::mouse(int button, int state, int x, int y)
 		}
 		if (estado == AJUSTES)
 		{
-			if (x >= 122 && x <= 452 && y >= 915 && y <= 1024)
+			if (x_base >= 122 && x_base <= 452 && y_base >= 915 && y_base <= 1024)
 			{
 				estado_anterior = estado;
 				estado = SONIDO;
 				return;
 			}
-			if (x >= 795 && x <= 1125 && y >= 916 && y <= 1025)
+			if (x_base >= 795 && x_base <= 1125 && y_base >= 916 && y_base <= 1025)
 			{
 				estado_anterior = estado;
 				estado = MUSICA;
 				return;
 			}
-			if (x >= 1466 && x <= 1796 && y >= 917 && y <= 1025)
+			if (x_base >= 1466 && x_base <= 1796 && y_base >= 917 && y_base <= 1025)
 			{
 				estado_anterior = estado;
 				estado = AYUDA;
 				return;
 			}
-			if (x >= 795 && x <= 1125 && y >= 664 && y <= 773)
+			if (x_base >= 795 && x_base <= 1125 && y_base >= 664 && y_base <= 773)
 			{
 				estado_anterior = estado;
 				estado = CREDITOS;
@@ -139,13 +143,13 @@ void Coordinador::mouse(int button, int state, int x, int y)
 		}
 		if (estado == AYUDA)
 		{
-			if (x >= 122 && x <= 452 && y >= 915 && y <= 1024)
+			if (x_base >= 122 && x_base <= 452 && y_base >= 915 && y_base <= 1024)
 			{
 				estado_anterior = estado;
 				estado = NORMAS;
 				return;
 			}
-			if (x >= 1466 && x <= 1796 && y >= 917 && y <= 1025)
+			if (x_base >= 1466 && x_base <= 1796 && y_base >= 917 && y_base <= 1025)
 			{
 				estado_anterior = estado;
 				estado = MOVIMIENTOS;
@@ -532,4 +536,19 @@ void Coordinador::setEstado(Estado nuevo_estado) {
 
 void Coordinador::setEstadoAnterior(Estado nuevo_estado_anterior) {
 	estado_anterior = nuevo_estado_anterior;
+}
+
+void Coordinador::actualizarEscalaVentana(int ancho_actual, int alto_actual) {
+	escalaX = ancho_actual / 1920.0f;
+	escalaY = alto_actual / 1080.0f;
+	ancho_ventana = ancho_actual;
+	alto_ventana = alto_actual;
+}
+
+float Coordinador::escalarX(float x) const {
+	return x * escalaX;
+}
+
+float Coordinador::escalarY(float y) const {
+	return y * escalaY;
 }

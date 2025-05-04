@@ -103,6 +103,10 @@ private:
 	float movimiento_titulo3 = 0.0f;
 	float tiempoespera_titulo3 = 0.0f;
 	int musica_actual = -1; // -1: ninguna, 0: menu, 1: creditos
+	int ancho_ventana = 1920;
+	int alto_ventana = 1080;
+	float escalaX = 1.0f;
+	float escalaY = 1.0f;
 	
 public:
 	void setTablero(Tablero* t);
@@ -123,6 +127,10 @@ public:
 	void setEstado(Estado nuevo_estado);
 	void setEstadoAnterior(Estado nuevo_estado_anterior);
 
+	void actualizarEscalaVentana(int ancho_actual, int alto_actual);
 
+	float escalarX(float x) const;
+
+	float escalarY(float y) const;
 };
 
