@@ -41,6 +41,9 @@ void Coordinador::MovRaton(int x, int y)  //Indica que casilla se ha pulsado seg
 	resaltar_movimientos = false;
 	resaltar_atras = false;
 	resaltar_interrogacion = false;
+	resaltar_cancion1 = false;
+	resaltar_cancion2 = false;
+	resaltar_cancion3 = false;
 
 	if (x_base >= 21 && x_base <= 127 && y_base >= 18 && y_base <= 38) resaltar_salida = true;
 	if (x_base >= 1816 && x_base <= 1895 && y_base >= 23 && y_base <= 76) resaltar_altavoz = true;
@@ -62,6 +65,11 @@ void Coordinador::MovRaton(int x, int y)  //Indica que casilla se ha pulsado seg
 		if (x_base >= 122 && x_base <= 452 && y_base >= 915 && y_base <= 1024) resaltar_normas = true;
 		if (x_base >= 1466 && x_base <= 1796 && y_base >= 917 && y_base <= 1025) resaltar_movimientos = true;
 		break;
+
+	case MUSICA:
+		if (x_base >= 104 && x_base <= 350 && y_base >= 916 && y_base <= 1025) resaltar_cancion1 = true;
+		if (x_base >= 813 && x_base <= 1225 && y_base >= 916 && y_base <= 1025) resaltar_cancion2 = true;
+		if (x_base >= 1484 && x_base <= 1896 && y_base >= 917 && y_base <= 1025) resaltar_cancion3 = true;
 	}
 
 
@@ -226,6 +234,9 @@ Coordinador::Coordinador()
 	activacion_titulo1 = false;
 	musica_creditos_activada = false;
 	activacion_titulo3 = false;
+	resaltar_cancion1 = false;
+	resaltar_cancion2 = false;
+	resaltar_cancion3 = false;
 	
 }
 
@@ -357,6 +368,7 @@ void Coordinador::dibuja()
 		BotonSalida2.draw();
 		BotonSalida2.setSize(5, 5);
 	}
+
 	//Boton de atras
 	if(estado!=INICIO)
 	{
@@ -408,6 +420,7 @@ void Coordinador::dibuja()
 			BotonAJUSTES2.draw();
 		}
 	}
+
 	//Botones AJUSTES
 	if (estado == AJUSTES) {
 
@@ -454,6 +467,7 @@ void Coordinador::dibuja()
 			BotonCreditos2.draw();
 		}
 	}
+
 	//Botones AYUDA
 	if (estado == AYUDA) {
 
@@ -480,6 +494,44 @@ void Coordinador::dibuja()
 		}
 
 	}
+
+	//Botones MUSICA
+	if (estado == MUSICA) {
+
+		if (resaltar_cancion1 == 0)
+		{
+			BotonCancion1.setPos(-30, -25);
+			BotonCancion1.draw();
+		}
+		else
+		{
+			BotonCancion12.setPos(-30, -25);
+			BotonCancion12.draw();
+		}
+
+		if (resaltar_cancion2 == 0)
+		{
+			BotonCancion2.setPos(0, -25);
+			BotonCancion2.draw();
+		}
+		else
+		{
+			BotonCancion22.setPos(0, -25);
+			BotonCancion22.draw();
+		}
+
+		if (resaltar_cancion3 == 0)
+		{
+			BotonCancion3.setPos(30, -25);
+			BotonCancion3.draw();
+		}
+		else
+		{
+			BotonCancion32.setPos(30, -25);
+			BotonCancion32.draw();
+		}
+	}
+
 	//Fondo
 	if (estado != CREDITOS)
 	{

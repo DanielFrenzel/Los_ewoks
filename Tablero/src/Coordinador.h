@@ -47,6 +47,14 @@ private:
 	Sprite BotonCreditos{ "imagenes/inicio/BOTON_CREDITOS.png", 0, 0, 15, 15 };
 	Sprite BotonCreditos2{ "imagenes/inicio/BOTON_CREDITOS2.png", 0, 0, 15, 15 };
 
+	//Pantalla MUSICA
+	Sprite BotonCancion1{ "imagenes/inicio/Cancion1.png", 0,0,15,15 };
+	Sprite BotonCancion12{ "imagenes/inicio/Cancion1Seleccionada.png", 0,0,15,15 };
+	Sprite BotonCancion2{ "imagenes/inicio/Cancion2.png", 0,0,15,15 };
+	Sprite BotonCancion22{ "imagenes/inicio/Cancion2Seleccionada.png", 0,0,15,15 };
+	Sprite BotonCancion3{ "imagenes/inicio/Cancion3.png", 0,0,15,15 };
+	Sprite BotonCancion32{ "imagenes/inicio/Cancion3Seleccionada.png", 0,0,15,15 };
+
 	//Pantalla AYUDA---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 	Sprite BotonNormas{ "imagenes/inicio/BOTON_NORMAS.png", 0, 0, 15, 15 };
 	Sprite BotonNormas2{ "imagenes/inicio/BOTON_NORMAS2.png", 0, 0, 15, 15 };
@@ -88,6 +96,9 @@ private:
 	bool resaltar_movimientos = 0;
 	bool resaltar_atras = 0;
 	bool resaltar_interrogacion = 0;
+	bool resaltar_cancion1 = 0;
+	bool resaltar_cancion2 = 0;
+	bool resaltar_cancion3 = 0;
 	bool pulsado_sonido = 0; //Servira para cambiar el icono de sonido
 	float bote = 0.0f;
 	float angulo_bote = 0.0f;
