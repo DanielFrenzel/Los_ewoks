@@ -11,6 +11,10 @@
       "RelativeMoniker": "D:0:0:{E575FADE-B6EB-4154-A1ED-8067A12EAE98}|Pang.vcxproj|solutionrelative:src\\Coordinador.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{E575FADE-B6EB-4154-A1ED-8067A12EAE98}|Pang.vcxproj|C:\\Users\\emilito2003\\Documents\\GitHub\\Los_ewoks\\Tablero\\src\\Piezas.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{E575FADE-B6EB-4154-A1ED-8067A12EAE98}|Pang.vcxproj|solutionrelative:src\\Piezas.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{E575FADE-B6EB-4154-A1ED-8067A12EAE98}|Pang.vcxproj|C:\\Users\\emilito2003\\Documents\\GitHub\\Los_ewoks\\Tablero\\src\\Ajedrez.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{E575FADE-B6EB-4154-A1ED-8067A12EAE98}|Pang.vcxproj|solutionrelative:src\\Ajedrez.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
@@ -45,10 +49,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{E575FADE-B6EB-4154-A1ED-8067A12EAE98}|Pang.vcxproj|C:\\Users\\emilito2003\\Documents\\GitHub\\Los_ewoks\\Tablero\\src\\Alfil.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{E575FADE-B6EB-4154-A1ED-8067A12EAE98}|Pang.vcxproj|solutionrelative:src\\Alfil.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E575FADE-B6EB-4154-A1ED-8067A12EAE98}|Pang.vcxproj|C:\\Users\\emilito2003\\Documents\\GitHub\\Los_ewoks\\Tablero\\src\\Piezas.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{E575FADE-B6EB-4154-A1ED-8067A12EAE98}|Pang.vcxproj|solutionrelative:src\\Piezas.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{E575FADE-B6EB-4154-A1ED-8067A12EAE98}|Pang.vcxproj|C:\\Users\\emilito2003\\Documents\\GitHub\\Los_ewoks\\Tablero\\src\\Caballo.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
@@ -98,7 +98,7 @@
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "Imagen.h",
               "DocumentMoniker": "C:\\Users\\emilito2003\\Documents\\GitHub\\Los_ewoks\\Tablero\\src\\Imagen.h",
               "RelativeDocumentMoniker": "src\\Imagen.h",
@@ -110,7 +110,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 2,
               "Title": "Piezas.h",
               "DocumentMoniker": "C:\\Users\\emilito2003\\Documents\\GitHub\\Los_ewoks\\Tablero\\src\\Piezas.h",
               "RelativeDocumentMoniker": "src\\Piezas.h",
@@ -118,11 +118,12 @@
               "RelativeToolTip": "src\\Piezas.h",
               "ViewState": "AgIAAA8AAAAAAAAAAAAAACkAAAA2AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-03-31T21:23:20.839Z"
+              "WhenOpened": "2025-03-31T21:23:20.839Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "Piezas.cpp",
               "DocumentMoniker": "C:\\Users\\emilito2003\\Documents\\GitHub\\Los_ewoks\\Tablero\\src\\Piezas.cpp",
               "RelativeDocumentMoniker": "src\\Piezas.cpp",
@@ -140,9 +141,10 @@
               "RelativeDocumentMoniker": "src\\Coordinador.h",
               "ToolTip": "C:\\Users\\emilito2003\\Documents\\GitHub\\Los_ewoks\\Tablero\\src\\Coordinador.h",
               "RelativeToolTip": "src\\Coordinador.h",
-              "ViewState": "AgIAAHgAAAAAAAAAAAAAAIAAAAAMAAAAAAAAAA==",
+              "ViewState": "AgIAAGsAAAAAAAAAAAAMwHYAAAAOAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-04-22T10:59:33.868Z"
+              "WhenOpened": "2025-04-22T10:59:33.868Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -152,14 +154,14 @@
               "RelativeDocumentMoniker": "src\\Coordinador.cpp",
               "ToolTip": "C:\\Users\\emilito2003\\Documents\\GitHub\\Los_ewoks\\Tablero\\src\\Coordinador.cpp",
               "RelativeToolTip": "src\\Coordinador.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEcAAAAkAAAAAAAAAA==",
+              "ViewState": "AgIAAJMAAAAAAAAAAAAAwJsAAAAEAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2025-04-22T11:01:08.302Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "Ajedrez.cpp",
               "DocumentMoniker": "C:\\Users\\emilito2003\\Documents\\GitHub\\Los_ewoks\\Tablero\\src\\Ajedrez.cpp",
               "RelativeDocumentMoniker": "src\\Ajedrez.cpp",
@@ -171,7 +173,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 8,
               "Title": "Tablero.cpp",
               "DocumentMoniker": "C:\\Users\\emilito2003\\Documents\\GitHub\\Los_ewoks\\Tablero\\src\\Tablero.cpp",
               "RelativeDocumentMoniker": "src\\Tablero.cpp",
@@ -183,7 +185,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 7,
               "Title": "Imagen.cpp",
               "DocumentMoniker": "C:\\Users\\emilito2003\\Documents\\GitHub\\Los_ewoks\\Tablero\\src\\Imagen.cpp",
               "RelativeDocumentMoniker": "src\\Imagen.cpp",
@@ -195,7 +197,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 10,
               "Title": "Casilla.h",
               "DocumentMoniker": "C:\\Users\\emilito2003\\Documents\\GitHub\\Los_ewoks\\Tablero\\src\\Casilla.h",
               "RelativeDocumentMoniker": "src\\Casilla.h",
@@ -207,7 +209,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 9,
               "Title": "Tablero.h",
               "DocumentMoniker": "C:\\Users\\emilito2003\\Documents\\GitHub\\Los_ewoks\\Tablero\\src\\Tablero.h",
               "RelativeDocumentMoniker": "src\\Tablero.h",
@@ -219,7 +221,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 11,
               "Title": "Alfil.cpp",
               "DocumentMoniker": "C:\\Users\\emilito2003\\Documents\\GitHub\\Los_ewoks\\Tablero\\src\\Alfil.cpp",
               "RelativeDocumentMoniker": "src\\Alfil.cpp",
@@ -315,7 +317,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "Rey.cpp",
               "DocumentMoniker": "C:\\Users\\emilito2003\\Documents\\GitHub\\Los_ewoks\\Tablero\\src\\Rey.cpp",
               "RelativeDocumentMoniker": "src\\Rey.cpp",

@@ -1,6 +1,7 @@
 #include "Coordinador.h"
 #include "freeglut.h"
 #include "ETSIDI.h"
+#include <cstdlib>
 void Coordinador::setTablero(Tablero* t)
 {
 	tablero = t;
@@ -153,8 +154,8 @@ void Coordinador::mouse(int button, int state, int x, int y)
 		{
 			if (x_base >= 122 && x_base <= 452 && y_base >= 915 && y_base <= 1024)
 			{
-				estado_anterior = estado;
-				estado = NORMAS;
+				estado = AYUDA;
+				system("start https://www.ajedrezeureka.com/ajedrez-pierde-gana/"); //Comando para abrir el navegador
 				return;
 			}
 			if (x_base >= 1466 && x_base <= 1796 && y_base >= 917 && y_base <= 1025)
