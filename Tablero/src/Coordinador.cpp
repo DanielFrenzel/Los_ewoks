@@ -68,9 +68,9 @@ void Coordinador::MovRaton(int x, int y)  //Indica que casilla se ha pulsado seg
 		break;
 
 	case MUSICA:
-		if (x_base >= 104 && x_base <= 350 && y_base >= 916 && y_base <= 1025) resaltar_cancion1 = true;
-		if (x_base >= 813 && x_base <= 1225 && y_base >= 916 && y_base <= 1025) resaltar_cancion2 = true;
-		if (x_base >= 1484 && x_base <= 1896 && y_base >= 917 && y_base <= 1025) resaltar_cancion3 = true;
+		if (x_base >= 105 && x_base <= 450 && y_base >= 874 && y_base <= 1025) resaltar_cancion1 = true;
+		if (x_base >= 794 && x_base <= 1120 && y_base >= 874 && y_base <= 1025) resaltar_cancion2 = true;
+		if (x_base >= 1464 && x_base <= 1790 && y_base >= 874 && y_base <= 1025) resaltar_cancion3 = true;
 	}
 
 
