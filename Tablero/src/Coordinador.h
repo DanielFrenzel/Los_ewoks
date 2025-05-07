@@ -7,6 +7,7 @@
 #include "Caballo.h"
 #include "Alfil.h"
 #include "ETSIDI.h"
+#include <vector>
 
 class Coordinador
 {
@@ -47,7 +48,7 @@ private:
 	Sprite BotonCreditos{ "imagenes/inicio/BOTON_CREDITOS.png", 0, 0, 15, 15 };
 	Sprite BotonCreditos2{ "imagenes/inicio/BOTON_CREDITOS2.png", 0, 0, 15, 15 };
 
-	//Pantalla MUSICA
+	//Pantalla MUSICA---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 	Sprite BotonCancion1{ "imagenes/inicio/Cancion1.png", 0,0,15,15 };
 	Sprite BotonCancion12{ "imagenes/inicio/Cancion1Seleccionada.png", 0,0,15,15 };
 	Sprite BotonCancion2{ "imagenes/inicio/Cancion2.png", 0,0,15,15 };
@@ -67,6 +68,14 @@ private:
 	Sprite ChessWarsCreditos{ "imagenes/recursos/CW3.png", 0, 0, 19, 15 };
 	Sprite FondoEstrellas{ "imagenes/recursos/FONDO_ESTRELLAS.png", 0, 0, 96, 64 };
 
+	//Volumen---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+	Sprite TextoVolumen{ "imagenes/recursos/TextoVolumen.png", 0,0,20,20 };
+	Sprite Volumen0{ "imagenes/recursos/Volumen0.png", 0,0,30,25 };
+	Sprite Volumen25{ "imagenes/recursos/Volumen25.png", 0,0,15,15 };
+	Sprite Volumen50{ "imagenes/recursos/Volumen50.png", 0,0,15,15 };
+	Sprite Volumen75{ "imagenes/recursos/Volumen75.png", 0,0,15,15 };
+	Sprite Volumen100{ "imagenes/recursos/Volumen100.png", 0,0,15,15 };
+	
 protected:
 	enum Estado { INICIO, DUELO, IA, AJUSTES, SONIDO, MUSICA, AYUDA, CREDITOS, NORMAS, MOVIMIENTOS };
 
@@ -118,6 +127,8 @@ private:
 	int alto_ventana = 1080;
 	float escalaX = 1.0f;
 	float escalaY = 1.0f;
+	int volumen = 100;
+	vector <Estado> memoria_Estado;
 	
 public:
 	void setTablero(Tablero* t);

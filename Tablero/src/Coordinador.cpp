@@ -71,6 +71,7 @@ void Coordinador::MovRaton(int x, int y)  //Indica que casilla se ha pulsado seg
 		if (x_base >= 105 && x_base <= 450 && y_base >= 874 && y_base <= 1025) resaltar_cancion1 = true;
 		if (x_base >= 794 && x_base <= 1120 && y_base >= 874 && y_base <= 1025) resaltar_cancion2 = true;
 		if (x_base >= 1464 && x_base <= 1790 && y_base >= 874 && y_base <= 1025) resaltar_cancion3 = true;
+		break;
 	}
 
 
@@ -95,50 +96,61 @@ void Coordinador::mouse(int button, int state, int x, int y)
 				musica();
 			}
 		}
-		if (x_base >= 1702 && x_base <= 1783 && y_base >= 26 && y_base <= 74) estado=estado_anterior;
+		if (x_base >= 1702 && x_base <= 1783 && y_base >= 26 && y_base <= 74)
+		{
+			estado = memoria_Estado.back();
+			memoria_Estado.pop_back();			
+		}
 		if (estado == INICIO)
 		{
 			if (x_base >= 122 && x_base <= 452 && y_base >= 915 && y_base <= 1024)
 			{
-				estado_anterior = estado;
+				memoria_Estado.push_back(INICIO);
 				estado = DUELO;
 				return;
 			}
 			if (x_base >= 795 && x_base <= 1125 && y_base >= 916 && y_base <= 1025)
 			{
+				memoria_Estado.push_back(INICIO);
 				estado_anterior = estado;
 				estado = IA;
 				return;
 			}
 			if (x_base >= 1466 && x_base <= 1796 && y_base >= 917 && y_base <= 1025)
 			{
+				memoria_Estado.push_back(INICIO);
 				estado_anterior = estado;
 				estado = AJUSTES;
 				return;
 			}
 		}
 		if (estado == AJUSTES)
-		{
+		{			
+			
 			if (x_base >= 122 && x_base <= 452 && y_base >= 915 && y_base <= 1024)
 			{
+				memoria_Estado.push_back(AJUSTES);
 				estado_anterior = estado;
 				estado = SONIDO;
 				return;
 			}
 			if (x_base >= 795 && x_base <= 1125 && y_base >= 916 && y_base <= 1025)
 			{
+				memoria_Estado.push_back(AJUSTES);
 				estado_anterior = estado;
 				estado = MUSICA;
 				return;
 			}
 			if (x_base >= 1466 && x_base <= 1796 && y_base >= 917 && y_base <= 1025)
 			{
+				memoria_Estado.push_back(AJUSTES);
 				estado_anterior = estado;
 				estado = AYUDA;
 				return;
 			}
 			if (x_base >= 795 && x_base <= 1125 && y_base >= 664 && y_base <= 773)
 			{
+				memoria_Estado.push_back(AJUSTES);
 				estado_anterior = estado;
 				estado = CREDITOS;
 				activacion_titulo1 = true;
@@ -160,11 +172,14 @@ void Coordinador::mouse(int button, int state, int x, int y)
 			}
 			if (x_base >= 1466 && x_base <= 1796 && y_base >= 917 && y_base <= 1025)
 			{
+				memoria_Estado.push_back(AYUDA);
 				estado_anterior = estado;
 				estado = MOVIMIENTOS;
 				return;
 			}
 		}
+
+
 		
 	}
 }
