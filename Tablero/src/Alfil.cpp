@@ -1,27 +1,43 @@
 #include "Alfil.h"
-#include <math.h>
 
-bool Alfil::ComprobarMov(Casilla** casillas, int fil1, int col1, int fil2, int col2)
+
+Alfil::Alfil(char col)
 {
-	int direccionFil = (fil1 < fil2) ? 1 : -1;
-	int direccionCol = (col1 < col2) ? 1 : -1;
-	if (fabs(fil1 - fil2) == fabs(col1 - col2))
-	{
-		int i = fil1 + direccionFil;
-		int j = col1 + direccionCol;
+	color = col;
+}
 
-		while (i != fil2 && j != col2)
+bool Alfil::comprobarMov(TABLERO& casillas, Casilla& cas1, Casilla& cas2)
+{
+	int filaOrigen = cas1.getfila();
+	int filaDestino = cas2.getfila();
+
+	int columnaOrigen = cas1.getcolumna();
+	int columnaDestino = cas2.getcolumna();
+
+	auto fichaDestino = casillas[cas2.getfila()][cas2.getcolumna()].getficha();
+
+	char colorDestino = casillas[cas2.getfila()][cas2.getcolumna()].getcolor();
+
+	int direccionFil = (filaOrigen < filaDestino) ? 1 : -1;
+	int direccionCol = (columnaOrigen < columnaDestino) ? 1 : -1;
+
+	if (abs(filaOrigen - filaDestino) == abs(columnaOrigen - columnaDestino))
+	{
+		int i = filaOrigen + direccionFil;
+		int j = columnaOrigen + direccionCol;
+
+		while (i != filaDestino && j != columnaDestino)
 		{
 			if (casillas[i][j].getficha() != 0)
 				return false;
 			i += direccionFil;
 			j += direccionCol;
 		}
-		if (casillas[fil2][col2].getficha() == 0)
+		if (fichaDestino == 0)
 		{
 			return 1;
 		}
-		else if (casillas[fil1][col1].getcolor() != casillas[fil2][col2].getcolor())
+		if (color != colorDestino)
 		{
 			return 1;
 		}
@@ -30,4 +46,22 @@ bool Alfil::ComprobarMov(Casilla** casillas, int fil1, int col1, int fil2, int c
 		
 	}
 	return 0;
+}
+
+void Alfil::dibujar(float x, float y)
+{
+	if (color == 'B')
+	{
+		Sprite* alfilB = Imagen::crearImagen("imagenes/Yoda.png", x, y, tam, tam);
+	}
+	if (color == 'N')
+	{
+		Sprite* alfilN = Imagen::crearImagen("imagenes/Doku_1.png", x, y, tam9, tam10);
+	}
+}
+
+
+char Alfil::getColor()
+{
+	return color;
 }

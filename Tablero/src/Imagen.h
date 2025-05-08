@@ -1,20 +1,21 @@
 #pragma once
-#include<string>
+
 #include"ETSIDI.h"
 
-using namespace ETSIDI;
-using namespace std;
+using namespace ETSIDI;										
 
 class Imagen
 {
 private:
-	string nombre;
-	float la_x;
-	float la_y;
-	float tamx;
-	float tamy;
-
+	static Sprite* nombreImagen;							/*Creamos objeto Sprite y lo hacemos static*/
 public:
-	Sprite* crearImagen(const char* nom, float& x, float& y, float& tax, float& tay);
-	void liberaImagen(Sprite* s);
+	static Sprite* crearImagen(const char* nom,				//Creamos la imagen
+		float& x, float& y, float& tam_x, float& tam_y);
+	~Imagen()												//Destruimos la imagen con delete
+	{
+		if (nombreImagen != nullptr)
+		{
+			delete nombreImagen;
+		}
+	}
 };

@@ -1,16 +1,20 @@
 #pragma once
-#include<iostream>
 #include"ETSIDI.h"
-#include"Casilla.h"
+#include"Piezas.h"
+#include "Casilla.h"
+#include<cmath>
 
-using namespace ETSIDI;
-using namespace std;
-class Peon
+class Peon:public Piezas							//Heredamos de la clase Piezas
 {
 private:
-	char color;
+	bool memoria;
+	//bool capturaPaso;
 public:
-	void dibuja();
-	bool ComprobarMov(Casilla** casillas, int fil1, int col1, int fil2, int col2) const;
+	Peon(char col);									//Constructor
+
+	bool comprobarMov(TABLERO& casillas,			//Funcion de comprobar movimiento de la clase Peon
+		Casilla& cas1, Casilla& cas2) override;
+	void dibujar(float x, float y) override;		//Funcion de dibujar de la clase Peon
+	char getColor() override;						//Funcion de devolver color de la clase Peon
 };
 

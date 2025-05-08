@@ -1,13 +1,40 @@
 #include "Rey.h"
-#include <math.h>
 
-using namespace std;
-
-bool Rey::ComprobarMov(Casilla** casillas, int fil1, int col1, int fil2, int col2)
+Rey::Rey(char col)
 {
-	if ((fabs(fil1 - fil2) == 1 || fabs(col1 - col2) == 1) && casillas[fil2][col2].getcolor() != casillas[fil1][col1].getcolor())
+	color = col;
+}
+
+bool Rey::comprobarMov(TABLERO& casillas, Casilla& cas1, Casilla& cas2)
+{
+	int filaOrigen = cas1.getfila();
+	int filaDestino = cas2.getfila();
+
+	int columnaOrigen = cas1.getcolumna();
+	int columnaDestino = cas2.getcolumna();
+
+	char colorDestino = casillas[cas2.getfila()][cas2.getcolumna()].getcolor();
+
+	if ((abs(filaOrigen - filaDestino) == 1 || abs(columnaOrigen - columnaDestino) == 1) && colorDestino != color)
 	{
 		return 1;
 	}
 	else return 0;
+}
+
+void Rey::dibujar(float x, float y)
+{
+	if (color == 'B')
+	{
+		Sprite* reyB = Imagen::crearImagen("imagenes/Obiwan.png", x, y, tam, tam);
+	}
+	else if (color == 'N')
+	{
+		Sprite* reyN = Imagen::crearImagen("imagenes/Palpatine.png", x, y, tam, tam);
+	}
+}
+
+char Rey::getColor()
+{
+	return color;
 }

@@ -1,11 +1,129 @@
-﻿  Coordinador.cpp
-C:\Users\ferni\OneDrive\Documentos\universidad\cuarto\info\trabajo\dani\Tablero\src\Piezas.h(23,15): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
+﻿  Ajedrez.cpp
+C:\Users\danie\Desktop\Tablero\src\Piezas.h(21,15): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
+  (compilando archivo de origen "src/Ajedrez.cpp")
+  
+C:\Users\danie\Desktop\Tablero\src\Piezas.h(24,15): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
+  (compilando archivo de origen "src/Ajedrez.cpp")
+  
+C:\Users\danie\Desktop\Tablero\src\Piezas.h(24,28): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
+  (compilando archivo de origen "src/Ajedrez.cpp")
+  
+  Alfil.cpp
+C:\Users\danie\Desktop\Tablero\src\Piezas.h(21,15): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
+  (compilando archivo de origen "src/Alfil.cpp")
+  
+C:\Users\danie\Desktop\Tablero\src\Piezas.h(24,15): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
+  (compilando archivo de origen "src/Alfil.cpp")
+  
+C:\Users\danie\Desktop\Tablero\src\Piezas.h(24,28): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
+  (compilando archivo de origen "src/Alfil.cpp")
+  
+  Caballo.cpp
+C:\Users\danie\Desktop\Tablero\src\Piezas.h(21,15): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
+  (compilando archivo de origen "src/Caballo.cpp")
+  
+C:\Users\danie\Desktop\Tablero\src\Piezas.h(24,15): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
+  (compilando archivo de origen "src/Caballo.cpp")
+  
+C:\Users\danie\Desktop\Tablero\src\Piezas.h(24,28): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
+  (compilando archivo de origen "src/Caballo.cpp")
+  
+  Casilla.cpp
+C:\Users\danie\Desktop\Tablero\src\Piezas.h(21,15): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
+  (compilando archivo de origen "src/Casilla.cpp")
+  
+C:\Users\danie\Desktop\Tablero\src\Piezas.h(24,15): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
+  (compilando archivo de origen "src/Casilla.cpp")
+  
+C:\Users\danie\Desktop\Tablero\src\Piezas.h(24,28): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
+  (compilando archivo de origen "src/Casilla.cpp")
+  
+C:\Users\danie\Desktop\Tablero\src\Casilla.cpp(18,10): warning C4244: 'inicializando': conversión de 'int' a 'float'; posible pérdida de datos
+C:\Users\danie\Desktop\Tablero\src\Casilla.cpp(19,10): warning C4244: 'inicializando': conversión de 'int' a 'float'; posible pérdida de datos
+C:\Users\danie\Desktop\Tablero\src\Casilla.cpp(31,10): warning C4244: 'inicializando': conversión de 'int' a 'float'; posible pérdida de datos
+C:\Users\danie\Desktop\Tablero\src\Casilla.cpp(32,10): warning C4244: 'inicializando': conversión de 'int' a 'float'; posible pérdida de datos
+  Coordinador.cpp
+C:\Users\danie\Desktop\Tablero\src\Piezas.h(21,15): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
   (compilando archivo de origen "src/Coordinador.cpp")
   
-C:\Users\ferni\OneDrive\Documentos\universidad\cuarto\info\trabajo\dani\Tablero\src\Piezas.h(26,15): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
+C:\Users\danie\Desktop\Tablero\src\Piezas.h(24,15): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
   (compilando archivo de origen "src/Coordinador.cpp")
   
-C:\Users\ferni\OneDrive\Documentos\universidad\cuarto\info\trabajo\dani\Tablero\src\Piezas.h(26,28): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
+C:\Users\danie\Desktop\Tablero\src\Piezas.h(24,28): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
   (compilando archivo de origen "src/Coordinador.cpp")
   
-  Pang.vcxproj -> C:\Users\ferni\OneDrive\Documentos\universidad\cuarto\info\trabajo\dani\Tablero\bin\Pang.exe
+  Imagen.cpp
+  Movimiento.cpp
+C:\Users\danie\Desktop\Tablero\src\Piezas.h(21,15): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
+  (compilando archivo de origen "src/Movimiento.cpp")
+  
+C:\Users\danie\Desktop\Tablero\src\Piezas.h(24,15): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
+  (compilando archivo de origen "src/Movimiento.cpp")
+  
+C:\Users\danie\Desktop\Tablero\src\Piezas.h(24,28): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
+  (compilando archivo de origen "src/Movimiento.cpp")
+  
+  Peon.cpp
+C:\Users\danie\Desktop\Tablero\src\Piezas.h(21,15): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
+  (compilando archivo de origen "src/Peon.cpp")
+  
+C:\Users\danie\Desktop\Tablero\src\Piezas.h(24,15): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
+  (compilando archivo de origen "src/Peon.cpp")
+  
+C:\Users\danie\Desktop\Tablero\src\Piezas.h(24,28): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
+  (compilando archivo de origen "src/Peon.cpp")
+  
+  Piezas.cpp
+C:\Users\danie\Desktop\Tablero\src\Piezas.h(21,15): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
+  (compilando archivo de origen "src/Piezas.cpp")
+  
+C:\Users\danie\Desktop\Tablero\src\Piezas.h(24,15): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
+  (compilando archivo de origen "src/Piezas.cpp")
+  
+C:\Users\danie\Desktop\Tablero\src\Piezas.h(24,28): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
+  (compilando archivo de origen "src/Piezas.cpp")
+  
+  Reina.cpp
+C:\Users\danie\Desktop\Tablero\src\Piezas.h(21,15): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
+  (compilando archivo de origen "src/Reina.cpp")
+  
+C:\Users\danie\Desktop\Tablero\src\Piezas.h(24,15): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
+  (compilando archivo de origen "src/Reina.cpp")
+  
+C:\Users\danie\Desktop\Tablero\src\Piezas.h(24,28): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
+  (compilando archivo de origen "src/Reina.cpp")
+  
+  Rey.cpp
+C:\Users\danie\Desktop\Tablero\src\Piezas.h(21,15): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
+  (compilando archivo de origen "src/Rey.cpp")
+  
+C:\Users\danie\Desktop\Tablero\src\Piezas.h(24,15): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
+  (compilando archivo de origen "src/Rey.cpp")
+  
+C:\Users\danie\Desktop\Tablero\src\Piezas.h(24,28): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
+  (compilando archivo de origen "src/Rey.cpp")
+  
+  Tablero.cpp
+C:\Users\danie\Desktop\Tablero\src\Piezas.h(21,15): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
+  (compilando archivo de origen "src/Tablero.cpp")
+  
+C:\Users\danie\Desktop\Tablero\src\Piezas.h(24,15): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
+  (compilando archivo de origen "src/Tablero.cpp")
+  
+C:\Users\danie\Desktop\Tablero\src\Piezas.h(24,28): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
+  (compilando archivo de origen "src/Tablero.cpp")
+  
+  Torre.cpp
+C:\Users\danie\Desktop\Tablero\src\Piezas.h(21,15): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
+  (compilando archivo de origen "src/Torre.cpp")
+  
+C:\Users\danie\Desktop\Tablero\src\Piezas.h(24,15): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
+  (compilando archivo de origen "src/Torre.cpp")
+  
+C:\Users\danie\Desktop\Tablero\src\Piezas.h(24,28): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
+  (compilando archivo de origen "src/Torre.cpp")
+  
+  Generando código...
+C:\Users\danie\Desktop\Tablero\src\Peon.cpp(96,1): warning C4715: 'Peon::comprobarMov': no todas las rutas de acceso de control devuelven un valor
+C:\Users\danie\Desktop\Tablero\src\Casilla.cpp(62,1): warning C4715: 'Casilla::getcolor': no todas las rutas de acceso de control devuelven un valor
+  Pang.vcxproj -> C:\Users\danie\Desktop\Tablero\bin\Pang.exe

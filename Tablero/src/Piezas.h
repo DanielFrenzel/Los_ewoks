@@ -1,57 +1,33 @@
 #pragma once
-#include <iostream>
+//Hacemos incldue de imagen para poder dibujar las piezas
+
 #include"ETSIDI.h"
 #include"Imagen.h"
+#include<array>
 
+class Casilla;										//Evitas hacer include y con ello evitas dependencias circulares
 
-using namespace std;
 using namespace ETSIDI;
-
+using std::abs;
+using TABLERO = array<array<Casilla, 8>, 8>;
 
 class Piezas
 {
-private:
-	int fila;
-	int columna;
-	float _x;//Lugar en x del tablero
-	float _y;//Lugar en y del tablero
-	int ficha;// 1->Torre  2->Caballo  3->Alfil  4->Rey  5->Reina  6->Peon
+protected:
 	char color;
 
-	Imagen imagen;
-	float tam = 7;
-	float tam3 = 7.27, tam2 = 4;//tamaño del droide
-	float tam5 = 7, tam6 = 7.5;//Tamaño de vader
-	float tam7 = 6.5, tam8 = 7.5;//Tamaño superdroide
-	float tam9 = 7.1, tam10 = 7.7;//Tamaño Doku
-
-	/*//Sprites de piezas blancas
-	Sprite peonB{ "imagenes/WhitePawn.png",0,0,5,5 };
-	Sprite caballoB{ "imagenes/WhiteKnight.png",0,0,5,5 };
-	Sprite alfilB{ "imagenes/WhiteBishop.png",0,0,5,5 };
-	Sprite torreB{ "imagenes/WhiteRook.png",0,0,5,5 };
-	Sprite reyB{ "imagenes/WhiteKing.png",0,0,5,5 };
-	Sprite reinaB{ "imagenes/WhiteQueen.png",0,0,5,5 };
-
-	//Sprites de piezas negras
-	Sprite peonN{ "imagenes/BlackPawn.png",0,0,5,5 };
-	Sprite caballoN{ "imagenes/BlackKnight.png",0,0,5,5 };
-	Sprite alfilN{ "imagenes/BlackBishop.png",0,0,5,5 };
-	Sprite torreN{ "imagenes/BlackRook.png",0,0,5,5 };
-	Sprite reyN{ "imagenes/BlackKing.png",0,0,5,5 };
-	Sprite reinaN{ "imagenes/BlackQueen.png",0,0,5,5 };*/
+	//Esto hay que cambiarlo
+	float tam = 7;					//tamaño estandar
+	float tam3 = 7.27, tam2 = 4;	//tamaño del droide
+	float tam5 = 7, tam6 = 7.5;		//Tamaño de vader
+	float tam7 = 6.5, tam8 = 7.5;	//Tamaño superdroide
+	float tam9 = 7.1, tam10 = 7.7;	//Tamaño Doku
 
 public:
-	void lugar(int f, int c);
-	void dibujar();
-	void setficha(int f);
-	void setcolor(char col);
-	char getcolor();
-	int getficha();
-	int getfila();
-	int getcolumna();
-
-	friend class Imagen;
+	virtual void dibujar(float x, float y) {};		//Funcion para dibujar de la clase base
+	virtual bool comprobarMov(TABLERO& casillas,	//Funcion de comprobar movimiento de la clase base
+		Casilla& cas1, Casilla& cas2)=0;
+	virtual char getColor()=0;						//Funcion de devolver color de la clase base
 
 };
 

@@ -2,71 +2,76 @@
 
 Casilla::Casilla()
 {
+	//Iniciazliamos los atributos
 
-}
-
-Casilla::Casilla(int &f, int &c, int fich, char col)
-{
-	fila = f;
-	columna = c;
-	piezas.setficha(fich);
-	piezas.setcolor(col);
-	piezas.lugar(f, c);
-
+	fila = 0;
+	columna = 0;
+	pieza = nullptr;
 }
 
 void Casilla:: dibuja()
 {
-	piezas.dibujar();
-}
+	//Dibujamos las piezas
 
-int Casilla::getficha()
-{
-	return piezas.getficha();
-}
+	//Coordenadas en x e y en la pantallas
 
-void Casilla::setficha(int f, char col)
-{
-	piezas.setficha(f);
-	piezas.setcolor(col);
-}
+	float x = (columna * 8) - 28;
+	float y = (fila * 8) - 28;
 
-int Casilla::getfila()
-{
-	return piezas.getfila();
-}
-
-int Casilla::getcolumna()
-{
-	return piezas.getcolumna();
-}
-
-char Casilla::getcolor()
-{
-	return piezas.getcolor();
+	if (pieza != nullptr)
+	{
+		pieza->dibujar(x, y);
+	}
 }
 
 void Casilla::Casilla_seleccionada()
 {
-	float _x = (piezas.getcolumna() * 8) - 28;
-	float _y = (piezas.getfila() * 8) - 28;
-	Sprite casilla_seleccionada{ "imagenes/casilla_seleccionada.png",_x,_y,8,8 };
-	if (piezas.getficha() != 0)
+	//Dibujamos la casilla seleccionada
+
+	float x = (columna * 8) - 28;
+	float y = (fila * 8) - 28;
+	float tam_x = 8, tam_y = 8;
+
+	Sprite* casilla_seleccionada = Imagen::crearImagen("imagenes/casilla_seleccionada.png", x, y, tam_x, tam_y);
+
+}
+
+//-------------------------------------------Getters
+
+Piezas* Casilla::getficha()
+{
+	return pieza;
+}
+
+int& Casilla::getfila()
+{
+	return fila;
+}
+
+int& Casilla::getcolumna()
+{
+	return columna;
+}
+
+char Casilla::getcolor()
+{
+	if (pieza != nullptr)
 	{
-		casilla_seleccionada.draw();
+		return pieza->getColor();
 	}
-	
 }
 
-bool Casilla::GetMemoriaPeon()
+//-------------------------------------------Setters
+
+void Casilla::setPosicion(int fil, int col)
 {
-	return memoriaPeon;
+	fila = fil;
+	columna = col;
 }
 
-void Casilla::SetMemoriaPeon(bool estado)
+void Casilla::setficha(Piezas* p)
 {
-	memoriaPeon = estado;
+	pieza = p;
 }
-
 
 

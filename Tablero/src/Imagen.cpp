@@ -1,15 +1,10 @@
 #include "Imagen.h"
-Sprite* Imagen::crearImagen(const char* nom, float& x, float& y, float& tax, float& tay)
-{
-	Sprite* s = new Sprite{ nom,x,y,tax,tay };
-	s->draw();
-	return s;//devuelvo un puntero
-}
 
-void Imagen::liberaImagen(Sprite* s)
+Sprite* Imagen::nombreImagen = nullptr;
+
+Sprite* Imagen::crearImagen(const char* nom, float& x, float& y, float& tam_x, float& tam_y)
 {
-	if (s != nullptr)
-	{
-		delete s;
-	}
+	nombreImagen = new Sprite{ nom,x,y,tam_x,tam_y };	//Creamos nuevo objeto
+	nombreImagen->draw();								//Lo dibujamos
+	return nombreImagen;								//Devuelvo el puntero
 }
