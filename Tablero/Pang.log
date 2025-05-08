@@ -1,0 +1,39 @@
+﻿  Ajedrez.cpp
+  Alfil.cpp
+  Caballo.cpp
+  Casilla.cpp
+C:\Users\ferni\OneDrive\Documentos\GitHub\Los_ewoks\Tablero\src\Ajedrez.cpp(2,10): error C1083: No se puede abrir el archivo incluir: 'Tablero.h': No such file or directory
+\src\Alfil.cpp(1,1): error C1083: No se puede abrir el archivo origen: 'src\Alfil.cpp': No such file or directory
+  Movimiento.cpp
+  (compilando archivo de origen "/src/Alfil.cpp")
+  
+\src\Caballo.cpp(1,1): error C1083: No se puede abrir el archivo origen: 'src\Caballo.cpp': No such file or directory
+  (compilando archivo de origen "/src/Caballo.cpp")
+  
+\src\Casilla.cpp(1,1): error C1083: No se puede abrir el archivo origen: 'src\Casilla.cpp': No such file or directory
+  (compilando archivo de origen "/src/Casilla.cpp")
+  
+\src\Movimiento.cpp(1,1): error C1083: No se puede abrir el archivo origen: 'src\Movimiento.cpp': No such file or directory
+  (compilando archivo de origen "/src/Movimiento.cpp")
+  
+  MovPiezas.cpp
+\src\MovPiezas.cpp(1,1): error C1083: No se puede abrir el archivo origen: 'src\MovPiezas.cpp': No such file or directory
+  (compilando archivo de origen "/src/MovPiezas.cpp")
+  
+  Peon.cpp
+\src\Peon.cpp(1,1): error C1083: No se puede abrir el archivo origen: 'src\Peon.cpp': No such file or directory
+  (compilando archivo de origen "/src/Peon.cpp")
+  
+  Rey.cpp
+\src\Rey.cpp(1,1): error C1083: No se puede abrir el archivo origen: 'src\Rey.cpp': No such file or directory
+  (compilando archivo de origen "/src/Rey.cpp")
+  
+  Tablero.cpp
+\src\Tablero.cpp(1,1): error C1083: No se puede abrir el archivo origen: 'src\Tablero.cpp': No such file or directory
+  (compilando archivo de origen "/src/Tablero.cpp")
+  
+  Torre.cpp
+\src\Torre.cpp(1,1): error C1083: No se puede abrir el archivo origen: 'src\Torre.cpp': No such file or directory
+  (compilando archivo de origen "/src/Torre.cpp")
+  
+  Generando código...
