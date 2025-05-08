@@ -1,33 +1,36 @@
 #pragma once
-#include "freeglut.h"
 #include <string>
-#include <functional>
 #include "ETSIDI.h"
-
+using ETSIDI::Sprite;
 class Boton
 {
 private:
-	GLdouble ancho;
-	GLdouble alto;
-	GLdouble x;
-	GLdouble y;
-	ETSIDI::Sprite* dibujado;
-	ETSIDI::Sprite sprite;
-	ETSIDI::Sprite sprite2;
-	int Caso_Sonido;
-	std::function<void()> function;
-	void PlaySonido(int caso);
-	bool mute = 0;
+	Sprite spriteNormal;
+	Sprite spriteResaltado;
+	float x, y;
+	float ancho, alto;
+	bool resaltado = false;
+	float regionX1, regionX2, regionY1, regionY2;
 
 public:
-	virtual void dibuja();
-	virtual void detectar(GLdouble rx, GLdouble ry);
-	virtual void click(GLdouble rx, GLdouble ry);
+	//constructor
+	Boton(const std::string& RutaNormal, const std::string& RutaResaltado,
+		float anchoInicial, float altoInicial);
+
+	//Setters
+	void setPos(float nuevox, float nuevoy);
+	void setSize(float nuevoAncho, float nuevoAlto);
+	void setRegion(float x1, float x2, float y1, float y2);
+
+	//Metodo que commprueba si el raton esta encima o no
+	bool ratonEncima(int rx, int ry) ;
 	
-	Boton(const GLdouble& Ancho, const GLdouble& Alto,
-		const GLdouble& x, const GLdouble& y,
-		std::string Path1, std::string Path2, int caso_sonido,
-		std::function<void()> func);
+	//Metodo que actualiza el resaltado
+	void actualizaResaltado(int rx, int ry);
+
+	//Para dibujar
+	void draw() ;
+
 
 };
 

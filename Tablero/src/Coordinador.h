@@ -1,6 +1,6 @@
 #pragma once
 #include "Tablero.h"
-#include"Casilla.h"
+#include "Casilla.h"
 #include "Peon.h"
 #include "Rey.h"
 #include "Torre.h"
@@ -8,6 +8,7 @@
 #include "Alfil.h"
 #include "ETSIDI.h"
 #include <vector>
+#include "Boton.h"
 
 class Coordinador
 {
@@ -15,53 +16,15 @@ private:
 	//General--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 	Sprite Estrella{ "imagenes/inicio/ESTRELLA.png", 0, 0, 20, 25 };
 	Sprite MenuInicial{ "imagenes/inicio/MENU4.png", 0, 0, 96, 64 };
-
-	Sprite BotonSalida{ "imagenes/inicio/Boton_salida.png", 0, 0, 20, 20 };
-	Sprite BotonSalida2{ "imagenes/inicio/Boton_salida2.png", 0, 0, 20, 20 };
-
+	/*
 	Sprite BotonSonido{ "imagenes/inicio/BOTON_ALTAVOZ.png", 0, 0, 5, 5 };
 	Sprite BotonSonido1_5{ "imagenes/inicio/BOTON_ALTAVOZ1.5.png", 0, 0, 5, 5 };
 	Sprite BotonSonido2{ "imagenes/inicio/BOTON_ALTAVOZ2.png", 0, 0, 5, 5 };
 	Sprite BotonSonido2_5{ "imagenes/inicio/BOTON_ALTAVOZ2.5.png", 0, 0, 5, 5 };
-
-	Sprite BotonAtras{ "imagenes/inicio/BOTON_ATRAS.png", 0, 0, 4, 4 };
-	Sprite BotonAtras2{ "imagenes/inicio/BOTON_ATRAS2.png", 0, 0, 4, 4 };
-
+	*/
 	Sprite BotonInterrogacion{ "imagenes/inicio/BOTON_INTERROGACION.png", 0, 0, 20, 20 };
 	Sprite BotonInterrogacion2{ "imagenes/inicio/BOTON_INTERROGACION2.png", 0, 0, 20, 20 };
 
-	//Primera Pantalla menu---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-	Sprite BotonDuelo{ "imagenes/inicio/BOTON_DUELO.png", 0, 0, 15, 15 };
-	Sprite BotonDuelo2{ "imagenes/inicio/BOTON_DUELO2.png", 0, 0, 15, 15 };
-	Sprite BotonIA{ "imagenes/inicio/BOTON_IA.png", 0, 0, 15, 15 };
-	Sprite BotonIA2{ "imagenes/inicio/BOTON_IA2.png", 0, 0, 15, 15 };
-	Sprite BotonAJUSTES{ "imagenes/inicio/BOTON_AJUSTES.png", 0, 0, 15, 15 };
-	Sprite BotonAJUSTES2{ "imagenes/inicio/BOTON_AJUSTES2.png", 0, 0, 15, 15 };
-
-	//Pantalla AJUSTES---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-	Sprite BotonSonidoGeneral{ "imagenes/inicio/BOTON_SONIDO.png", 0, 0, 15, 15 };
-	Sprite BotonSonidoGeneral2{ "imagenes/inicio/BOTON_SONIDO2.png", 0, 0, 15, 15 };
-	Sprite BotonMusica{ "imagenes/inicio/BOTON_MUSICA.png", 0, 0, 15, 15 };
-	Sprite BotonMusica2{ "imagenes/inicio/BOTON_MUSICA2.png", 0, 0, 15, 15 };
-	Sprite BotonAyuda{ "imagenes/inicio/BOTON_AYUDA.png", 0, 0, 15, 15 };
-	Sprite BotonAyuda2{ "imagenes/inicio/BOTON_AYUDA2.png", 0, 0, 15, 15 };
-	Sprite BotonCreditos{ "imagenes/inicio/BOTON_CREDITOS.png", 0, 0, 15, 15 };
-	Sprite BotonCreditos2{ "imagenes/inicio/BOTON_CREDITOS2.png", 0, 0, 15, 15 };
-
-	//Pantalla MUSICA---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-	Sprite BotonCancion1{ "imagenes/inicio/Cancion1.png", 0,0,15,15 };
-	Sprite BotonCancion12{ "imagenes/inicio/Cancion1Seleccionada.png", 0,0,15,15 };
-	Sprite BotonCancion2{ "imagenes/inicio/Cancion2.png", 0,0,15,15 };
-	Sprite BotonCancion22{ "imagenes/inicio/Cancion2Seleccionada.png", 0,0,15,15 };
-	Sprite BotonCancion3{ "imagenes/inicio/Cancion3.png", 0,0,15,15 };
-	Sprite BotonCancion32{ "imagenes/inicio/Cancion3Seleccionada.png", 0,0,15,15 };
-
-	//Pantalla AYUDA---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-	Sprite BotonNormas{ "imagenes/inicio/BOTON_NORMAS.png", 0, 0, 15, 15 };
-	Sprite BotonNormas2{ "imagenes/inicio/BOTON_NORMAS2.png", 0, 0, 15, 15 };
-	Sprite BotonMovimientos{ "imagenes/inicio/BOTON_MOVIMIENTOS.png", 0, 0, 15, 15 };
-	Sprite BotonMovimientos2{ "imagenes/inicio/BOTON_MOVIMIENTOS2.png", 0, 0, 15, 15 };
-	
 	//Creditos---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 	Sprite Titulo1Creditos{ "imagenes/recursos/T1.png", 0, 0, 15, 15 };
 	Sprite Titulo3Creditos{ "imagenes/recursos/T3.png", 0, 0, 15, 15 };
@@ -82,7 +45,29 @@ protected:
 private:
 	Estado estado;
 	Estado estado_anterior;
+	//Botone varios
+	Boton botonSalida{ "imagenes/inicio/Boton_salida.png", "imagenes/inicio/Boton_salida2.png", 20, 20 };
+	Boton botonAtras{ "imagenes/inicio/BOTON_ATRAS.png", "imagenes/inicio/BOTON_ATRAS2.png", 4, 4 };
+	Boton botonAltavozON{ "imagenes/inicio/BOTON_ALTAVOZ.png", "imagenes/inicio/BOTON_ALTAVOZ1.5.png", 5, 5 };
+	Boton botonAltavozOFF{ "imagenes/inicio/BOTON_ALTAVOZ2.png", "imagenes/inicio/BOTON_ALTAVOZ2.5.png", 5, 5 };
 
+	//Inicio
+	Boton botonDuelo{ "imagenes/inicio/BOTON_DUELO.png", "imagenes/inicio/BOTON_DUELO2.png", 15, 15 };
+	Boton botonIA{ "imagenes/inicio/BOTON_IA.png", "imagenes/inicio/BOTON_IA2.png", 15, 15 };
+	Boton botonAjustes{ "imagenes/inicio/BOTON_AJUSTES.png", "imagenes/inicio/BOTON_AJUSTES2.png", 15, 15 };
+	//Ajustes
+	Boton botonSonidoGeneral{ "imagenes/inicio/BOTON_SONIDO.png", "imagenes/inicio/BOTON_SONIDO2.png", 15, 15 };
+	Boton botonMusica{ "imagenes/inicio/BOTON_MUSICA.png", "imagenes/inicio/BOTON_MUSICA2.png", 15, 15 };
+	Boton botonAyuda{ "imagenes/inicio/BOTON_AYUDA.png", "imagenes/inicio/BOTON_AYUDA2.png", 15, 15 };
+	Boton botonCreditos{ "imagenes/inicio/BOTON_CREDITOS.png", "imagenes/inicio/BOTON_CREDITOS2.png", 15, 15 };
+	//Ayuda
+	Boton botonNormas{ "imagenes/inicio/BOTON_NORMAS.png", "imagenes/inicio/BOTON_NORMAS2.png", 15, 15 };
+	Boton botonMovimientos{ "imagenes/inicio/BOTON_MOVIMIENTOS.png", "imagenes/inicio/BOTON_MOVIMIENTOS2.png", 15, 15 };
+	//Musica
+	Boton botonMusica1{ "imagenes/inicio/cancion1.png", "imagenes/inicio/Cancion1Seleccionada.png", 15, 15 };
+	Boton botonMusica2{ "imagenes/inicio/cancion2.png", "imagenes/inicio/Cancion2Seleccionada.png", 15, 15 };
+	Boton botonMusica3{ "imagenes/inicio/cancion3.png", "imagenes/inicio/Cancion3Seleccionada.png", 15, 15 };
+		
 private:
 	Tablero* tablero = nullptr;
 	int ficha;
@@ -92,23 +77,9 @@ private:
 	Caballo caballo;
 	Alfil alfil;
 	bool turno = 0;
-	bool resaltar_duelo = 0;
-	bool resaltar_ia = 0;
-	bool resaltar_ajustes = 0;
-	bool resaltar_salida = 0;
-	bool resaltar_altavoz = 0;
-	bool resaltar_sonido = 0;
-	bool resaltar_musica = 0;
-	bool resaltar_ayuda = 0;
-	bool resaltar_creditos = 0;
-	bool resaltar_normas = 0;
-	bool resaltar_movimientos = 0;
-	bool resaltar_atras = 0;
-	bool resaltar_interrogacion = 0;
-	bool resaltar_cancion1 = 0;
-	bool resaltar_cancion2 = 0;
-	bool resaltar_cancion3 = 0;
+	//bool resaltar_altavoz = 0;
 	bool pulsado_sonido = 0; //Servira para cambiar el icono de sonido
+	//Variables para las animaciones
 	float bote = 0.0f;
 	float angulo_bote = 0.0f;
 	float anim_CW = 0.0f;
@@ -122,7 +93,9 @@ private:
 	bool activacion_titulo3 = 0;
 	float movimiento_titulo3 = 0.0f;
 	float tiempoespera_titulo3 = 0.0f;
+	//Variable musica
 	int musica_actual = -1; // -1: ninguna, 0: menu, 1: creditos
+	//Variables para el rescalado (nos ayuda a que el juego funcione en cualqier pantalla)
 	int ancho_ventana = 1920;
 	int alto_ventana = 1080;
 	float escalaX = 1.0f;

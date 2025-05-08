@@ -1,11 +1,67 @@
 ﻿  Coordinador.cpp
-C:\Users\david\Documents\Universidad\Info2\TrabajoDavid\Cambios\Tablero\src\Piezas.h(23,15): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
+C:\Users\david\Documents\Universidad\Info2\TrabajoDavid\Trabajo optimizado\Tablero\src\Piezas.h(23,15): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
   (compilando archivo de origen "src/Coordinador.cpp")
   
-C:\Users\david\Documents\Universidad\Info2\TrabajoDavid\Cambios\Tablero\src\Piezas.h(26,15): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
+C:\Users\david\Documents\Universidad\Info2\TrabajoDavid\Trabajo optimizado\Tablero\src\Piezas.h(26,15): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
   (compilando archivo de origen "src/Coordinador.cpp")
   
-C:\Users\david\Documents\Universidad\Info2\TrabajoDavid\Cambios\Tablero\src\Piezas.h(26,28): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
+C:\Users\david\Documents\Universidad\Info2\TrabajoDavid\Trabajo optimizado\Tablero\src\Piezas.h(26,28): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
   (compilando archivo de origen "src/Coordinador.cpp")
   
-  Pang.vcxproj -> C:\Users\david\Documents\Universidad\Info2\TrabajoDavid\Cambios\Tablero\bin\Pang.exe
+C:\Users\david\Documents\Universidad\Info2\TrabajoDavid\Trabajo optimizado\Tablero\src\Coordinador.cpp(31,41): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
+C:\Users\david\Documents\Universidad\Info2\TrabajoDavid\Trabajo optimizado\Tablero\src\Coordinador.cpp(31,33): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
+C:\Users\david\Documents\Universidad\Info2\TrabajoDavid\Trabajo optimizado\Tablero\src\Coordinador.cpp(32,40): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
+C:\Users\david\Documents\Universidad\Info2\TrabajoDavid\Trabajo optimizado\Tablero\src\Coordinador.cpp(32,32): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
+C:\Users\david\Documents\Universidad\Info2\TrabajoDavid\Trabajo optimizado\Tablero\src\Coordinador.cpp(33,44): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
+C:\Users\david\Documents\Universidad\Info2\TrabajoDavid\Trabajo optimizado\Tablero\src\Coordinador.cpp(33,36): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
+C:\Users\david\Documents\Universidad\Info2\TrabajoDavid\Trabajo optimizado\Tablero\src\Coordinador.cpp(34,45): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
+C:\Users\david\Documents\Universidad\Info2\TrabajoDavid\Trabajo optimizado\Tablero\src\Coordinador.cpp(34,37): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
+C:\Users\david\Documents\Universidad\Info2\TrabajoDavid\Trabajo optimizado\Tablero\src\Coordinador.cpp(38,41): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
+C:\Users\david\Documents\Universidad\Info2\TrabajoDavid\Trabajo optimizado\Tablero\src\Coordinador.cpp(38,33): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
+C:\Users\david\Documents\Universidad\Info2\TrabajoDavid\Trabajo optimizado\Tablero\src\Coordinador.cpp(39,38): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
+C:\Users\david\Documents\Universidad\Info2\TrabajoDavid\Trabajo optimizado\Tablero\src\Coordinador.cpp(39,30): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
+C:\Users\david\Documents\Universidad\Info2\TrabajoDavid\Trabajo optimizado\Tablero\src\Coordinador.cpp(40,43): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
+C:\Users\david\Documents\Universidad\Info2\TrabajoDavid\Trabajo optimizado\Tablero\src\Coordinador.cpp(40,35): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
+C:\Users\david\Documents\Universidad\Info2\TrabajoDavid\Trabajo optimizado\Tablero\src\Coordinador.cpp(43,49): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
+C:\Users\david\Documents\Universidad\Info2\TrabajoDavid\Trabajo optimizado\Tablero\src\Coordinador.cpp(43,41): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
+C:\Users\david\Documents\Universidad\Info2\TrabajoDavid\Trabajo optimizado\Tablero\src\Coordinador.cpp(44,42): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
+C:\Users\david\Documents\Universidad\Info2\TrabajoDavid\Trabajo optimizado\Tablero\src\Coordinador.cpp(44,34): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
+C:\Users\david\Documents\Universidad\Info2\TrabajoDavid\Trabajo optimizado\Tablero\src\Coordinador.cpp(45,41): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
+C:\Users\david\Documents\Universidad\Info2\TrabajoDavid\Trabajo optimizado\Tablero\src\Coordinador.cpp(45,33): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
+C:\Users\david\Documents\Universidad\Info2\TrabajoDavid\Trabajo optimizado\Tablero\src\Coordinador.cpp(46,44): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
+C:\Users\david\Documents\Universidad\Info2\TrabajoDavid\Trabajo optimizado\Tablero\src\Coordinador.cpp(46,36): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
+C:\Users\david\Documents\Universidad\Info2\TrabajoDavid\Trabajo optimizado\Tablero\src\Coordinador.cpp(49,42): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
+C:\Users\david\Documents\Universidad\Info2\TrabajoDavid\Trabajo optimizado\Tablero\src\Coordinador.cpp(49,34): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
+C:\Users\david\Documents\Universidad\Info2\TrabajoDavid\Trabajo optimizado\Tablero\src\Coordinador.cpp(50,47): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
+C:\Users\david\Documents\Universidad\Info2\TrabajoDavid\Trabajo optimizado\Tablero\src\Coordinador.cpp(50,39): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
+C:\Users\david\Documents\Universidad\Info2\TrabajoDavid\Trabajo optimizado\Tablero\src\Coordinador.cpp(54,43): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
+C:\Users\david\Documents\Universidad\Info2\TrabajoDavid\Trabajo optimizado\Tablero\src\Coordinador.cpp(54,35): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
+C:\Users\david\Documents\Universidad\Info2\TrabajoDavid\Trabajo optimizado\Tablero\src\Coordinador.cpp(55,43): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
+C:\Users\david\Documents\Universidad\Info2\TrabajoDavid\Trabajo optimizado\Tablero\src\Coordinador.cpp(55,35): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
+C:\Users\david\Documents\Universidad\Info2\TrabajoDavid\Trabajo optimizado\Tablero\src\Coordinador.cpp(56,43): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
+C:\Users\david\Documents\Universidad\Info2\TrabajoDavid\Trabajo optimizado\Tablero\src\Coordinador.cpp(56,35): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
+C:\Users\david\Documents\Universidad\Info2\TrabajoDavid\Trabajo optimizado\Tablero\src\Coordinador.cpp(69,38): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
+C:\Users\david\Documents\Universidad\Info2\TrabajoDavid\Trabajo optimizado\Tablero\src\Coordinador.cpp(69,31): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
+C:\Users\david\Documents\Universidad\Info2\TrabajoDavid\Trabajo optimizado\Tablero\src\Coordinador.cpp(70,61): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
+C:\Users\david\Documents\Universidad\Info2\TrabajoDavid\Trabajo optimizado\Tablero\src\Coordinador.cpp(70,53): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
+C:\Users\david\Documents\Universidad\Info2\TrabajoDavid\Trabajo optimizado\Tablero\src\Coordinador.cpp(76,61): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
+C:\Users\david\Documents\Universidad\Info2\TrabajoDavid\Trabajo optimizado\Tablero\src\Coordinador.cpp(76,53): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
+C:\Users\david\Documents\Universidad\Info2\TrabajoDavid\Trabajo optimizado\Tablero\src\Coordinador.cpp(81,37): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
+C:\Users\david\Documents\Universidad\Info2\TrabajoDavid\Trabajo optimizado\Tablero\src\Coordinador.cpp(81,30): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
+C:\Users\david\Documents\Universidad\Info2\TrabajoDavid\Trabajo optimizado\Tablero\src\Coordinador.cpp(88,39): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
+C:\Users\david\Documents\Universidad\Info2\TrabajoDavid\Trabajo optimizado\Tablero\src\Coordinador.cpp(88,31): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
+C:\Users\david\Documents\Universidad\Info2\TrabajoDavid\Trabajo optimizado\Tablero\src\Coordinador.cpp(94,36): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
+C:\Users\david\Documents\Universidad\Info2\TrabajoDavid\Trabajo optimizado\Tablero\src\Coordinador.cpp(94,28): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
+C:\Users\david\Documents\Universidad\Info2\TrabajoDavid\Trabajo optimizado\Tablero\src\Coordinador.cpp(112,47): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
+C:\Users\david\Documents\Universidad\Info2\TrabajoDavid\Trabajo optimizado\Tablero\src\Coordinador.cpp(112,39): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
+C:\Users\david\Documents\Universidad\Info2\TrabajoDavid\Trabajo optimizado\Tablero\src\Coordinador.cpp(119,40): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
+C:\Users\david\Documents\Universidad\Info2\TrabajoDavid\Trabajo optimizado\Tablero\src\Coordinador.cpp(119,32): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
+C:\Users\david\Documents\Universidad\Info2\TrabajoDavid\Trabajo optimizado\Tablero\src\Coordinador.cpp(126,39): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
+C:\Users\david\Documents\Universidad\Info2\TrabajoDavid\Trabajo optimizado\Tablero\src\Coordinador.cpp(126,31): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
+C:\Users\david\Documents\Universidad\Info2\TrabajoDavid\Trabajo optimizado\Tablero\src\Coordinador.cpp(133,42): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
+C:\Users\david\Documents\Universidad\Info2\TrabajoDavid\Trabajo optimizado\Tablero\src\Coordinador.cpp(133,34): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
+C:\Users\david\Documents\Universidad\Info2\TrabajoDavid\Trabajo optimizado\Tablero\src\Coordinador.cpp(149,40): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
+C:\Users\david\Documents\Universidad\Info2\TrabajoDavid\Trabajo optimizado\Tablero\src\Coordinador.cpp(149,32): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
+C:\Users\david\Documents\Universidad\Info2\TrabajoDavid\Trabajo optimizado\Tablero\src\Coordinador.cpp(155,45): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
+C:\Users\david\Documents\Universidad\Info2\TrabajoDavid\Trabajo optimizado\Tablero\src\Coordinador.cpp(155,37): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
+  Pang.vcxproj -> C:\Users\david\Documents\Universidad\Info2\TrabajoDavid\Trabajo optimizado\Tablero\bin\Pang.exe

@@ -28,49 +28,32 @@ void Coordinador::MovRaton(int x, int y)  //Indica que casilla se ha pulsado seg
 		if (tablero)
 			tablero->seleccion(fil3, col3);
 	}
-	//Reset resaltado de botones
-	resaltar_duelo = false;
-	resaltar_ia = false;
-	resaltar_ajustes = false;
-	resaltar_salida = false;
-	resaltar_altavoz = false;
-	resaltar_sonido = false;
-	resaltar_musica = false;
-	resaltar_ayuda = false;
-	resaltar_creditos = false;
-	resaltar_normas = false;
-	resaltar_movimientos = false;
-	resaltar_atras = false;
-	resaltar_interrogacion = false;
-	resaltar_cancion1 = false;
-	resaltar_cancion2 = false;
-	resaltar_cancion3 = false;
-
-	if (x_base >= 21 && x_base <= 127 && y_base >= 18 && y_base <= 38) resaltar_salida = true;
-	if (x_base >= 1816 && x_base <= 1895 && y_base >= 23 && y_base <= 76) resaltar_altavoz = true;
-	if (x_base >= 1702 && x_base <= 1783 && y_base >= 26 && y_base <= 74) resaltar_atras = true;
+	botonSalida.actualizaResaltado(x_base, y_base);
+	botonAtras.actualizaResaltado(x_base, y_base);
+	botonAltavozON.actualizaResaltado(x_base, y_base);
+	botonAltavozOFF.actualizaResaltado(x_base, y_base);
 	switch (estado)
 	{
 	case INICIO:
-		if (x_base >= 122 && x_base <= 452 && y_base >= 915 && y_base <= 1024) resaltar_duelo = true;
-		if (x_base >= 795 && x_base <= 1125 && y_base >= 916 && y_base <= 1025) resaltar_ia = true;
-		if (x_base >= 1466 && x_base <= 1796 && y_base >= 917 && y_base <= 1025) resaltar_ajustes = true;
+		botonDuelo.actualizaResaltado(x_base, y_base);
+		botonIA.actualizaResaltado(x_base, y_base);
+		botonAjustes.actualizaResaltado(x_base, y_base);
 		break;
 	case AJUSTES:
-		if (x_base >= 122 && x_base <= 452 && y_base >= 915 && y_base <= 1024) resaltar_sonido = true;
-		if (x_base >= 795 && x_base <= 1125 && y_base >= 916 && y_base <= 1025) resaltar_musica = true;
-		if (x_base >= 1466 && x_base <= 1796 && y_base >= 917 && y_base <= 1025) resaltar_ayuda = true;
-		if (x_base >= 795 && x_base <= 1125 && y_base >= 664 && y_base <= 773) resaltar_creditos = true;
+		botonSonidoGeneral.actualizaResaltado(x_base, y_base);
+		botonMusica.actualizaResaltado(x_base, y_base);
+		botonAyuda.actualizaResaltado(x_base, y_base);
+		botonCreditos.actualizaResaltado(x_base, y_base);
 		break;
 	case AYUDA:
-		if (x_base >= 122 && x_base <= 452 && y_base >= 915 && y_base <= 1024) resaltar_normas = true;
-		if (x_base >= 1466 && x_base <= 1796 && y_base >= 917 && y_base <= 1025) resaltar_movimientos = true;
+		botonNormas.actualizaResaltado(x_base, y_base);
+		botonMovimientos.actualizaResaltado(x_base, y_base);
 		break;
 
 	case MUSICA:
-		if (x_base >= 105 && x_base <= 450 && y_base >= 874 && y_base <= 1025) resaltar_cancion1 = true;
-		if (x_base >= 794 && x_base <= 1120 && y_base >= 874 && y_base <= 1025) resaltar_cancion2 = true;
-		if (x_base >= 1464 && x_base <= 1790 && y_base >= 874 && y_base <= 1025) resaltar_cancion3 = true;
+		botonMusica1.actualizaResaltado(x_base, y_base);
+		botonMusica2.actualizaResaltado(x_base, y_base);
+		botonMusica3.actualizaResaltado(x_base, y_base);
 		break;
 	}
 
@@ -83,33 +66,32 @@ void Coordinador::mouse(int button, int state, int x, int y)
 	float y_base = y / escalaY;
 	if (button == GLUT_LEFT_BUTTON && state == GLUT_DOWN)
 	{
-		if (x_base >= 21 && x_base <= 127 && y_base >= 18 && y_base <= 38) exit(0);
-		if (x_base >= 1816 && x_base <= 1895 && y_base >= 23 && y_base <= 76)
-		{
-			if (pulsado_sonido == 0)
-			{
-				pulsado_sonido = true;
-				musica();
-			}
-			else {
-				pulsado_sonido = false;
-				musica();
-			}
+		if (botonSalida.ratonEncima(x_base,y_base)) exit(0);
+		if (!pulsado_sonido && botonAltavozON.ratonEncima(x_base, y_base)) {
+			pulsado_sonido = true;
+			musica();
+			return;
 		}
-		if (x_base >= 1702 && x_base <= 1783 && y_base >= 26 && y_base <= 74)
+		
+		if (pulsado_sonido && botonAltavozOFF.ratonEncima(x_base, y_base)) {
+			pulsado_sonido = false;
+			musica();
+			return;
+		}
+		if (botonAtras.ratonEncima(x_base,y_base)&&estado!=INICIO)
 		{
 			estado = memoria_Estado.back();
 			memoria_Estado.pop_back();			
 		}
 		if (estado == INICIO)
 		{
-			if (x_base >= 122 && x_base <= 452 && y_base >= 915 && y_base <= 1024)
+			if (botonDuelo.ratonEncima(x_base, y_base))
 			{
 				memoria_Estado.push_back(INICIO);
 				estado = DUELO;
 				return;
 			}
-			if (x_base >= 795 && x_base <= 1125 && y_base >= 916 && y_base <= 1025)
+			if (botonIA.ratonEncima(x_base, y_base))
 			{
 				memoria_Estado.push_back(INICIO);
 				estado_anterior = estado;
@@ -127,28 +109,28 @@ void Coordinador::mouse(int button, int state, int x, int y)
 		if (estado == AJUSTES)
 		{			
 			
-			if (x_base >= 122 && x_base <= 452 && y_base >= 915 && y_base <= 1024)
+			if (botonSonidoGeneral.ratonEncima(x_base, y_base))
 			{
 				memoria_Estado.push_back(AJUSTES);
 				estado_anterior = estado;
 				estado = SONIDO;
 				return;
 			}
-			if (x_base >= 795 && x_base <= 1125 && y_base >= 916 && y_base <= 1025)
+			if (botonMusica.ratonEncima(x_base, y_base))
 			{
 				memoria_Estado.push_back(AJUSTES);
 				estado_anterior = estado;
 				estado = MUSICA;
 				return;
 			}
-			if (x_base >= 1466 && x_base <= 1796 && y_base >= 917 && y_base <= 1025)
+			if (botonAyuda.ratonEncima(x_base, y_base))
 			{
 				memoria_Estado.push_back(AJUSTES);
 				estado_anterior = estado;
 				estado = AYUDA;
 				return;
 			}
-			if (x_base >= 795 && x_base <= 1125 && y_base >= 664 && y_base <= 773)
+			if (botonCreditos.ratonEncima(x_base, y_base))
 			{
 				memoria_Estado.push_back(AJUSTES);
 				estado_anterior = estado;
@@ -164,13 +146,13 @@ void Coordinador::mouse(int button, int state, int x, int y)
 		}
 		if (estado == AYUDA)
 		{
-			if (x_base >= 122 && x_base <= 452 && y_base >= 915 && y_base <= 1024)
+			if (botonNormas.ratonEncima(x_base, y_base))
 			{
 				estado = AYUDA;
 				system("start https://www.ajedrezeureka.com/ajedrez-pierde-gana/"); //Comando para abrir el navegador
 				return;
 			}
-			if (x_base >= 1466 && x_base <= 1796 && y_base >= 917 && y_base <= 1025)
+			if (botonMovimientos.ratonEncima(x_base, y_base))
 			{
 				memoria_Estado.push_back(AYUDA);
 				estado_anterior = estado;
@@ -228,31 +210,57 @@ bool Coordinador::compMov(int fil1, int col1, int fil2, int col2) //comprueba si
 //Constructor-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 Coordinador::Coordinador()
 {
-	//Vamos a utilizar esta parte de codigo para especificar en que estado estamos
 	estado = INICIO;
-	//Reseteamos los botones para que salga bien el "resaltar"
-	resaltar_duelo = false;
-	resaltar_ia = false;
-	resaltar_ajustes = false;
-	resaltar_salida = false;
-	resaltar_altavoz = false;
-	resaltar_sonido = false;
-	resaltar_musica = false;
-	resaltar_ayuda = false;
-	resaltar_creditos = false;
+	//botones Varios
+	botonSalida.setPos(-32, 38);
+	botonSalida.setRegion(21.0f, 127.0f, 18.0f, 38.0f);
+	botonSalida.setSize(5.0f, 5.0f);
+	botonAtras.setPos(35, 29);
+	botonAtras.setRegion(1702.0f, 1783.0f, 26.0f, 74.0f);
+	botonAltavozON.setPos(40,29);
+	botonAltavozON.setRegion(1816.0f, 1895.0f, 23.0f, 76.0f);
+	botonAltavozOFF.setPos(40, 29);
+	botonAltavozOFF.setRegion(1816.0f, 1895.0f, 23.0f, 76.0f);
+
+	//botones Inicio
+	botonDuelo.setPos(-30, -25);
+	botonDuelo.setRegion( 122.0f, 452.0f, 915.0f, 1024.0f);
+	botonIA.setPos(0, -25);
+	botonIA.setRegion(795.0f, 1125.0f, 916.0f, 1025.0f);
+	botonAjustes.setPos(30, -25);
+	botonAjustes.setRegion(1466.0f, 1796.0f, 917.0f, 1025.0f);
+
+	//botones Ajustes
+	botonSonidoGeneral.setPos(-30, -25);
+	botonSonidoGeneral.setRegion(122.0f, 452.0f, 915.0f, 1024.0f);
+	botonMusica.setPos(0, -25);
+	botonMusica.setRegion(795.0f, 1125.0f, 916.0f, 1025.0f);
+	botonAyuda.setPos(30, -25);
+	botonAyuda.setRegion(1466.0f, 1796.0f, 917.0f, 1025.0f);
+	botonCreditos.setPos(0, -10);
+	botonCreditos.setRegion(795.0f, 1125.0f, 664.0f, 773.0f);	
+
+	//Botones Ayuda
+	botonNormas.setPos(-30, -25);
+	botonNormas.setRegion(122.0f, 452.0f, 915.0f, 1024.0f);
+	botonMovimientos.setPos(30, -25);
+	botonMovimientos.setRegion(1466.0f, 1796.0f, 917.0f, 1025.0f);
+
+	//Botones Musica
+	botonMusica1.setPos(-30, -25);
+	botonMusica1.setRegion(105.0f, 450.0f, 874.0f, 1025.0f);
+	botonMusica2.setPos(0, -25);
+	botonMusica2.setRegion(794.0f, 1120.0f, 874.0f, 1025.0f);
+	botonMusica3.setPos(30, -25);
+	botonMusica3.setRegion(1464.0f, 1790.0f, 874.0f, 1025.0f);
+
+
 	pulsado_sonido = false;
-	resaltar_normas = false;
-	resaltar_movimientos = false;
-	resaltar_atras = false;
-	resaltar_interrogacion = false;
 	activacion_titulo2 = false;
 	tamx = 0, tamy = 0;
 	activacion_titulo1 = false;
 	musica_creditos_activada = false;
 	activacion_titulo3 = false;
-	resaltar_cancion1 = false;
-	resaltar_cancion2 = false;
-	resaltar_cancion3 = false;
 	
 }
 
@@ -266,7 +274,7 @@ void Coordinador::animaciones()
 
 	bote = sin(angulo_bote) * 1.0f;
 
-	//Creditos
+	//Creditos (toda la secuencia completa)
 	if (estado == CREDITOS)
 	{
 		
@@ -320,7 +328,7 @@ void Coordinador::musica()
 	}
 	else if (estado != CREDITOS && musica_actual != 0)
 	{
-		playMusica("sonidos/Musica1.mp3", true);
+		playMusica("sonidos/Musica1_25.mp3", true);
 		musica_actual = 0;
 	}
 
@@ -341,211 +349,45 @@ void Coordinador::dibuja()
 	//Boton de sonido
 	if (pulsado_sonido == 0)
 	{
-		if (resaltar_altavoz == 0)
-		{
-			BotonSonido.setPos(40, 29);
-			BotonSonido.draw();
-		}
-		else
-		{
-			BotonSonido1_5.setPos(40, 29);
-			BotonSonido1_5.draw();
-		}
-		BotonSonido.setPos(40, 29);
-		BotonSonido.draw();
-		BotonSonido.setSize(5, 5);
+		botonAltavozON.draw();
 	}
 	else
 	{
-		if (resaltar_altavoz == 0)
-		{
-			BotonSonido2.setPos(40, 29);
-			BotonSonido2.draw();
-		}
-		else
-		{
-			BotonSonido2_5.setPos(40, 29);
-			BotonSonido2_5.draw();
-		}
-		BotonSonido2.setPos(40, 29);
-		BotonSonido2.draw();
+		botonAltavozOFF.draw();
 	}
-
-	//Boton de exit
-	if (resaltar_salida == 0)
-	{
-		BotonSalida.setPos(-32, 38);
-		BotonSalida.draw();
-		BotonSalida.setSize(5, 5);
-	}
-	else
-	{
-		BotonSalida2.setPos(-32, 38);
-		BotonSalida2.draw();
-		BotonSalida2.setSize(5, 5);
-	}
+	//Boton Exit
+	botonSalida.draw();
 
 	//Boton de atras
-	if(estado!=INICIO)
-	{
-		if (resaltar_atras == 0)
-		{
-			BotonAtras.setPos(35, 29);
-			BotonAtras.draw();
-		}
-		else
-		{
-			BotonAtras2.setPos(35, 29);
-			BotonAtras2.draw();
-		}
-	}
+	if(estado!=INICIO) botonAtras.draw();
 
 	//Botones Inicio
 	if (estado == INICIO) {
-
-		if (resaltar_duelo == 0)
-		{
-			BotonDuelo.setPos(-30, -25);
-			BotonDuelo.draw();
-		}
-		else
-		{
-			BotonDuelo2.setPos(-30, -25);
-			BotonDuelo2.draw();
-		}
-
-		if (resaltar_ia == 0)
-		{
-			BotonIA.setPos(0, -25);
-			BotonIA.draw();
-		}
-		else
-		{
-			BotonIA2.setPos(0, -25);
-			BotonIA2.draw();
-		}
-
-		if (resaltar_ajustes == 0)
-		{
-			BotonAJUSTES.setPos(30, -25);
-			BotonAJUSTES.draw();
-		}
-		else
-		{
-			BotonAJUSTES2.setPos(30, -25);
-			BotonAJUSTES2.draw();
-		}
+		botonDuelo.draw();
+		botonIA.draw();
+		botonAjustes.draw();
 	}
 
 	//Botones AJUSTES
 	if (estado == AJUSTES) {
-
-		if (resaltar_sonido == 0)
-		{
-			BotonSonidoGeneral.setPos(-30, -25);
-			BotonSonidoGeneral.draw();
-		}
-		else
-		{
-			BotonSonidoGeneral2.setPos(-30, -25);
-			BotonSonidoGeneral2.draw();
-		}
-
-		if (resaltar_musica == 0)
-		{
-			BotonMusica.setPos(0, -25);
-			BotonMusica.draw();
-		}
-		else
-		{
-			BotonMusica2.setPos(0, -25);
-			BotonMusica2.draw();
-		}
-
-		if (resaltar_ayuda == 0)
-		{
-			BotonAyuda.setPos(30, -25);
-			BotonAyuda.draw();
-		}
-		else
-		{
-			BotonAyuda2.setPos(30, -25);
-			BotonAyuda2.draw();
-		}
-		if (resaltar_creditos == 0)
-		{
-			BotonCreditos.setPos(0, -10);
-			BotonCreditos.draw();
-		}
-		else
-		{
-			BotonCreditos2.setPos(0, -10);
-			BotonCreditos2.draw();
-		}
+		botonSonidoGeneral.draw();
+		botonMusica.draw();
+		botonAyuda.draw();
+		botonCreditos.draw();
 	}
 
 	//Botones AYUDA
 	if (estado == AYUDA) {
-
-		if (resaltar_normas == 0)
-		{
-			BotonNormas.setPos(-30, -25);
-			BotonNormas.draw();
-		}
-		else
-		{
-			BotonNormas2.setPos(-30, -25);
-			BotonNormas2.draw();
-		}
-
-		if (resaltar_movimientos == 0)
-		{
-			BotonMovimientos.setPos(30, -25);
-			BotonMovimientos.draw();
-		}
-		else
-		{
-			BotonMovimientos2.setPos(30, -25);
-			BotonMovimientos2.draw();
-		}
+		botonNormas.draw();
+		botonMovimientos.draw();
 
 	}
 
 	//Botones MUSICA
 	if (estado == MUSICA) {
-
-		if (resaltar_cancion1 == 0)
-		{
-			BotonCancion1.setPos(-30, -25);
-			BotonCancion1.draw();
-		}
-		else
-		{
-			BotonCancion12.setPos(-30, -25);
-			BotonCancion12.draw();
-		}
-
-		if (resaltar_cancion2 == 0)
-		{
-			BotonCancion2.setPos(0, -25);
-			BotonCancion2.draw();
-		}
-		else
-		{
-			BotonCancion22.setPos(0, -25);
-			BotonCancion22.draw();
-		}
-
-		if (resaltar_cancion3 == 0)
-		{
-			BotonCancion3.setPos(30, -25);
-			BotonCancion3.draw();
-		}
-		else
-		{
-			BotonCancion32.setPos(30, -25);
-			BotonCancion32.draw();
-		}
+		botonMusica1.draw();
+		botonMusica2.draw();
+		botonMusica3.draw();
 	}
 
 	//Fondo
@@ -555,7 +397,7 @@ void Coordinador::dibuja()
 	}
 	
 
-	//Creditos
+	//Creditos (toda la secuencia)
 	if (estado == CREDITOS)
 	{
 		if (activacion_titulo1 == 1)

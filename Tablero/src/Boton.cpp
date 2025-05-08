@@ -1,52 +1,60 @@
 #include "Boton.h"
-#include"iostream"
-
-void Boton::dibuja()
+#include "ETSIDI.h"
+Boton::Boton(
+	const std::string& rutaNormal,
+	const std::string& rutaResaltado,
+	float anchoInicial,
+	float altoInicial
+	)
+	: spriteNormal(rutaNormal.c_str(), 0, 0, anchoInicial, altoInicial),
+	spriteResaltado(rutaResaltado.c_str(), 0, 0, anchoInicial, altoInicial),
+	x(0), y(0), ancho(anchoInicial), alto(altoInicial)
+	, regionX1(0), regionX2(0), regionY1(0), regionY2(0)
 {
-	if (dibujado != nullptr)
-		dibujado->draw();
+}
+void Boton::setRegion(float x1, float x2, float y1, float y2) 
+{
+	regionX1 = x1;
+	regionX2 = x2;
+	regionY1 = y1;
+	regionY2 = y2;
+	
+}
+void Boton::setPos(float nuevox, float nuevoy)
+{
+	x = nuevox;
+	y = nuevoy;
+	spriteNormal.setPos(x, y);
+	spriteResaltado.setPos(x, y);
+
+}
+void Boton::setSize(float nuevoAncho, float nuevoAlto)
+{
+	ancho = nuevoAncho;
+	alto = nuevoAlto;
+	spriteNormal.setSize(ancho, alto);
+	spriteResaltado.setSize(ancho, alto);
 }
 
-void Boton::detectar(GLdouble rx, GLdouble ry)
+bool Boton::ratonEncima(int rx, int ry) 
 {
-	if ((rx) > (x - ancho / 2) && rx < (x + ancho / 2) &&
-		(ry) >(y - alto / 2) && ry < (y + alto / 2))
-		dibujado = &sprite2;
-	else {
-		dibujado = &sprite;
-	}
+	return (rx >= regionX1 && rx <= regionX2 && ry >= regionY1 && ry <= regionY2);
 }
 
-void Boton::click(GLdouble rx, GLdouble ry)
+void Boton::actualizaResaltado(int rx, int ry)
 {
-	if ((rx) > (x - ancho / 2) && rx < (x + ancho / 2) &&
-		(ry) >(y - alto / 2) && ry < (y + alto / 2))
+	resaltado = ratonEncima(rx, ry);
+	resaltado = (rx >= regionX1 && rx <= regionX2 && ry >= regionY1 && ry <= regionY2);
+}
+
+void Boton::draw() 
+{
+	if (resaltado == 1)
 	{
-		if (function != nullptr)
-		{
-			function();
-			PlaySonido(Caso_Sonido);
-		}
-
+		spriteResaltado.draw();
 	}
-}
-
-void Boton::PlaySonido(int caso) {
-
-	if (mute == false)
+	else
 	{
-		if (caso == 1) ETSIDI::play("sonidos/impacto.wav");
+		spriteNormal.draw();
 	}
-}
-
-
-
-Boton::Boton(const GLdouble& Ancho, const GLdouble& Alto,
-	const GLdouble& x, const GLdouble& y,
-	std::string Path1, std::string Path2, int caso_sonido,
-	std::function<void()> func)
-	: ancho(Ancho), alto(Alto), x(x), y(y), sprite(ETSIDI::Sprite(Path1.c_str(), x, y, Ancho, Alto)),
-	sprite2(ETSIDI::Sprite(Path2.c_str(), x, y, Ancho, Alto)), dibujado(nullptr), function(func), Caso_Sonido(caso_sonido)
-{
-
 }

@@ -1,89 +1,97 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\david\\Documents\\Universidad\\Info2\\TrabajoDavid\\Cambios\\Tablero\\",
+  "WorkspaceRootPath": "C:\\Users\\david\\Documents\\Universidad\\Info2\\TrabajoDavid\\Trabajo optimizado\\Tablero\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{E575FADE-B6EB-4154-A1ED-8067A12EAE98}|Pang.vcxproj|C:\\Users\\david\\Documents\\Universidad\\Info2\\TrabajoDavid\\Cambios\\Tablero\\src\\Coordinador.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "AbsoluteMoniker": "D:0:0:{E575FADE-B6EB-4154-A1ED-8067A12EAE98}|Pang.vcxproj|C:\\Users\\david\\Documents\\Universidad\\Info2\\TrabajoDavid\\Trabajo optimizado\\Tablero\\src\\Coordinador.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{E575FADE-B6EB-4154-A1ED-8067A12EAE98}|Pang.vcxproj|solutionrelative:src\\Coordinador.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E575FADE-B6EB-4154-A1ED-8067A12EAE98}|Pang.vcxproj|C:\\Users\\david\\Documents\\Universidad\\Info2\\TrabajoDavid\\Cambios\\Tablero\\src\\Coordinador.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "AbsoluteMoniker": "D:0:0:{E575FADE-B6EB-4154-A1ED-8067A12EAE98}|Pang.vcxproj|C:\\Users\\david\\Documents\\Universidad\\Info2\\TrabajoDavid\\Trabajo optimizado\\Tablero\\src\\Coordinador.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{E575FADE-B6EB-4154-A1ED-8067A12EAE98}|Pang.vcxproj|solutionrelative:src\\Coordinador.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E575FADE-B6EB-4154-A1ED-8067A12EAE98}|Pang.vcxproj|C:\\Users\\david\\Documents\\Universidad\\Info2\\TrabajoDavid\\Cambios\\Tablero\\src\\Ajedrez.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "AbsoluteMoniker": "D:0:0:{E575FADE-B6EB-4154-A1ED-8067A12EAE98}|Pang.vcxproj|C:\\Users\\david\\Documents\\Universidad\\Info2\\TrabajoDavid\\Trabajo optimizado\\Tablero\\src\\Ajedrez.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{E575FADE-B6EB-4154-A1ED-8067A12EAE98}|Pang.vcxproj|solutionrelative:src\\Ajedrez.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E575FADE-B6EB-4154-A1ED-8067A12EAE98}|Pang.vcxproj|C:\\Users\\david\\Documents\\Universidad\\Info2\\TrabajoDavid\\Cambios\\Tablero\\src\\Piezas.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{E575FADE-B6EB-4154-A1ED-8067A12EAE98}|Pang.vcxproj|solutionrelative:src\\Piezas.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{E575FADE-B6EB-4154-A1ED-8067A12EAE98}|Pang.vcxproj|C:\\Users\\david\\Documents\\Universidad\\Info2\\TrabajoDavid\\Trabajo optimizado\\Tablero\\src\\Boton.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{E575FADE-B6EB-4154-A1ED-8067A12EAE98}|Pang.vcxproj|solutionrelative:src\\Boton.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E575FADE-B6EB-4154-A1ED-8067A12EAE98}|Pang.vcxproj|C:\\Users\\david\\Documents\\Universidad\\Info2\\TrabajoDavid\\Cambios\\Tablero\\src\\Piezas.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{E575FADE-B6EB-4154-A1ED-8067A12EAE98}|Pang.vcxproj|solutionrelative:src\\Piezas.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{E575FADE-B6EB-4154-A1ED-8067A12EAE98}|Pang.vcxproj|C:\\Users\\david\\Documents\\Universidad\\Info2\\TrabajoDavid\\Trabajo optimizado\\Tablero\\src\\Boton.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{E575FADE-B6EB-4154-A1ED-8067A12EAE98}|Pang.vcxproj|solutionrelative:src\\Boton.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E575FADE-B6EB-4154-A1ED-8067A12EAE98}|Pang.vcxproj|C:\\Users\\david\\Documents\\Universidad\\Info2\\TrabajoDavid\\Cambios\\Tablero\\src\\Rey.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{E575FADE-B6EB-4154-A1ED-8067A12EAE98}|Pang.vcxproj|solutionrelative:src\\Rey.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E575FADE-B6EB-4154-A1ED-8067A12EAE98}|Pang.vcxproj|C:\\Users\\david\\Documents\\Universidad\\Info2\\TrabajoDavid\\Cambios\\Tablero\\src\\Imagen.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{E575FADE-B6EB-4154-A1ED-8067A12EAE98}|Pang.vcxproj|solutionrelative:src\\Imagen.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E575FADE-B6EB-4154-A1ED-8067A12EAE98}|Pang.vcxproj|C:\\Users\\david\\Documents\\Universidad\\Info2\\TrabajoDavid\\Cambios\\Tablero\\src\\Imagen.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{E575FADE-B6EB-4154-A1ED-8067A12EAE98}|Pang.vcxproj|solutionrelative:src\\Imagen.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E575FADE-B6EB-4154-A1ED-8067A12EAE98}|Pang.vcxproj|C:\\Users\\david\\Documents\\Universidad\\Info2\\TrabajoDavid\\Cambios\\Tablero\\src\\Tablero.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{E575FADE-B6EB-4154-A1ED-8067A12EAE98}|Pang.vcxproj|solutionrelative:src\\Tablero.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E575FADE-B6EB-4154-A1ED-8067A12EAE98}|Pang.vcxproj|C:\\Users\\david\\Documents\\Universidad\\Info2\\TrabajoDavid\\Cambios\\Tablero\\src\\Tablero.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{E575FADE-B6EB-4154-A1ED-8067A12EAE98}|Pang.vcxproj|solutionrelative:src\\Tablero.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E575FADE-B6EB-4154-A1ED-8067A12EAE98}|Pang.vcxproj|C:\\Users\\david\\Documents\\Universidad\\Info2\\TrabajoDavid\\Cambios\\Tablero\\src\\Casilla.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{E575FADE-B6EB-4154-A1ED-8067A12EAE98}|Pang.vcxproj|solutionrelative:src\\Casilla.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E575FADE-B6EB-4154-A1ED-8067A12EAE98}|Pang.vcxproj|C:\\Users\\david\\Documents\\Universidad\\Info2\\TrabajoDavid\\Cambios\\Tablero\\src\\Alfil.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{E575FADE-B6EB-4154-A1ED-8067A12EAE98}|Pang.vcxproj|solutionrelative:src\\Alfil.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E575FADE-B6EB-4154-A1ED-8067A12EAE98}|Pang.vcxproj|C:\\Users\\david\\Documents\\Universidad\\Info2\\TrabajoDavid\\Cambios\\Tablero\\src\\Caballo.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "AbsoluteMoniker": "D:0:0:{E575FADE-B6EB-4154-A1ED-8067A12EAE98}|Pang.vcxproj|C:\\Users\\david\\Documents\\Universidad\\Info2\\TrabajoDavid\\Trabajo optimizado\\Tablero\\src\\Caballo.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{E575FADE-B6EB-4154-A1ED-8067A12EAE98}|Pang.vcxproj|solutionrelative:src\\Caballo.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E575FADE-B6EB-4154-A1ED-8067A12EAE98}|Pang.vcxproj|C:\\Users\\david\\Documents\\Universidad\\Info2\\TrabajoDavid\\Cambios\\Tablero\\src\\Rey.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "AbsoluteMoniker": "D:0:0:{E575FADE-B6EB-4154-A1ED-8067A12EAE98}|Pang.vcxproj|C:\\Users\\david\\Documents\\Universidad\\Info2\\TrabajoDavid\\Trabajo optimizado\\Tablero\\src\\Piezas.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{E575FADE-B6EB-4154-A1ED-8067A12EAE98}|Pang.vcxproj|solutionrelative:src\\Piezas.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E575FADE-B6EB-4154-A1ED-8067A12EAE98}|Pang.vcxproj|C:\\Users\\david\\Documents\\Universidad\\Info2\\TrabajoDavid\\Trabajo optimizado\\Tablero\\src\\Piezas.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{E575FADE-B6EB-4154-A1ED-8067A12EAE98}|Pang.vcxproj|solutionrelative:src\\Piezas.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E575FADE-B6EB-4154-A1ED-8067A12EAE98}|Pang.vcxproj|C:\\Users\\david\\Documents\\Universidad\\Info2\\TrabajoDavid\\Trabajo optimizado\\Tablero\\src\\Rey.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{E575FADE-B6EB-4154-A1ED-8067A12EAE98}|Pang.vcxproj|solutionrelative:src\\Rey.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E575FADE-B6EB-4154-A1ED-8067A12EAE98}|Pang.vcxproj|C:\\Users\\david\\Documents\\Universidad\\Info2\\TrabajoDavid\\Trabajo optimizado\\Tablero\\src\\Imagen.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{E575FADE-B6EB-4154-A1ED-8067A12EAE98}|Pang.vcxproj|solutionrelative:src\\Imagen.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E575FADE-B6EB-4154-A1ED-8067A12EAE98}|Pang.vcxproj|C:\\Users\\david\\Documents\\Universidad\\Info2\\TrabajoDavid\\Trabajo optimizado\\Tablero\\src\\Imagen.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{E575FADE-B6EB-4154-A1ED-8067A12EAE98}|Pang.vcxproj|solutionrelative:src\\Imagen.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E575FADE-B6EB-4154-A1ED-8067A12EAE98}|Pang.vcxproj|C:\\Users\\david\\Documents\\Universidad\\Info2\\TrabajoDavid\\Trabajo optimizado\\Tablero\\src\\Tablero.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{E575FADE-B6EB-4154-A1ED-8067A12EAE98}|Pang.vcxproj|solutionrelative:src\\Tablero.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E575FADE-B6EB-4154-A1ED-8067A12EAE98}|Pang.vcxproj|C:\\Users\\david\\Documents\\Universidad\\Info2\\TrabajoDavid\\Trabajo optimizado\\Tablero\\src\\Tablero.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{E575FADE-B6EB-4154-A1ED-8067A12EAE98}|Pang.vcxproj|solutionrelative:src\\Tablero.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E575FADE-B6EB-4154-A1ED-8067A12EAE98}|Pang.vcxproj|C:\\Users\\david\\Documents\\Universidad\\Info2\\TrabajoDavid\\Trabajo optimizado\\Tablero\\src\\Casilla.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{E575FADE-B6EB-4154-A1ED-8067A12EAE98}|Pang.vcxproj|solutionrelative:src\\Casilla.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E575FADE-B6EB-4154-A1ED-8067A12EAE98}|Pang.vcxproj|C:\\Users\\david\\Documents\\Universidad\\Info2\\TrabajoDavid\\Trabajo optimizado\\Tablero\\src\\Alfil.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{E575FADE-B6EB-4154-A1ED-8067A12EAE98}|Pang.vcxproj|solutionrelative:src\\Alfil.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E575FADE-B6EB-4154-A1ED-8067A12EAE98}|Pang.vcxproj|C:\\Users\\david\\Documents\\Universidad\\Info2\\TrabajoDavid\\Trabajo optimizado\\Tablero\\src\\Rey.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{E575FADE-B6EB-4154-A1ED-8067A12EAE98}|Pang.vcxproj|solutionrelative:src\\Rey.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E575FADE-B6EB-4154-A1ED-8067A12EAE98}|Pang.vcxproj|C:\\Users\\david\\Documents\\Universidad\\Info2\\TrabajoDavid\\Cambios\\Tablero\\src\\Caballo.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "AbsoluteMoniker": "D:0:0:{E575FADE-B6EB-4154-A1ED-8067A12EAE98}|Pang.vcxproj|C:\\Users\\david\\Documents\\Universidad\\Info2\\TrabajoDavid\\Trabajo optimizado\\Tablero\\src\\Caballo.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{E575FADE-B6EB-4154-A1ED-8067A12EAE98}|Pang.vcxproj|solutionrelative:src\\Caballo.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E575FADE-B6EB-4154-A1ED-8067A12EAE98}|Pang.vcxproj|C:\\Users\\david\\Documents\\Universidad\\Info2\\TrabajoDavid\\Cambios\\Tablero\\src\\Casilla.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "AbsoluteMoniker": "D:0:0:{E575FADE-B6EB-4154-A1ED-8067A12EAE98}|Pang.vcxproj|C:\\Users\\david\\Documents\\Universidad\\Info2\\TrabajoDavid\\Trabajo optimizado\\Tablero\\src\\Casilla.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{E575FADE-B6EB-4154-A1ED-8067A12EAE98}|Pang.vcxproj|solutionrelative:src\\Casilla.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E575FADE-B6EB-4154-A1ED-8067A12EAE98}|Pang.vcxproj|C:\\Users\\david\\Documents\\Universidad\\Info2\\TrabajoDavid\\Cambios\\Tablero\\src\\Torre.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "AbsoluteMoniker": "D:0:0:{E575FADE-B6EB-4154-A1ED-8067A12EAE98}|Pang.vcxproj|C:\\Users\\david\\Documents\\Universidad\\Info2\\TrabajoDavid\\Trabajo optimizado\\Tablero\\src\\Torre.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{E575FADE-B6EB-4154-A1ED-8067A12EAE98}|Pang.vcxproj|solutionrelative:src\\Torre.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E575FADE-B6EB-4154-A1ED-8067A12EAE98}|Pang.vcxproj|C:\\Users\\david\\Documents\\Universidad\\Info2\\TrabajoDavid\\Cambios\\Tablero\\src\\Peon.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "AbsoluteMoniker": "D:0:0:{E575FADE-B6EB-4154-A1ED-8067A12EAE98}|Pang.vcxproj|C:\\Users\\david\\Documents\\Universidad\\Info2\\TrabajoDavid\\Trabajo optimizado\\Tablero\\src\\Peon.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{E575FADE-B6EB-4154-A1ED-8067A12EAE98}|Pang.vcxproj|solutionrelative:src\\Peon.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E575FADE-B6EB-4154-A1ED-8067A12EAE98}|Pang.vcxproj|C:\\Users\\david\\Documents\\Universidad\\Info2\\TrabajoDavid\\Cambios\\Tablero\\src\\Peon.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "AbsoluteMoniker": "D:0:0:{E575FADE-B6EB-4154-A1ED-8067A12EAE98}|Pang.vcxproj|C:\\Users\\david\\Documents\\Universidad\\Info2\\TrabajoDavid\\Trabajo optimizado\\Tablero\\src\\Peon.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{E575FADE-B6EB-4154-A1ED-8067A12EAE98}|Pang.vcxproj|solutionrelative:src\\Peon.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E575FADE-B6EB-4154-A1ED-8067A12EAE98}|Pang.vcxproj|C:\\Users\\david\\Documents\\Universidad\\Info2\\TrabajoDavid\\Cambios\\Tablero\\src\\Torre.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "AbsoluteMoniker": "D:0:0:{E575FADE-B6EB-4154-A1ED-8067A12EAE98}|Pang.vcxproj|C:\\Users\\david\\Documents\\Universidad\\Info2\\TrabajoDavid\\Trabajo optimizado\\Tablero\\src\\Torre.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{E575FADE-B6EB-4154-A1ED-8067A12EAE98}|Pang.vcxproj|solutionrelative:src\\Torre.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E575FADE-B6EB-4154-A1ED-8067A12EAE98}|Pang.vcxproj|C:\\Users\\david\\Documents\\Universidad\\Info2\\TrabajoDavid\\Cambios\\Tablero\\src\\Alfil.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "AbsoluteMoniker": "D:0:0:{E575FADE-B6EB-4154-A1ED-8067A12EAE98}|Pang.vcxproj|C:\\Users\\david\\Documents\\Universidad\\Info2\\TrabajoDavid\\Trabajo optimizado\\Tablero\\src\\Alfil.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{E575FADE-B6EB-4154-A1ED-8067A12EAE98}|Pang.vcxproj|solutionrelative:src\\Alfil.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
@@ -100,11 +108,11 @@
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "Coordinador.cpp",
-              "DocumentMoniker": "C:\\Users\\david\\Documents\\Universidad\\Info2\\TrabajoDavid\\Cambios\\Tablero\\src\\Coordinador.cpp",
+              "DocumentMoniker": "C:\\Users\\david\\Documents\\Universidad\\Info2\\TrabajoDavid\\Trabajo optimizado\\Tablero\\src\\Coordinador.cpp",
               "RelativeDocumentMoniker": "src\\Coordinador.cpp",
-              "ToolTip": "C:\\Users\\david\\Documents\\Universidad\\Info2\\TrabajoDavid\\Cambios\\Tablero\\src\\Coordinador.cpp",
+              "ToolTip": "C:\\Users\\david\\Documents\\Universidad\\Info2\\TrabajoDavid\\Trabajo optimizado\\Tablero\\src\\Coordinador.cpp",
               "RelativeToolTip": "src\\Coordinador.cpp",
-              "ViewState": "AgIAAMYAAAAAAAAAAAAcwKcAAAAEAAAAAAAAAA==",
+              "ViewState": "AgIAAJcBAAAAAAAAAAAcwEgAAAAKAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2025-04-22T11:01:08.302Z",
               "IsPinned": true,
@@ -114,11 +122,11 @@
               "$type": "Document",
               "DocumentIndex": 1,
               "Title": "Coordinador.h",
-              "DocumentMoniker": "C:\\Users\\david\\Documents\\Universidad\\Info2\\TrabajoDavid\\Cambios\\Tablero\\src\\Coordinador.h",
+              "DocumentMoniker": "C:\\Users\\david\\Documents\\Universidad\\Info2\\TrabajoDavid\\Trabajo optimizado\\Tablero\\src\\Coordinador.h",
               "RelativeDocumentMoniker": "src\\Coordinador.h",
-              "ToolTip": "C:\\Users\\david\\Documents\\Universidad\\Info2\\TrabajoDavid\\Cambios\\Tablero\\src\\Coordinador.h",
+              "ToolTip": "C:\\Users\\david\\Documents\\Universidad\\Info2\\TrabajoDavid\\Trabajo optimizado\\Tablero\\src\\Coordinador.h",
               "RelativeToolTip": "src\\Coordinador.h",
-              "ViewState": "AgIAAHIAAAAAAAAAAAAIwIIAAAAgAAAAAAAAAA==",
+              "ViewState": "AgIAAEIAAAAAAAAAAAAAAF8AAAASAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2025-04-22T10:59:33.868Z",
               "IsPinned": true,
@@ -128,14 +136,43 @@
               "$type": "Document",
               "DocumentIndex": 2,
               "Title": "Ajedrez.cpp",
-              "DocumentMoniker": "C:\\Users\\david\\Documents\\Universidad\\Info2\\TrabajoDavid\\Cambios\\Tablero\\src\\Ajedrez.cpp",
+              "DocumentMoniker": "C:\\Users\\david\\Documents\\Universidad\\Info2\\TrabajoDavid\\Trabajo optimizado\\Tablero\\src\\Ajedrez.cpp",
               "RelativeDocumentMoniker": "src\\Ajedrez.cpp",
-              "ToolTip": "C:\\Users\\david\\Documents\\Universidad\\Info2\\TrabajoDavid\\Cambios\\Tablero\\src\\Ajedrez.cpp",
+              "ToolTip": "C:\\Users\\david\\Documents\\Universidad\\Info2\\TrabajoDavid\\Trabajo optimizado\\Tablero\\src\\Ajedrez.cpp",
               "RelativeToolTip": "src\\Ajedrez.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAKQAAAABAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEsAAAADAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2025-03-21T18:35:52.092Z",
-              "IsPinned": true
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Boton.cpp",
+              "DocumentMoniker": "C:\\Users\\david\\Documents\\Universidad\\Info2\\TrabajoDavid\\Trabajo optimizado\\Tablero\\src\\Boton.cpp",
+              "RelativeDocumentMoniker": "src\\Boton.cpp",
+              "ToolTip": "C:\\Users\\david\\Documents\\Universidad\\Info2\\TrabajoDavid\\Trabajo optimizado\\Tablero\\src\\Boton.cpp",
+              "RelativeToolTip": "src\\Boton.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-05-08T16:03:35.409Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Boton.h",
+              "DocumentMoniker": "C:\\Users\\david\\Documents\\Universidad\\Info2\\TrabajoDavid\\Trabajo optimizado\\Tablero\\src\\Boton.h",
+              "RelativeDocumentMoniker": "src\\Boton.h",
+              "ToolTip": "C:\\Users\\david\\Documents\\Universidad\\Info2\\TrabajoDavid\\Trabajo optimizado\\Tablero\\src\\Boton.h",
+              "RelativeToolTip": "src\\Boton.h",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABUAAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-05-08T16:03:30.481Z",
+              "IsPinned": true,
+              "EditorCaption": ""
             },
             {
               "$type": "Bookmark",
@@ -143,23 +180,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Imagen.h",
-              "DocumentMoniker": "C:\\Users\\david\\Documents\\Universidad\\Info2\\TrabajoDavid\\Cambios\\Tablero\\src\\Imagen.h",
-              "RelativeDocumentMoniker": "src\\Imagen.h",
-              "ToolTip": "C:\\Users\\david\\Documents\\Universidad\\Info2\\TrabajoDavid\\Cambios\\Tablero\\src\\Imagen.h",
-              "RelativeToolTip": "src\\Imagen.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-04-22T10:34:17.391Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 7,
               "Title": "Piezas.h",
-              "DocumentMoniker": "C:\\Users\\david\\Documents\\Universidad\\Info2\\TrabajoDavid\\Cambios\\Tablero\\src\\Piezas.h",
+              "DocumentMoniker": "C:\\Users\\david\\Documents\\Universidad\\Info2\\TrabajoDavid\\Trabajo optimizado\\Tablero\\src\\Piezas.h",
               "RelativeDocumentMoniker": "src\\Piezas.h",
-              "ToolTip": "C:\\Users\\david\\Documents\\Universidad\\Info2\\TrabajoDavid\\Cambios\\Tablero\\src\\Piezas.h",
+              "ToolTip": "C:\\Users\\david\\Documents\\Universidad\\Info2\\TrabajoDavid\\Trabajo optimizado\\Tablero\\src\\Piezas.h",
               "RelativeToolTip": "src\\Piezas.h",
               "ViewState": "AgIAAA8AAAAAAAAAAAAAACkAAAA2AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
@@ -167,11 +192,36 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
+              "Title": "Caballo.h",
+              "DocumentMoniker": "C:\\Users\\david\\Documents\\Universidad\\Info2\\TrabajoDavid\\Trabajo optimizado\\Tablero\\src\\Caballo.h",
+              "RelativeDocumentMoniker": "src\\Caballo.h",
+              "ToolTip": "C:\\Users\\david\\Documents\\Universidad\\Info2\\TrabajoDavid\\Trabajo optimizado\\Tablero\\src\\Caballo.h",
+              "RelativeToolTip": "src\\Caballo.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-04-17T21:03:51.103Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Imagen.h",
+              "DocumentMoniker": "C:\\Users\\david\\Documents\\Universidad\\Info2\\TrabajoDavid\\Trabajo optimizado\\Tablero\\src\\Imagen.h",
+              "RelativeDocumentMoniker": "src\\Imagen.h",
+              "ToolTip": "C:\\Users\\david\\Documents\\Universidad\\Info2\\TrabajoDavid\\Trabajo optimizado\\Tablero\\src\\Imagen.h",
+              "RelativeToolTip": "src\\Imagen.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-04-22T10:34:17.391Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
               "Title": "Piezas.cpp",
-              "DocumentMoniker": "C:\\Users\\david\\Documents\\Universidad\\Info2\\TrabajoDavid\\Cambios\\Tablero\\src\\Piezas.cpp",
+              "DocumentMoniker": "C:\\Users\\david\\Documents\\Universidad\\Info2\\TrabajoDavid\\Trabajo optimizado\\Tablero\\src\\Piezas.cpp",
               "RelativeDocumentMoniker": "src\\Piezas.cpp",
-              "ToolTip": "C:\\Users\\david\\Documents\\Universidad\\Info2\\TrabajoDavid\\Cambios\\Tablero\\src\\Piezas.cpp",
+              "ToolTip": "C:\\Users\\david\\Documents\\Universidad\\Info2\\TrabajoDavid\\Trabajo optimizado\\Tablero\\src\\Piezas.cpp",
               "RelativeToolTip": "src\\Piezas.cpp",
               "ViewState": "AgIAAB4AAAAAAAAAAAAAAIAAAAAKAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
@@ -179,11 +229,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 11,
               "Title": "Tablero.cpp",
-              "DocumentMoniker": "C:\\Users\\david\\Documents\\Universidad\\Info2\\TrabajoDavid\\Cambios\\Tablero\\src\\Tablero.cpp",
+              "DocumentMoniker": "C:\\Users\\david\\Documents\\Universidad\\Info2\\TrabajoDavid\\Trabajo optimizado\\Tablero\\src\\Tablero.cpp",
               "RelativeDocumentMoniker": "src\\Tablero.cpp",
-              "ToolTip": "C:\\Users\\david\\Documents\\Universidad\\Info2\\TrabajoDavid\\Cambios\\Tablero\\src\\Tablero.cpp",
+              "ToolTip": "C:\\Users\\david\\Documents\\Universidad\\Info2\\TrabajoDavid\\Trabajo optimizado\\Tablero\\src\\Tablero.cpp",
               "RelativeToolTip": "src\\Tablero.cpp",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
@@ -191,11 +241,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 10,
               "Title": "Imagen.cpp",
-              "DocumentMoniker": "C:\\Users\\david\\Documents\\Universidad\\Info2\\TrabajoDavid\\Cambios\\Tablero\\src\\Imagen.cpp",
+              "DocumentMoniker": "C:\\Users\\david\\Documents\\Universidad\\Info2\\TrabajoDavid\\Trabajo optimizado\\Tablero\\src\\Imagen.cpp",
               "RelativeDocumentMoniker": "src\\Imagen.cpp",
-              "ToolTip": "C:\\Users\\david\\Documents\\Universidad\\Info2\\TrabajoDavid\\Cambios\\Tablero\\src\\Imagen.cpp",
+              "ToolTip": "C:\\Users\\david\\Documents\\Universidad\\Info2\\TrabajoDavid\\Trabajo optimizado\\Tablero\\src\\Imagen.cpp",
               "RelativeToolTip": "src\\Imagen.cpp",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAALAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
@@ -203,11 +253,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 13,
               "Title": "Casilla.h",
-              "DocumentMoniker": "C:\\Users\\david\\Documents\\Universidad\\Info2\\TrabajoDavid\\Cambios\\Tablero\\src\\Casilla.h",
+              "DocumentMoniker": "C:\\Users\\david\\Documents\\Universidad\\Info2\\TrabajoDavid\\Trabajo optimizado\\Tablero\\src\\Casilla.h",
               "RelativeDocumentMoniker": "src\\Casilla.h",
-              "ToolTip": "C:\\Users\\david\\Documents\\Universidad\\Info2\\TrabajoDavid\\Cambios\\Tablero\\src\\Casilla.h",
+              "ToolTip": "C:\\Users\\david\\Documents\\Universidad\\Info2\\TrabajoDavid\\Trabajo optimizado\\Tablero\\src\\Casilla.h",
               "RelativeToolTip": "src\\Casilla.h",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAHAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
@@ -215,11 +265,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 12,
               "Title": "Tablero.h",
-              "DocumentMoniker": "C:\\Users\\david\\Documents\\Universidad\\Info2\\TrabajoDavid\\Cambios\\Tablero\\src\\Tablero.h",
+              "DocumentMoniker": "C:\\Users\\david\\Documents\\Universidad\\Info2\\TrabajoDavid\\Trabajo optimizado\\Tablero\\src\\Tablero.h",
               "RelativeDocumentMoniker": "src\\Tablero.h",
-              "ToolTip": "C:\\Users\\david\\Documents\\Universidad\\Info2\\TrabajoDavid\\Cambios\\Tablero\\src\\Tablero.h",
+              "ToolTip": "C:\\Users\\david\\Documents\\Universidad\\Info2\\TrabajoDavid\\Trabajo optimizado\\Tablero\\src\\Tablero.h",
               "RelativeToolTip": "src\\Tablero.h",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAADAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
@@ -227,11 +277,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 14,
               "Title": "Alfil.cpp",
-              "DocumentMoniker": "C:\\Users\\david\\Documents\\Universidad\\Info2\\TrabajoDavid\\Cambios\\Tablero\\src\\Alfil.cpp",
+              "DocumentMoniker": "C:\\Users\\david\\Documents\\Universidad\\Info2\\TrabajoDavid\\Trabajo optimizado\\Tablero\\src\\Alfil.cpp",
               "RelativeDocumentMoniker": "src\\Alfil.cpp",
-              "ToolTip": "C:\\Users\\david\\Documents\\Universidad\\Info2\\TrabajoDavid\\Cambios\\Tablero\\src\\Alfil.cpp",
+              "ToolTip": "C:\\Users\\david\\Documents\\Universidad\\Info2\\TrabajoDavid\\Trabajo optimizado\\Tablero\\src\\Alfil.cpp",
               "RelativeToolTip": "src\\Alfil.cpp",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAeAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
@@ -239,23 +289,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "Caballo.h",
-              "DocumentMoniker": "C:\\Users\\david\\Documents\\Universidad\\Info2\\TrabajoDavid\\Cambios\\Tablero\\src\\Caballo.h",
-              "RelativeDocumentMoniker": "src\\Caballo.h",
-              "ToolTip": "C:\\Users\\david\\Documents\\Universidad\\Info2\\TrabajoDavid\\Cambios\\Tablero\\src\\Caballo.h",
-              "RelativeToolTip": "src\\Caballo.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-04-17T21:03:51.103Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 16,
               "Title": "Caballo.cpp",
-              "DocumentMoniker": "C:\\Users\\david\\Documents\\Universidad\\Info2\\TrabajoDavid\\Cambios\\Tablero\\src\\Caballo.cpp",
+              "DocumentMoniker": "C:\\Users\\david\\Documents\\Universidad\\Info2\\TrabajoDavid\\Trabajo optimizado\\Tablero\\src\\Caballo.cpp",
               "RelativeDocumentMoniker": "src\\Caballo.cpp",
-              "ToolTip": "C:\\Users\\david\\Documents\\Universidad\\Info2\\TrabajoDavid\\Cambios\\Tablero\\src\\Caballo.cpp",
+              "ToolTip": "C:\\Users\\david\\Documents\\Universidad\\Info2\\TrabajoDavid\\Trabajo optimizado\\Tablero\\src\\Caballo.cpp",
               "RelativeToolTip": "src\\Caballo.cpp",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
@@ -263,11 +301,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 15,
               "Title": "Rey.h",
-              "DocumentMoniker": "C:\\Users\\david\\Documents\\Universidad\\Info2\\TrabajoDavid\\Cambios\\Tablero\\src\\Rey.h",
+              "DocumentMoniker": "C:\\Users\\david\\Documents\\Universidad\\Info2\\TrabajoDavid\\Trabajo optimizado\\Tablero\\src\\Rey.h",
               "RelativeDocumentMoniker": "src\\Rey.h",
-              "ToolTip": "C:\\Users\\david\\Documents\\Universidad\\Info2\\TrabajoDavid\\Cambios\\Tablero\\src\\Rey.h",
+              "ToolTip": "C:\\Users\\david\\Documents\\Universidad\\Info2\\TrabajoDavid\\Trabajo optimizado\\Tablero\\src\\Rey.h",
               "RelativeToolTip": "src\\Rey.h",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
@@ -275,11 +313,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 17,
               "Title": "Casilla.cpp",
-              "DocumentMoniker": "C:\\Users\\david\\Documents\\Universidad\\Info2\\TrabajoDavid\\Cambios\\Tablero\\src\\Casilla.cpp",
+              "DocumentMoniker": "C:\\Users\\david\\Documents\\Universidad\\Info2\\TrabajoDavid\\Trabajo optimizado\\Tablero\\src\\Casilla.cpp",
               "RelativeDocumentMoniker": "src\\Casilla.cpp",
-              "ToolTip": "C:\\Users\\david\\Documents\\Universidad\\Info2\\TrabajoDavid\\Cambios\\Tablero\\src\\Casilla.cpp",
+              "ToolTip": "C:\\Users\\david\\Documents\\Universidad\\Info2\\TrabajoDavid\\Trabajo optimizado\\Tablero\\src\\Casilla.cpp",
               "RelativeToolTip": "src\\Casilla.cpp",
               "ViewState": "AgIAACcAAAAAAAAAAAAAADkAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
@@ -287,11 +325,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 18,
               "Title": "Torre.cpp",
-              "DocumentMoniker": "C:\\Users\\david\\Documents\\Universidad\\Info2\\TrabajoDavid\\Cambios\\Tablero\\src\\Torre.cpp",
+              "DocumentMoniker": "C:\\Users\\david\\Documents\\Universidad\\Info2\\TrabajoDavid\\Trabajo optimizado\\Tablero\\src\\Torre.cpp",
               "RelativeDocumentMoniker": "src\\Torre.cpp",
-              "ToolTip": "C:\\Users\\david\\Documents\\Universidad\\Info2\\TrabajoDavid\\Cambios\\Tablero\\src\\Torre.cpp",
+              "ToolTip": "C:\\Users\\david\\Documents\\Universidad\\Info2\\TrabajoDavid\\Trabajo optimizado\\Tablero\\src\\Torre.cpp",
               "RelativeToolTip": "src\\Torre.cpp",
               "ViewState": "AgIAAAwAAAAAAAAAAAAAABIAAAACAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
@@ -299,11 +337,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 20,
               "Title": "Peon.cpp",
-              "DocumentMoniker": "C:\\Users\\david\\Documents\\Universidad\\Info2\\TrabajoDavid\\Cambios\\Tablero\\src\\Peon.cpp",
+              "DocumentMoniker": "C:\\Users\\david\\Documents\\Universidad\\Info2\\TrabajoDavid\\Trabajo optimizado\\Tablero\\src\\Peon.cpp",
               "RelativeDocumentMoniker": "src\\Peon.cpp",
-              "ToolTip": "C:\\Users\\david\\Documents\\Universidad\\Info2\\TrabajoDavid\\Cambios\\Tablero\\src\\Peon.cpp",
+              "ToolTip": "C:\\Users\\david\\Documents\\Universidad\\Info2\\TrabajoDavid\\Trabajo optimizado\\Tablero\\src\\Peon.cpp",
               "RelativeToolTip": "src\\Peon.cpp",
               "ViewState": "AgIAADAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
@@ -311,11 +349,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 19,
               "Title": "Peon.h",
-              "DocumentMoniker": "C:\\Users\\david\\Documents\\Universidad\\Info2\\TrabajoDavid\\Cambios\\Tablero\\src\\Peon.h",
+              "DocumentMoniker": "C:\\Users\\david\\Documents\\Universidad\\Info2\\TrabajoDavid\\Trabajo optimizado\\Tablero\\src\\Peon.h",
               "RelativeDocumentMoniker": "src\\Peon.h",
-              "ToolTip": "C:\\Users\\david\\Documents\\Universidad\\Info2\\TrabajoDavid\\Cambios\\Tablero\\src\\Peon.h",
+              "ToolTip": "C:\\Users\\david\\Documents\\Universidad\\Info2\\TrabajoDavid\\Trabajo optimizado\\Tablero\\src\\Peon.h",
               "RelativeToolTip": "src\\Peon.h",
               "ViewState": "AgIAAAEAAAAAAAAAAAAYwBAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
@@ -323,11 +361,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 8,
               "Title": "Rey.cpp",
-              "DocumentMoniker": "C:\\Users\\david\\Documents\\Universidad\\Info2\\TrabajoDavid\\Cambios\\Tablero\\src\\Rey.cpp",
+              "DocumentMoniker": "C:\\Users\\david\\Documents\\Universidad\\Info2\\TrabajoDavid\\Trabajo optimizado\\Tablero\\src\\Rey.cpp",
               "RelativeDocumentMoniker": "src\\Rey.cpp",
-              "ToolTip": "C:\\Users\\david\\Documents\\Universidad\\Info2\\TrabajoDavid\\Cambios\\Tablero\\src\\Rey.cpp",
+              "ToolTip": "C:\\Users\\david\\Documents\\Universidad\\Info2\\TrabajoDavid\\Trabajo optimizado\\Tablero\\src\\Rey.cpp",
               "RelativeToolTip": "src\\Rey.cpp",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
@@ -335,11 +373,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 22,
               "Title": "Alfil.h",
-              "DocumentMoniker": "C:\\Users\\david\\Documents\\Universidad\\Info2\\TrabajoDavid\\Cambios\\Tablero\\src\\Alfil.h",
+              "DocumentMoniker": "C:\\Users\\david\\Documents\\Universidad\\Info2\\TrabajoDavid\\Trabajo optimizado\\Tablero\\src\\Alfil.h",
               "RelativeDocumentMoniker": "src\\Alfil.h",
-              "ToolTip": "C:\\Users\\david\\Documents\\Universidad\\Info2\\TrabajoDavid\\Cambios\\Tablero\\src\\Alfil.h",
+              "ToolTip": "C:\\Users\\david\\Documents\\Universidad\\Info2\\TrabajoDavid\\Trabajo optimizado\\Tablero\\src\\Alfil.h",
               "RelativeToolTip": "src\\Alfil.h",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
@@ -347,11 +385,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 21,
               "Title": "Torre.h",
-              "DocumentMoniker": "C:\\Users\\david\\Documents\\Universidad\\Info2\\TrabajoDavid\\Cambios\\Tablero\\src\\Torre.h",
+              "DocumentMoniker": "C:\\Users\\david\\Documents\\Universidad\\Info2\\TrabajoDavid\\Trabajo optimizado\\Tablero\\src\\Torre.h",
               "RelativeDocumentMoniker": "src\\Torre.h",
-              "ToolTip": "C:\\Users\\david\\Documents\\Universidad\\Info2\\TrabajoDavid\\Cambios\\Tablero\\src\\Torre.h",
+              "ToolTip": "C:\\Users\\david\\Documents\\Universidad\\Info2\\TrabajoDavid\\Trabajo optimizado\\Tablero\\src\\Torre.h",
               "RelativeToolTip": "src\\Torre.h",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
