@@ -1,9 +1,15 @@
 #pragma once
 #include "Casilla.h"
+#include"Piezas.h"
+#include<cmath>
 
-class Rey
+class Rey :public Piezas
 {
 public:
-	bool ComprobarMov(Casilla** casillas, int fil1, int col1, int fil2, int col2);
+	Rey() = default;
+	Rey(char col);
+	bool comprobarMov(TABLERO& casillas, Casilla& cas1, Casilla& cas2) override;
+	void dibujar(float x, float y) override;
+	char getColor() override;
 };
 

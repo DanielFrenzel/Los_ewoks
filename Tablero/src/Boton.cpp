@@ -36,12 +36,12 @@ void Boton::setSize(float nuevoAncho, float nuevoAlto)
 	spriteResaltado.setSize(ancho, alto);
 }
 
-bool Boton::ratonEncima(int rx, int ry) 
+bool Boton::ratonEncima(float rx, float ry) 
 {
 	return (rx >= regionX1 && rx <= regionX2 && ry >= regionY1 && ry <= regionY2);
 }
 
-void Boton::actualizaResaltado(int rx, int ry)
+void Boton::actualizaResaltado(float rx, float ry)
 {
 	resaltado = ratonEncima(rx, ry);
 	resaltado = (rx >= regionX1 && rx <= regionX2 && ry >= regionY1 && ry <= regionY2);

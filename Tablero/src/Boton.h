@@ -23,10 +23,10 @@ public:
 	void setRegion(float x1, float x2, float y1, float y2);
 
 	//Metodo que commprueba si el raton esta encima o no
-	bool ratonEncima(int rx, int ry) ;
+	bool ratonEncima(float rx, float ry) ;
 	
 	//Metodo que actualiza el resaltado
-	void actualizaResaltado(int rx, int ry);
+	void actualizaResaltado(float rx, float ry);
 
 	//Para dibujar
 	void draw() ;

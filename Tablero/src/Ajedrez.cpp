@@ -5,7 +5,6 @@
 #include "Coordinador.h"
 #include "ETSIDI.h"
 
-Tablero tab; //centralizamos la información en este objeto
 Coordinador coordinador;
 int fil1, fil2, col1, col2, fil3, col3;
 bool flag = false;
@@ -41,7 +40,6 @@ int main(int argc,char* argv[])
 	glMatrixMode(GL_PROJECTION);
 	gluPerspective( 30.0, 800/600.0f, 0.1, 150);
 
-	coordinador.setTablero(&tab);
 	coordinador.musica();
 	coordinador.actualizarEscalaVentana(1920, 1080);
 	//Registrar los callbacks
@@ -88,44 +86,45 @@ void OnMouseClick(int button, int state, int x, int y)
 {
 	if (button == GLUT_LEFT_BUTTON && state == GLUT_DOWN && flag == false)
 	{
-		cout << x << "," << y<<endl;
-		if ((x >= 100 || x <= 700) && (y >= 0 || y <= 600))
+		cout << x << "," << y << endl;
+		if ((x >= 441 || x <= 1478) && (y >= 151 || y <= 933))
 		{
 			for (int i = 0;i < 8;i++)
 			{
-				if ((x >= 100 + (75 * (i))) && (x <= 100 + (75 * (i + 1))))
+				if ((x >= 441 + (129.625 * (i))) && (x <= 441 + (129.625 * (i + 1))))
 				{
 					flag = true;
 					col1 = i;
 				}
-				if ((y >= 00 + (75 * (i))) && (y <= 0 + (75 * (i + 1))))
+				if ((y >= 151 + (97.75 * (i))) && (y <= 151 + (97.75 * (i + 1))))
 				{
 					fil1 = (7 - i);
 				}
 			}
-			tab.seleccion(fil1, col1);
+			coordinador.seleccion(fil1, col1);
 		}
 	}
 
 
 	else if (button == GLUT_LEFT_BUTTON && state == GLUT_DOWN && flag == true)
 	{
-		if ((x >= 100 || x <= 700) && (y >= 0 || y <= 600))
+		if ((x >= 441 || x <= 1478) && (y >= 151 || y <= 933))
 		{
 			for (int i = 0;i < 8;i++)
 			{
-				if ((x >= 100 + (75 * (i))) && (x <= 100 + (75 * (i + 1))))
+				if ((x >= 441 + (129.625 * (i))) && (x <= 441 + (129.625 * (i + 1))))
 				{
-					flag = false;
+					flag = true;
 					col2 = i;
 				}
-				if ((y >= 0 + (75 * (i))) && (y <= 0 + (75 * (i + 1))))
+				if ((y >= 151 + (97.75 * (i))) && (y <= 151 + (97.75 * (i + 1))))
 				{
 					fil2 = (7 - i);
 				}
 			}
-			coordinador.movimiento(fil1, col1, fil2, col2);
+			coordinador.mueve(fil1, col1, fil2, col2);
 		}
+
 	}
 
 	if (button == GLUT_RIGHT_BUTTON && state == GLUT_DOWN && flag == true)
@@ -133,6 +132,7 @@ void OnMouseClick(int button, int state, int x, int y)
 		flag = false;
 	}
 	coordinador.mouse(button, state, x, y);
+
 	glutPostRedisplay();
 }
 
@@ -155,7 +155,17 @@ void OnTimer(int value)
 
 void onSpecialKeyboardDown(int key, int x, int y)
 {
-
+	switch (key) {
+	case GLUT_KEY_UP:
+		coordinador.subirVolumen();
+		break;
+	case GLUT_KEY_DOWN:
+		coordinador.bajarVolumen();
+		break;
+	default:
+		break;
+	}
+	glutPostRedisplay();
 	
 }
 void reshape(int w, int h)

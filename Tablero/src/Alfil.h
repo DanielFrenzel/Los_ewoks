@@ -1,10 +1,15 @@
 #pragma once
-#include "Casilla.h"
+#include "Piezas.h"
+#include"Casilla.h"
+#include<cmath>
 
-class Alfil
+class Alfil :public Piezas
 {
 public:
-	bool ComprobarMov(Casilla** casillas, int fil1, int col1, int fil2, int col2);
-
+	Alfil() = default;
+	Alfil(char col);
+	bool comprobarMov(TABLERO& casillas, Casilla& cas1, Casilla& cas2) override;
+	void dibujar(float x, float y) override;
+	char getColor() override;
 };
 

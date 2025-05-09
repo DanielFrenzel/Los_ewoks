@@ -1,8 +1,18 @@
 #pragma once
 #include "Casilla.h"
+#include"Piezas.h"
 
-class Torre
+class Torre :public Piezas
 {
 public:
-	bool ComprobarMov(Casilla** casillas, int fil1, int col1, int fil2, int col2);
+	Torre() = default;
+	Torre(char col);
+	inline bool comer(char color1, char color2)
+	{
+		if (color1 == color2) return 0;
+		else return 1;
+	}
+	bool comprobarMov(TABLERO& casillas, Casilla& cas1, Casilla& cas2) override;
+	void dibujar(float x, float y) override;
+	char getColor() override;
 };

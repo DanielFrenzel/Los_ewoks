@@ -1,42 +1,62 @@
 #include "Torre.h"
 
-
-static bool comer(char color1, char color2)
+Torre::Torre(char col)
 {
-	if (color1 == color2)
-		return 0;
-	else return 1;
+	color = col;
 }
 
-
-bool Torre::ComprobarMov(Casilla** casillas, int fil1, int col1, int fil2, int col2)
+bool Torre::comprobarMov(TABLERO& casillas, Casilla& cas1, Casilla& cas2)
 {
-	if (col1 == col2 && fil1 == fil2) // si se le pulsa en el mismo sitio no se ueve
+	int filaOrigen = cas1.getfila();
+	int filaDestino = cas2.getfila();
+
+	int columnaOrigen = cas1.getcolumna();
+	int columnaDestino = cas2.getcolumna();
+
+	char colorDestino = casillas[cas2.getfila()][cas2.getcolumna()].getcolor();
+
+	if (columnaOrigen == columnaDestino && filaOrigen == filaDestino) // si se le pulsa en el mismo sitio no se ueve
 	{
 		return 0;
 	}
-	else if (col1 == col2)
+	if (columnaOrigen == columnaDestino)
 	{
-		int direccion = (fil1 < fil2) ? 1 : -1;  // comprueba si tiene que sumar o restar
-		for (int i = fil1 + direccion; i != fil2; i += direccion)
+		int direccion = (filaOrigen < filaDestino) ? 1 : -1;  // comprueba si tiene que sumar o restar
+		for (int i = (filaOrigen + direccion); i != filaDestino; i += direccion)
 		{
-			if (casillas[i][col1].getficha() != 0)
-				return 0; 
-			
+			if (casillas[i][columnaOrigen].getficha() != 0)
+				return 0;
+
 		}
-		return comer(casillas[fil1][col1].getcolor(), casillas[fil2][col2].getcolor());
+		return comer(color, colorDestino);
 
 	}
-	else if (fil1 == fil2)  
+	if (filaOrigen == filaDestino)
 	{
-		int direccion = (col1 < col2) ? 1 : -1;  // comprueba si tiene que sumar o restar
-		for (int i = col1 + direccion; i != col2; i += direccion)
+		int direccion = (columnaOrigen < columnaDestino) ? 1 : -1;  // comprueba si tiene que sumar o restar
+		for (int i = (columnaOrigen + direccion); i != columnaDestino; i += direccion)
 		{
-			if (casillas[fil1][i].getficha() != 0)
+			if (casillas[filaOrigen][i].getficha() != 0)
 				return 0; // obstáculo
 		}
-		return comer(casillas[fil1][col1].getcolor(), casillas[fil2][col2].getcolor());
+		return comer(color, colorDestino);
 	}
 	else return 0;
 }
 
+void Torre::dibujar(float x, float y)
+{
+	if (color == 'B')
+	{
+		Sprite* torreB = Imagen::crearImagen("imagenes/Chewy.png", x, y, tam, tam);
+	}
+	if (color == 'N')
+	{
+		Sprite* torreN = Imagen::crearImagen("imagenes/Superdroide.png", x, y, tam7, tam8);
+	}
+}
+
+char Torre::getColor()
+{
+	return color;
+}

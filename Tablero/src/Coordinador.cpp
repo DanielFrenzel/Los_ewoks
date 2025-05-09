@@ -2,31 +2,28 @@
 #include "freeglut.h"
 #include "ETSIDI.h"
 #include <cstdlib>
-void Coordinador::setTablero(Tablero* t)
-{
-	tablero = t;
-}
+
+
 //Movimiento del raton----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 void Coordinador::MovRaton(int x, int y)  //Indica que casilla se ha pulsado según 
 {
 	float x_base = x / escalaX;
 	float y_base = y / escalaY;
 	int fil3 = 0, col3 = 0;
-	if ((x_base >= 100 || x_base <= 700) && (y_base >= 0 || y_base <= 600))
+	if ((x >= 100 || x <= 700) && (y >= 0 || y <= 600))
 	{
-		for (int i = 0; i < 8; i++)
+		for (int i = 0;i < 8;i++)
 		{
-			if ((x_base >= 100 + (75 * i)) && (x_base <= 100 + (75 * (i + 1))))
+			if ((x >= 100 + (75 * (i))) && (x <= 100 + (75 * (i + 1))))
 			{
 				col3 = i;
 			}
-			if ((y_base >= 0 + (75 * i)) && (y_base <= 0 + (75 * (i + 1))))
+			if ((y >= 0 + (75 * (i))) && (y <= 0 + (75 * (i + 1))))
 			{
 				fil3 = (7 - i);
 			}
 		}
-		if (tablero)
-			tablero->seleccion(fil3, col3);
+		tablero.seleccion(fil3, col3);
 	}
 	botonSalida.actualizaResaltado(x_base, y_base);
 	botonAtras.actualizaResaltado(x_base, y_base);
@@ -166,47 +163,16 @@ void Coordinador::mouse(int button, int state, int x, int y)
 	}
 }
 //Movimiento fichas----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-void Coordinador::movimiento(int fil1, int col1, int fil2, int col2)  //mueve la ficha de la selección 1 a la 2
+void Coordinador::mueve(int fil1, int col1, int fil2, int col2)  //mueve la ficha de la selección 1 a la 2
 {
-	char color = (turno == 0) ? 'B' : 'N';
-
-	if (fil1 == fil2 && col1 == col2)
-		return;
-
-	if (compMov(fil1, col1, fil2, col2) && tablero->getCasillas()[fil1][col1].getcolor() == color)
-	{
-		if (tablero->getCasillas()[fil1][col1].getficha() != 0)
-		{
-			tablero->getCasillas()[fil2][col2].setficha(tablero->getCasillas()[fil1][col1].getficha(), tablero->getCasillas()[fil1][col1].getcolor());
-			tablero->getCasillas()[fil1][col1].setficha(0, 0);
-
-			// Actualiza selección gráfica
-			tablero->seleccion(fil2, col2);
-			turno = not(turno);
-		}
-	}
+	tablero.mueve(fil1, col1, fil2, col2);
 }
 
-bool Coordinador::compMov(int fil1, int col1, int fil2, int col2) //comprueba si se puede mover
+void Coordinador::seleccion(int f1, int c1)
 {
-	switch (tablero->getCasillas()[fil1][col1].getficha())
-	{
-	case 6:
-		return peon.ComprobarMov(tablero->getCasillas(), fil1, col1, fil2, col2);
-	case 5:
-		return alfil.ComprobarMov(tablero->getCasillas(), fil1, col1, fil2, col2) || torre.ComprobarMov(tablero->getCasillas(), fil1, col1, fil2, col2);
-	case 4:
-		return rey.ComprobarMov(tablero->getCasillas(), fil1, col1, fil2, col2);
-	case 3:
-		return alfil.ComprobarMov(tablero->getCasillas(), fil1, col1, fil2, col2);
-	case 2:
-		return caballo.ComprobarMov(tablero->getCasillas(), fil1, col1, fil2, col2);
-	case 1:
-		return torre.ComprobarMov(tablero->getCasillas(), fil1, col1, fil2, col2);
-	default:
-		return false;
-	}
+	tablero.seleccion(f1, c1);
 }
+
 //Constructor-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 Coordinador::Coordinador()
 {
@@ -217,14 +183,14 @@ Coordinador::Coordinador()
 	botonSalida.setSize(5.0f, 5.0f);
 	botonAtras.setPos(35, 29);
 	botonAtras.setRegion(1702.0f, 1783.0f, 26.0f, 74.0f);
-	botonAltavozON.setPos(40,29);
+	botonAltavozON.setPos(40, 29);
 	botonAltavozON.setRegion(1816.0f, 1895.0f, 23.0f, 76.0f);
 	botonAltavozOFF.setPos(40, 29);
 	botonAltavozOFF.setRegion(1816.0f, 1895.0f, 23.0f, 76.0f);
 
 	//botones Inicio
 	botonDuelo.setPos(-30, -25);
-	botonDuelo.setRegion( 122.0f, 452.0f, 915.0f, 1024.0f);
+	botonDuelo.setRegion(122.0f, 452.0f, 915.0f, 1024.0f);
 	botonIA.setPos(0, -25);
 	botonIA.setRegion(795.0f, 1125.0f, 916.0f, 1025.0f);
 	botonAjustes.setPos(30, -25);
@@ -238,7 +204,7 @@ Coordinador::Coordinador()
 	botonAyuda.setPos(30, -25);
 	botonAyuda.setRegion(1466.0f, 1796.0f, 917.0f, 1025.0f);
 	botonCreditos.setPos(0, -10);
-	botonCreditos.setRegion(795.0f, 1125.0f, 664.0f, 773.0f);	
+	botonCreditos.setRegion(795.0f, 1125.0f, 664.0f, 773.0f);
 
 	//Botones Ayuda
 	botonNormas.setPos(-30, -25);
@@ -254,16 +220,14 @@ Coordinador::Coordinador()
 	botonMusica3.setPos(30, -25);
 	botonMusica3.setRegion(1464.0f, 1790.0f, 874.0f, 1025.0f);
 
-
+	//varios
 	pulsado_sonido = false;
 	activacion_titulo2 = false;
 	tamx = 0, tamy = 0;
 	activacion_titulo1 = false;
 	musica_creditos_activada = false;
 	activacion_titulo3 = false;
-	
 }
-
 //Animaciones varias de los menus-----------------------------------------------------------------------------------------------------------------------------------------------------------------
 void Coordinador::animaciones()
 {
@@ -313,33 +277,39 @@ void Coordinador::animaciones()
 //Musica-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 void Coordinador::musica()
 {
-
 	if (pulsado_sonido != 0)
 	{
 		stopMusica();
-		musica_actual = -1;
-		return;
 	}
-
-	if (estado == CREDITOS &&  musica_actual != 1)
+	else if (estado != CREDITOS)
 	{
-		stopMusica();
-		musica_actual = 1;
+		playMusica("sonidos/Musica1100.mp3", true);
 	}
-	else if (estado != CREDITOS && musica_actual != 0)
-	{
-		playMusica("sonidos/Musica1_25.mp3", true);
-		musica_actual = 0;
-	}
-
 	
+}
+
+
+//Control de volumen
+void Coordinador::subirVolumen(){
+	if (volumen < 100) {
+		volumen += 25;
+		stopMusica();
+		playMusica(rutasVolumen[(volumen / 25)-1].c_str(), false);
+	}
+}
+void Coordinador::bajarVolumen(){
+	if (volumen > 0){
+		volumen -= 25;
+		stopMusica();
+		playMusica(rutasVolumen[(volumen / 25)-1].c_str(), false);
+	}
 }
  
 //Para dibujar-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 void Coordinador::dibuja()
-{
+{	
 	//Estella de la muerte
-	if (estado != CREDITOS)
+	if (estado != CREDITOS && estado != DUELO)
 	{
 		Estrella.setPos(-16, 0 + bote);
 		Estrella.draw();
@@ -368,6 +338,10 @@ void Coordinador::dibuja()
 		botonAjustes.draw();
 	}
 
+	if (estado == DUELO) {
+		tablero.dibuja();
+	}
+
 	//Botones AJUSTES
 	if (estado == AJUSTES) {
 		botonSonidoGeneral.draw();
@@ -390,9 +364,16 @@ void Coordinador::dibuja()
 		botonMusica3.draw();
 	}
 
+	//Volumen
+	if (estado == SONIDO){
+		TextoVolumen.setPos(0, - 26);
+		TextoVolumen.draw();
+		volumenes[volumen / 25].setPos(0, -25);
+		volumenes[volumen / 25].draw();
+	}
+
 	//Fondo
-	if (estado != CREDITOS)
-	{
+	if (estado != CREDITOS) {
 		MenuInicial.draw();	
 	}
 	
@@ -427,6 +408,8 @@ void Coordinador::dibuja()
 		FondoEstrellas.draw();
 
 	}
+
+	
 }
 //Getters (Por si hiciera falta)---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 Coordinador::Estado Coordinador::getEstado() const 
