@@ -1,298 +1,76 @@
-﻿  Ajedrez.cpp
-C:\Users\ferni\OneDrive\Documentos\GitHub\Los_ewoks\Tablero\src\Piezas.h(20,14): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
-  (compilando archivo de origen "src/Ajedrez.cpp")
-  
-C:\Users\ferni\OneDrive\Documentos\GitHub\Los_ewoks\Tablero\src\Piezas.h(21,15): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
-  (compilando archivo de origen "src/Ajedrez.cpp")
-  
-C:\Users\ferni\OneDrive\Documentos\GitHub\Los_ewoks\Tablero\src\Piezas.h(21,31): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
-  (compilando archivo de origen "src/Ajedrez.cpp")
-  
-C:\Users\ferni\OneDrive\Documentos\GitHub\Los_ewoks\Tablero\src\Piezas.h(23,15): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
-  (compilando archivo de origen "src/Ajedrez.cpp")
-  
-C:\Users\ferni\OneDrive\Documentos\GitHub\Los_ewoks\Tablero\src\Piezas.h(24,15): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
-  (compilando archivo de origen "src/Ajedrez.cpp")
-  
-C:\Users\ferni\OneDrive\Documentos\GitHub\Los_ewoks\Tablero\src\Piezas.h(24,31): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
-  (compilando archivo de origen "src/Ajedrez.cpp")
-  
-  Alfil.cpp
-C:\Users\ferni\OneDrive\Documentos\GitHub\Los_ewoks\Tablero\src\Piezas.h(20,14): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
-  (compilando archivo de origen "src/Alfil.cpp")
-  
-C:\Users\ferni\OneDrive\Documentos\GitHub\Los_ewoks\Tablero\src\Piezas.h(21,15): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
-  (compilando archivo de origen "src/Alfil.cpp")
-  
-C:\Users\ferni\OneDrive\Documentos\GitHub\Los_ewoks\Tablero\src\Piezas.h(21,31): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
-  (compilando archivo de origen "src/Alfil.cpp")
-  
-C:\Users\ferni\OneDrive\Documentos\GitHub\Los_ewoks\Tablero\src\Piezas.h(23,15): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
-  (compilando archivo de origen "src/Alfil.cpp")
-  
-C:\Users\ferni\OneDrive\Documentos\GitHub\Los_ewoks\Tablero\src\Piezas.h(24,15): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
-  (compilando archivo de origen "src/Alfil.cpp")
-  
-C:\Users\ferni\OneDrive\Documentos\GitHub\Los_ewoks\Tablero\src\Piezas.h(24,31): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
-  (compilando archivo de origen "src/Alfil.cpp")
-  
-  Boton.cpp
-  Caballo.cpp
-C:\Users\ferni\OneDrive\Documentos\GitHub\Los_ewoks\Tablero\src\Piezas.h(20,14): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
-  (compilando archivo de origen "src/Caballo.cpp")
-  
-C:\Users\ferni\OneDrive\Documentos\GitHub\Los_ewoks\Tablero\src\Piezas.h(21,15): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
-  (compilando archivo de origen "src/Caballo.cpp")
-  
-C:\Users\ferni\OneDrive\Documentos\GitHub\Los_ewoks\Tablero\src\Piezas.h(21,31): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
-  (compilando archivo de origen "src/Caballo.cpp")
-  
-C:\Users\ferni\OneDrive\Documentos\GitHub\Los_ewoks\Tablero\src\Piezas.h(23,15): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
-  (compilando archivo de origen "src/Caballo.cpp")
-  
-C:\Users\ferni\OneDrive\Documentos\GitHub\Los_ewoks\Tablero\src\Piezas.h(24,15): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
-  (compilando archivo de origen "src/Caballo.cpp")
-  
-C:\Users\ferni\OneDrive\Documentos\GitHub\Los_ewoks\Tablero\src\Piezas.h(24,31): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
-  (compilando archivo de origen "src/Caballo.cpp")
-  
-  Casilla.cpp
-C:\Users\ferni\OneDrive\Documentos\GitHub\Los_ewoks\Tablero\src\Piezas.h(20,14): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
-  (compilando archivo de origen "src/Casilla.cpp")
-  
-C:\Users\ferni\OneDrive\Documentos\GitHub\Los_ewoks\Tablero\src\Piezas.h(21,15): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
-  (compilando archivo de origen "src/Casilla.cpp")
-  
-C:\Users\ferni\OneDrive\Documentos\GitHub\Los_ewoks\Tablero\src\Piezas.h(21,31): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
-  (compilando archivo de origen "src/Casilla.cpp")
-  
-C:\Users\ferni\OneDrive\Documentos\GitHub\Los_ewoks\Tablero\src\Piezas.h(23,15): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
-  (compilando archivo de origen "src/Casilla.cpp")
-  
-C:\Users\ferni\OneDrive\Documentos\GitHub\Los_ewoks\Tablero\src\Piezas.h(24,15): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
-  (compilando archivo de origen "src/Casilla.cpp")
-  
-C:\Users\ferni\OneDrive\Documentos\GitHub\Los_ewoks\Tablero\src\Piezas.h(24,31): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
-  (compilando archivo de origen "src/Casilla.cpp")
-  
-C:\Users\ferni\OneDrive\Documentos\GitHub\Los_ewoks\Tablero\src\Casilla.cpp(18,10): warning C4244: 'inicializando': conversión de 'double' a 'float'; posible pérdida de datos
-C:\Users\ferni\OneDrive\Documentos\GitHub\Los_ewoks\Tablero\src\Casilla.cpp(19,10): warning C4244: 'inicializando': conversión de 'double' a 'float'; posible pérdida de datos
-C:\Users\ferni\OneDrive\Documentos\GitHub\Los_ewoks\Tablero\src\Casilla.cpp(33,10): warning C4244: 'inicializando': conversión de 'int' a 'float'; posible pérdida de datos
-C:\Users\ferni\OneDrive\Documentos\GitHub\Los_ewoks\Tablero\src\Casilla.cpp(34,10): warning C4244: 'inicializando': conversión de 'int' a 'float'; posible pérdida de datos
-  Coordinador.cpp
-C:\Users\ferni\OneDrive\Documentos\GitHub\Los_ewoks\Tablero\src\Piezas.h(20,14): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
+﻿  Coordinador.cpp
+C:\Users\ferni\OneDrive\Documentos\universidad\cuarto\info\trabajo\arnaiz2.0\Tablero\src\Piezas.h(20,14): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
   (compilando archivo de origen "src/Coordinador.cpp")
   
-C:\Users\ferni\OneDrive\Documentos\GitHub\Los_ewoks\Tablero\src\Piezas.h(21,15): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
+C:\Users\ferni\OneDrive\Documentos\universidad\cuarto\info\trabajo\arnaiz2.0\Tablero\src\Piezas.h(21,15): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
   (compilando archivo de origen "src/Coordinador.cpp")
   
-C:\Users\ferni\OneDrive\Documentos\GitHub\Los_ewoks\Tablero\src\Piezas.h(21,31): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
+C:\Users\ferni\OneDrive\Documentos\universidad\cuarto\info\trabajo\arnaiz2.0\Tablero\src\Piezas.h(21,31): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
   (compilando archivo de origen "src/Coordinador.cpp")
   
-C:\Users\ferni\OneDrive\Documentos\GitHub\Los_ewoks\Tablero\src\Piezas.h(23,15): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
+C:\Users\ferni\OneDrive\Documentos\universidad\cuarto\info\trabajo\arnaiz2.0\Tablero\src\Piezas.h(23,15): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
   (compilando archivo de origen "src/Coordinador.cpp")
   
-C:\Users\ferni\OneDrive\Documentos\GitHub\Los_ewoks\Tablero\src\Piezas.h(24,15): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
+C:\Users\ferni\OneDrive\Documentos\universidad\cuarto\info\trabajo\arnaiz2.0\Tablero\src\Piezas.h(24,15): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
   (compilando archivo de origen "src/Coordinador.cpp")
   
-C:\Users\ferni\OneDrive\Documentos\GitHub\Los_ewoks\Tablero\src\Piezas.h(24,31): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
+C:\Users\ferni\OneDrive\Documentos\universidad\cuarto\info\trabajo\arnaiz2.0\Tablero\src\Piezas.h(24,31): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
   (compilando archivo de origen "src/Coordinador.cpp")
   
-C:\Users\ferni\OneDrive\Documentos\GitHub\Los_ewoks\Tablero\src\Coordinador.cpp(28,41): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
-C:\Users\ferni\OneDrive\Documentos\GitHub\Los_ewoks\Tablero\src\Coordinador.cpp(28,33): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
-C:\Users\ferni\OneDrive\Documentos\GitHub\Los_ewoks\Tablero\src\Coordinador.cpp(29,40): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
-C:\Users\ferni\OneDrive\Documentos\GitHub\Los_ewoks\Tablero\src\Coordinador.cpp(29,32): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
-C:\Users\ferni\OneDrive\Documentos\GitHub\Los_ewoks\Tablero\src\Coordinador.cpp(30,44): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
-C:\Users\ferni\OneDrive\Documentos\GitHub\Los_ewoks\Tablero\src\Coordinador.cpp(30,36): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
-C:\Users\ferni\OneDrive\Documentos\GitHub\Los_ewoks\Tablero\src\Coordinador.cpp(31,45): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
-C:\Users\ferni\OneDrive\Documentos\GitHub\Los_ewoks\Tablero\src\Coordinador.cpp(31,37): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
-C:\Users\ferni\OneDrive\Documentos\GitHub\Los_ewoks\Tablero\src\Coordinador.cpp(35,41): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
-C:\Users\ferni\OneDrive\Documentos\GitHub\Los_ewoks\Tablero\src\Coordinador.cpp(35,33): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
-C:\Users\ferni\OneDrive\Documentos\GitHub\Los_ewoks\Tablero\src\Coordinador.cpp(36,38): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
-C:\Users\ferni\OneDrive\Documentos\GitHub\Los_ewoks\Tablero\src\Coordinador.cpp(36,30): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
-C:\Users\ferni\OneDrive\Documentos\GitHub\Los_ewoks\Tablero\src\Coordinador.cpp(37,43): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
-C:\Users\ferni\OneDrive\Documentos\GitHub\Los_ewoks\Tablero\src\Coordinador.cpp(37,35): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
-C:\Users\ferni\OneDrive\Documentos\GitHub\Los_ewoks\Tablero\src\Coordinador.cpp(40,49): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
-C:\Users\ferni\OneDrive\Documentos\GitHub\Los_ewoks\Tablero\src\Coordinador.cpp(40,41): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
-C:\Users\ferni\OneDrive\Documentos\GitHub\Los_ewoks\Tablero\src\Coordinador.cpp(41,42): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
-C:\Users\ferni\OneDrive\Documentos\GitHub\Los_ewoks\Tablero\src\Coordinador.cpp(41,34): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
-C:\Users\ferni\OneDrive\Documentos\GitHub\Los_ewoks\Tablero\src\Coordinador.cpp(42,41): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
-C:\Users\ferni\OneDrive\Documentos\GitHub\Los_ewoks\Tablero\src\Coordinador.cpp(42,33): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
-C:\Users\ferni\OneDrive\Documentos\GitHub\Los_ewoks\Tablero\src\Coordinador.cpp(43,44): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
-C:\Users\ferni\OneDrive\Documentos\GitHub\Los_ewoks\Tablero\src\Coordinador.cpp(43,36): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
-C:\Users\ferni\OneDrive\Documentos\GitHub\Los_ewoks\Tablero\src\Coordinador.cpp(46,42): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
-C:\Users\ferni\OneDrive\Documentos\GitHub\Los_ewoks\Tablero\src\Coordinador.cpp(46,34): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
-C:\Users\ferni\OneDrive\Documentos\GitHub\Los_ewoks\Tablero\src\Coordinador.cpp(47,47): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
-C:\Users\ferni\OneDrive\Documentos\GitHub\Los_ewoks\Tablero\src\Coordinador.cpp(47,39): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
-C:\Users\ferni\OneDrive\Documentos\GitHub\Los_ewoks\Tablero\src\Coordinador.cpp(51,43): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
-C:\Users\ferni\OneDrive\Documentos\GitHub\Los_ewoks\Tablero\src\Coordinador.cpp(51,35): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
-C:\Users\ferni\OneDrive\Documentos\GitHub\Los_ewoks\Tablero\src\Coordinador.cpp(52,43): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
-C:\Users\ferni\OneDrive\Documentos\GitHub\Los_ewoks\Tablero\src\Coordinador.cpp(52,35): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
-C:\Users\ferni\OneDrive\Documentos\GitHub\Los_ewoks\Tablero\src\Coordinador.cpp(53,43): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
-C:\Users\ferni\OneDrive\Documentos\GitHub\Los_ewoks\Tablero\src\Coordinador.cpp(53,35): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
-C:\Users\ferni\OneDrive\Documentos\GitHub\Los_ewoks\Tablero\src\Coordinador.cpp(67,38): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
-C:\Users\ferni\OneDrive\Documentos\GitHub\Los_ewoks\Tablero\src\Coordinador.cpp(67,31): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
-C:\Users\ferni\OneDrive\Documentos\GitHub\Los_ewoks\Tablero\src\Coordinador.cpp(68,61): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
-C:\Users\ferni\OneDrive\Documentos\GitHub\Los_ewoks\Tablero\src\Coordinador.cpp(68,53): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
-C:\Users\ferni\OneDrive\Documentos\GitHub\Los_ewoks\Tablero\src\Coordinador.cpp(74,61): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
-C:\Users\ferni\OneDrive\Documentos\GitHub\Los_ewoks\Tablero\src\Coordinador.cpp(74,53): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
-C:\Users\ferni\OneDrive\Documentos\GitHub\Los_ewoks\Tablero\src\Coordinador.cpp(79,37): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
-C:\Users\ferni\OneDrive\Documentos\GitHub\Los_ewoks\Tablero\src\Coordinador.cpp(79,30): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
-C:\Users\ferni\OneDrive\Documentos\GitHub\Los_ewoks\Tablero\src\Coordinador.cpp(86,39): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
-C:\Users\ferni\OneDrive\Documentos\GitHub\Los_ewoks\Tablero\src\Coordinador.cpp(86,31): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
-C:\Users\ferni\OneDrive\Documentos\GitHub\Los_ewoks\Tablero\src\Coordinador.cpp(92,36): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
-C:\Users\ferni\OneDrive\Documentos\GitHub\Los_ewoks\Tablero\src\Coordinador.cpp(92,28): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
-C:\Users\ferni\OneDrive\Documentos\GitHub\Los_ewoks\Tablero\src\Coordinador.cpp(116,47): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
-C:\Users\ferni\OneDrive\Documentos\GitHub\Los_ewoks\Tablero\src\Coordinador.cpp(116,39): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
-C:\Users\ferni\OneDrive\Documentos\GitHub\Los_ewoks\Tablero\src\Coordinador.cpp(123,40): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
-C:\Users\ferni\OneDrive\Documentos\GitHub\Los_ewoks\Tablero\src\Coordinador.cpp(123,32): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
-C:\Users\ferni\OneDrive\Documentos\GitHub\Los_ewoks\Tablero\src\Coordinador.cpp(130,39): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
-C:\Users\ferni\OneDrive\Documentos\GitHub\Los_ewoks\Tablero\src\Coordinador.cpp(130,31): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
-C:\Users\ferni\OneDrive\Documentos\GitHub\Los_ewoks\Tablero\src\Coordinador.cpp(137,42): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
-C:\Users\ferni\OneDrive\Documentos\GitHub\Los_ewoks\Tablero\src\Coordinador.cpp(137,34): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
-C:\Users\ferni\OneDrive\Documentos\GitHub\Los_ewoks\Tablero\src\Coordinador.cpp(153,40): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
-C:\Users\ferni\OneDrive\Documentos\GitHub\Los_ewoks\Tablero\src\Coordinador.cpp(153,32): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
-C:\Users\ferni\OneDrive\Documentos\GitHub\Los_ewoks\Tablero\src\Coordinador.cpp(159,45): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
-C:\Users\ferni\OneDrive\Documentos\GitHub\Los_ewoks\Tablero\src\Coordinador.cpp(159,37): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
-  Imagen.cpp
-  Movimiento.cpp
-C:\Users\ferni\OneDrive\Documentos\GitHub\Los_ewoks\Tablero\src\Piezas.h(20,14): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
-  (compilando archivo de origen "src/Movimiento.cpp")
-  
-C:\Users\ferni\OneDrive\Documentos\GitHub\Los_ewoks\Tablero\src\Piezas.h(21,15): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
-  (compilando archivo de origen "src/Movimiento.cpp")
-  
-C:\Users\ferni\OneDrive\Documentos\GitHub\Los_ewoks\Tablero\src\Piezas.h(21,31): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
-  (compilando archivo de origen "src/Movimiento.cpp")
-  
-C:\Users\ferni\OneDrive\Documentos\GitHub\Los_ewoks\Tablero\src\Piezas.h(23,15): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
-  (compilando archivo de origen "src/Movimiento.cpp")
-  
-C:\Users\ferni\OneDrive\Documentos\GitHub\Los_ewoks\Tablero\src\Piezas.h(24,15): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
-  (compilando archivo de origen "src/Movimiento.cpp")
-  
-C:\Users\ferni\OneDrive\Documentos\GitHub\Los_ewoks\Tablero\src\Piezas.h(24,31): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
-  (compilando archivo de origen "src/Movimiento.cpp")
-  
-  Peon.cpp
-C:\Users\ferni\OneDrive\Documentos\GitHub\Los_ewoks\Tablero\src\Piezas.h(20,14): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
-  (compilando archivo de origen "src/Peon.cpp")
-  
-C:\Users\ferni\OneDrive\Documentos\GitHub\Los_ewoks\Tablero\src\Piezas.h(21,15): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
-  (compilando archivo de origen "src/Peon.cpp")
-  
-C:\Users\ferni\OneDrive\Documentos\GitHub\Los_ewoks\Tablero\src\Piezas.h(21,31): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
-  (compilando archivo de origen "src/Peon.cpp")
-  
-C:\Users\ferni\OneDrive\Documentos\GitHub\Los_ewoks\Tablero\src\Piezas.h(23,15): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
-  (compilando archivo de origen "src/Peon.cpp")
-  
-C:\Users\ferni\OneDrive\Documentos\GitHub\Los_ewoks\Tablero\src\Piezas.h(24,15): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
-  (compilando archivo de origen "src/Peon.cpp")
-  
-C:\Users\ferni\OneDrive\Documentos\GitHub\Los_ewoks\Tablero\src\Piezas.h(24,31): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
-  (compilando archivo de origen "src/Peon.cpp")
-  
-  Piezas.cpp
-C:\Users\ferni\OneDrive\Documentos\GitHub\Los_ewoks\Tablero\src\Piezas.h(20,14): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
-  (compilando archivo de origen "src/Piezas.cpp")
-  
-C:\Users\ferni\OneDrive\Documentos\GitHub\Los_ewoks\Tablero\src\Piezas.h(21,15): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
-  (compilando archivo de origen "src/Piezas.cpp")
-  
-C:\Users\ferni\OneDrive\Documentos\GitHub\Los_ewoks\Tablero\src\Piezas.h(21,31): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
-  (compilando archivo de origen "src/Piezas.cpp")
-  
-C:\Users\ferni\OneDrive\Documentos\GitHub\Los_ewoks\Tablero\src\Piezas.h(23,15): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
-  (compilando archivo de origen "src/Piezas.cpp")
-  
-C:\Users\ferni\OneDrive\Documentos\GitHub\Los_ewoks\Tablero\src\Piezas.h(24,15): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
-  (compilando archivo de origen "src/Piezas.cpp")
-  
-C:\Users\ferni\OneDrive\Documentos\GitHub\Los_ewoks\Tablero\src\Piezas.h(24,31): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
-  (compilando archivo de origen "src/Piezas.cpp")
-  
-  Reina.cpp
-C:\Users\ferni\OneDrive\Documentos\GitHub\Los_ewoks\Tablero\src\Piezas.h(20,14): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
-  (compilando archivo de origen "src/Reina.cpp")
-  
-C:\Users\ferni\OneDrive\Documentos\GitHub\Los_ewoks\Tablero\src\Piezas.h(21,15): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
-  (compilando archivo de origen "src/Reina.cpp")
-  
-C:\Users\ferni\OneDrive\Documentos\GitHub\Los_ewoks\Tablero\src\Piezas.h(21,31): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
-  (compilando archivo de origen "src/Reina.cpp")
-  
-C:\Users\ferni\OneDrive\Documentos\GitHub\Los_ewoks\Tablero\src\Piezas.h(23,15): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
-  (compilando archivo de origen "src/Reina.cpp")
-  
-C:\Users\ferni\OneDrive\Documentos\GitHub\Los_ewoks\Tablero\src\Piezas.h(24,15): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
-  (compilando archivo de origen "src/Reina.cpp")
-  
-C:\Users\ferni\OneDrive\Documentos\GitHub\Los_ewoks\Tablero\src\Piezas.h(24,31): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
-  (compilando archivo de origen "src/Reina.cpp")
-  
-  Rey.cpp
-C:\Users\ferni\OneDrive\Documentos\GitHub\Los_ewoks\Tablero\src\Piezas.h(20,14): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
-  (compilando archivo de origen "src/Rey.cpp")
-  
-C:\Users\ferni\OneDrive\Documentos\GitHub\Los_ewoks\Tablero\src\Piezas.h(21,15): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
-  (compilando archivo de origen "src/Rey.cpp")
-  
-C:\Users\ferni\OneDrive\Documentos\GitHub\Los_ewoks\Tablero\src\Piezas.h(21,31): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
-  (compilando archivo de origen "src/Rey.cpp")
-  
-C:\Users\ferni\OneDrive\Documentos\GitHub\Los_ewoks\Tablero\src\Piezas.h(23,15): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
-  (compilando archivo de origen "src/Rey.cpp")
-  
-C:\Users\ferni\OneDrive\Documentos\GitHub\Los_ewoks\Tablero\src\Piezas.h(24,15): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
-  (compilando archivo de origen "src/Rey.cpp")
-  
-C:\Users\ferni\OneDrive\Documentos\GitHub\Los_ewoks\Tablero\src\Piezas.h(24,31): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
-  (compilando archivo de origen "src/Rey.cpp")
-  
-  Tablero.cpp
-C:\Users\ferni\OneDrive\Documentos\GitHub\Los_ewoks\Tablero\src\Piezas.h(20,14): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
-  (compilando archivo de origen "src/Tablero.cpp")
-  
-C:\Users\ferni\OneDrive\Documentos\GitHub\Los_ewoks\Tablero\src\Piezas.h(21,15): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
-  (compilando archivo de origen "src/Tablero.cpp")
-  
-C:\Users\ferni\OneDrive\Documentos\GitHub\Los_ewoks\Tablero\src\Piezas.h(21,31): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
-  (compilando archivo de origen "src/Tablero.cpp")
-  
-C:\Users\ferni\OneDrive\Documentos\GitHub\Los_ewoks\Tablero\src\Piezas.h(23,15): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
-  (compilando archivo de origen "src/Tablero.cpp")
-  
-C:\Users\ferni\OneDrive\Documentos\GitHub\Los_ewoks\Tablero\src\Piezas.h(24,15): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
-  (compilando archivo de origen "src/Tablero.cpp")
-  
-C:\Users\ferni\OneDrive\Documentos\GitHub\Los_ewoks\Tablero\src\Piezas.h(24,31): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
-  (compilando archivo de origen "src/Tablero.cpp")
-  
-  Torre.cpp
-C:\Users\ferni\OneDrive\Documentos\GitHub\Los_ewoks\Tablero\src\Piezas.h(20,14): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
-  (compilando archivo de origen "src/Torre.cpp")
-  
-C:\Users\ferni\OneDrive\Documentos\GitHub\Los_ewoks\Tablero\src\Piezas.h(21,15): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
-  (compilando archivo de origen "src/Torre.cpp")
-  
-C:\Users\ferni\OneDrive\Documentos\GitHub\Los_ewoks\Tablero\src\Piezas.h(21,31): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
-  (compilando archivo de origen "src/Torre.cpp")
-  
-C:\Users\ferni\OneDrive\Documentos\GitHub\Los_ewoks\Tablero\src\Piezas.h(23,15): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
-  (compilando archivo de origen "src/Torre.cpp")
-  
-C:\Users\ferni\OneDrive\Documentos\GitHub\Los_ewoks\Tablero\src\Piezas.h(24,15): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
-  (compilando archivo de origen "src/Torre.cpp")
-  
-C:\Users\ferni\OneDrive\Documentos\GitHub\Los_ewoks\Tablero\src\Piezas.h(24,31): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
-  (compilando archivo de origen "src/Torre.cpp")
-  
-  Vineta.cpp
-C:\Users\ferni\OneDrive\Documentos\GitHub\Los_ewoks\Tablero\src\Vineta.cpp(10,129): warning C4305: 'argumento': truncamiento de 'double' a 'float'
-C:\Users\ferni\OneDrive\Documentos\GitHub\Los_ewoks\Tablero\src\Vineta.cpp(59,51): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
-C:\Users\ferni\OneDrive\Documentos\GitHub\Los_ewoks\Tablero\src\Vineta.cpp(59,40): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
-  Generando código...
-C:\Users\ferni\OneDrive\Documentos\GitHub\Los_ewoks\Tablero\src\Peon.cpp(96,1): warning C4715: 'Peon::comprobarMov': no todas las rutas de acceso de control devuelven un valor
-C:\Users\ferni\OneDrive\Documentos\GitHub\Los_ewoks\Tablero\src\Casilla.cpp(63,1): warning C4715: 'Casilla::getcolor': no todas las rutas de acceso de control devuelven un valor
-  Pang.vcxproj -> C:\Users\ferni\OneDrive\Documentos\GitHub\Los_ewoks\Tablero\bin\Pang.exe
+C:\Users\ferni\OneDrive\Documentos\universidad\cuarto\info\trabajo\arnaiz2.0\Tablero\src\Coordinador.cpp(28,41): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
+C:\Users\ferni\OneDrive\Documentos\universidad\cuarto\info\trabajo\arnaiz2.0\Tablero\src\Coordinador.cpp(28,33): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
+C:\Users\ferni\OneDrive\Documentos\universidad\cuarto\info\trabajo\arnaiz2.0\Tablero\src\Coordinador.cpp(29,40): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
+C:\Users\ferni\OneDrive\Documentos\universidad\cuarto\info\trabajo\arnaiz2.0\Tablero\src\Coordinador.cpp(29,32): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
+C:\Users\ferni\OneDrive\Documentos\universidad\cuarto\info\trabajo\arnaiz2.0\Tablero\src\Coordinador.cpp(30,44): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
+C:\Users\ferni\OneDrive\Documentos\universidad\cuarto\info\trabajo\arnaiz2.0\Tablero\src\Coordinador.cpp(30,36): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
+C:\Users\ferni\OneDrive\Documentos\universidad\cuarto\info\trabajo\arnaiz2.0\Tablero\src\Coordinador.cpp(31,45): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
+C:\Users\ferni\OneDrive\Documentos\universidad\cuarto\info\trabajo\arnaiz2.0\Tablero\src\Coordinador.cpp(31,37): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
+C:\Users\ferni\OneDrive\Documentos\universidad\cuarto\info\trabajo\arnaiz2.0\Tablero\src\Coordinador.cpp(35,41): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
+C:\Users\ferni\OneDrive\Documentos\universidad\cuarto\info\trabajo\arnaiz2.0\Tablero\src\Coordinador.cpp(35,33): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
+C:\Users\ferni\OneDrive\Documentos\universidad\cuarto\info\trabajo\arnaiz2.0\Tablero\src\Coordinador.cpp(36,38): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
+C:\Users\ferni\OneDrive\Documentos\universidad\cuarto\info\trabajo\arnaiz2.0\Tablero\src\Coordinador.cpp(36,30): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
+C:\Users\ferni\OneDrive\Documentos\universidad\cuarto\info\trabajo\arnaiz2.0\Tablero\src\Coordinador.cpp(37,43): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
+C:\Users\ferni\OneDrive\Documentos\universidad\cuarto\info\trabajo\arnaiz2.0\Tablero\src\Coordinador.cpp(37,35): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
+C:\Users\ferni\OneDrive\Documentos\universidad\cuarto\info\trabajo\arnaiz2.0\Tablero\src\Coordinador.cpp(40,49): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
+C:\Users\ferni\OneDrive\Documentos\universidad\cuarto\info\trabajo\arnaiz2.0\Tablero\src\Coordinador.cpp(40,41): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
+C:\Users\ferni\OneDrive\Documentos\universidad\cuarto\info\trabajo\arnaiz2.0\Tablero\src\Coordinador.cpp(41,42): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
+C:\Users\ferni\OneDrive\Documentos\universidad\cuarto\info\trabajo\arnaiz2.0\Tablero\src\Coordinador.cpp(41,34): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
+C:\Users\ferni\OneDrive\Documentos\universidad\cuarto\info\trabajo\arnaiz2.0\Tablero\src\Coordinador.cpp(42,41): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
+C:\Users\ferni\OneDrive\Documentos\universidad\cuarto\info\trabajo\arnaiz2.0\Tablero\src\Coordinador.cpp(42,33): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
+C:\Users\ferni\OneDrive\Documentos\universidad\cuarto\info\trabajo\arnaiz2.0\Tablero\src\Coordinador.cpp(43,44): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
+C:\Users\ferni\OneDrive\Documentos\universidad\cuarto\info\trabajo\arnaiz2.0\Tablero\src\Coordinador.cpp(43,36): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
+C:\Users\ferni\OneDrive\Documentos\universidad\cuarto\info\trabajo\arnaiz2.0\Tablero\src\Coordinador.cpp(46,42): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
+C:\Users\ferni\OneDrive\Documentos\universidad\cuarto\info\trabajo\arnaiz2.0\Tablero\src\Coordinador.cpp(46,34): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
+C:\Users\ferni\OneDrive\Documentos\universidad\cuarto\info\trabajo\arnaiz2.0\Tablero\src\Coordinador.cpp(47,47): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
+C:\Users\ferni\OneDrive\Documentos\universidad\cuarto\info\trabajo\arnaiz2.0\Tablero\src\Coordinador.cpp(47,39): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
+C:\Users\ferni\OneDrive\Documentos\universidad\cuarto\info\trabajo\arnaiz2.0\Tablero\src\Coordinador.cpp(51,43): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
+C:\Users\ferni\OneDrive\Documentos\universidad\cuarto\info\trabajo\arnaiz2.0\Tablero\src\Coordinador.cpp(51,35): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
+C:\Users\ferni\OneDrive\Documentos\universidad\cuarto\info\trabajo\arnaiz2.0\Tablero\src\Coordinador.cpp(52,43): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
+C:\Users\ferni\OneDrive\Documentos\universidad\cuarto\info\trabajo\arnaiz2.0\Tablero\src\Coordinador.cpp(52,35): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
+C:\Users\ferni\OneDrive\Documentos\universidad\cuarto\info\trabajo\arnaiz2.0\Tablero\src\Coordinador.cpp(53,43): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
+C:\Users\ferni\OneDrive\Documentos\universidad\cuarto\info\trabajo\arnaiz2.0\Tablero\src\Coordinador.cpp(53,35): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
+C:\Users\ferni\OneDrive\Documentos\universidad\cuarto\info\trabajo\arnaiz2.0\Tablero\src\Coordinador.cpp(67,38): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
+C:\Users\ferni\OneDrive\Documentos\universidad\cuarto\info\trabajo\arnaiz2.0\Tablero\src\Coordinador.cpp(67,31): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
+C:\Users\ferni\OneDrive\Documentos\universidad\cuarto\info\trabajo\arnaiz2.0\Tablero\src\Coordinador.cpp(68,61): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
+C:\Users\ferni\OneDrive\Documentos\universidad\cuarto\info\trabajo\arnaiz2.0\Tablero\src\Coordinador.cpp(68,53): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
+C:\Users\ferni\OneDrive\Documentos\universidad\cuarto\info\trabajo\arnaiz2.0\Tablero\src\Coordinador.cpp(74,61): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
+C:\Users\ferni\OneDrive\Documentos\universidad\cuarto\info\trabajo\arnaiz2.0\Tablero\src\Coordinador.cpp(74,53): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
+C:\Users\ferni\OneDrive\Documentos\universidad\cuarto\info\trabajo\arnaiz2.0\Tablero\src\Coordinador.cpp(79,37): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
+C:\Users\ferni\OneDrive\Documentos\universidad\cuarto\info\trabajo\arnaiz2.0\Tablero\src\Coordinador.cpp(79,30): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
+C:\Users\ferni\OneDrive\Documentos\universidad\cuarto\info\trabajo\arnaiz2.0\Tablero\src\Coordinador.cpp(86,39): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
+C:\Users\ferni\OneDrive\Documentos\universidad\cuarto\info\trabajo\arnaiz2.0\Tablero\src\Coordinador.cpp(86,31): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
+C:\Users\ferni\OneDrive\Documentos\universidad\cuarto\info\trabajo\arnaiz2.0\Tablero\src\Coordinador.cpp(92,36): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
+C:\Users\ferni\OneDrive\Documentos\universidad\cuarto\info\trabajo\arnaiz2.0\Tablero\src\Coordinador.cpp(92,28): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
+C:\Users\ferni\OneDrive\Documentos\universidad\cuarto\info\trabajo\arnaiz2.0\Tablero\src\Coordinador.cpp(116,47): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
+C:\Users\ferni\OneDrive\Documentos\universidad\cuarto\info\trabajo\arnaiz2.0\Tablero\src\Coordinador.cpp(116,39): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
+C:\Users\ferni\OneDrive\Documentos\universidad\cuarto\info\trabajo\arnaiz2.0\Tablero\src\Coordinador.cpp(123,40): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
+C:\Users\ferni\OneDrive\Documentos\universidad\cuarto\info\trabajo\arnaiz2.0\Tablero\src\Coordinador.cpp(123,32): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
+C:\Users\ferni\OneDrive\Documentos\universidad\cuarto\info\trabajo\arnaiz2.0\Tablero\src\Coordinador.cpp(130,39): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
+C:\Users\ferni\OneDrive\Documentos\universidad\cuarto\info\trabajo\arnaiz2.0\Tablero\src\Coordinador.cpp(130,31): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
+C:\Users\ferni\OneDrive\Documentos\universidad\cuarto\info\trabajo\arnaiz2.0\Tablero\src\Coordinador.cpp(137,42): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
+C:\Users\ferni\OneDrive\Documentos\universidad\cuarto\info\trabajo\arnaiz2.0\Tablero\src\Coordinador.cpp(137,34): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
+C:\Users\ferni\OneDrive\Documentos\universidad\cuarto\info\trabajo\arnaiz2.0\Tablero\src\Coordinador.cpp(153,40): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
+C:\Users\ferni\OneDrive\Documentos\universidad\cuarto\info\trabajo\arnaiz2.0\Tablero\src\Coordinador.cpp(153,32): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
+C:\Users\ferni\OneDrive\Documentos\universidad\cuarto\info\trabajo\arnaiz2.0\Tablero\src\Coordinador.cpp(159,45): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
+C:\Users\ferni\OneDrive\Documentos\universidad\cuarto\info\trabajo\arnaiz2.0\Tablero\src\Coordinador.cpp(159,37): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
+  Pang.vcxproj -> C:\Users\ferni\OneDrive\Documentos\universidad\cuarto\info\trabajo\arnaiz2.0\Tablero\bin\Pang.exe

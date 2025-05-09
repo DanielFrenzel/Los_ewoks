@@ -5,9 +5,8 @@ void Vineta::dibujar()
 {
     
 	vineta.draw();
-    tablero.draw();
     fondo.draw();    
-    mostrarTextoAnimado("Peones y torres moverás, joven padawan. Pero recordar\n debes : la mente, tu arma más poderosa es.", 0.1, -15, -18);
+    mostrarTextoAnimado("PARA MÍ, EL ALIADO ES LA FUERZA, Y ES UN PODEROSO ALIADO.\nLA VIDA LA CREA Y LA HACE CRECER, Y SU ENERGÍA\nNOS RODEA Y NOS UNE.\nNOSOTROS DOS, SERES LUMINOSOS SOMOS, TÚ ERES LA MATERIA\nBRUTA. Y DEBES SENTIR LA FUERZA A TU ALREDEDOR,\nAQUÍ, ENTRE TÚ Y YO.\n¿SÍ?, EL ÁRBOL, LA ROCA, POR TODAS PARTES, ¿SÍ?\nINCLUSO ENTRE LA TIERRA Y LA NAVE.", 0.02, -13, -14);
    
     
 }
@@ -17,7 +16,7 @@ void Vineta::mostrarTextoAnimado(const std::string& texto, float deltaTiempo, fl
     // Si es un texto nuevo, inicializa las variables
     if (textoCompleto != texto)
     {
-        playMusica("sonidos/Sonido_Yoda.mp3", true);
+        playMusica("sonidos/Sonido_Yoda.mp3", false);
         textoCompleto = texto;
         textoMostrado = "";
         indiceTexto = 0;
@@ -39,7 +38,6 @@ void Vineta::mostrarTextoAnimado(const std::string& texto, float deltaTiempo, fl
 
         if (indiceTexto >= textoCompleto.size())
         {
-            playMusica("sonidos/Sonido_Yoda.mp3", false);
             textoTerminado = true;
         }
     }
@@ -48,14 +46,14 @@ void Vineta::mostrarTextoAnimado(const std::string& texto, float deltaTiempo, fl
     std::istringstream ss(textoMostrado);
     std::string linea;
     float desplazamientoY = 0.0f;
-    const float saltoLinea = 3.0f;  // Ajusta según el tamaño de la fuente
+    const float saltoLinea = 1.75f;  // Ajusta según el tamaño de la fuente
 
     
 
     while (std::getline(ss, linea, '\n'))
     {
         ETSIDI::setTextColor(255, 255, 0);  // Blanco
-        ETSIDI::setFont("fuentes/STARWARS.ttf", 24);
+        ETSIDI::setFont("fuentes/STARWARS.ttf", 16);
         ETSIDI::printxy(linea.c_str(), posX, posY - desplazamientoY);
         desplazamientoY += saltoLinea;  // Baja una línea para la siguiente
     }

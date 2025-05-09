@@ -368,7 +368,7 @@ void Coordinador::musica()
 	}
 	else if (estado != CREDITOS && musica_actual != 0)
 	{
-		playMusica("sonidos/Musica1_25.mp3", true);
+		playMusica("sonidos/Musica1_100.mp3", true);
 		musica_actual = 0;
 	}
 
@@ -428,7 +428,8 @@ void Coordinador::dibuja()
 	}
 
 	if (estado == DUELO) {
-
+		stopMusica();
+		playMusica("sonidos/Musica1_100.mp3", true);
 		tablero.dibuja();
 		
 	}
