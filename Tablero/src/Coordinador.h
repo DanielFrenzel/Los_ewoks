@@ -20,12 +20,7 @@ private:
 	//General--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 	Sprite Estrella{ "imagenes/inicio/ESTRELLA.png", 0, 0, 20, 25 };
 	Sprite MenuInicial{ "imagenes/inicio/MENU4.png", 0, 0, 96, 64 };
-	/*
-	Sprite BotonSonido{ "imagenes/inicio/BOTON_ALTAVOZ.png", 0, 0, 5, 5 };
-	Sprite BotonSonido1_5{ "imagenes/inicio/BOTON_ALTAVOZ1.5.png", 0, 0, 5, 5 };
-	Sprite BotonSonido2{ "imagenes/inicio/BOTON_ALTAVOZ2.png", 0, 0, 5, 5 };
-	Sprite BotonSonido2_5{ "imagenes/inicio/BOTON_ALTAVOZ2.5.png", 0, 0, 5, 5 };
-	*/
+
 	Sprite BotonInterrogacion{ "imagenes/inicio/BOTON_INTERROGACION.png", 0, 0, 20, 20 };
 	Sprite BotonInterrogacion2{ "imagenes/inicio/BOTON_INTERROGACION2.png", 0, 0, 20, 20 };
 
@@ -45,8 +40,10 @@ private:
 	//viñeta
 	//Sprite vineta{ "imagenes/vineta.png", -4,3,70,75 };
 	
+	//Biomas
+	Sprite recuadroBioma{ "imagenes/recuadro_biomas3.png", 0, 0, 10, 9 };
 protected:
-	enum Estado { INICIO, DUELO, IA, AJUSTES, SONIDO, MUSICA, AYUDA, CREDITOS, NORMAS, MOVIMIENTOS, VINETA };
+	enum Estado { INICIO, DUELO, BIOMA, AJUSTES, SONIDO, MUSICA, AYUDA, CREDITOS, NORMAS, MOVIMIENTOS, VINETA };
 
 private:
 	Estado estado;
@@ -56,11 +53,15 @@ private:
 	Boton botonAtras{ "imagenes/inicio/BOTON_ATRAS.png", "imagenes/inicio/BOTON_ATRAS2.png", 4, 4 };
 	Boton botonAltavozON{ "imagenes/inicio/BOTON_ALTAVOZ.png", "imagenes/inicio/BOTON_ALTAVOZ1.5.png", 5, 5 };
 	Boton botonAltavozOFF{ "imagenes/inicio/BOTON_ALTAVOZ2.png", "imagenes/inicio/BOTON_ALTAVOZ2.5.png", 5, 5 };
-
 	//Inicio
 	Boton botonDuelo{ "imagenes/inicio/BOTON_DUELO.png", "imagenes/inicio/BOTON_DUELO2.png", 15, 15 };
-	Boton botonIA{ "imagenes/inicio/BOTON_IA.png", "imagenes/inicio/BOTON_IA2.png", 15, 15 };
+	Boton botonBioma{ "imagenes/inicio/BOTON_BIOMA.png", "imagenes/inicio/BOTON_BIOMA2.png", 15, 15 };
 	Boton botonAjustes{ "imagenes/inicio/BOTON_AJUSTES.png", "imagenes/inicio/BOTON_AJUSTES2.png", 15, 15 };
+	//Bioma
+	Boton botonMapa1{ "imagenes/Tablero_Fondo_Hoch.png", "imagenes/Tablero_Fondo_Hoch2.png", 10, 9 };
+	Boton botonMapa2{ "imagenes/Fondo_tablero_Tatooine.png", "imagenes/Fondo_tablero_Tatooine2.png", 10, 9 };
+	Boton botonMapa3{ "imagenes/Fondo_tablero_sorgan.png", "imagenes/Fondo_tablero_sorgan2.png",  10, 9 };
+	Boton botonMapa4{ "imagenes/Tablero_Fondo_Hoch.png", "imagenes/Tablero_Fondo_Hoch2.png",  10, 9 };
 	//Ajustes
 	Boton botonSonidoGeneral{ "imagenes/inicio/BOTON_SONIDO.png", "imagenes/inicio/BOTON_SONIDO2.png", 15, 15 };
 	Boton botonMusica{ "imagenes/inicio/BOTON_MUSICA.png", "imagenes/inicio/BOTON_MUSICA2.png", 15, 15 };
@@ -77,6 +78,7 @@ private:
 
 		
 private:
+	int mapaSeleccionado = 1;
 	Tablero tablero;	//Creamos matriz de casillas
 	Vineta vineta;
 	int ficha;
@@ -132,7 +134,13 @@ private:
 	  "sonidos/Musica175.mp3",
 	  "sonidos/Musica1100.mp3",
 	};
-
+	//Array para fondos
+	std::string rutasFondo[4] = {
+	  "imagenes/Tablero_Fondo_Hoch.png",
+	  "imagenes/Fondo_tablero_Tatooine.png.png",
+	  "imagenes/Fondo_tablero_Sorgan.png.png",
+	  "imagenes/Tablero_Fondo_Hoch.png",
+	};
 	vector <Estado> memoria_Estado;
 	
 public:

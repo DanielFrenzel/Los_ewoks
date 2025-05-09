@@ -1,110 +1,110 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\ferni\\OneDrive\\Documentos\\universidad\\cuarto\\info\\trabajo\\arnaiz2.0\\Tablero\\",
+  "WorkspaceRootPath": "C:\\Users\\david\\Documents\\Universidad\\Info2\\TrabajoDavid\\Yoda charla\\Tablero\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{E575FADE-B6EB-4154-A1ED-8067A12EAE98}|Pang.vcxproj|C:\\Users\\ferni\\OneDrive\\Documentos\\universidad\\cuarto\\info\\trabajo\\arnaiz2.0\\Tablero\\src\\Tablero.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{E575FADE-B6EB-4154-A1ED-8067A12EAE98}|Pang.vcxproj|solutionrelative:src\\Tablero.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E575FADE-B6EB-4154-A1ED-8067A12EAE98}|Pang.vcxproj|C:\\Users\\ferni\\OneDrive\\Documentos\\universidad\\cuarto\\info\\trabajo\\arnaiz2.0\\Tablero\\src\\Torre.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{E575FADE-B6EB-4154-A1ED-8067A12EAE98}|Pang.vcxproj|solutionrelative:src\\Torre.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E575FADE-B6EB-4154-A1ED-8067A12EAE98}|Pang.vcxproj|C:\\Users\\ferni\\OneDrive\\Documentos\\universidad\\cuarto\\info\\trabajo\\arnaiz2.0\\Tablero\\src\\Ajedrez.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{E575FADE-B6EB-4154-A1ED-8067A12EAE98}|Pang.vcxproj|solutionrelative:src\\Ajedrez.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E575FADE-B6EB-4154-A1ED-8067A12EAE98}|Pang.vcxproj|C:\\Users\\ferni\\OneDrive\\Documentos\\universidad\\cuarto\\info\\trabajo\\arnaiz2.0\\Tablero\\src\\Tablero.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{E575FADE-B6EB-4154-A1ED-8067A12EAE98}|Pang.vcxproj|solutionrelative:src\\Tablero.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E575FADE-B6EB-4154-A1ED-8067A12EAE98}|Pang.vcxproj|C:\\Users\\ferni\\OneDrive\\Documentos\\universidad\\cuarto\\info\\trabajo\\arnaiz2.0\\Tablero\\src\\Coordinador.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{E575FADE-B6EB-4154-A1ED-8067A12EAE98}|Pang.vcxproj|solutionrelative:src\\Coordinador.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E575FADE-B6EB-4154-A1ED-8067A12EAE98}|Pang.vcxproj|C:\\Users\\ferni\\OneDrive\\Documentos\\universidad\\cuarto\\info\\trabajo\\arnaiz2.0\\Tablero\\src\\Casilla.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{E575FADE-B6EB-4154-A1ED-8067A12EAE98}|Pang.vcxproj|solutionrelative:src\\Casilla.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E575FADE-B6EB-4154-A1ED-8067A12EAE98}|Pang.vcxproj|C:\\Users\\ferni\\OneDrive\\Documentos\\universidad\\cuarto\\info\\trabajo\\arnaiz2.0\\Tablero\\src\\Vineta.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{E575FADE-B6EB-4154-A1ED-8067A12EAE98}|Pang.vcxproj|solutionrelative:src\\Vineta.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E575FADE-B6EB-4154-A1ED-8067A12EAE98}|Pang.vcxproj|C:\\Users\\ferni\\OneDrive\\Documentos\\universidad\\cuarto\\info\\trabajo\\arnaiz2.0\\Tablero\\src\\Coordinador.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "AbsoluteMoniker": "D:0:0:{E575FADE-B6EB-4154-A1ED-8067A12EAE98}|Pang.vcxproj|C:\\Users\\david\\Documents\\Universidad\\Info2\\TrabajoDavid\\Yoda charla\\Tablero\\src\\Coordinador.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{E575FADE-B6EB-4154-A1ED-8067A12EAE98}|Pang.vcxproj|solutionrelative:src\\Coordinador.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E575FADE-B6EB-4154-A1ED-8067A12EAE98}|Pang.vcxproj|C:\\Users\\ferni\\OneDrive\\Documentos\\universidad\\cuarto\\info\\trabajo\\arnaiz2.0\\Tablero\\src\\Vineta.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "AbsoluteMoniker": "D:0:0:{E575FADE-B6EB-4154-A1ED-8067A12EAE98}|Pang.vcxproj|C:\\Users\\david\\Documents\\Universidad\\Info2\\TrabajoDavid\\Yoda charla\\Tablero\\src\\Coordinador.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{E575FADE-B6EB-4154-A1ED-8067A12EAE98}|Pang.vcxproj|solutionrelative:src\\Coordinador.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E575FADE-B6EB-4154-A1ED-8067A12EAE98}|Pang.vcxproj|C:\\Users\\david\\Documents\\Universidad\\Info2\\TrabajoDavid\\Yoda charla\\Tablero\\src\\Boton.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{E575FADE-B6EB-4154-A1ED-8067A12EAE98}|Pang.vcxproj|solutionrelative:src\\Boton.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E575FADE-B6EB-4154-A1ED-8067A12EAE98}|Pang.vcxproj|C:\\Users\\david\\Documents\\Universidad\\Info2\\TrabajoDavid\\Yoda charla\\Tablero\\src\\Ajedrez.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{E575FADE-B6EB-4154-A1ED-8067A12EAE98}|Pang.vcxproj|solutionrelative:src\\Ajedrez.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E575FADE-B6EB-4154-A1ED-8067A12EAE98}|Pang.vcxproj|C:\\Users\\david\\Documents\\Universidad\\Info2\\TrabajoDavid\\Yoda charla\\Tablero\\src\\Tablero.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{E575FADE-B6EB-4154-A1ED-8067A12EAE98}|Pang.vcxproj|solutionrelative:src\\Tablero.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E575FADE-B6EB-4154-A1ED-8067A12EAE98}|Pang.vcxproj|C:\\Users\\david\\Documents\\Universidad\\Info2\\TrabajoDavid\\Yoda charla\\Tablero\\src\\Torre.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{E575FADE-B6EB-4154-A1ED-8067A12EAE98}|Pang.vcxproj|solutionrelative:src\\Torre.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E575FADE-B6EB-4154-A1ED-8067A12EAE98}|Pang.vcxproj|C:\\Users\\david\\Documents\\Universidad\\Info2\\TrabajoDavid\\Yoda charla\\Tablero\\src\\Tablero.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{E575FADE-B6EB-4154-A1ED-8067A12EAE98}|Pang.vcxproj|solutionrelative:src\\Tablero.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E575FADE-B6EB-4154-A1ED-8067A12EAE98}|Pang.vcxproj|C:\\Users\\david\\Documents\\Universidad\\Info2\\TrabajoDavid\\Yoda charla\\Tablero\\src\\Casilla.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{E575FADE-B6EB-4154-A1ED-8067A12EAE98}|Pang.vcxproj|solutionrelative:src\\Casilla.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E575FADE-B6EB-4154-A1ED-8067A12EAE98}|Pang.vcxproj|C:\\Users\\david\\Documents\\Universidad\\Info2\\TrabajoDavid\\Yoda charla\\Tablero\\src\\Vineta.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{E575FADE-B6EB-4154-A1ED-8067A12EAE98}|Pang.vcxproj|solutionrelative:src\\Vineta.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E575FADE-B6EB-4154-A1ED-8067A12EAE98}|Pang.vcxproj|C:\\Users\\david\\Documents\\Universidad\\Info2\\TrabajoDavid\\Yoda charla\\Tablero\\src\\Vineta.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{E575FADE-B6EB-4154-A1ED-8067A12EAE98}|Pang.vcxproj|solutionrelative:src\\Vineta.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E575FADE-B6EB-4154-A1ED-8067A12EAE98}|Pang.vcxproj|C:\\Users\\ferni\\OneDrive\\Documentos\\universidad\\cuarto\\info\\trabajo\\arnaiz2.0\\Tablero\\src\\Imagen.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "AbsoluteMoniker": "D:0:0:{E575FADE-B6EB-4154-A1ED-8067A12EAE98}|Pang.vcxproj|C:\\Users\\david\\Documents\\Universidad\\Info2\\TrabajoDavid\\Yoda charla\\Tablero\\src\\Imagen.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{E575FADE-B6EB-4154-A1ED-8067A12EAE98}|Pang.vcxproj|solutionrelative:src\\Imagen.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E575FADE-B6EB-4154-A1ED-8067A12EAE98}|Pang.vcxproj|C:\\Users\\ferni\\OneDrive\\Documentos\\universidad\\cuarto\\info\\trabajo\\arnaiz2.0\\Tablero\\src\\Boton.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "AbsoluteMoniker": "D:0:0:{E575FADE-B6EB-4154-A1ED-8067A12EAE98}|Pang.vcxproj|C:\\Users\\david\\Documents\\Universidad\\Info2\\TrabajoDavid\\Yoda charla\\Tablero\\src\\Boton.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{E575FADE-B6EB-4154-A1ED-8067A12EAE98}|Pang.vcxproj|solutionrelative:src\\Boton.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E575FADE-B6EB-4154-A1ED-8067A12EAE98}|Pang.vcxproj|C:\\Users\\ferni\\OneDrive\\Documentos\\universidad\\cuarto\\info\\trabajo\\arnaiz2.0\\Tablero\\src\\Imagen.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "AbsoluteMoniker": "D:0:0:{E575FADE-B6EB-4154-A1ED-8067A12EAE98}|Pang.vcxproj|C:\\Users\\david\\Documents\\Universidad\\Info2\\TrabajoDavid\\Yoda charla\\Tablero\\src\\Imagen.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{E575FADE-B6EB-4154-A1ED-8067A12EAE98}|Pang.vcxproj|solutionrelative:src\\Imagen.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E575FADE-B6EB-4154-A1ED-8067A12EAE98}|Pang.vcxproj|C:\\Users\\ferni\\OneDrive\\Documentos\\universidad\\cuarto\\info\\trabajo\\arnaiz2.0\\Tablero\\src\\Torre.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "AbsoluteMoniker": "D:0:0:{E575FADE-B6EB-4154-A1ED-8067A12EAE98}|Pang.vcxproj|C:\\Users\\david\\Documents\\Universidad\\Info2\\TrabajoDavid\\Yoda charla\\Tablero\\src\\Torre.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{E575FADE-B6EB-4154-A1ED-8067A12EAE98}|Pang.vcxproj|solutionrelative:src\\Torre.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E575FADE-B6EB-4154-A1ED-8067A12EAE98}|Pang.vcxproj|C:\\Users\\ferni\\OneDrive\\Documentos\\universidad\\cuarto\\info\\trabajo\\arnaiz2.0\\Tablero\\src\\Rey.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "AbsoluteMoniker": "D:0:0:{E575FADE-B6EB-4154-A1ED-8067A12EAE98}|Pang.vcxproj|C:\\Users\\david\\Documents\\Universidad\\Info2\\TrabajoDavid\\Yoda charla\\Tablero\\src\\Rey.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{E575FADE-B6EB-4154-A1ED-8067A12EAE98}|Pang.vcxproj|solutionrelative:src\\Rey.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E575FADE-B6EB-4154-A1ED-8067A12EAE98}|Pang.vcxproj|C:\\Users\\ferni\\OneDrive\\Documentos\\universidad\\cuarto\\info\\trabajo\\arnaiz2.0\\Tablero\\src\\Casilla.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "AbsoluteMoniker": "D:0:0:{E575FADE-B6EB-4154-A1ED-8067A12EAE98}|Pang.vcxproj|C:\\Users\\david\\Documents\\Universidad\\Info2\\TrabajoDavid\\Yoda charla\\Tablero\\src\\Casilla.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{E575FADE-B6EB-4154-A1ED-8067A12EAE98}|Pang.vcxproj|solutionrelative:src\\Casilla.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E575FADE-B6EB-4154-A1ED-8067A12EAE98}|Pang.vcxproj|C:\\Users\\ferni\\OneDrive\\Documentos\\universidad\\cuarto\\info\\trabajo\\arnaiz2.0\\Tablero\\src\\Rey.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "AbsoluteMoniker": "D:0:0:{E575FADE-B6EB-4154-A1ED-8067A12EAE98}|Pang.vcxproj|C:\\Users\\david\\Documents\\Universidad\\Info2\\TrabajoDavid\\Yoda charla\\Tablero\\src\\Rey.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{E575FADE-B6EB-4154-A1ED-8067A12EAE98}|Pang.vcxproj|solutionrelative:src\\Rey.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E575FADE-B6EB-4154-A1ED-8067A12EAE98}|Pang.vcxproj|C:\\Users\\ferni\\OneDrive\\Documentos\\universidad\\cuarto\\info\\trabajo\\arnaiz2.0\\Tablero\\src\\Reina.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "AbsoluteMoniker": "D:0:0:{E575FADE-B6EB-4154-A1ED-8067A12EAE98}|Pang.vcxproj|C:\\Users\\david\\Documents\\Universidad\\Info2\\TrabajoDavid\\Yoda charla\\Tablero\\src\\Reina.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{E575FADE-B6EB-4154-A1ED-8067A12EAE98}|Pang.vcxproj|solutionrelative:src\\Reina.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E575FADE-B6EB-4154-A1ED-8067A12EAE98}|Pang.vcxproj|C:\\Users\\ferni\\OneDrive\\Documentos\\universidad\\cuarto\\info\\trabajo\\arnaiz2.0\\Tablero\\src\\Caballo.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "AbsoluteMoniker": "D:0:0:{E575FADE-B6EB-4154-A1ED-8067A12EAE98}|Pang.vcxproj|C:\\Users\\david\\Documents\\Universidad\\Info2\\TrabajoDavid\\Yoda charla\\Tablero\\src\\Caballo.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{E575FADE-B6EB-4154-A1ED-8067A12EAE98}|Pang.vcxproj|solutionrelative:src\\Caballo.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E575FADE-B6EB-4154-A1ED-8067A12EAE98}|Pang.vcxproj|C:\\Users\\ferni\\OneDrive\\Documentos\\universidad\\cuarto\\info\\trabajo\\arnaiz2.0\\Tablero\\src\\Caballo.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "AbsoluteMoniker": "D:0:0:{E575FADE-B6EB-4154-A1ED-8067A12EAE98}|Pang.vcxproj|C:\\Users\\david\\Documents\\Universidad\\Info2\\TrabajoDavid\\Yoda charla\\Tablero\\src\\Caballo.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{E575FADE-B6EB-4154-A1ED-8067A12EAE98}|Pang.vcxproj|solutionrelative:src\\Caballo.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E575FADE-B6EB-4154-A1ED-8067A12EAE98}|Pang.vcxproj|C:\\Users\\ferni\\OneDrive\\Documentos\\universidad\\cuarto\\info\\trabajo\\arnaiz2.0\\Tablero\\src\\Alfil.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "AbsoluteMoniker": "D:0:0:{E575FADE-B6EB-4154-A1ED-8067A12EAE98}|Pang.vcxproj|C:\\Users\\david\\Documents\\Universidad\\Info2\\TrabajoDavid\\Yoda charla\\Tablero\\src\\Alfil.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{E575FADE-B6EB-4154-A1ED-8067A12EAE98}|Pang.vcxproj|solutionrelative:src\\Alfil.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E575FADE-B6EB-4154-A1ED-8067A12EAE98}|Pang.vcxproj|C:\\Users\\ferni\\OneDrive\\Documentos\\universidad\\cuarto\\info\\trabajo\\arnaiz2.0\\Tablero\\src\\Alfil.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "AbsoluteMoniker": "D:0:0:{E575FADE-B6EB-4154-A1ED-8067A12EAE98}|Pang.vcxproj|C:\\Users\\david\\Documents\\Universidad\\Info2\\TrabajoDavid\\Yoda charla\\Tablero\\src\\Alfil.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{E575FADE-B6EB-4154-A1ED-8067A12EAE98}|Pang.vcxproj|solutionrelative:src\\Alfil.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E575FADE-B6EB-4154-A1ED-8067A12EAE98}|Pang.vcxproj|C:\\Users\\ferni\\OneDrive\\Documentos\\universidad\\cuarto\\info\\trabajo\\arnaiz2.0\\Tablero\\src\\Peon.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "AbsoluteMoniker": "D:0:0:{E575FADE-B6EB-4154-A1ED-8067A12EAE98}|Pang.vcxproj|C:\\Users\\david\\Documents\\Universidad\\Info2\\TrabajoDavid\\Yoda charla\\Tablero\\src\\Peon.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{E575FADE-B6EB-4154-A1ED-8067A12EAE98}|Pang.vcxproj|solutionrelative:src\\Peon.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E575FADE-B6EB-4154-A1ED-8067A12EAE98}|Pang.vcxproj|C:\\Users\\ferni\\OneDrive\\Documentos\\universidad\\cuarto\\info\\trabajo\\arnaiz2.0\\Tablero\\src\\Peon.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "AbsoluteMoniker": "D:0:0:{E575FADE-B6EB-4154-A1ED-8067A12EAE98}|Pang.vcxproj|C:\\Users\\david\\Documents\\Universidad\\Info2\\TrabajoDavid\\Yoda charla\\Tablero\\src\\Peon.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{E575FADE-B6EB-4154-A1ED-8067A12EAE98}|Pang.vcxproj|solutionrelative:src\\Peon.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E575FADE-B6EB-4154-A1ED-8067A12EAE98}|Pang.vcxproj|C:\\Users\\ferni\\OneDrive\\Documentos\\universidad\\cuarto\\info\\trabajo\\arnaiz2.0\\Tablero\\src\\Piezas.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "AbsoluteMoniker": "D:0:0:{E575FADE-B6EB-4154-A1ED-8067A12EAE98}|Pang.vcxproj|C:\\Users\\david\\Documents\\Universidad\\Info2\\TrabajoDavid\\Yoda charla\\Tablero\\src\\Piezas.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{E575FADE-B6EB-4154-A1ED-8067A12EAE98}|Pang.vcxproj|solutionrelative:src\\Piezas.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E575FADE-B6EB-4154-A1ED-8067A12EAE98}|Pang.vcxproj|C:\\Users\\ferni\\OneDrive\\Documentos\\universidad\\cuarto\\info\\trabajo\\arnaiz2.0\\Tablero\\src\\Piezas.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "AbsoluteMoniker": "D:0:0:{E575FADE-B6EB-4154-A1ED-8067A12EAE98}|Pang.vcxproj|C:\\Users\\david\\Documents\\Universidad\\Info2\\TrabajoDavid\\Yoda charla\\Tablero\\src\\Piezas.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{E575FADE-B6EB-4154-A1ED-8067A12EAE98}|Pang.vcxproj|solutionrelative:src\\Piezas.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E575FADE-B6EB-4154-A1ED-8067A12EAE98}|Pang.vcxproj|C:\\Users\\ferni\\OneDrive\\Documentos\\universidad\\cuarto\\info\\trabajo\\arnaiz2.0\\Tablero\\src\\Boton.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{E575FADE-B6EB-4154-A1ED-8067A12EAE98}|Pang.vcxproj|solutionrelative:src\\Boton.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
   "DocumentGroupContainers": [
@@ -114,17 +114,17 @@
       "DocumentGroups": [
         {
           "DockedHeight": 200,
-          "SelectedChildIndex": 8,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 1,
               "Title": "Coordinador.cpp",
-              "DocumentMoniker": "C:\\Users\\ferni\\OneDrive\\Documentos\\universidad\\cuarto\\info\\trabajo\\arnaiz2.0\\Tablero\\src\\Coordinador.cpp",
+              "DocumentMoniker": "C:\\Users\\david\\Documents\\Universidad\\Info2\\TrabajoDavid\\Yoda charla\\Tablero\\src\\Coordinador.cpp",
               "RelativeDocumentMoniker": "src\\Coordinador.cpp",
-              "ToolTip": "C:\\Users\\ferni\\OneDrive\\Documentos\\universidad\\cuarto\\info\\trabajo\\arnaiz2.0\\Tablero\\src\\Coordinador.cpp",
+              "ToolTip": "C:\\Users\\david\\Documents\\Universidad\\Info2\\TrabajoDavid\\Yoda charla\\Tablero\\src\\Coordinador.cpp",
               "RelativeToolTip": "src\\Coordinador.cpp",
-              "ViewState": "AgIAAKEBAAAAAAAAAAAAALEBAAACAAAAAAAAAA==",
+              "ViewState": "AgIAADsAAAAAAAAAAAAYwEUAAAADAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2025-04-22T11:01:08.302Z",
               "IsPinned": true,
@@ -132,26 +132,27 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 0,
               "Title": "Coordinador.h",
-              "DocumentMoniker": "C:\\Users\\ferni\\OneDrive\\Documentos\\universidad\\cuarto\\info\\trabajo\\arnaiz2.0\\Tablero\\src\\Coordinador.h",
+              "DocumentMoniker": "C:\\Users\\david\\Documents\\Universidad\\Info2\\TrabajoDavid\\Yoda charla\\Tablero\\src\\Coordinador.h",
               "RelativeDocumentMoniker": "src\\Coordinador.h",
-              "ToolTip": "C:\\Users\\ferni\\OneDrive\\Documentos\\universidad\\cuarto\\info\\trabajo\\arnaiz2.0\\Tablero\\src\\Coordinador.h",
+              "ToolTip": "C:\\Users\\david\\Documents\\Universidad\\Info2\\TrabajoDavid\\Yoda charla\\Tablero\\src\\Coordinador.h",
               "RelativeToolTip": "src\\Coordinador.h",
-              "ViewState": "AgIAAG8AAAAAAAAAAAAAAJ0AAAAVAAAAAAAAAA==",
+              "ViewState": "AgIAAHwAAAAAAAAAAAAYwIwAAAAhAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2025-04-22T10:59:33.868Z",
-              "IsPinned": true
+              "IsPinned": true,
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "Ajedrez.cpp",
-              "DocumentMoniker": "C:\\Users\\ferni\\OneDrive\\Documentos\\universidad\\cuarto\\info\\trabajo\\arnaiz2.0\\Tablero\\src\\Ajedrez.cpp",
+              "DocumentMoniker": "C:\\Users\\david\\Documents\\Universidad\\Info2\\TrabajoDavid\\Yoda charla\\Tablero\\src\\Ajedrez.cpp",
               "RelativeDocumentMoniker": "src\\Ajedrez.cpp",
-              "ToolTip": "C:\\Users\\ferni\\OneDrive\\Documentos\\universidad\\cuarto\\info\\trabajo\\arnaiz2.0\\Tablero\\src\\Ajedrez.cpp",
+              "ToolTip": "C:\\Users\\david\\Documents\\Universidad\\Info2\\TrabajoDavid\\Yoda charla\\Tablero\\src\\Ajedrez.cpp",
               "RelativeToolTip": "src\\Ajedrez.cpp",
-              "ViewState": "AgIAAAwAAAAAAAAAAAAAACYAAAAeAAAAAAAAAA==",
+              "ViewState": "AgIAAG8AAAAAAAAAAAAAACYAAAAeAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2025-03-21T18:35:52.092Z",
               "IsPinned": true,
@@ -159,11 +160,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 11,
               "Title": "Boton.cpp",
-              "DocumentMoniker": "C:\\Users\\ferni\\OneDrive\\Documentos\\universidad\\cuarto\\info\\trabajo\\arnaiz2.0\\Tablero\\src\\Boton.cpp",
+              "DocumentMoniker": "C:\\Users\\david\\Documents\\Universidad\\Info2\\TrabajoDavid\\Yoda charla\\Tablero\\src\\Boton.cpp",
               "RelativeDocumentMoniker": "src\\Boton.cpp",
-              "ToolTip": "C:\\Users\\ferni\\OneDrive\\Documentos\\universidad\\cuarto\\info\\trabajo\\arnaiz2.0\\Tablero\\src\\Boton.cpp",
+              "ToolTip": "C:\\Users\\david\\Documents\\Universidad\\Info2\\TrabajoDavid\\Yoda charla\\Tablero\\src\\Boton.cpp",
               "RelativeToolTip": "src\\Boton.cpp",
               "ViewState": "AgIAAAYAAAAAAAAAAAAAACoAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
@@ -172,24 +173,29 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 2,
               "Title": "Boton.h",
-              "DocumentMoniker": "C:\\Users\\ferni\\OneDrive\\Documentos\\universidad\\cuarto\\info\\trabajo\\arnaiz2.0\\Tablero\\src\\Boton.h",
+              "DocumentMoniker": "C:\\Users\\david\\Documents\\Universidad\\Info2\\TrabajoDavid\\Yoda charla\\Tablero\\src\\Boton.h",
               "RelativeDocumentMoniker": "src\\Boton.h",
-              "ToolTip": "C:\\Users\\ferni\\OneDrive\\Documentos\\universidad\\cuarto\\info\\trabajo\\arnaiz2.0\\Tablero\\src\\Boton.h",
+              "ToolTip": "C:\\Users\\david\\Documents\\Universidad\\Info2\\TrabajoDavid\\Yoda charla\\Tablero\\src\\Boton.h",
               "RelativeToolTip": "src\\Boton.h",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAABUAAAAxAAAAAAAAAA==",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABoAAAAhAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2025-05-08T16:03:30.481Z",
-              "IsPinned": true
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 9,
               "Title": "Vineta.h",
-              "DocumentMoniker": "C:\\Users\\ferni\\OneDrive\\Documentos\\universidad\\cuarto\\info\\trabajo\\arnaiz2.0\\Tablero\\src\\Vineta.h",
+              "DocumentMoniker": "C:\\Users\\david\\Documents\\Universidad\\Info2\\TrabajoDavid\\Yoda charla\\Tablero\\src\\Vineta.h",
               "RelativeDocumentMoniker": "src\\Vineta.h",
-              "ToolTip": "C:\\Users\\ferni\\OneDrive\\Documentos\\universidad\\cuarto\\info\\trabajo\\arnaiz2.0\\Tablero\\src\\Vineta.h",
+              "ToolTip": "C:\\Users\\david\\Documents\\Universidad\\Info2\\TrabajoDavid\\Yoda charla\\Tablero\\src\\Vineta.h",
               "RelativeToolTip": "src\\Vineta.h",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
@@ -197,11 +203,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 12,
               "Title": "Imagen.cpp",
-              "DocumentMoniker": "C:\\Users\\ferni\\OneDrive\\Documentos\\universidad\\cuarto\\info\\trabajo\\arnaiz2.0\\Tablero\\src\\Imagen.cpp",
+              "DocumentMoniker": "C:\\Users\\david\\Documents\\Universidad\\Info2\\TrabajoDavid\\Yoda charla\\Tablero\\src\\Imagen.cpp",
               "RelativeDocumentMoniker": "src\\Imagen.cpp",
-              "ToolTip": "C:\\Users\\ferni\\OneDrive\\Documentos\\universidad\\cuarto\\info\\trabajo\\arnaiz2.0\\Tablero\\src\\Imagen.cpp",
+              "ToolTip": "C:\\Users\\david\\Documents\\Universidad\\Info2\\TrabajoDavid\\Yoda charla\\Tablero\\src\\Imagen.cpp",
               "RelativeToolTip": "src\\Imagen.cpp",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
@@ -209,11 +215,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 15,
               "Title": "Casilla.h",
-              "DocumentMoniker": "C:\\Users\\ferni\\OneDrive\\Documentos\\universidad\\cuarto\\info\\trabajo\\arnaiz2.0\\Tablero\\src\\Casilla.h",
+              "DocumentMoniker": "C:\\Users\\david\\Documents\\Universidad\\Info2\\TrabajoDavid\\Yoda charla\\Tablero\\src\\Casilla.h",
               "RelativeDocumentMoniker": "src\\Casilla.h",
-              "ToolTip": "C:\\Users\\ferni\\OneDrive\\Documentos\\universidad\\cuarto\\info\\trabajo\\arnaiz2.0\\Tablero\\src\\Casilla.h",
+              "ToolTip": "C:\\Users\\david\\Documents\\Universidad\\Info2\\TrabajoDavid\\Yoda charla\\Tablero\\src\\Casilla.h",
               "RelativeToolTip": "src\\Casilla.h",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABwAAAAbAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
@@ -221,24 +227,23 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 4,
               "Title": "Tablero.h",
-              "DocumentMoniker": "C:\\Users\\ferni\\OneDrive\\Documentos\\universidad\\cuarto\\info\\trabajo\\arnaiz2.0\\Tablero\\src\\Tablero.h",
+              "DocumentMoniker": "C:\\Users\\david\\Documents\\Universidad\\Info2\\TrabajoDavid\\Yoda charla\\Tablero\\src\\Tablero.h",
               "RelativeDocumentMoniker": "src\\Tablero.h",
-              "ToolTip": "C:\\Users\\ferni\\OneDrive\\Documentos\\universidad\\cuarto\\info\\trabajo\\arnaiz2.0\\Tablero\\src\\Tablero.h",
+              "ToolTip": "C:\\Users\\david\\Documents\\Universidad\\Info2\\TrabajoDavid\\Yoda charla\\Tablero\\src\\Tablero.h",
               "RelativeToolTip": "src\\Tablero.h",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAB0AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-03-21T18:36:38.44Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-21T18:36:38.44Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 21,
               "Title": "Alfil.cpp",
-              "DocumentMoniker": "C:\\Users\\ferni\\OneDrive\\Documentos\\universidad\\cuarto\\info\\trabajo\\arnaiz2.0\\Tablero\\src\\Alfil.cpp",
+              "DocumentMoniker": "C:\\Users\\david\\Documents\\Universidad\\Info2\\TrabajoDavid\\Yoda charla\\Tablero\\src\\Alfil.cpp",
               "RelativeDocumentMoniker": "src\\Alfil.cpp",
-              "ToolTip": "C:\\Users\\ferni\\OneDrive\\Documentos\\universidad\\cuarto\\info\\trabajo\\arnaiz2.0\\Tablero\\src\\Alfil.cpp",
+              "ToolTip": "C:\\Users\\david\\Documents\\Universidad\\Info2\\TrabajoDavid\\Yoda charla\\Tablero\\src\\Alfil.cpp",
               "RelativeToolTip": "src\\Alfil.cpp",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAEIAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
@@ -246,11 +251,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 19,
               "Title": "Caballo.cpp",
-              "DocumentMoniker": "C:\\Users\\ferni\\OneDrive\\Documentos\\universidad\\cuarto\\info\\trabajo\\arnaiz2.0\\Tablero\\src\\Caballo.cpp",
+              "DocumentMoniker": "C:\\Users\\david\\Documents\\Universidad\\Info2\\TrabajoDavid\\Yoda charla\\Tablero\\src\\Caballo.cpp",
               "RelativeDocumentMoniker": "src\\Caballo.cpp",
-              "ToolTip": "C:\\Users\\ferni\\OneDrive\\Documentos\\universidad\\cuarto\\info\\trabajo\\arnaiz2.0\\Tablero\\src\\Caballo.cpp",
+              "ToolTip": "C:\\Users\\david\\Documents\\Universidad\\Info2\\TrabajoDavid\\Yoda charla\\Tablero\\src\\Caballo.cpp",
               "RelativeToolTip": "src\\Caballo.cpp",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAACoAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
@@ -258,11 +263,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 16,
               "Title": "Rey.h",
-              "DocumentMoniker": "C:\\Users\\ferni\\OneDrive\\Documentos\\universidad\\cuarto\\info\\trabajo\\arnaiz2.0\\Tablero\\src\\Rey.h",
+              "DocumentMoniker": "C:\\Users\\david\\Documents\\Universidad\\Info2\\TrabajoDavid\\Yoda charla\\Tablero\\src\\Rey.h",
               "RelativeDocumentMoniker": "src\\Rey.h",
-              "ToolTip": "C:\\Users\\ferni\\OneDrive\\Documentos\\universidad\\cuarto\\info\\trabajo\\arnaiz2.0\\Tablero\\src\\Rey.h",
+              "ToolTip": "C:\\Users\\david\\Documents\\Universidad\\Info2\\TrabajoDavid\\Yoda charla\\Tablero\\src\\Rey.h",
               "RelativeToolTip": "src\\Rey.h",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
@@ -270,11 +275,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 7,
               "Title": "Casilla.cpp",
-              "DocumentMoniker": "C:\\Users\\ferni\\OneDrive\\Documentos\\universidad\\cuarto\\info\\trabajo\\arnaiz2.0\\Tablero\\src\\Casilla.cpp",
+              "DocumentMoniker": "C:\\Users\\david\\Documents\\Universidad\\Info2\\TrabajoDavid\\Yoda charla\\Tablero\\src\\Casilla.cpp",
               "RelativeDocumentMoniker": "src\\Casilla.cpp",
-              "ToolTip": "C:\\Users\\ferni\\OneDrive\\Documentos\\universidad\\cuarto\\info\\trabajo\\arnaiz2.0\\Tablero\\src\\Casilla.cpp",
+              "ToolTip": "C:\\Users\\david\\Documents\\Universidad\\Info2\\TrabajoDavid\\Yoda charla\\Tablero\\src\\Casilla.cpp",
               "RelativeToolTip": "src\\Casilla.cpp",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
@@ -282,11 +287,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 23,
               "Title": "Peon.cpp",
-              "DocumentMoniker": "C:\\Users\\ferni\\OneDrive\\Documentos\\universidad\\cuarto\\info\\trabajo\\arnaiz2.0\\Tablero\\src\\Peon.cpp",
+              "DocumentMoniker": "C:\\Users\\david\\Documents\\Universidad\\Info2\\TrabajoDavid\\Yoda charla\\Tablero\\src\\Peon.cpp",
               "RelativeDocumentMoniker": "src\\Peon.cpp",
-              "ToolTip": "C:\\Users\\ferni\\OneDrive\\Documentos\\universidad\\cuarto\\info\\trabajo\\arnaiz2.0\\Tablero\\src\\Peon.cpp",
+              "ToolTip": "C:\\Users\\david\\Documents\\Universidad\\Info2\\TrabajoDavid\\Yoda charla\\Tablero\\src\\Peon.cpp",
               "RelativeToolTip": "src\\Peon.cpp",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAHQAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
@@ -294,11 +299,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 22,
               "Title": "Peon.h",
-              "DocumentMoniker": "C:\\Users\\ferni\\OneDrive\\Documentos\\universidad\\cuarto\\info\\trabajo\\arnaiz2.0\\Tablero\\src\\Peon.h",
+              "DocumentMoniker": "C:\\Users\\david\\Documents\\Universidad\\Info2\\TrabajoDavid\\Yoda charla\\Tablero\\src\\Peon.h",
               "RelativeDocumentMoniker": "src\\Peon.h",
-              "ToolTip": "C:\\Users\\ferni\\OneDrive\\Documentos\\universidad\\cuarto\\info\\trabajo\\arnaiz2.0\\Tablero\\src\\Peon.h",
+              "ToolTip": "C:\\Users\\david\\Documents\\Universidad\\Info2\\TrabajoDavid\\Yoda charla\\Tablero\\src\\Peon.h",
               "RelativeToolTip": "src\\Peon.h",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
@@ -306,11 +311,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 14,
               "Title": "Rey.cpp",
-              "DocumentMoniker": "C:\\Users\\ferni\\OneDrive\\Documentos\\universidad\\cuarto\\info\\trabajo\\arnaiz2.0\\Tablero\\src\\Rey.cpp",
+              "DocumentMoniker": "C:\\Users\\david\\Documents\\Universidad\\Info2\\TrabajoDavid\\Yoda charla\\Tablero\\src\\Rey.cpp",
               "RelativeDocumentMoniker": "src\\Rey.cpp",
-              "ToolTip": "C:\\Users\\ferni\\OneDrive\\Documentos\\universidad\\cuarto\\info\\trabajo\\arnaiz2.0\\Tablero\\src\\Rey.cpp",
+              "ToolTip": "C:\\Users\\david\\Documents\\Universidad\\Info2\\TrabajoDavid\\Yoda charla\\Tablero\\src\\Rey.cpp",
               "RelativeToolTip": "src\\Rey.cpp",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAACoAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
@@ -318,11 +323,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 20,
               "Title": "Alfil.h",
-              "DocumentMoniker": "C:\\Users\\ferni\\OneDrive\\Documentos\\universidad\\cuarto\\info\\trabajo\\arnaiz2.0\\Tablero\\src\\Alfil.h",
+              "DocumentMoniker": "C:\\Users\\david\\Documents\\Universidad\\Info2\\TrabajoDavid\\Yoda charla\\Tablero\\src\\Alfil.h",
               "RelativeDocumentMoniker": "src\\Alfil.h",
-              "ToolTip": "C:\\Users\\ferni\\OneDrive\\Documentos\\universidad\\cuarto\\info\\trabajo\\arnaiz2.0\\Tablero\\src\\Alfil.h",
+              "ToolTip": "C:\\Users\\david\\Documents\\Universidad\\Info2\\TrabajoDavid\\Yoda charla\\Tablero\\src\\Alfil.h",
               "RelativeToolTip": "src\\Alfil.h",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
@@ -330,11 +335,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 10,
               "Title": "Imagen.h",
-              "DocumentMoniker": "C:\\Users\\ferni\\OneDrive\\Documentos\\universidad\\cuarto\\info\\trabajo\\arnaiz2.0\\Tablero\\src\\Imagen.h",
+              "DocumentMoniker": "C:\\Users\\david\\Documents\\Universidad\\Info2\\TrabajoDavid\\Yoda charla\\Tablero\\src\\Imagen.h",
               "RelativeDocumentMoniker": "src\\Imagen.h",
-              "ToolTip": "C:\\Users\\ferni\\OneDrive\\Documentos\\universidad\\cuarto\\info\\trabajo\\arnaiz2.0\\Tablero\\src\\Imagen.h",
+              "ToolTip": "C:\\Users\\david\\Documents\\Universidad\\Info2\\TrabajoDavid\\Yoda charla\\Tablero\\src\\Imagen.h",
               "RelativeToolTip": "src\\Imagen.h",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
@@ -342,24 +347,23 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 6,
               "Title": "Tablero.cpp",
-              "DocumentMoniker": "C:\\Users\\ferni\\OneDrive\\Documentos\\universidad\\cuarto\\info\\trabajo\\arnaiz2.0\\Tablero\\src\\Tablero.cpp",
+              "DocumentMoniker": "C:\\Users\\david\\Documents\\Universidad\\Info2\\TrabajoDavid\\Yoda charla\\Tablero\\src\\Tablero.cpp",
               "RelativeDocumentMoniker": "src\\Tablero.cpp",
-              "ToolTip": "C:\\Users\\ferni\\OneDrive\\Documentos\\universidad\\cuarto\\info\\trabajo\\arnaiz2.0\\Tablero\\src\\Tablero.cpp",
+              "ToolTip": "C:\\Users\\david\\Documents\\Universidad\\Info2\\TrabajoDavid\\Yoda charla\\Tablero\\src\\Tablero.cpp",
               "RelativeToolTip": "src\\Tablero.cpp",
               "ViewState": "AgIAAGAAAAAAAAAAAIAwwHgAAAADAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-05-01T08:53:48.284Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-01T08:53:48.284Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 13,
               "Title": "Torre.cpp",
-              "DocumentMoniker": "C:\\Users\\ferni\\OneDrive\\Documentos\\universidad\\cuarto\\info\\trabajo\\arnaiz2.0\\Tablero\\src\\Torre.cpp",
+              "DocumentMoniker": "C:\\Users\\david\\Documents\\Universidad\\Info2\\TrabajoDavid\\Yoda charla\\Tablero\\src\\Torre.cpp",
               "RelativeDocumentMoniker": "src\\Torre.cpp",
-              "ToolTip": "C:\\Users\\ferni\\OneDrive\\Documentos\\universidad\\cuarto\\info\\trabajo\\arnaiz2.0\\Tablero\\src\\Torre.cpp",
+              "ToolTip": "C:\\Users\\david\\Documents\\Universidad\\Info2\\TrabajoDavid\\Yoda charla\\Tablero\\src\\Torre.cpp",
               "RelativeToolTip": "src\\Torre.cpp",
               "ViewState": "AgIAADMAAAAAAAAAAAAAABIAAAACAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
@@ -367,24 +371,23 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 5,
               "Title": "Torre.h",
-              "DocumentMoniker": "C:\\Users\\ferni\\OneDrive\\Documentos\\universidad\\cuarto\\info\\trabajo\\arnaiz2.0\\Tablero\\src\\Torre.h",
+              "DocumentMoniker": "C:\\Users\\david\\Documents\\Universidad\\Info2\\TrabajoDavid\\Yoda charla\\Tablero\\src\\Torre.h",
               "RelativeDocumentMoniker": "src\\Torre.h",
-              "ToolTip": "C:\\Users\\ferni\\OneDrive\\Documentos\\universidad\\cuarto\\info\\trabajo\\arnaiz2.0\\Tablero\\src\\Torre.h",
+              "ToolTip": "C:\\Users\\david\\Documents\\Universidad\\Info2\\TrabajoDavid\\Yoda charla\\Tablero\\src\\Torre.h",
               "RelativeToolTip": "src\\Torre.h",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-04-17T20:00:42.9Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-17T20:00:42.9Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 8,
               "Title": "Vineta.cpp",
-              "DocumentMoniker": "C:\\Users\\ferni\\OneDrive\\Documentos\\universidad\\cuarto\\info\\trabajo\\arnaiz2.0\\Tablero\\src\\Vineta.cpp",
+              "DocumentMoniker": "C:\\Users\\david\\Documents\\Universidad\\Info2\\TrabajoDavid\\Yoda charla\\Tablero\\src\\Vineta.cpp",
               "RelativeDocumentMoniker": "src\\Vineta.cpp",
-              "ToolTip": "C:\\Users\\ferni\\OneDrive\\Documentos\\universidad\\cuarto\\info\\trabajo\\arnaiz2.0\\Tablero\\src\\Vineta.cpp",
+              "ToolTip": "C:\\Users\\david\\Documents\\Universidad\\Info2\\TrabajoDavid\\Yoda charla\\Tablero\\src\\Vineta.cpp",
               "RelativeToolTip": "src\\Vineta.cpp",
               "ViewState": "AgIAACQAAAAAAAAAAAAAADAAAAAhAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
@@ -392,11 +395,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 17,
               "Title": "Reina.cpp",
-              "DocumentMoniker": "C:\\Users\\ferni\\OneDrive\\Documentos\\universidad\\cuarto\\info\\trabajo\\arnaiz2.0\\Tablero\\src\\Reina.cpp",
+              "DocumentMoniker": "C:\\Users\\david\\Documents\\Universidad\\Info2\\TrabajoDavid\\Yoda charla\\Tablero\\src\\Reina.cpp",
               "RelativeDocumentMoniker": "src\\Reina.cpp",
-              "ToolTip": "C:\\Users\\ferni\\OneDrive\\Documentos\\universidad\\cuarto\\info\\trabajo\\arnaiz2.0\\Tablero\\src\\Reina.cpp",
+              "ToolTip": "C:\\Users\\david\\Documents\\Universidad\\Info2\\TrabajoDavid\\Yoda charla\\Tablero\\src\\Reina.cpp",
               "RelativeToolTip": "src\\Reina.cpp",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
@@ -404,11 +407,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 18,
               "Title": "Caballo.h",
-              "DocumentMoniker": "C:\\Users\\ferni\\OneDrive\\Documentos\\universidad\\cuarto\\info\\trabajo\\arnaiz2.0\\Tablero\\src\\Caballo.h",
+              "DocumentMoniker": "C:\\Users\\david\\Documents\\Universidad\\Info2\\TrabajoDavid\\Yoda charla\\Tablero\\src\\Caballo.h",
               "RelativeDocumentMoniker": "src\\Caballo.h",
-              "ToolTip": "C:\\Users\\ferni\\OneDrive\\Documentos\\universidad\\cuarto\\info\\trabajo\\arnaiz2.0\\Tablero\\src\\Caballo.h",
+              "ToolTip": "C:\\Users\\david\\Documents\\Universidad\\Info2\\TrabajoDavid\\Yoda charla\\Tablero\\src\\Caballo.h",
               "RelativeToolTip": "src\\Caballo.h",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
@@ -416,11 +419,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 25,
               "Title": "Piezas.cpp",
-              "DocumentMoniker": "C:\\Users\\ferni\\OneDrive\\Documentos\\universidad\\cuarto\\info\\trabajo\\arnaiz2.0\\Tablero\\src\\Piezas.cpp",
+              "DocumentMoniker": "C:\\Users\\david\\Documents\\Universidad\\Info2\\TrabajoDavid\\Yoda charla\\Tablero\\src\\Piezas.cpp",
               "RelativeDocumentMoniker": "src\\Piezas.cpp",
-              "ToolTip": "C:\\Users\\ferni\\OneDrive\\Documentos\\universidad\\cuarto\\info\\trabajo\\arnaiz2.0\\Tablero\\src\\Piezas.cpp",
+              "ToolTip": "C:\\Users\\david\\Documents\\Universidad\\Info2\\TrabajoDavid\\Yoda charla\\Tablero\\src\\Piezas.cpp",
               "RelativeToolTip": "src\\Piezas.cpp",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
@@ -428,15 +431,25 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 24,
               "Title": "Piezas.h",
-              "DocumentMoniker": "C:\\Users\\ferni\\OneDrive\\Documentos\\universidad\\cuarto\\info\\trabajo\\arnaiz2.0\\Tablero\\src\\Piezas.h",
+              "DocumentMoniker": "C:\\Users\\david\\Documents\\Universidad\\Info2\\TrabajoDavid\\Yoda charla\\Tablero\\src\\Piezas.h",
               "RelativeDocumentMoniker": "src\\Piezas.h",
-              "ToolTip": "C:\\Users\\ferni\\OneDrive\\Documentos\\universidad\\cuarto\\info\\trabajo\\arnaiz2.0\\Tablero\\src\\Piezas.h",
+              "ToolTip": "C:\\Users\\david\\Documents\\Universidad\\Info2\\TrabajoDavid\\Yoda charla\\Tablero\\src\\Piezas.h",
               "RelativeToolTip": "src\\Piezas.h",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAPAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2025-03-31T21:23:20.839Z"
+            }
+          ]
+        },
+        {
+          "DockedHeight": 14,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
             }
           ]
         }

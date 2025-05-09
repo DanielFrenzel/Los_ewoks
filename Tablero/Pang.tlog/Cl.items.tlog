@@ -1,15 +1,15 @@
-C:\Users\ferni\OneDrive\Documentos\universidad\cuarto\info\trabajo\arnaiz2.0\Tablero\src\Ajedrez.cpp;C:\Users\ferni\OneDrive\Documentos\universidad\cuarto\info\trabajo\arnaiz2.0\Tablero\Ajedrez.obj
-C:\Users\ferni\OneDrive\Documentos\universidad\cuarto\info\trabajo\arnaiz2.0\Tablero\src\Alfil.cpp;C:\Users\ferni\OneDrive\Documentos\universidad\cuarto\info\trabajo\arnaiz2.0\Tablero\Alfil.obj
-C:\Users\ferni\OneDrive\Documentos\universidad\cuarto\info\trabajo\arnaiz2.0\Tablero\src\Boton.cpp;C:\Users\ferni\OneDrive\Documentos\universidad\cuarto\info\trabajo\arnaiz2.0\Tablero\Boton.obj
-C:\Users\ferni\OneDrive\Documentos\universidad\cuarto\info\trabajo\arnaiz2.0\Tablero\src\Caballo.cpp;C:\Users\ferni\OneDrive\Documentos\universidad\cuarto\info\trabajo\arnaiz2.0\Tablero\Caballo.obj
-C:\Users\ferni\OneDrive\Documentos\universidad\cuarto\info\trabajo\arnaiz2.0\Tablero\src\Casilla.cpp;C:\Users\ferni\OneDrive\Documentos\universidad\cuarto\info\trabajo\arnaiz2.0\Tablero\Casilla.obj
-C:\Users\ferni\OneDrive\Documentos\universidad\cuarto\info\trabajo\arnaiz2.0\Tablero\src\Coordinador.cpp;C:\Users\ferni\OneDrive\Documentos\universidad\cuarto\info\trabajo\arnaiz2.0\Tablero\Coordinador.obj
-C:\Users\ferni\OneDrive\Documentos\universidad\cuarto\info\trabajo\arnaiz2.0\Tablero\src\Imagen.cpp;C:\Users\ferni\OneDrive\Documentos\universidad\cuarto\info\trabajo\arnaiz2.0\Tablero\Imagen.obj
-C:\Users\ferni\OneDrive\Documentos\universidad\cuarto\info\trabajo\arnaiz2.0\Tablero\src\Movimiento.cpp;C:\Users\ferni\OneDrive\Documentos\universidad\cuarto\info\trabajo\arnaiz2.0\Tablero\Movimiento.obj
-C:\Users\ferni\OneDrive\Documentos\universidad\cuarto\info\trabajo\arnaiz2.0\Tablero\src\Peon.cpp;C:\Users\ferni\OneDrive\Documentos\universidad\cuarto\info\trabajo\arnaiz2.0\Tablero\Peon.obj
-C:\Users\ferni\OneDrive\Documentos\universidad\cuarto\info\trabajo\arnaiz2.0\Tablero\src\Piezas.cpp;C:\Users\ferni\OneDrive\Documentos\universidad\cuarto\info\trabajo\arnaiz2.0\Tablero\Piezas.obj
-C:\Users\ferni\OneDrive\Documentos\universidad\cuarto\info\trabajo\arnaiz2.0\Tablero\src\Reina.cpp;C:\Users\ferni\OneDrive\Documentos\universidad\cuarto\info\trabajo\arnaiz2.0\Tablero\Reina.obj
-C:\Users\ferni\OneDrive\Documentos\universidad\cuarto\info\trabajo\arnaiz2.0\Tablero\src\Rey.cpp;C:\Users\ferni\OneDrive\Documentos\universidad\cuarto\info\trabajo\arnaiz2.0\Tablero\Rey.obj
-C:\Users\ferni\OneDrive\Documentos\universidad\cuarto\info\trabajo\arnaiz2.0\Tablero\src\Tablero.cpp;C:\Users\ferni\OneDrive\Documentos\universidad\cuarto\info\trabajo\arnaiz2.0\Tablero\Tablero.obj
-C:\Users\ferni\OneDrive\Documentos\universidad\cuarto\info\trabajo\arnaiz2.0\Tablero\src\Torre.cpp;C:\Users\ferni\OneDrive\Documentos\universidad\cuarto\info\trabajo\arnaiz2.0\Tablero\Torre.obj
-C:\Users\ferni\OneDrive\Documentos\universidad\cuarto\info\trabajo\arnaiz2.0\Tablero\src\Vineta.cpp;C:\Users\ferni\OneDrive\Documentos\universidad\cuarto\info\trabajo\arnaiz2.0\Tablero\Vineta.obj
+C:\Users\david\Documents\Universidad\Info2\TrabajoDavid\Yoda charla\Tablero\src\Ajedrez.cpp;C:\Users\david\Documents\Universidad\Info2\TrabajoDavid\Yoda charla\Tablero\Ajedrez.obj
+C:\Users\david\Documents\Universidad\Info2\TrabajoDavid\Yoda charla\Tablero\src\Alfil.cpp;C:\Users\david\Documents\Universidad\Info2\TrabajoDavid\Yoda charla\Tablero\Alfil.obj
+C:\Users\david\Documents\Universidad\Info2\TrabajoDavid\Yoda charla\Tablero\src\Boton.cpp;C:\Users\david\Documents\Universidad\Info2\TrabajoDavid\Yoda charla\Tablero\Boton.obj
+C:\Users\david\Documents\Universidad\Info2\TrabajoDavid\Yoda charla\Tablero\src\Caballo.cpp;C:\Users\david\Documents\Universidad\Info2\TrabajoDavid\Yoda charla\Tablero\Caballo.obj
+C:\Users\david\Documents\Universidad\Info2\TrabajoDavid\Yoda charla\Tablero\src\Casilla.cpp;C:\Users\david\Documents\Universidad\Info2\TrabajoDavid\Yoda charla\Tablero\Casilla.obj
+C:\Users\david\Documents\Universidad\Info2\TrabajoDavid\Yoda charla\Tablero\src\Coordinador.cpp;C:\Users\david\Documents\Universidad\Info2\TrabajoDavid\Yoda charla\Tablero\Coordinador.obj
+C:\Users\david\Documents\Universidad\Info2\TrabajoDavid\Yoda charla\Tablero\src\Imagen.cpp;C:\Users\david\Documents\Universidad\Info2\TrabajoDavid\Yoda charla\Tablero\Imagen.obj
+C:\Users\david\Documents\Universidad\Info2\TrabajoDavid\Yoda charla\Tablero\src\Movimiento.cpp;C:\Users\david\Documents\Universidad\Info2\TrabajoDavid\Yoda charla\Tablero\Movimiento.obj
+C:\Users\david\Documents\Universidad\Info2\TrabajoDavid\Yoda charla\Tablero\src\Peon.cpp;C:\Users\david\Documents\Universidad\Info2\TrabajoDavid\Yoda charla\Tablero\Peon.obj
+C:\Users\david\Documents\Universidad\Info2\TrabajoDavid\Yoda charla\Tablero\src\Piezas.cpp;C:\Users\david\Documents\Universidad\Info2\TrabajoDavid\Yoda charla\Tablero\Piezas.obj
+C:\Users\david\Documents\Universidad\Info2\TrabajoDavid\Yoda charla\Tablero\src\Reina.cpp;C:\Users\david\Documents\Universidad\Info2\TrabajoDavid\Yoda charla\Tablero\Reina.obj
+C:\Users\david\Documents\Universidad\Info2\TrabajoDavid\Yoda charla\Tablero\src\Rey.cpp;C:\Users\david\Documents\Universidad\Info2\TrabajoDavid\Yoda charla\Tablero\Rey.obj
+C:\Users\david\Documents\Universidad\Info2\TrabajoDavid\Yoda charla\Tablero\src\Tablero.cpp;C:\Users\david\Documents\Universidad\Info2\TrabajoDavid\Yoda charla\Tablero\Tablero.obj
+C:\Users\david\Documents\Universidad\Info2\TrabajoDavid\Yoda charla\Tablero\src\Torre.cpp;C:\Users\david\Documents\Universidad\Info2\TrabajoDavid\Yoda charla\Tablero\Torre.obj
+C:\Users\david\Documents\Universidad\Info2\TrabajoDavid\Yoda charla\Tablero\src\Vineta.cpp;C:\Users\david\Documents\Universidad\Info2\TrabajoDavid\Yoda charla\Tablero\Vineta.obj

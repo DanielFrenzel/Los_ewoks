@@ -22,6 +22,10 @@ public:
 	void setSize(float nuevoAncho, float nuevoAlto);
 	void setRegion(float x1, float x2, float y1, float y2);
 
+	//getters
+	float getX() const { return x; }
+	float getY() const { return y; }
+
 	//Metodo que commprueba si el raton esta encima o no
 	bool ratonEncima(int rx, int ry) ;
 	

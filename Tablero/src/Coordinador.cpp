@@ -2,7 +2,7 @@
 #include "freeglut.h"
 #include "ETSIDI.h"
 #include <cstdlib>
-
+#include <iostream>
 
 //Movimiento del raton----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 void Coordinador::MovRaton(int x, int y)  //Indica que casilla se ha pulsado según 
@@ -33,7 +33,7 @@ void Coordinador::MovRaton(int x, int y)  //Indica que casilla se ha pulsado seg
 	{
 	case INICIO:
 		botonDuelo.actualizaResaltado(x_base, y_base);
-		botonIA.actualizaResaltado(x_base, y_base);
+		botonBioma.actualizaResaltado(x_base, y_base);
 		botonAjustes.actualizaResaltado(x_base, y_base);
 		break;
 	case AJUSTES:
@@ -52,6 +52,12 @@ void Coordinador::MovRaton(int x, int y)  //Indica que casilla se ha pulsado seg
 		botonMusica2.actualizaResaltado(x_base, y_base);
 		botonMusica3.actualizaResaltado(x_base, y_base);
 		break;
+	case BIOMA:
+		botonMapa1.actualizaResaltado(x_base, y_base);
+		botonMapa2.actualizaResaltado(x_base, y_base);
+		botonMapa3.actualizaResaltado(x_base, y_base);
+		botonMapa4.actualizaResaltado(x_base, y_base);
+		break;
 	}
 
 
@@ -61,6 +67,7 @@ void Coordinador::mouse(int button, int state, int x, int y)
 {
 	float x_base = x / escalaX;
 	float y_base = y / escalaY;
+	//std::cout << "Click en pos juego: (" << x_base << ", " << y_base << ")" << std::endl;
 	if (button == GLUT_LEFT_BUTTON && state == GLUT_DOWN)
 	{
 		
@@ -89,11 +96,11 @@ void Coordinador::mouse(int button, int state, int x, int y)
 				estado = VINETA;
 				return;
 			}
-			if (botonIA.ratonEncima(x_base, y_base))
+			if (botonBioma.ratonEncima(x_base, y_base))
 			{
 				memoria_Estado.push_back(INICIO);
 				estado_anterior = estado;
-				estado = IA;
+				estado = BIOMA;
 				return;
 			}
 			if (x_base >= 1466 && x_base <= 1796 && y_base >= 917 && y_base <= 1025)
@@ -164,7 +171,28 @@ void Coordinador::mouse(int button, int state, int x, int y)
 				return;
 			}
 		}
-
+		if (estado == BIOMA)
+		{
+			if (botonMapa1.ratonEncima(x_base, y_base)) {
+				mapaSeleccionado = 1;
+			}
+			else if (botonMapa2.ratonEncima(x_base, y_base)) {
+				mapaSeleccionado = 2;
+			}
+			else if (botonMapa3.ratonEncima(x_base, y_base)) {
+				mapaSeleccionado = 3;
+			}
+			else if (botonMapa4.ratonEncima(x_base, y_base)) {
+				mapaSeleccionado = 4;
+			}
+			switch (mapaSeleccionado) {
+			case 1: recuadroBioma.setPos(botonMapa1.getX(), botonMapa1.getY()); break;
+			case 2: recuadroBioma.setPos(botonMapa2.getX(), botonMapa2.getY()); break;
+			case 3: recuadroBioma.setPos(botonMapa3.getX(), botonMapa3.getY()); break;
+			case 4: recuadroBioma.setPos(botonMapa4.getX(), botonMapa4.getY()); break;
+			}
+			return;
+		}
 
 		
 	}
@@ -267,8 +295,8 @@ Coordinador::Coordinador()
 	//botones Inicio
 	botonDuelo.setPos(-30, -25);
 	botonDuelo.setRegion(122.0f, 452.0f, 915.0f, 1024.0f);
-	botonIA.setPos(0, -25);
-	botonIA.setRegion(795.0f, 1125.0f, 916.0f, 1025.0f);
+	botonBioma.setPos(0, -25);
+	botonBioma.setRegion(795.0f, 1125.0f, 916.0f, 1025.0f);
 	botonAjustes.setPos(30, -25);
 	botonAjustes.setRegion(1466.0f, 1796.0f, 917.0f, 1025.0f);
 
@@ -296,6 +324,17 @@ Coordinador::Coordinador()
 	botonMusica3.setPos(30, -25);
 	botonMusica3.setRegion(1464.0f, 1790.0f, 874.0f, 1025.0f);
 
+	//Botones Bioma
+	botonMapa1.setPos(-30, -20);
+	botonMapa1.setRegion(175.0f, 400.0f, 800.0f, 950.0f);
+	botonMapa2.setPos(-10, -20);
+	botonMapa2.setRegion(620.0f, 845.0f, 800.0f, 950.0f);
+	botonMapa3.setPos(10, -20);
+	botonMapa3.setRegion(1075.0f, 1295.0f, 800.0f, 950.0f);
+	botonMapa4.setPos(30, -20);
+	botonMapa4.setRegion(1520.0f, 1745.0f, 800.0f, 950.0f);
+
+	recuadroBioma.setPos(botonMapa1.getX(), botonMapa1.getY());
 
 	pulsado_sonido = false;
 	activacion_titulo2 = false;
@@ -423,7 +462,7 @@ void Coordinador::dibuja()
 	//Botones Inicio
 	if (estado == INICIO) {
 		botonDuelo.draw();
-		botonIA.draw();
+		botonBioma.draw();
 		botonAjustes.draw();
 	}
 
@@ -445,6 +484,13 @@ void Coordinador::dibuja()
 		botonMusica.draw();
 		botonAyuda.draw();
 		botonCreditos.draw();
+	}
+	if (estado == BIOMA){
+		recuadroBioma.draw();
+		botonMapa1.draw();
+		botonMapa2.draw();
+		botonMapa3.draw();
+		botonMapa4.draw();
 	}
 
 	//Botones AYUDA
