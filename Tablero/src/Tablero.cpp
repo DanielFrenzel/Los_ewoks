@@ -118,7 +118,7 @@ void Tablero::dibuja()															//Dibujamos las piezas y el tablero
 	casilla[f][c].Casilla_seleccionada();										//Imprime casilla seleccionada
 
 	tablero.draw();
-	fondo.draw();
+	//fondo.draw();
 
 }
 

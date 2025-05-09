@@ -24,8 +24,8 @@ private:
 	TABLERO casilla;							//Creamos matriz de casillas
 	int f, c;									//Esto es para la casilla seleccionada(se puede cambiar)
 	float x, y, tam_x, tam_y;					//Esto es para el tamaño y posicion del tablero solamente
-	Sprite fondo{ "imagenes/fondo_esapcio_negro.png", 0, 0, 96, 64 };
-	Sprite tablero{ "imagenes/Tablero_Futurista.png", 0, 0, 56, 56 };
+	//Sprite fondo{ "imagenes/fondo_esapcio_negro.png", 0, 0, 96, 64 };
+	Sprite tablero{ "imagenes/Tablero_Fondo_1.png", 0, 0, 96, 64 };
 
 
 public:
