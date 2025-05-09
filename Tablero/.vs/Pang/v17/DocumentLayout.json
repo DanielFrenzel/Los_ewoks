@@ -3,32 +3,40 @@
   "WorkspaceRootPath": "C:\\Users\\ferni\\OneDrive\\Documentos\\GitHub\\Los_ewoks\\Tablero\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{E575FADE-B6EB-4154-A1ED-8067A12EAE98}|Pang.vcxproj|C:\\Users\\ferni\\OneDrive\\Documentos\\GitHub\\Los_ewoks\\Tablero\\src\\Coordinador.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{E575FADE-B6EB-4154-A1ED-8067A12EAE98}|Pang.vcxproj|solutionrelative:src\\Coordinador.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E575FADE-B6EB-4154-A1ED-8067A12EAE98}|Pang.vcxproj|C:\\Users\\ferni\\OneDrive\\Documentos\\GitHub\\Los_ewoks\\Tablero\\src\\Casilla.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{E575FADE-B6EB-4154-A1ED-8067A12EAE98}|Pang.vcxproj|solutionrelative:src\\Casilla.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{E575FADE-B6EB-4154-A1ED-8067A12EAE98}|Pang.vcxproj|C:\\Users\\ferni\\OneDrive\\Documentos\\GitHub\\Los_ewoks\\Tablero\\src\\Coordinador.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{E575FADE-B6EB-4154-A1ED-8067A12EAE98}|Pang.vcxproj|solutionrelative:src\\Coordinador.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E575FADE-B6EB-4154-A1ED-8067A12EAE98}|Pang.vcxproj|C:\\Users\\ferni\\OneDrive\\Documentos\\GitHub\\Los_ewoks\\Tablero\\src\\Coordinador.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{E575FADE-B6EB-4154-A1ED-8067A12EAE98}|Pang.vcxproj|solutionrelative:src\\Coordinador.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{E575FADE-B6EB-4154-A1ED-8067A12EAE98}|Pang.vcxproj|C:\\Users\\ferni\\OneDrive\\Documentos\\GitHub\\Los_ewoks\\Tablero\\src\\Ajedrez.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{E575FADE-B6EB-4154-A1ED-8067A12EAE98}|Pang.vcxproj|solutionrelative:src\\Ajedrez.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E575FADE-B6EB-4154-A1ED-8067A12EAE98}|Pang.vcxproj|C:\\Users\\ferni\\OneDrive\\Documentos\\GitHub\\Los_ewoks\\Tablero\\src\\Casilla.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{E575FADE-B6EB-4154-A1ED-8067A12EAE98}|Pang.vcxproj|solutionrelative:src\\Casilla.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{E575FADE-B6EB-4154-A1ED-8067A12EAE98}|Pang.vcxproj|C:\\Users\\ferni\\OneDrive\\Documentos\\GitHub\\Los_ewoks\\Tablero\\src\\Casilla.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{E575FADE-B6EB-4154-A1ED-8067A12EAE98}|Pang.vcxproj|solutionrelative:src\\Casilla.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E575FADE-B6EB-4154-A1ED-8067A12EAE98}|Pang.vcxproj|C:\\Users\\ferni\\OneDrive\\Documentos\\GitHub\\Los_ewoks\\Tablero\\src\\Tablero.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{E575FADE-B6EB-4154-A1ED-8067A12EAE98}|Pang.vcxproj|solutionrelative:src\\Tablero.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{E575FADE-B6EB-4154-A1ED-8067A12EAE98}|Pang.vcxproj|C:\\Users\\ferni\\OneDrive\\Documentos\\GitHub\\Los_ewoks\\Tablero\\src\\Vineta.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{E575FADE-B6EB-4154-A1ED-8067A12EAE98}|Pang.vcxproj|solutionrelative:src\\Vineta.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E575FADE-B6EB-4154-A1ED-8067A12EAE98}|Pang.vcxproj|C:\\Users\\ferni\\OneDrive\\Documentos\\GitHub\\Los_ewoks\\Tablero\\src\\Torre.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{E575FADE-B6EB-4154-A1ED-8067A12EAE98}|Pang.vcxproj|solutionrelative:src\\Torre.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{E575FADE-B6EB-4154-A1ED-8067A12EAE98}|Pang.vcxproj|C:\\Users\\ferni\\OneDrive\\Documentos\\GitHub\\Los_ewoks\\Tablero\\src\\Vineta.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{E575FADE-B6EB-4154-A1ED-8067A12EAE98}|Pang.vcxproj|solutionrelative:src\\Vineta.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E575FADE-B6EB-4154-A1ED-8067A12EAE98}|Pang.vcxproj|C:\\Users\\ferni\\OneDrive\\Documentos\\GitHub\\Los_ewoks\\Tablero\\src\\Imagen.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{E575FADE-B6EB-4154-A1ED-8067A12EAE98}|Pang.vcxproj|solutionrelative:src\\Imagen.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E575FADE-B6EB-4154-A1ED-8067A12EAE98}|Pang.vcxproj|C:\\Users\\ferni\\OneDrive\\Documentos\\GitHub\\Los_ewoks\\Tablero\\src\\Boton.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{E575FADE-B6EB-4154-A1ED-8067A12EAE98}|Pang.vcxproj|solutionrelative:src\\Boton.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E575FADE-B6EB-4154-A1ED-8067A12EAE98}|Pang.vcxproj|C:\\Users\\ferni\\OneDrive\\Documentos\\GitHub\\Los_ewoks\\Tablero\\src\\Imagen.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{E575FADE-B6EB-4154-A1ED-8067A12EAE98}|Pang.vcxproj|solutionrelative:src\\Imagen.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{E575FADE-B6EB-4154-A1ED-8067A12EAE98}|Pang.vcxproj|C:\\Users\\ferni\\OneDrive\\Documentos\\GitHub\\Los_ewoks\\Tablero\\src\\Tablero.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
@@ -39,12 +47,24 @@
       "RelativeMoniker": "D:0:0:{E575FADE-B6EB-4154-A1ED-8067A12EAE98}|Pang.vcxproj|solutionrelative:src\\Torre.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E575FADE-B6EB-4154-A1ED-8067A12EAE98}|Pang.vcxproj|C:\\Users\\ferni\\OneDrive\\Documentos\\GitHub\\Los_ewoks\\Tablero\\src\\Rey.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{E575FADE-B6EB-4154-A1ED-8067A12EAE98}|Pang.vcxproj|solutionrelative:src\\Rey.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{E575FADE-B6EB-4154-A1ED-8067A12EAE98}|Pang.vcxproj|C:\\Users\\ferni\\OneDrive\\Documentos\\GitHub\\Los_ewoks\\Tablero\\src\\Tablero.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{E575FADE-B6EB-4154-A1ED-8067A12EAE98}|Pang.vcxproj|solutionrelative:src\\Tablero.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{E575FADE-B6EB-4154-A1ED-8067A12EAE98}|Pang.vcxproj|C:\\Users\\ferni\\OneDrive\\Documentos\\GitHub\\Los_ewoks\\Tablero\\src\\Rey.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{E575FADE-B6EB-4154-A1ED-8067A12EAE98}|Pang.vcxproj|solutionrelative:src\\Rey.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E575FADE-B6EB-4154-A1ED-8067A12EAE98}|Pang.vcxproj|C:\\Users\\ferni\\OneDrive\\Documentos\\GitHub\\Los_ewoks\\Tablero\\src\\Casilla.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{E575FADE-B6EB-4154-A1ED-8067A12EAE98}|Pang.vcxproj|solutionrelative:src\\Casilla.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E575FADE-B6EB-4154-A1ED-8067A12EAE98}|Pang.vcxproj|C:\\Users\\ferni\\OneDrive\\Documentos\\GitHub\\Los_ewoks\\Tablero\\src\\Torre.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{E575FADE-B6EB-4154-A1ED-8067A12EAE98}|Pang.vcxproj|solutionrelative:src\\Torre.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E575FADE-B6EB-4154-A1ED-8067A12EAE98}|Pang.vcxproj|C:\\Users\\ferni\\OneDrive\\Documentos\\GitHub\\Los_ewoks\\Tablero\\src\\Rey.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{E575FADE-B6EB-4154-A1ED-8067A12EAE98}|Pang.vcxproj|solutionrelative:src\\Rey.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{E575FADE-B6EB-4154-A1ED-8067A12EAE98}|Pang.vcxproj|C:\\Users\\ferni\\OneDrive\\Documentos\\GitHub\\Los_ewoks\\Tablero\\src\\Reina.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
@@ -75,14 +95,6 @@
       "RelativeMoniker": "D:0:0:{E575FADE-B6EB-4154-A1ED-8067A12EAE98}|Pang.vcxproj|solutionrelative:src\\Peon.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E575FADE-B6EB-4154-A1ED-8067A12EAE98}|Pang.vcxproj|C:\\Users\\ferni\\OneDrive\\Documentos\\GitHub\\Los_ewoks\\Tablero\\src\\Imagen.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{E575FADE-B6EB-4154-A1ED-8067A12EAE98}|Pang.vcxproj|solutionrelative:src\\Imagen.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E575FADE-B6EB-4154-A1ED-8067A12EAE98}|Pang.vcxproj|C:\\Users\\ferni\\OneDrive\\Documentos\\GitHub\\Los_ewoks\\Tablero\\src\\Imagen.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{E575FADE-B6EB-4154-A1ED-8067A12EAE98}|Pang.vcxproj|solutionrelative:src\\Imagen.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{E575FADE-B6EB-4154-A1ED-8067A12EAE98}|Pang.vcxproj|C:\\Users\\ferni\\OneDrive\\Documentos\\GitHub\\Los_ewoks\\Tablero\\src\\Piezas.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{E575FADE-B6EB-4154-A1ED-8067A12EAE98}|Pang.vcxproj|solutionrelative:src\\Piezas.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
@@ -93,10 +105,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{E575FADE-B6EB-4154-A1ED-8067A12EAE98}|Pang.vcxproj|C:\\Users\\ferni\\OneDrive\\Documentos\\GitHub\\Los_ewoks\\Tablero\\src\\Boton.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{E575FADE-B6EB-4154-A1ED-8067A12EAE98}|Pang.vcxproj|solutionrelative:src\\Boton.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E575FADE-B6EB-4154-A1ED-8067A12EAE98}|Pang.vcxproj|C:\\Users\\ferni\\OneDrive\\Documentos\\GitHub\\Los_ewoks\\Tablero\\src\\Boton.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{E575FADE-B6EB-4154-A1ED-8067A12EAE98}|Pang.vcxproj|solutionrelative:src\\Boton.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
   "DocumentGroupContainers": [
@@ -106,64 +114,64 @@
       "DocumentGroups": [
         {
           "DockedHeight": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "Coordinador.cpp",
               "DocumentMoniker": "C:\\Users\\ferni\\OneDrive\\Documentos\\GitHub\\Los_ewoks\\Tablero\\src\\Coordinador.cpp",
               "RelativeDocumentMoniker": "src\\Coordinador.cpp",
               "ToolTip": "C:\\Users\\ferni\\OneDrive\\Documentos\\GitHub\\Los_ewoks\\Tablero\\src\\Coordinador.cpp",
               "RelativeToolTip": "src\\Coordinador.cpp",
-              "ViewState": "AgIAACYBAAAAAAAAAAAAADABAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAGsBAAAAAAAAAAAAAM0BAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2025-04-22T11:01:08.302Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Coordinador.h",
+              "DocumentMoniker": "C:\\Users\\ferni\\OneDrive\\Documentos\\GitHub\\Los_ewoks\\Tablero\\src\\Coordinador.h",
+              "RelativeDocumentMoniker": "src\\Coordinador.h",
+              "ToolTip": "C:\\Users\\ferni\\OneDrive\\Documentos\\GitHub\\Los_ewoks\\Tablero\\src\\Coordinador.h",
+              "RelativeToolTip": "src\\Coordinador.h",
+              "ViewState": "AgIAAHgAAAAAAAAAAAAAAJ0AAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-04-22T10:59:33.868Z",
               "IsPinned": true,
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "Coordinador.h",
-              "DocumentMoniker": "C:\\Users\\ferni\\OneDrive\\Documentos\\GitHub\\Los_ewoks\\Tablero\\src\\Coordinador.h",
-              "RelativeDocumentMoniker": "src\\Coordinador.h",
-              "ToolTip": "C:\\Users\\ferni\\OneDrive\\Documentos\\GitHub\\Los_ewoks\\Tablero\\src\\Coordinador.h",
-              "RelativeToolTip": "src\\Coordinador.h",
-              "ViewState": "AgIAAGkAAAAAAAAAAAAAAHEAAAATAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-04-22T10:59:33.868Z",
-              "IsPinned": true
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
               "Title": "Ajedrez.cpp",
               "DocumentMoniker": "C:\\Users\\ferni\\OneDrive\\Documentos\\GitHub\\Los_ewoks\\Tablero\\src\\Ajedrez.cpp",
               "RelativeDocumentMoniker": "src\\Ajedrez.cpp",
               "ToolTip": "C:\\Users\\ferni\\OneDrive\\Documentos\\GitHub\\Los_ewoks\\Tablero\\src\\Ajedrez.cpp",
               "RelativeToolTip": "src\\Ajedrez.cpp",
-              "ViewState": "AgIAAGMAAAAAAAAAAAAAAHcAAAAaAAAAAAAAAA==",
+              "ViewState": "AgIAAGYAAAAAAAAAAAAAABcAAAAfAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2025-03-21T18:35:52.092Z",
               "IsPinned": true
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 7,
               "Title": "Boton.cpp",
               "DocumentMoniker": "C:\\Users\\ferni\\OneDrive\\Documentos\\GitHub\\Los_ewoks\\Tablero\\src\\Boton.cpp",
               "RelativeDocumentMoniker": "src\\Boton.cpp",
               "ToolTip": "C:\\Users\\ferni\\OneDrive\\Documentos\\GitHub\\Los_ewoks\\Tablero\\src\\Boton.cpp",
               "RelativeToolTip": "src\\Boton.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACoAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAACoAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2025-05-08T16:03:35.409Z",
               "IsPinned": true
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 25,
               "Title": "Boton.h",
               "DocumentMoniker": "C:\\Users\\ferni\\OneDrive\\Documentos\\GitHub\\Los_ewoks\\Tablero\\src\\Boton.h",
               "RelativeDocumentMoniker": "src\\Boton.h",
@@ -176,19 +184,31 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "Reina.cpp",
-              "DocumentMoniker": "C:\\Users\\ferni\\OneDrive\\Documentos\\GitHub\\Los_ewoks\\Tablero\\src\\Reina.cpp",
-              "RelativeDocumentMoniker": "src\\Reina.cpp",
-              "ToolTip": "C:\\Users\\ferni\\OneDrive\\Documentos\\GitHub\\Los_ewoks\\Tablero\\src\\Reina.cpp",
-              "RelativeToolTip": "src\\Reina.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 4,
+              "Title": "Vineta.cpp",
+              "DocumentMoniker": "C:\\Users\\ferni\\OneDrive\\Documentos\\GitHub\\Los_ewoks\\Tablero\\src\\Vineta.cpp",
+              "RelativeDocumentMoniker": "src\\Vineta.cpp",
+              "ToolTip": "C:\\Users\\ferni\\OneDrive\\Documentos\\GitHub\\Los_ewoks\\Tablero\\src\\Vineta.cpp",
+              "RelativeToolTip": "src\\Vineta.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACYAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-05-08T20:45:41.121Z"
+              "WhenOpened": "2025-05-09T00:54:49.779Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 5,
+              "Title": "Vineta.h",
+              "DocumentMoniker": "C:\\Users\\ferni\\OneDrive\\Documentos\\GitHub\\Los_ewoks\\Tablero\\src\\Vineta.h",
+              "RelativeDocumentMoniker": "src\\Vineta.h",
+              "ToolTip": "C:\\Users\\ferni\\OneDrive\\Documentos\\GitHub\\Los_ewoks\\Tablero\\src\\Vineta.h",
+              "RelativeToolTip": "src\\Vineta.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-05-09T00:54:48.308Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
               "Title": "Imagen.cpp",
               "DocumentMoniker": "C:\\Users\\ferni\\OneDrive\\Documentos\\GitHub\\Los_ewoks\\Tablero\\src\\Imagen.cpp",
               "RelativeDocumentMoniker": "src\\Imagen.cpp",
@@ -200,7 +220,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 13,
               "Title": "Casilla.h",
               "DocumentMoniker": "C:\\Users\\ferni\\OneDrive\\Documentos\\GitHub\\Los_ewoks\\Tablero\\src\\Casilla.h",
               "RelativeDocumentMoniker": "src\\Casilla.h",
@@ -212,19 +232,19 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 9,
               "Title": "Tablero.h",
               "DocumentMoniker": "C:\\Users\\ferni\\OneDrive\\Documentos\\GitHub\\Los_ewoks\\Tablero\\src\\Tablero.h",
               "RelativeDocumentMoniker": "src\\Tablero.h",
               "ToolTip": "C:\\Users\\ferni\\OneDrive\\Documentos\\GitHub\\Los_ewoks\\Tablero\\src\\Tablero.h",
               "RelativeToolTip": "src\\Tablero.h",
-              "ViewState": "AgIAAA8AAAAAAAAAAAAAAAoAAAAPAAAAAAAAAA==",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAAABsAAABCAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2025-03-21T18:36:38.44Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 20,
               "Title": "Alfil.cpp",
               "DocumentMoniker": "C:\\Users\\ferni\\OneDrive\\Documentos\\GitHub\\Los_ewoks\\Tablero\\src\\Alfil.cpp",
               "RelativeDocumentMoniker": "src\\Alfil.cpp",
@@ -236,7 +256,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 18,
               "Title": "Caballo.cpp",
               "DocumentMoniker": "C:\\Users\\ferni\\OneDrive\\Documentos\\GitHub\\Los_ewoks\\Tablero\\src\\Caballo.cpp",
               "RelativeDocumentMoniker": "src\\Caballo.cpp",
@@ -248,7 +268,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 15,
               "Title": "Rey.h",
               "DocumentMoniker": "C:\\Users\\ferni\\OneDrive\\Documentos\\GitHub\\Los_ewoks\\Tablero\\src\\Rey.h",
               "RelativeDocumentMoniker": "src\\Rey.h",
@@ -260,20 +280,19 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "Casilla.cpp",
               "DocumentMoniker": "C:\\Users\\ferni\\OneDrive\\Documentos\\GitHub\\Los_ewoks\\Tablero\\src\\Casilla.cpp",
               "RelativeDocumentMoniker": "src\\Casilla.cpp",
               "ToolTip": "C:\\Users\\ferni\\OneDrive\\Documentos\\GitHub\\Los_ewoks\\Tablero\\src\\Casilla.cpp",
               "RelativeToolTip": "src\\Casilla.cpp",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAAB8AAAAbAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACQAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-03-28T09:06:14.7Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-28T09:06:14.7Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 22,
               "Title": "Peon.cpp",
               "DocumentMoniker": "C:\\Users\\ferni\\OneDrive\\Documentos\\GitHub\\Los_ewoks\\Tablero\\src\\Peon.cpp",
               "RelativeDocumentMoniker": "src\\Peon.cpp",
@@ -285,7 +304,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 21,
               "Title": "Peon.h",
               "DocumentMoniker": "C:\\Users\\ferni\\OneDrive\\Documentos\\GitHub\\Los_ewoks\\Tablero\\src\\Peon.h",
               "RelativeDocumentMoniker": "src\\Peon.h",
@@ -297,7 +316,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 12,
               "Title": "Rey.cpp",
               "DocumentMoniker": "C:\\Users\\ferni\\OneDrive\\Documentos\\GitHub\\Los_ewoks\\Tablero\\src\\Rey.cpp",
               "RelativeDocumentMoniker": "src\\Rey.cpp",
@@ -309,7 +328,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 19,
               "Title": "Alfil.h",
               "DocumentMoniker": "C:\\Users\\ferni\\OneDrive\\Documentos\\GitHub\\Los_ewoks\\Tablero\\src\\Alfil.h",
               "RelativeDocumentMoniker": "src\\Alfil.h",
@@ -321,7 +340,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 6,
               "Title": "Imagen.h",
               "DocumentMoniker": "C:\\Users\\ferni\\OneDrive\\Documentos\\GitHub\\Los_ewoks\\Tablero\\src\\Imagen.h",
               "RelativeDocumentMoniker": "src\\Imagen.h",
@@ -333,19 +352,19 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 11,
               "Title": "Tablero.cpp",
               "DocumentMoniker": "C:\\Users\\ferni\\OneDrive\\Documentos\\GitHub\\Los_ewoks\\Tablero\\src\\Tablero.cpp",
               "RelativeDocumentMoniker": "src\\Tablero.cpp",
               "ToolTip": "C:\\Users\\ferni\\OneDrive\\Documentos\\GitHub\\Los_ewoks\\Tablero\\src\\Tablero.cpp",
               "RelativeToolTip": "src\\Tablero.cpp",
-              "ViewState": "AgIAAFQAAAAAAAAAAIAwwHQAAAAkAAAAAAAAAA==",
+              "ViewState": "AgIAAFcAAAAAAAAAAIAwwHUAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2025-05-01T08:53:48.284Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 10,
               "Title": "Torre.cpp",
               "DocumentMoniker": "C:\\Users\\ferni\\OneDrive\\Documentos\\GitHub\\Los_ewoks\\Tablero\\src\\Torre.cpp",
               "RelativeDocumentMoniker": "src\\Torre.cpp",
@@ -357,7 +376,19 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 16,
+              "Title": "Reina.cpp",
+              "DocumentMoniker": "C:\\Users\\ferni\\OneDrive\\Documentos\\GitHub\\Los_ewoks\\Tablero\\src\\Reina.cpp",
+              "RelativeDocumentMoniker": "src\\Reina.cpp",
+              "ToolTip": "C:\\Users\\ferni\\OneDrive\\Documentos\\GitHub\\Los_ewoks\\Tablero\\src\\Reina.cpp",
+              "RelativeToolTip": "src\\Reina.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-05-08T20:45:41.121Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
               "Title": "Torre.h",
               "DocumentMoniker": "C:\\Users\\ferni\\OneDrive\\Documentos\\GitHub\\Los_ewoks\\Tablero\\src\\Torre.h",
               "RelativeDocumentMoniker": "src\\Torre.h",
@@ -369,7 +400,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 17,
               "Title": "Caballo.h",
               "DocumentMoniker": "C:\\Users\\ferni\\OneDrive\\Documentos\\GitHub\\Los_ewoks\\Tablero\\src\\Caballo.h",
               "RelativeDocumentMoniker": "src\\Caballo.h",
@@ -381,7 +412,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 24,
               "Title": "Piezas.cpp",
               "DocumentMoniker": "C:\\Users\\ferni\\OneDrive\\Documentos\\GitHub\\Los_ewoks\\Tablero\\src\\Piezas.cpp",
               "RelativeDocumentMoniker": "src\\Piezas.cpp",
@@ -393,7 +424,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 23,
               "Title": "Piezas.h",
               "DocumentMoniker": "C:\\Users\\ferni\\OneDrive\\Documentos\\GitHub\\Los_ewoks\\Tablero\\src\\Piezas.h",
               "RelativeDocumentMoniker": "src\\Piezas.h",

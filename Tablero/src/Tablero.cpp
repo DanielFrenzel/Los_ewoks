@@ -139,3 +139,4 @@ void Tablero::seleccion(int f1, int c1)											//Funcion de seleccion de la c
 	f = f1;
 	c = c1;
 }
+

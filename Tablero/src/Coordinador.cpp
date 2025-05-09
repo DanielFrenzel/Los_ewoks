@@ -63,6 +63,7 @@ void Coordinador::mouse(int button, int state, int x, int y)
 	float y_base = y / escalaY;
 	if (button == GLUT_LEFT_BUTTON && state == GLUT_DOWN)
 	{
+		
 		if (botonSalida.ratonEncima(x_base,y_base)) exit(0);
 		if (!pulsado_sonido && botonAltavozON.ratonEncima(x_base, y_base)) {
 			pulsado_sonido = true;
@@ -85,7 +86,7 @@ void Coordinador::mouse(int button, int state, int x, int y)
 			if (botonDuelo.ratonEncima(x_base, y_base))
 			{
 				memoria_Estado.push_back(INICIO);
-				estado = DUELO;
+				estado = VINETA;
 				return;
 			}
 			if (botonIA.ratonEncima(x_base, y_base))
@@ -103,6 +104,12 @@ void Coordinador::mouse(int button, int state, int x, int y)
 				return;
 			}
 		}
+
+		if (estado == VINETA)
+		{
+			estado = DUELO;
+		}
+		
 		if (estado == AJUSTES)
 		{			
 			
@@ -166,6 +173,75 @@ void Coordinador::mouse(int button, int state, int x, int y)
 void Coordinador::mueve(int fil1, int col1, int fil2, int col2)  //mueve la ficha de la selección 1 a la 2
 {
 	tablero.mueve(fil1, col1, fil2, col2);
+}
+
+void Coordinador::calcular_Casilla(int button, int state, int x, int y)		//se ha hecho para que al cambiar de resolucion de pantalla no de problema
+{
+	
+	const float tableroXInicio = 441.0f;
+	const float tableroXFin = 1478.0f;
+	const float tableroYInicio = 151.0f;
+	const float tableroYFin = 933.0f;
+	const float pasoX = 129.625f;
+	const float pasoY = 97.75f;
+
+	if (button == GLUT_LEFT_BUTTON && state == GLUT_DOWN && flag == false)		//pieza que se quiere mover
+	{
+	
+		if ((x >= escalarX(tableroXInicio) && x <= escalarX(tableroXFin)) &&
+			(y >= escalarY(tableroYInicio) && y <= escalarY(tableroYFin)))
+		{
+			for (int i = 0; i < 8; i++)
+			{
+				if ((x >= escalarX(tableroXInicio + (pasoX * i))) &&
+					(x <= escalarX(tableroXInicio + (pasoX * (i + 1)))))
+				{
+					flag = true;
+					col1 = i;
+				}
+				if ((y >= escalarY(tableroYInicio + (pasoY * i))) &&
+					(y <= escalarY(tableroYInicio + (pasoY * (i + 1)))))
+				{
+					fil1 = (7 - i);
+				}
+			}
+			//playMusica("sonidos/Sonido_Seleccion.mp3", true);
+			tablero.seleccion(fil1, col1);
+		}
+		
+		//playMusica("sonidos/Sonido_Seleccion.mp3", false);
+	}
+
+	else if (button == GLUT_LEFT_BUTTON && state == GLUT_DOWN && flag == true)		//casilla a la que se quiere mover la pieza
+	{
+	   if ((x >= escalarX(tableroXInicio) && x <= escalarX(tableroXFin)) && (y >= escalarY(tableroYInicio) && y <= escalarY(tableroYFin)))
+	{
+		for (int i = 0; i < 8; i++)
+		{
+			if ((x >= escalarX(tableroXInicio + (pasoX * i))) &&
+				(x <= escalarX(tableroXInicio + (pasoX * (i + 1)))))
+			{
+				flag = true;
+				col2 = i;
+			}
+			if ((y >= escalarY(tableroYInicio + (pasoY * i))) &&
+				(y <= escalarY(tableroYInicio + (pasoY * (i + 1)))))
+			{
+				fil2 = (7 - i);
+			}
+		}
+		tablero.mueve(fil1, col1, fil2, col2);
+	}
+	   flag = false;
+
+	}
+	
+
+	if (button == GLUT_RIGHT_BUTTON && state == GLUT_DOWN && flag == true)  //sirve para cancelar la seleccion de una pieza
+	{
+		flag = false;
+	}
+	
 }
 
 void Coordinador::seleccion(int f1, int c1)
@@ -299,12 +375,30 @@ void Coordinador::musica()
 	
 }
  
+
+//Control de volumen
+void Coordinador::subirVolumen() {
+	if (volumen < 100) {
+		volumen += 25;
+		stopMusica();
+		playMusica(rutasVolumen[(volumen / 25) - 1].c_str(), false);
+	}
+}
+void Coordinador::bajarVolumen() {
+	if (volumen > 0) {
+		volumen -= 25;
+		stopMusica();
+		playMusica(rutasVolumen[(volumen / 25) - 1].c_str(), false);
+	}
+}
+
 //Para dibujar-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 void Coordinador::dibuja()
 {
-
+	
+	//estado = DUELO;
 	//Estella de la muerte
-	if (estado != CREDITOS && estado != DUELO)
+	if (estado != CREDITOS && estado != DUELO && estado != VINETA)
 	{
 		Estrella.setPos(-16, 0 + bote);
 		Estrella.draw();
@@ -334,7 +428,14 @@ void Coordinador::dibuja()
 	}
 
 	if (estado == DUELO) {
+
 		tablero.dibuja();
+		
+	}
+
+	if (estado == VINETA)
+	{
+		vineta.dibujar();
 	}
 
 	//Botones AJUSTES
@@ -357,6 +458,14 @@ void Coordinador::dibuja()
 		botonMusica1.draw();
 		botonMusica2.draw();
 		botonMusica3.draw();
+	}
+
+	//Volumen
+	if (estado == SONIDO) {
+		TextoVolumen.setPos(0, -26);
+		TextoVolumen.draw();
+		volumenes[volumen / 25].setPos(0, -25);
+		volumenes[volumen / 25].draw();
 	}
 
 	//Fondo

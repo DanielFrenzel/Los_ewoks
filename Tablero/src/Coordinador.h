@@ -9,6 +9,7 @@
 #include "ETSIDI.h"
 #include <vector>
 #include "Boton.h"
+#include "Vineta.h"
 
 using namespace ETSIDI;							//Para no tener que poner ETSIDI:: siempre
 using TABLERO = array<array<Casilla, 8>, 8>;	//Decimos que TABLERO equivale a el array de arrays (ahorramos escribir mucho)
@@ -41,9 +42,11 @@ private:
 	Sprite Volumen50{ "imagenes/recursos/Volumen50.png", 0,0,15,15 };
 	Sprite Volumen75{ "imagenes/recursos/Volumen75.png", 0,0,15,15 };
 	Sprite Volumen100{ "imagenes/recursos/Volumen100.png", 0,0,15,15 };
+	//viñeta
+	//Sprite vineta{ "imagenes/vineta.png", -4,3,70,75 };
 	
 protected:
-	enum Estado { INICIO, DUELO, IA, AJUSTES, SONIDO, MUSICA, AYUDA, CREDITOS, NORMAS, MOVIMIENTOS };
+	enum Estado { INICIO, DUELO, IA, AJUSTES, SONIDO, MUSICA, AYUDA, CREDITOS, NORMAS, MOVIMIENTOS, VINETA };
 
 private:
 	Estado estado;
@@ -70,9 +73,12 @@ private:
 	Boton botonMusica1{ "imagenes/inicio/cancion1.png", "imagenes/inicio/Cancion1Seleccionada.png", 15, 15 };
 	Boton botonMusica2{ "imagenes/inicio/cancion2.png", "imagenes/inicio/Cancion2Seleccionada.png", 15, 15 };
 	Boton botonMusica3{ "imagenes/inicio/cancion3.png", "imagenes/inicio/Cancion3Seleccionada.png", 15, 15 };
+	
+
 		
 private:
-	Tablero tablero;							//Creamos matriz de casillas
+	Tablero tablero;	//Creamos matriz de casillas
+	Vineta vineta;
 	int ficha;
 	Peon peon;
 	Rey rey;
@@ -80,6 +86,8 @@ private:
 	Caballo caballo;
 	Alfil alfil;
 	bool turno = 0;
+	int fil1, fil2, col1, col2, fil3, col3;
+	bool flag = false;
 	//bool resaltar_altavoz = 0;
 	bool pulsado_sonido = 0; //Servira para cambiar el icono de sonido
 	//Variables para las animaciones
@@ -103,12 +111,34 @@ private:
 	int alto_ventana = 1080;
 	float escalaX = 1.0f;
 	float escalaY = 1.0f;
+	//Variables volumen
 	int volumen = 100;
+	Sprite volumenes[5] = {
+		Sprite("imagenes/recursos/Volumen0.png",  0,0,30,30),
+		Sprite("imagenes/recursos/Volumen25.png", 0,0,30,30),
+		Sprite("imagenes/recursos/Volumen50.png", 0,0,30,30),
+		Sprite("imagenes/recursos/Volumen75.png", 0,0,30,30),
+		Sprite("imagenes/recursos/Volumen100.png",0,0,30,30)
+	};
+	std::string rutasVolumen[4] = {
+		"sonidos/BLASTER25.mp3",
+		"sonidos/BLASTER50.mp3",
+		"sonidos/BLASTER75.mp3",
+		"sonidos/BLASTER100.mp3"
+	};
+	std::string rutasMenu[4] = {
+	  "sonidos/Musica125.mp3",
+	  "sonidos/Musica150.mp3",
+	  "sonidos/Musica175.mp3",
+	  "sonidos/Musica1100.mp3",
+	};
+
 	vector <Estado> memoria_Estado;
 	
 public:
 	Coordinador();
 	void MovRaton(int x, int y);
+	void calcular_Casilla(int button, int state, int x, int y);
 	void mouse(int button, int state, int x, int y);
 	void mueve(int fil1, int col1, int fil2, int col2); //movimiento del tablero pasado a través del coordinador
 	void seleccion(int f1, int c1);				//pasar la casilla seleccionada al tablero
@@ -124,10 +154,13 @@ public:
 	void setEstado(Estado nuevo_estado);
 	void setEstadoAnterior(Estado nuevo_estado_anterior);
 
+	//Control de volumen
+	void subirVolumen();
+	void bajarVolumen();
+
+	//Funcions para el escalado de las coordenadas(nos permite que funcione en pantalla completa en cualquier pantalla)
 	void actualizarEscalaVentana(int ancho_actual, int alto_actual);
-
 	float escalarX(float x) const;
-
 	float escalarY(float y) const;
 };
 

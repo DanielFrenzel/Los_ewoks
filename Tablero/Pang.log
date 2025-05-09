@@ -77,8 +77,8 @@ C:\Users\ferni\OneDrive\Documentos\GitHub\Los_ewoks\Tablero\src\Piezas.h(24,31):
   
 C:\Users\ferni\OneDrive\Documentos\GitHub\Los_ewoks\Tablero\src\Casilla.cpp(18,10): warning C4244: 'inicializando': conversión de 'double' a 'float'; posible pérdida de datos
 C:\Users\ferni\OneDrive\Documentos\GitHub\Los_ewoks\Tablero\src\Casilla.cpp(19,10): warning C4244: 'inicializando': conversión de 'double' a 'float'; posible pérdida de datos
-C:\Users\ferni\OneDrive\Documentos\GitHub\Los_ewoks\Tablero\src\Casilla.cpp(31,10): warning C4244: 'inicializando': conversión de 'double' a 'float'; posible pérdida de datos
-C:\Users\ferni\OneDrive\Documentos\GitHub\Los_ewoks\Tablero\src\Casilla.cpp(32,10): warning C4244: 'inicializando': conversión de 'double' a 'float'; posible pérdida de datos
+C:\Users\ferni\OneDrive\Documentos\GitHub\Los_ewoks\Tablero\src\Casilla.cpp(33,10): warning C4244: 'inicializando': conversión de 'int' a 'float'; posible pérdida de datos
+C:\Users\ferni\OneDrive\Documentos\GitHub\Los_ewoks\Tablero\src\Casilla.cpp(34,10): warning C4244: 'inicializando': conversión de 'int' a 'float'; posible pérdida de datos
   Coordinador.cpp
 C:\Users\ferni\OneDrive\Documentos\GitHub\Los_ewoks\Tablero\src\Piezas.h(20,14): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
   (compilando archivo de origen "src/Coordinador.cpp")
@@ -130,30 +130,30 @@ C:\Users\ferni\OneDrive\Documentos\GitHub\Los_ewoks\Tablero\src\Coordinador.cpp(
 C:\Users\ferni\OneDrive\Documentos\GitHub\Los_ewoks\Tablero\src\Coordinador.cpp(52,35): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
 C:\Users\ferni\OneDrive\Documentos\GitHub\Los_ewoks\Tablero\src\Coordinador.cpp(53,43): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
 C:\Users\ferni\OneDrive\Documentos\GitHub\Los_ewoks\Tablero\src\Coordinador.cpp(53,35): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
-C:\Users\ferni\OneDrive\Documentos\GitHub\Los_ewoks\Tablero\src\Coordinador.cpp(66,38): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
-C:\Users\ferni\OneDrive\Documentos\GitHub\Los_ewoks\Tablero\src\Coordinador.cpp(66,31): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
-C:\Users\ferni\OneDrive\Documentos\GitHub\Los_ewoks\Tablero\src\Coordinador.cpp(67,61): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
-C:\Users\ferni\OneDrive\Documentos\GitHub\Los_ewoks\Tablero\src\Coordinador.cpp(67,53): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
-C:\Users\ferni\OneDrive\Documentos\GitHub\Los_ewoks\Tablero\src\Coordinador.cpp(73,61): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
-C:\Users\ferni\OneDrive\Documentos\GitHub\Los_ewoks\Tablero\src\Coordinador.cpp(73,53): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
-C:\Users\ferni\OneDrive\Documentos\GitHub\Los_ewoks\Tablero\src\Coordinador.cpp(78,37): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
-C:\Users\ferni\OneDrive\Documentos\GitHub\Los_ewoks\Tablero\src\Coordinador.cpp(78,30): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
-C:\Users\ferni\OneDrive\Documentos\GitHub\Los_ewoks\Tablero\src\Coordinador.cpp(85,39): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
-C:\Users\ferni\OneDrive\Documentos\GitHub\Los_ewoks\Tablero\src\Coordinador.cpp(85,31): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
-C:\Users\ferni\OneDrive\Documentos\GitHub\Los_ewoks\Tablero\src\Coordinador.cpp(91,36): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
-C:\Users\ferni\OneDrive\Documentos\GitHub\Los_ewoks\Tablero\src\Coordinador.cpp(91,28): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
-C:\Users\ferni\OneDrive\Documentos\GitHub\Los_ewoks\Tablero\src\Coordinador.cpp(109,47): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
-C:\Users\ferni\OneDrive\Documentos\GitHub\Los_ewoks\Tablero\src\Coordinador.cpp(109,39): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
-C:\Users\ferni\OneDrive\Documentos\GitHub\Los_ewoks\Tablero\src\Coordinador.cpp(116,40): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
-C:\Users\ferni\OneDrive\Documentos\GitHub\Los_ewoks\Tablero\src\Coordinador.cpp(116,32): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
-C:\Users\ferni\OneDrive\Documentos\GitHub\Los_ewoks\Tablero\src\Coordinador.cpp(123,39): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
-C:\Users\ferni\OneDrive\Documentos\GitHub\Los_ewoks\Tablero\src\Coordinador.cpp(123,31): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
-C:\Users\ferni\OneDrive\Documentos\GitHub\Los_ewoks\Tablero\src\Coordinador.cpp(130,42): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
-C:\Users\ferni\OneDrive\Documentos\GitHub\Los_ewoks\Tablero\src\Coordinador.cpp(130,34): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
-C:\Users\ferni\OneDrive\Documentos\GitHub\Los_ewoks\Tablero\src\Coordinador.cpp(146,40): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
-C:\Users\ferni\OneDrive\Documentos\GitHub\Los_ewoks\Tablero\src\Coordinador.cpp(146,32): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
-C:\Users\ferni\OneDrive\Documentos\GitHub\Los_ewoks\Tablero\src\Coordinador.cpp(152,45): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
-C:\Users\ferni\OneDrive\Documentos\GitHub\Los_ewoks\Tablero\src\Coordinador.cpp(152,37): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
+C:\Users\ferni\OneDrive\Documentos\GitHub\Los_ewoks\Tablero\src\Coordinador.cpp(67,38): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
+C:\Users\ferni\OneDrive\Documentos\GitHub\Los_ewoks\Tablero\src\Coordinador.cpp(67,31): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
+C:\Users\ferni\OneDrive\Documentos\GitHub\Los_ewoks\Tablero\src\Coordinador.cpp(68,61): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
+C:\Users\ferni\OneDrive\Documentos\GitHub\Los_ewoks\Tablero\src\Coordinador.cpp(68,53): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
+C:\Users\ferni\OneDrive\Documentos\GitHub\Los_ewoks\Tablero\src\Coordinador.cpp(74,61): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
+C:\Users\ferni\OneDrive\Documentos\GitHub\Los_ewoks\Tablero\src\Coordinador.cpp(74,53): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
+C:\Users\ferni\OneDrive\Documentos\GitHub\Los_ewoks\Tablero\src\Coordinador.cpp(79,37): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
+C:\Users\ferni\OneDrive\Documentos\GitHub\Los_ewoks\Tablero\src\Coordinador.cpp(79,30): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
+C:\Users\ferni\OneDrive\Documentos\GitHub\Los_ewoks\Tablero\src\Coordinador.cpp(86,39): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
+C:\Users\ferni\OneDrive\Documentos\GitHub\Los_ewoks\Tablero\src\Coordinador.cpp(86,31): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
+C:\Users\ferni\OneDrive\Documentos\GitHub\Los_ewoks\Tablero\src\Coordinador.cpp(92,36): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
+C:\Users\ferni\OneDrive\Documentos\GitHub\Los_ewoks\Tablero\src\Coordinador.cpp(92,28): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
+C:\Users\ferni\OneDrive\Documentos\GitHub\Los_ewoks\Tablero\src\Coordinador.cpp(116,47): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
+C:\Users\ferni\OneDrive\Documentos\GitHub\Los_ewoks\Tablero\src\Coordinador.cpp(116,39): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
+C:\Users\ferni\OneDrive\Documentos\GitHub\Los_ewoks\Tablero\src\Coordinador.cpp(123,40): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
+C:\Users\ferni\OneDrive\Documentos\GitHub\Los_ewoks\Tablero\src\Coordinador.cpp(123,32): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
+C:\Users\ferni\OneDrive\Documentos\GitHub\Los_ewoks\Tablero\src\Coordinador.cpp(130,39): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
+C:\Users\ferni\OneDrive\Documentos\GitHub\Los_ewoks\Tablero\src\Coordinador.cpp(130,31): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
+C:\Users\ferni\OneDrive\Documentos\GitHub\Los_ewoks\Tablero\src\Coordinador.cpp(137,42): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
+C:\Users\ferni\OneDrive\Documentos\GitHub\Los_ewoks\Tablero\src\Coordinador.cpp(137,34): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
+C:\Users\ferni\OneDrive\Documentos\GitHub\Los_ewoks\Tablero\src\Coordinador.cpp(153,40): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
+C:\Users\ferni\OneDrive\Documentos\GitHub\Los_ewoks\Tablero\src\Coordinador.cpp(153,32): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
+C:\Users\ferni\OneDrive\Documentos\GitHub\Los_ewoks\Tablero\src\Coordinador.cpp(159,45): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
+C:\Users\ferni\OneDrive\Documentos\GitHub\Los_ewoks\Tablero\src\Coordinador.cpp(159,37): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
   Imagen.cpp
   Movimiento.cpp
 C:\Users\ferni\OneDrive\Documentos\GitHub\Los_ewoks\Tablero\src\Piezas.h(20,14): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
@@ -288,7 +288,11 @@ C:\Users\ferni\OneDrive\Documentos\GitHub\Los_ewoks\Tablero\src\Piezas.h(24,15):
 C:\Users\ferni\OneDrive\Documentos\GitHub\Los_ewoks\Tablero\src\Piezas.h(24,31): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
   (compilando archivo de origen "src/Torre.cpp")
   
+  Vineta.cpp
+C:\Users\ferni\OneDrive\Documentos\GitHub\Los_ewoks\Tablero\src\Vineta.cpp(10,129): warning C4305: 'argumento': truncamiento de 'double' a 'float'
+C:\Users\ferni\OneDrive\Documentos\GitHub\Los_ewoks\Tablero\src\Vineta.cpp(59,51): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
+C:\Users\ferni\OneDrive\Documentos\GitHub\Los_ewoks\Tablero\src\Vineta.cpp(59,40): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
   Generando código...
 C:\Users\ferni\OneDrive\Documentos\GitHub\Los_ewoks\Tablero\src\Peon.cpp(96,1): warning C4715: 'Peon::comprobarMov': no todas las rutas de acceso de control devuelven un valor
-C:\Users\ferni\OneDrive\Documentos\GitHub\Los_ewoks\Tablero\src\Casilla.cpp(62,1): warning C4715: 'Casilla::getcolor': no todas las rutas de acceso de control devuelven un valor
+C:\Users\ferni\OneDrive\Documentos\GitHub\Los_ewoks\Tablero\src\Casilla.cpp(63,1): warning C4715: 'Casilla::getcolor': no todas las rutas de acceso de control devuelven un valor
   Pang.vcxproj -> C:\Users\ferni\OneDrive\Documentos\GitHub\Los_ewoks\Tablero\bin\Pang.exe

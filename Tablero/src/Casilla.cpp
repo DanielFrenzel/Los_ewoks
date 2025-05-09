@@ -28,11 +28,12 @@ void Casilla::Casilla_seleccionada()
 {
 	//Dibujamos la casilla seleccionada
 
-	float x = (columna * 5.8) - 10;
-	float y = (fila * 5.8) - 20.5;
-	float tam_x = 7, tam_y = 7;
-
-	Sprite* casilla_seleccionada = Imagen::crearImagen("imagenes/casilla_seleccionada.png", x, y, tam_x, tam_y);
+	//float x = (columna * 5.05) - 20.2;
+	//float y = (fila * 5.05) + 20.2;
+	float x = (columna * 8) - 28;  // Centrado horizontal
+	float y = (fila * 8) - 151;
+	float tam_x = 6, tam_y = 6;
+	//Sprite* casilla_seleccionada = Imagen::crearImagen("imagenes/casilla_seleccionada.png", x, y, tam_x, tam_y);
 
 }
 
