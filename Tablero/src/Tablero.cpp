@@ -8,7 +8,7 @@ Tablero::Tablero()																//Constructor
 
 	x = 0;
 	y = 0;
-	tam_x = 64;
+	tam_x = 96;
 	tam_y = 64;
 
 
@@ -117,8 +117,8 @@ void Tablero::dibuja()															//Dibujamos las piezas y el tablero
 
 	casilla[f][c].Casilla_seleccionada();										//Imprime casilla seleccionada
 
-	tablero.draw();
-	//fondo.draw();
+	Sprite* tablero = Imagen::crearImagen										//Imprime tablero
+	("imagenes/Tablero_Fondo_1.png", x, y, tam_x, tam_y);
 
 }
 

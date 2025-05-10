@@ -5,12 +5,15 @@ Reina::Reina(char col)
 	color = col;
 }
 
-bool Reina::comprobarMov(TABLERO& casillas, Casilla& cas1, Casilla& cas2)
+State Reina::comprobarMov(TABLERO& casillas, Casilla& cas1, Casilla& cas2)
 {
 	Alfil alfilTemp(color);  // Puedes pasar color si lo necesitas
 	Torre torreTemp(color);
 
-	return (alfilTemp.comprobarMov(casillas, cas1, cas2) || torreTemp.comprobarMov(casillas, cas1, cas2));
+	State movimiento = alfilTemp.comprobarMov(casillas, cas1, cas2);
+	if (movimiento != INVALIDO)
+		return movimiento;
+	return (torreTemp.comprobarMov(casillas, cas1, cas2));
 }
 
 void Reina::dibujar(float x, float y)
@@ -28,4 +31,9 @@ void Reina::dibujar(float x, float y)
 char Reina::getColor()
 {
 	return color;
+}
+
+Tipo_pieza Reina::getTipo()
+{
+	return tipo;
 }

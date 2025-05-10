@@ -5,7 +5,7 @@ Torre::Torre(char col)
 	color = col;
 }
 
-bool Torre::comprobarMov(TABLERO& casillas, Casilla& cas1, Casilla& cas2)
+State Torre::comprobarMov(TABLERO& casillas, Casilla& cas1, Casilla& cas2)
 {
 	int filaOrigen = cas1.getfila();
 	int filaDestino = cas2.getfila();
@@ -17,7 +17,7 @@ bool Torre::comprobarMov(TABLERO& casillas, Casilla& cas1, Casilla& cas2)
 
 	if (columnaOrigen == columnaDestino && filaOrigen == filaDestino) // si se le pulsa en el mismo sitio no se ueve
 	{
-		return 0;
+		return INVALIDO;
 	}
 	if (columnaOrigen == columnaDestino)
 	{
@@ -25,7 +25,7 @@ bool Torre::comprobarMov(TABLERO& casillas, Casilla& cas1, Casilla& cas2)
 		for (int i = (filaOrigen + direccion); i != filaDestino; i += direccion)
 		{
 			if (casillas[i][columnaOrigen].getficha() != 0)
-				return 0;
+				return INVALIDO;
 
 		}
 		return comer(color, colorDestino);
@@ -37,11 +37,11 @@ bool Torre::comprobarMov(TABLERO& casillas, Casilla& cas1, Casilla& cas2)
 		for (int i = (columnaOrigen + direccion); i != columnaDestino; i += direccion)
 		{
 			if (casillas[filaOrigen][i].getficha() != 0)
-				return 0; // obstáculo
+				return INVALIDO; // obstáculo
 		}
 		return comer(color, colorDestino);
 	}
-	else return 0;
+	else return INVALIDO;
 }
 
 void Torre::dibujar(float x, float y)
@@ -59,4 +59,9 @@ void Torre::dibujar(float x, float y)
 char Torre::getColor()
 {
 	return color;
+}
+
+Tipo_pieza Torre::getTipo()
+{
+	return tipo;
 }

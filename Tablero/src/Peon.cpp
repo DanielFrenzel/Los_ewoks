@@ -6,91 +6,90 @@ Peon::Peon(char col)
 
 	color = col;
 	memoria = true;
-	//capturaPaso = false;
+	capturaPaso = false;
+	tipo = PEON;
 }
 
-bool Peon::comprobarMov(TABLERO& casillas, Casilla& cas1, Casilla& cas2)
+State Peon::comprobarMov(TABLERO& casillas, Casilla& cas1, Casilla& cas2)
 {
 	int mov = (memoria == true) ? 2 : 1;						//Si la memoria es true el movimiento es de 2
 
 	char colorDestino = cas2.getcolor();
+
 	int filaOrigen = cas1.getfila();
 	int filaDestino = cas2.getfila();
 
 	int columnaOrigen = cas1.getcolumna();
 	int columnaDestino = cas2.getcolumna();
 
+	auto fichaOrigen = casillas[cas1.getfila()][cas1.getcolumna()].getficha();
 	auto fichaDestino = casillas[cas2.getfila()][cas2.getcolumna()].getficha();
-	auto fichaPaso = casillas[cas1.getfila()][cas2.getcolumna()].getficha();
 
-	//Peon* peonPaso = dynamic_cast<Peon*>(fichaPaso);//Necesario para que  fichaPaso sepa si contiene un peon
+	int filaValida1 = casillas[cas1.getfila()][cas1.getcolumna()].getfila();
+	int filaValida2 = casillas[cas1.getfila()][cas2.getcolumna()].getfila();
+
+	bool memo = casillas[cas1.getfila()][cas2.getcolumna()].getMemoria();
+
+	Tipo_pieza fichaPaso = casillas[cas1.getfila()][cas1.getcolumna()].getTipo();
+
+	capturaPaso = false;
+
+	if (filaDestino == filaOrigen + 2 || filaDestino == filaOrigen - 2)
+	{
+		capturaPaso = true;
+	}
 
 	if (color == 'B')//Para fichas blancas
 	{
-		if ((filaDestino == (filaOrigen + mov) || (filaDestino == (filaOrigen + 1))) //Condicion de movimiento
+		if (filaDestino == (filaOrigen + 1) && (abs(columnaDestino - columnaOrigen) == 1)	//Condicion de peon pasante
+			&& (fichaDestino == 0) && (memo == true) && (fichaPaso == PEON) && (filaValida2 == 4))
+		{
+			return PASANTE;
+		}
+
+		if (((filaDestino == (filaOrigen + 1)) || (filaDestino == (filaOrigen + mov))) //Condicion de movimiento
 			&& (columnaOrigen == columnaDestino) && (fichaDestino == 0))
 		{
-			memoria = false;									//Ponemos la memoria a false despues del primer movimiento
-			/*if (mov == 2)
-			{
-				capturaPaso = true;
-			}*/
-			return 1;
+			memoria = false; //Ponemos la memoria a false despues del primer movimiento
+			return NORMAL;
 		}
 
 		if (filaDestino == (filaOrigen + 1) && (abs(columnaDestino - columnaOrigen) == 1) //Condicion de comer
 			&& (fichaDestino != 0) && (colorDestino == 'N'))
 		{
-			return 1;
+			return NORMAL;
 		}
-
-		/*if (filaDestino == (filaOrigen + 1) && (abs(columnaDestino - columnaOrigen) == 1) && (ficha == 0) && (fichaPaso != nullptr))
-		{
-			if (capturaPaso==true)
-			{
-				return 1;
-			}
-			if (capturaPaso == false)
-			{
-				return 0;
-			}
-		}*/
 
 		else
 		{
-			return 0;
+			return INVALIDO;
 		}
+
 	}
 	if (color == 'N')//Para fichas negras
 	{
-		if ((filaDestino == (filaOrigen - mov) || filaDestino == (filaOrigen - 1))
+		if (filaDestino == (filaOrigen - 1) && (abs(columnaDestino - columnaOrigen) == 1)	//Condicion de peon pasante
+			&& (fichaDestino == 0) && (memo == true) && (fichaPaso == PEON) && (filaValida2 == 3))
+		{
+			return PASANTE;
+		}
+
+		if (((filaDestino == (filaOrigen - 1)) || (filaDestino == (filaOrigen - mov))) //Condicion de movimiento
 			&& (columnaOrigen == columnaDestino) && (fichaDestino == 0))
 		{
-			memoria = false;
-			return 1;
+			memoria = false; //Ponemos la memoria a false despues del primer movimiento
+			return NORMAL;
 		}
 
-		if (filaDestino == (filaOrigen - 1) && abs(columnaDestino - columnaOrigen) == 1
+		if (filaDestino == (filaOrigen - 1) && (abs(columnaDestino - columnaOrigen) == 1) //Condicion de comer
 			&& (fichaDestino != 0) && (colorDestino == 'B'))
 		{
-			return 1;
+			return NORMAL;
 		}
-
-		/*if (filaDestino == (filaOrigen - 1) && (abs(columnaDestino - columnaOrigen) == 1) && (ficha == 0) && (fichaPaso != nullptr))
-		{
-			if (capturaPaso == true)
-			{
-				return 1;
-			}
-			if (capturaPaso == false)
-			{
-				return 0;
-			}
-		}*/
 
 		else
 		{
-			return 0;
+			return INVALIDO;
 		}
 	}
 }
@@ -101,7 +100,7 @@ void Peon::dibujar(float x, float y)
 
 	if (color == 'B')
 	{
-		Sprite* peonB = Imagen::crearImagen("imagenes/R2D2.png", x, y, tam, tam5);
+		Sprite* peonB = Imagen::crearImagen("imagenes/R2D2.png", x, y, tam, tam);
 	}
 	if (color == 'N')
 	{
@@ -114,4 +113,14 @@ void Peon::dibujar(float x, float y)
 char Peon::getColor()
 {
 	return color;
+}
+
+bool Peon::getMemoria()
+{
+	return capturaPaso;
+}
+
+Tipo_pieza Peon::getTipo()
+{
+	return tipo;
 }

@@ -11,9 +11,13 @@ using namespace ETSIDI;
 using std::abs;
 using TABLERO = array<array<Casilla, 8>, 8>;
 
+enum State { INVALIDO, NORMAL, PASANTE };
+enum Tipo_pieza { NADA, PEON, TORRE, ALFIL, CABALLO, REINA, REY };
+
 class Piezas
 {
 protected:
+	Tipo_pieza tipo;
 	char color;
 
 	//Esto hay que cambiarlo
@@ -25,10 +29,12 @@ protected:
 
 public:
 	virtual void dibujar(float x, float y) {};		//Funcion para dibujar de la clase base
-	virtual bool comprobarMov(TABLERO& casillas,	//Funcion de comprobar movimiento de la clase base
+	virtual State comprobarMov(TABLERO& casillas,	//Funcion de comprobar movimiento de la clase base
 		Casilla& cas1, Casilla& cas2) = 0;
 	virtual char getColor() = 0;						//Funcion de devolver color de la clase base
-
+	virtual bool getMemoria() = 0;
+	virtual Tipo_pieza getTipo() = 0;
 };
+
 
 

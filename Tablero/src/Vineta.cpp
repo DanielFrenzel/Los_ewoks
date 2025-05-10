@@ -3,9 +3,12 @@
 
 void Vineta::dibujar()
 {
-    
-	vineta.draw();
-    fondo.draw();    
+    Sprite* vineta = Imagen::crearImagen										//Imprime tablero
+    ("imagenes/vineta.png", xv, yv, tamv_x, tamv_y);
+    Sprite* fondo = Imagen::crearImagen										//Imprime tablero
+    ("imagenes/fondo_esapcio_negro.png", xf, yf, tamf_x, tamf_y);
+	//vineta.draw();
+   // fondo.draw();    
     mostrarTextoAnimado("PARA MÍ, EL ALIADO ES LA FUERZA, Y ES UN PODEROSO ALIADO.\nLA VIDA LA CREA Y LA HACE CRECER, Y SU ENERGÍA\nNOS RODEA Y NOS UNE.\nNOSOTROS DOS, SERES LUMINOSOS SOMOS, TÚ ERES LA MATERIA\nBRUTA. Y DEBES SENTIR LA FUERZA A TU ALREDEDOR,\nAQUÍ, ENTRE TÚ Y YO.\n¿SÍ?, EL ÁRBOL, LA ROCA, POR TODAS PARTES, ¿SÍ?\nINCLUSO ENTRE LA TIERRA Y LA NAVE.", 0.02, -13, -14);
    
     

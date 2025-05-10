@@ -28,12 +28,11 @@ void Casilla::Casilla_seleccionada()
 {
 	//Dibujamos la casilla seleccionada
 
-	//float x = (columna * 5.05) - 20.2;
-	//float y = (fila * 5.05) + 20.2;
-	float x = (columna * 8) - 28;  // Centrado horizontal
-	float y = (fila * 8) - 151;
+	float x = -8.7;
+	float y = -9;
 	float tam_x = 6, tam_y = 6;
-	//Sprite* casilla_seleccionada = Imagen::crearImagen("imagenes/casilla_seleccionada.png", x, y, tam_x, tam_y);
+
+	//Sprite* casilla_seleccionada = Imagen::crearImagen("imagenes/casilla_seleccionada_1.png", x, y, tam_x, tam_y);
 
 }
 
@@ -62,6 +61,22 @@ char Casilla::getcolor()
 	}
 }
 
+bool Casilla::getMemoria()
+{
+	if (pieza != nullptr)
+	{
+		return pieza->getMemoria();
+	}
+}
+
+Tipo_pieza Casilla::getTipo()
+{
+	if (pieza != nullptr)
+	{
+		return pieza->getTipo();
+	}
+}
+
 //-------------------------------------------Setters
 
 void Casilla::setPosicion(int fil, int col)
@@ -74,5 +89,4 @@ void Casilla::setficha(Piezas* p)
 {
 	pieza = p;
 }
-
 
