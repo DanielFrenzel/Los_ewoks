@@ -1,415 +1,86 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\david\\Documents\\Universidad\\Info2\\TrabajoDavid\\Trabajo con ajedrez\\Tablero\\",
+  "WorkspaceRootPath": "C:\\Users\\emilito2003\\Documents\\GitHub\\Los_ewoks\\Tablero\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{E575FADE-B6EB-4154-A1ED-8067A12EAE98}|Pang.vcxproj|C:\\Users\\david\\Documents\\Universidad\\Info2\\TrabajoDavid\\Trabajo con ajedrez\\Tablero\\src\\Coordinador.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "AbsoluteMoniker": "D:0:0:{E575FADE-B6EB-4154-A1ED-8067A12EAE98}|Pang.vcxproj|C:\\Users\\emilito2003\\Documents\\GitHub\\Los_ewoks\\Tablero\\src\\Coordinador.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{E575FADE-B6EB-4154-A1ED-8067A12EAE98}|Pang.vcxproj|solutionrelative:src\\Coordinador.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E575FADE-B6EB-4154-A1ED-8067A12EAE98}|Pang.vcxproj|C:\\Users\\david\\Documents\\Universidad\\Info2\\TrabajoDavid\\Trabajo con ajedrez\\Tablero\\src\\Coordinador.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "AbsoluteMoniker": "D:0:0:{E575FADE-B6EB-4154-A1ED-8067A12EAE98}|Pang.vcxproj|C:\\Users\\emilito2003\\Documents\\GitHub\\Los_ewoks\\Tablero\\src\\Coordinador.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{E575FADE-B6EB-4154-A1ED-8067A12EAE98}|Pang.vcxproj|solutionrelative:src\\Coordinador.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E575FADE-B6EB-4154-A1ED-8067A12EAE98}|Pang.vcxproj|C:\\Users\\david\\Documents\\Universidad\\Info2\\TrabajoDavid\\Trabajo con ajedrez\\Tablero\\src\\Ajedrez.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{E575FADE-B6EB-4154-A1ED-8067A12EAE98}|Pang.vcxproj|solutionrelative:src\\Ajedrez.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E575FADE-B6EB-4154-A1ED-8067A12EAE98}|Pang.vcxproj|C:\\Users\\david\\Documents\\Universidad\\Info2\\TrabajoDavid\\Trabajo con ajedrez\\Tablero\\src\\Boton.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{E575FADE-B6EB-4154-A1ED-8067A12EAE98}|Pang.vcxproj|solutionrelative:src\\Boton.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E575FADE-B6EB-4154-A1ED-8067A12EAE98}|Pang.vcxproj|C:\\Users\\david\\Documents\\Universidad\\Info2\\TrabajoDavid\\Trabajo con ajedrez\\Tablero\\src\\Boton.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{E575FADE-B6EB-4154-A1ED-8067A12EAE98}|Pang.vcxproj|solutionrelative:src\\Boton.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E575FADE-B6EB-4154-A1ED-8067A12EAE98}|Pang.vcxproj|C:\\Users\\david\\Documents\\Universidad\\Info2\\TrabajoDavid\\Trabajo con ajedrez\\Tablero\\src\\Casilla.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{E575FADE-B6EB-4154-A1ED-8067A12EAE98}|Pang.vcxproj|solutionrelative:src\\Casilla.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E575FADE-B6EB-4154-A1ED-8067A12EAE98}|Pang.vcxproj|C:\\Users\\david\\Documents\\Universidad\\Info2\\TrabajoDavid\\Trabajo con ajedrez\\Tablero\\src\\Casilla.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{E575FADE-B6EB-4154-A1ED-8067A12EAE98}|Pang.vcxproj|solutionrelative:src\\Casilla.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E575FADE-B6EB-4154-A1ED-8067A12EAE98}|Pang.vcxproj|C:\\Users\\david\\Documents\\Universidad\\Info2\\TrabajoDavid\\Trabajo con ajedrez\\Tablero\\src\\Tablero.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "AbsoluteMoniker": "D:0:0:{E575FADE-B6EB-4154-A1ED-8067A12EAE98}|Pang.vcxproj|C:\\Users\\emilito2003\\Documents\\GitHub\\Los_ewoks\\Tablero\\src\\Tablero.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{E575FADE-B6EB-4154-A1ED-8067A12EAE98}|Pang.vcxproj|solutionrelative:src\\Tablero.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E575FADE-B6EB-4154-A1ED-8067A12EAE98}|Pang.vcxproj|C:\\Users\\david\\Documents\\Universidad\\Info2\\TrabajoDavid\\Trabajo con ajedrez\\Tablero\\src\\Torre.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{E575FADE-B6EB-4154-A1ED-8067A12EAE98}|Pang.vcxproj|solutionrelative:src\\Torre.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E575FADE-B6EB-4154-A1ED-8067A12EAE98}|Pang.vcxproj|C:\\Users\\david\\Documents\\Universidad\\Info2\\TrabajoDavid\\Trabajo con ajedrez\\Tablero\\src\\Tablero.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "AbsoluteMoniker": "D:0:0:{E575FADE-B6EB-4154-A1ED-8067A12EAE98}|Pang.vcxproj|C:\\Users\\emilito2003\\Documents\\GitHub\\Los_ewoks\\Tablero\\src\\Tablero.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{E575FADE-B6EB-4154-A1ED-8067A12EAE98}|Pang.vcxproj|solutionrelative:src\\Tablero.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E575FADE-B6EB-4154-A1ED-8067A12EAE98}|Pang.vcxproj|C:\\Users\\david\\Documents\\Universidad\\Info2\\TrabajoDavid\\Trabajo con ajedrez\\Tablero\\src\\Torre.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{E575FADE-B6EB-4154-A1ED-8067A12EAE98}|Pang.vcxproj|solutionrelative:src\\Torre.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E575FADE-B6EB-4154-A1ED-8067A12EAE98}|Pang.vcxproj|C:\\Users\\david\\Documents\\Universidad\\Info2\\TrabajoDavid\\Trabajo con ajedrez\\Tablero\\src\\Rey.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{E575FADE-B6EB-4154-A1ED-8067A12EAE98}|Pang.vcxproj|solutionrelative:src\\Rey.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E575FADE-B6EB-4154-A1ED-8067A12EAE98}|Pang.vcxproj|C:\\Users\\david\\Documents\\Universidad\\Info2\\TrabajoDavid\\Trabajo con ajedrez\\Tablero\\src\\Rey.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{E575FADE-B6EB-4154-A1ED-8067A12EAE98}|Pang.vcxproj|solutionrelative:src\\Rey.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E575FADE-B6EB-4154-A1ED-8067A12EAE98}|Pang.vcxproj|C:\\Users\\david\\Documents\\Universidad\\Info2\\TrabajoDavid\\Trabajo con ajedrez\\Tablero\\src\\Reina.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{E575FADE-B6EB-4154-A1ED-8067A12EAE98}|Pang.vcxproj|solutionrelative:src\\Reina.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E575FADE-B6EB-4154-A1ED-8067A12EAE98}|Pang.vcxproj|C:\\Users\\david\\Documents\\Universidad\\Info2\\TrabajoDavid\\Trabajo con ajedrez\\Tablero\\src\\Caballo.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{E575FADE-B6EB-4154-A1ED-8067A12EAE98}|Pang.vcxproj|solutionrelative:src\\Caballo.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E575FADE-B6EB-4154-A1ED-8067A12EAE98}|Pang.vcxproj|C:\\Users\\david\\Documents\\Universidad\\Info2\\TrabajoDavid\\Trabajo con ajedrez\\Tablero\\src\\Caballo.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{E575FADE-B6EB-4154-A1ED-8067A12EAE98}|Pang.vcxproj|solutionrelative:src\\Caballo.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E575FADE-B6EB-4154-A1ED-8067A12EAE98}|Pang.vcxproj|C:\\Users\\david\\Documents\\Universidad\\Info2\\TrabajoDavid\\Trabajo con ajedrez\\Tablero\\src\\Alfil.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{E575FADE-B6EB-4154-A1ED-8067A12EAE98}|Pang.vcxproj|solutionrelative:src\\Alfil.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E575FADE-B6EB-4154-A1ED-8067A12EAE98}|Pang.vcxproj|C:\\Users\\david\\Documents\\Universidad\\Info2\\TrabajoDavid\\Trabajo con ajedrez\\Tablero\\src\\Alfil.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{E575FADE-B6EB-4154-A1ED-8067A12EAE98}|Pang.vcxproj|solutionrelative:src\\Alfil.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E575FADE-B6EB-4154-A1ED-8067A12EAE98}|Pang.vcxproj|C:\\Users\\david\\Documents\\Universidad\\Info2\\TrabajoDavid\\Trabajo con ajedrez\\Tablero\\src\\Peon.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{E575FADE-B6EB-4154-A1ED-8067A12EAE98}|Pang.vcxproj|solutionrelative:src\\Peon.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E575FADE-B6EB-4154-A1ED-8067A12EAE98}|Pang.vcxproj|C:\\Users\\david\\Documents\\Universidad\\Info2\\TrabajoDavid\\Trabajo con ajedrez\\Tablero\\src\\Peon.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{E575FADE-B6EB-4154-A1ED-8067A12EAE98}|Pang.vcxproj|solutionrelative:src\\Peon.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E575FADE-B6EB-4154-A1ED-8067A12EAE98}|Pang.vcxproj|C:\\Users\\david\\Documents\\Universidad\\Info2\\TrabajoDavid\\Trabajo con ajedrez\\Tablero\\src\\Imagen.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{E575FADE-B6EB-4154-A1ED-8067A12EAE98}|Pang.vcxproj|solutionrelative:src\\Imagen.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E575FADE-B6EB-4154-A1ED-8067A12EAE98}|Pang.vcxproj|C:\\Users\\david\\Documents\\Universidad\\Info2\\TrabajoDavid\\Trabajo con ajedrez\\Tablero\\src\\Imagen.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{E575FADE-B6EB-4154-A1ED-8067A12EAE98}|Pang.vcxproj|solutionrelative:src\\Imagen.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E575FADE-B6EB-4154-A1ED-8067A12EAE98}|Pang.vcxproj|C:\\Users\\david\\Documents\\Universidad\\Info2\\TrabajoDavid\\Trabajo con ajedrez\\Tablero\\src\\Piezas.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{E575FADE-B6EB-4154-A1ED-8067A12EAE98}|Pang.vcxproj|solutionrelative:src\\Piezas.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E575FADE-B6EB-4154-A1ED-8067A12EAE98}|Pang.vcxproj|C:\\Users\\david\\Documents\\Universidad\\Info2\\TrabajoDavid\\Trabajo con ajedrez\\Tablero\\src\\Piezas.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{E575FADE-B6EB-4154-A1ED-8067A12EAE98}|Pang.vcxproj|solutionrelative:src\\Piezas.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
   "DocumentGroupContainers": [
     {
-      "Orientation": 1,
+      "Orientation": 0,
       "VerticalTabListWidth": 256,
       "DocumentGroups": [
         {
-          "DockedHeight": 200,
+          "DockedWidth": 200,
           "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "Coordinador.cpp",
-              "DocumentMoniker": "C:\\Users\\david\\Documents\\Universidad\\Info2\\TrabajoDavid\\Trabajo con ajedrez\\Tablero\\src\\Coordinador.cpp",
+              "DocumentMoniker": "C:\\Users\\emilito2003\\Documents\\GitHub\\Los_ewoks\\Tablero\\src\\Coordinador.cpp",
               "RelativeDocumentMoniker": "src\\Coordinador.cpp",
-              "ToolTip": "C:\\Users\\david\\Documents\\Universidad\\Info2\\TrabajoDavid\\Trabajo con ajedrez\\Tablero\\src\\Coordinador.cpp",
+              "ToolTip": "C:\\Users\\emilito2003\\Documents\\GitHub\\Los_ewoks\\Tablero\\src\\Coordinador.cpp",
               "RelativeToolTip": "src\\Coordinador.cpp",
-              "ViewState": "AgIAAA8BAAAAAAAAAAAjwCgBAAA8AAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEkBAAAiAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-04-22T11:01:08.302Z",
-              "IsPinned": true,
+              "WhenOpened": "2025-05-13T11:28:42.269Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
               "Title": "Coordinador.h",
-              "DocumentMoniker": "C:\\Users\\david\\Documents\\Universidad\\Info2\\TrabajoDavid\\Trabajo con ajedrez\\Tablero\\src\\Coordinador.h",
+              "DocumentMoniker": "C:\\Users\\emilito2003\\Documents\\GitHub\\Los_ewoks\\Tablero\\src\\Coordinador.h",
               "RelativeDocumentMoniker": "src\\Coordinador.h",
-              "ToolTip": "C:\\Users\\david\\Documents\\Universidad\\Info2\\TrabajoDavid\\Trabajo con ajedrez\\Tablero\\src\\Coordinador.h",
+              "ToolTip": "C:\\Users\\emilito2003\\Documents\\GitHub\\Los_ewoks\\Tablero\\src\\Coordinador.h",
               "RelativeToolTip": "src\\Coordinador.h",
-              "ViewState": "AgIAAF4AAAAAAAAAAAAjwHQAAAAhAAAAAAAAAA==",
+              "ViewState": "AgIAAJAAAAAAAAAAAAAAAD8AAABqAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-04-22T10:59:33.868Z",
-              "IsPinned": true
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Ajedrez.cpp",
-              "DocumentMoniker": "C:\\Users\\david\\Documents\\Universidad\\Info2\\TrabajoDavid\\Trabajo con ajedrez\\Tablero\\src\\Ajedrez.cpp",
-              "RelativeDocumentMoniker": "src\\Ajedrez.cpp",
-              "ToolTip": "C:\\Users\\david\\Documents\\Universidad\\Info2\\TrabajoDavid\\Trabajo con ajedrez\\Tablero\\src\\Ajedrez.cpp",
-              "RelativeToolTip": "src\\Ajedrez.cpp",
-              "ViewState": "AgIAAIcAAAAAAAAAAAAAAKcAAAAVAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-03-21T18:35:52.092Z",
-              "IsPinned": true
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Boton.cpp",
-              "DocumentMoniker": "C:\\Users\\david\\Documents\\Universidad\\Info2\\TrabajoDavid\\Trabajo con ajedrez\\Tablero\\src\\Boton.cpp",
-              "RelativeDocumentMoniker": "src\\Boton.cpp",
-              "ToolTip": "C:\\Users\\david\\Documents\\Universidad\\Info2\\TrabajoDavid\\Trabajo con ajedrez\\Tablero\\src\\Boton.cpp",
-              "RelativeToolTip": "src\\Boton.cpp",
-              "ViewState": "AgIAABIAAAAAAAAAAAAAACkAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-05-08T16:03:35.409Z",
-              "IsPinned": true
+              "WhenOpened": "2025-05-13T11:28:41Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "Boton.h",
-              "DocumentMoniker": "C:\\Users\\david\\Documents\\Universidad\\Info2\\TrabajoDavid\\Trabajo con ajedrez\\Tablero\\src\\Boton.h",
-              "RelativeDocumentMoniker": "src\\Boton.h",
-              "ToolTip": "C:\\Users\\david\\Documents\\Universidad\\Info2\\TrabajoDavid\\Trabajo con ajedrez\\Tablero\\src\\Boton.h",
-              "RelativeToolTip": "src\\Boton.h",
-              "ViewState": "AgIAAAgAAAAAAAAAAAAvwCIAAAACAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-05-08T16:03:30.481Z",
-              "IsPinned": true
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "Reina.cpp",
-              "DocumentMoniker": "C:\\Users\\david\\Documents\\Universidad\\Info2\\TrabajoDavid\\Trabajo con ajedrez\\Tablero\\src\\Reina.cpp",
-              "RelativeDocumentMoniker": "src\\Reina.cpp",
-              "ToolTip": "C:\\Users\\david\\Documents\\Universidad\\Info2\\TrabajoDavid\\Trabajo con ajedrez\\Tablero\\src\\Reina.cpp",
-              "RelativeToolTip": "src\\Reina.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-05-08T20:45:41.121Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 20,
-              "Title": "Imagen.cpp",
-              "DocumentMoniker": "C:\\Users\\david\\Documents\\Universidad\\Info2\\TrabajoDavid\\Trabajo con ajedrez\\Tablero\\src\\Imagen.cpp",
-              "RelativeDocumentMoniker": "src\\Imagen.cpp",
-              "ToolTip": "C:\\Users\\david\\Documents\\Universidad\\Info2\\TrabajoDavid\\Trabajo con ajedrez\\Tablero\\src\\Imagen.cpp",
-              "RelativeToolTip": "src\\Imagen.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-04-22T10:34:57.072Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Casilla.h",
-              "DocumentMoniker": "C:\\Users\\david\\Documents\\Universidad\\Info2\\TrabajoDavid\\Trabajo con ajedrez\\Tablero\\src\\Casilla.h",
-              "RelativeDocumentMoniker": "src\\Casilla.h",
-              "ToolTip": "C:\\Users\\david\\Documents\\Universidad\\Info2\\TrabajoDavid\\Trabajo con ajedrez\\Tablero\\src\\Casilla.h",
-              "RelativeToolTip": "src\\Casilla.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABwAAAAbAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-03-21T19:05:24.69Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
               "Title": "Tablero.h",
-              "DocumentMoniker": "C:\\Users\\david\\Documents\\Universidad\\Info2\\TrabajoDavid\\Trabajo con ajedrez\\Tablero\\src\\Tablero.h",
+              "DocumentMoniker": "C:\\Users\\emilito2003\\Documents\\GitHub\\Los_ewoks\\Tablero\\src\\Tablero.h",
               "RelativeDocumentMoniker": "src\\Tablero.h",
-              "ToolTip": "C:\\Users\\david\\Documents\\Universidad\\Info2\\TrabajoDavid\\Trabajo con ajedrez\\Tablero\\src\\Tablero.h",
+              "ToolTip": "C:\\Users\\emilito2003\\Documents\\GitHub\\Los_ewoks\\Tablero\\src\\Tablero.h",
               "RelativeToolTip": "src\\Tablero.h",
-              "ViewState": "AgIAAA8AAAAAAAAAAAAAAAoAAAAPAAAAAAAAAA==",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-03-21T18:36:38.44Z"
+              "WhenOpened": "2025-05-13T11:28:35.638Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "Alfil.cpp",
-              "DocumentMoniker": "C:\\Users\\david\\Documents\\Universidad\\Info2\\TrabajoDavid\\Trabajo con ajedrez\\Tablero\\src\\Alfil.cpp",
-              "RelativeDocumentMoniker": "src\\Alfil.cpp",
-              "ToolTip": "C:\\Users\\david\\Documents\\Universidad\\Info2\\TrabajoDavid\\Trabajo con ajedrez\\Tablero\\src\\Alfil.cpp",
-              "RelativeToolTip": "src\\Alfil.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEIAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-04-17T21:14:20.711Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "Caballo.cpp",
-              "DocumentMoniker": "C:\\Users\\david\\Documents\\Universidad\\Info2\\TrabajoDavid\\Trabajo con ajedrez\\Tablero\\src\\Caballo.cpp",
-              "RelativeDocumentMoniker": "src\\Caballo.cpp",
-              "ToolTip": "C:\\Users\\david\\Documents\\Universidad\\Info2\\TrabajoDavid\\Trabajo con ajedrez\\Tablero\\src\\Caballo.cpp",
-              "RelativeToolTip": "src\\Caballo.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACoAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-04-17T21:03:21.96Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "Rey.h",
-              "DocumentMoniker": "C:\\Users\\david\\Documents\\Universidad\\Info2\\TrabajoDavid\\Trabajo con ajedrez\\Tablero\\src\\Rey.h",
-              "RelativeDocumentMoniker": "src\\Rey.h",
-              "ToolTip": "C:\\Users\\david\\Documents\\Universidad\\Info2\\TrabajoDavid\\Trabajo con ajedrez\\Tablero\\src\\Rey.h",
-              "RelativeToolTip": "src\\Rey.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-04-17T15:48:35.801Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Casilla.cpp",
-              "DocumentMoniker": "C:\\Users\\david\\Documents\\Universidad\\Info2\\TrabajoDavid\\Trabajo con ajedrez\\Tablero\\src\\Casilla.cpp",
-              "RelativeDocumentMoniker": "src\\Casilla.cpp",
-              "ToolTip": "C:\\Users\\david\\Documents\\Universidad\\Info2\\TrabajoDavid\\Trabajo con ajedrez\\Tablero\\src\\Casilla.cpp",
-              "RelativeToolTip": "src\\Casilla.cpp",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAAB8AAAAbAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-03-28T09:06:14.7Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 19,
-              "Title": "Peon.cpp",
-              "DocumentMoniker": "C:\\Users\\david\\Documents\\Universidad\\Info2\\TrabajoDavid\\Trabajo con ajedrez\\Tablero\\src\\Peon.cpp",
-              "RelativeDocumentMoniker": "src\\Peon.cpp",
-              "ToolTip": "C:\\Users\\david\\Documents\\Universidad\\Info2\\TrabajoDavid\\Trabajo con ajedrez\\Tablero\\src\\Peon.cpp",
-              "RelativeToolTip": "src\\Peon.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAHQAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-04-17T14:16:26.102Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "Peon.h",
-              "DocumentMoniker": "C:\\Users\\david\\Documents\\Universidad\\Info2\\TrabajoDavid\\Trabajo con ajedrez\\Tablero\\src\\Peon.h",
-              "RelativeDocumentMoniker": "src\\Peon.h",
-              "ToolTip": "C:\\Users\\david\\Documents\\Universidad\\Info2\\TrabajoDavid\\Trabajo con ajedrez\\Tablero\\src\\Peon.h",
-              "RelativeToolTip": "src\\Peon.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-04-17T14:16:51.082Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "Rey.cpp",
-              "DocumentMoniker": "C:\\Users\\david\\Documents\\Universidad\\Info2\\TrabajoDavid\\Trabajo con ajedrez\\Tablero\\src\\Rey.cpp",
-              "RelativeDocumentMoniker": "src\\Rey.cpp",
-              "ToolTip": "C:\\Users\\david\\Documents\\Universidad\\Info2\\TrabajoDavid\\Trabajo con ajedrez\\Tablero\\src\\Rey.cpp",
-              "RelativeToolTip": "src\\Rey.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACoAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-04-17T15:48:13.364Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "Alfil.h",
-              "DocumentMoniker": "C:\\Users\\david\\Documents\\Universidad\\Info2\\TrabajoDavid\\Trabajo con ajedrez\\Tablero\\src\\Alfil.h",
-              "RelativeDocumentMoniker": "src\\Alfil.h",
-              "ToolTip": "C:\\Users\\david\\Documents\\Universidad\\Info2\\TrabajoDavid\\Trabajo con ajedrez\\Tablero\\src\\Alfil.h",
-              "RelativeToolTip": "src\\Alfil.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-04-17T21:14:43.924Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 21,
-              "Title": "Imagen.h",
-              "DocumentMoniker": "C:\\Users\\david\\Documents\\Universidad\\Info2\\TrabajoDavid\\Trabajo con ajedrez\\Tablero\\src\\Imagen.h",
-              "RelativeDocumentMoniker": "src\\Imagen.h",
-              "ToolTip": "C:\\Users\\david\\Documents\\Universidad\\Info2\\TrabajoDavid\\Trabajo con ajedrez\\Tablero\\src\\Imagen.h",
-              "RelativeToolTip": "src\\Imagen.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-04-22T10:34:17.391Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 2,
               "Title": "Tablero.cpp",
-              "DocumentMoniker": "C:\\Users\\david\\Documents\\Universidad\\Info2\\TrabajoDavid\\Trabajo con ajedrez\\Tablero\\src\\Tablero.cpp",
+              "DocumentMoniker": "C:\\Users\\emilito2003\\Documents\\GitHub\\Los_ewoks\\Tablero\\src\\Tablero.cpp",
               "RelativeDocumentMoniker": "src\\Tablero.cpp",
-              "ToolTip": "C:\\Users\\david\\Documents\\Universidad\\Info2\\TrabajoDavid\\Trabajo con ajedrez\\Tablero\\src\\Tablero.cpp",
+              "ToolTip": "C:\\Users\\emilito2003\\Documents\\GitHub\\Los_ewoks\\Tablero\\src\\Tablero.cpp",
               "RelativeToolTip": "src\\Tablero.cpp",
-              "ViewState": "AgIAAFQAAAAAAAAAAIAwwHQAAAAkAAAAAAAAAA==",
+              "ViewState": "AgIAAGMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-05-01T08:53:48.284Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "Torre.cpp",
-              "DocumentMoniker": "C:\\Users\\david\\Documents\\Universidad\\Info2\\TrabajoDavid\\Trabajo con ajedrez\\Tablero\\src\\Torre.cpp",
-              "RelativeDocumentMoniker": "src\\Torre.cpp",
-              "ToolTip": "C:\\Users\\david\\Documents\\Universidad\\Info2\\TrabajoDavid\\Trabajo con ajedrez\\Tablero\\src\\Torre.cpp",
-              "RelativeToolTip": "src\\Torre.cpp",
-              "ViewState": "AgIAADMAAAAAAAAAAAAAABIAAAACAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-04-17T19:59:52.148Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "Torre.h",
-              "DocumentMoniker": "C:\\Users\\david\\Documents\\Universidad\\Info2\\TrabajoDavid\\Trabajo con ajedrez\\Tablero\\src\\Torre.h",
-              "RelativeDocumentMoniker": "src\\Torre.h",
-              "ToolTip": "C:\\Users\\david\\Documents\\Universidad\\Info2\\TrabajoDavid\\Trabajo con ajedrez\\Tablero\\src\\Torre.h",
-              "RelativeToolTip": "src\\Torre.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-04-17T20:00:42.9Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "Caballo.h",
-              "DocumentMoniker": "C:\\Users\\david\\Documents\\Universidad\\Info2\\TrabajoDavid\\Trabajo con ajedrez\\Tablero\\src\\Caballo.h",
-              "RelativeDocumentMoniker": "src\\Caballo.h",
-              "ToolTip": "C:\\Users\\david\\Documents\\Universidad\\Info2\\TrabajoDavid\\Trabajo con ajedrez\\Tablero\\src\\Caballo.h",
-              "RelativeToolTip": "src\\Caballo.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-04-17T21:03:51.103Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 23,
-              "Title": "Piezas.cpp",
-              "DocumentMoniker": "C:\\Users\\david\\Documents\\Universidad\\Info2\\TrabajoDavid\\Trabajo con ajedrez\\Tablero\\src\\Piezas.cpp",
-              "RelativeDocumentMoniker": "src\\Piezas.cpp",
-              "ToolTip": "C:\\Users\\david\\Documents\\Universidad\\Info2\\TrabajoDavid\\Trabajo con ajedrez\\Tablero\\src\\Piezas.cpp",
-              "RelativeToolTip": "src\\Piezas.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-03-31T21:24:20.208Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 22,
-              "Title": "Piezas.h",
-              "DocumentMoniker": "C:\\Users\\david\\Documents\\Universidad\\Info2\\TrabajoDavid\\Trabajo con ajedrez\\Tablero\\src\\Piezas.h",
-              "RelativeDocumentMoniker": "src\\Piezas.h",
-              "ToolTip": "C:\\Users\\david\\Documents\\Universidad\\Info2\\TrabajoDavid\\Trabajo con ajedrez\\Tablero\\src\\Piezas.h",
-              "RelativeToolTip": "src\\Piezas.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAPAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-03-31T21:23:20.839Z"
+              "WhenOpened": "2025-05-13T11:28:24.922Z"
             }
           ]
         },
         {
-          "DockedHeight": 14,
+          "DockedWidth": 200,
           "SelectedChildIndex": -1,
           "Children": [
             {

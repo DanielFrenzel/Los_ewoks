@@ -5,7 +5,7 @@ Rey::Rey(char col)
 	color = col;
 }
 
-bool Rey::comprobarMov(TABLERO& casillas, Casilla& cas1, Casilla& cas2)
+State Rey::comprobarMov(TABLERO& casillas, Casilla& cas1, Casilla& cas2)
 {
 	int filaOrigen = cas1.getfila();
 	int filaDestino = cas2.getfila();
@@ -20,9 +20,9 @@ bool Rey::comprobarMov(TABLERO& casillas, Casilla& cas1, Casilla& cas2)
 
 	if (((df <= 1 && dc <= 1) && !(df == 0 && dc == 0)) && colorDestino != color)
 	{
-		return 1;
+		return NORMAL;
 	}
-	else return 0;
+	else return INVALIDO;
 }
 
 void Rey::dibujar(float x, float y)
@@ -40,4 +40,9 @@ void Rey::dibujar(float x, float y)
 char Rey::getColor()
 {
 	return color;
+}
+
+Tipo_pieza Rey::getTipo()
+{
+	return tipo;
 }

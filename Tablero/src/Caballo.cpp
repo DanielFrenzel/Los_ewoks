@@ -5,7 +5,7 @@ Caballo::Caballo(char col)
 	color = col;
 }
 
-bool Caballo::comprobarMov(TABLERO& casillas, Casilla& cas1, Casilla& cas2)
+State Caballo::comprobarMov(TABLERO& casillas, Casilla& cas1, Casilla& cas2)
 {
 	int filaOrigen = cas1.getfila();
 	int filaDestino = cas2.getfila();
@@ -18,11 +18,11 @@ bool Caballo::comprobarMov(TABLERO& casillas, Casilla& cas1, Casilla& cas2)
 	if (((abs(filaOrigen - filaDestino) == 2 && abs(columnaOrigen - columnaDestino) == 1)
 		|| (abs(columnaOrigen - columnaDestino) == 2 && abs(filaOrigen - filaDestino) == 1)))
 	{
-		if (colorDestino == 0 || color != colorDestino) return 1;
-		else return 0;
+		if (colorDestino == 0 || color != colorDestino) return NORMAL;
+		else return INVALIDO;
 
 	}
-	return 0;
+	return INVALIDO;
 }
 
 void Caballo::dibujar(float x, float y)
@@ -40,4 +40,9 @@ void Caballo::dibujar(float x, float y)
 char Caballo::getColor()
 {
 	return color;
+}
+
+Tipo_pieza Caballo::getTipo()
+{
+	return tipo;
 }

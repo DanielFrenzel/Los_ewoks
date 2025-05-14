@@ -33,6 +33,8 @@ public:
 	int& getfila();
 	int& getcolumna();
 	Piezas* getficha();
+	bool getMemoria();
+	Tipo_pieza getTipo();
 
 	//Setters
 	void setficha(Piezas* p);

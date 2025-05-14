@@ -8,7 +8,7 @@ Tablero::Tablero()																//Constructor
 
 	x = 0;
 	y = 0;
-	tam_x = 64;
+	tam_x = 96;
 	tam_y = 64;
 
 
@@ -106,6 +106,7 @@ Tablero::Tablero()																//Constructor
 
 void Tablero::dibuja()															//Dibujamos las piezas y el tablero
 {
+
 	for (int i = 0;i < 8;i++)													//Imprime piezas
 	{
 		for (int j = 0;j < 8;j++)
@@ -116,8 +117,8 @@ void Tablero::dibuja()															//Dibujamos las piezas y el tablero
 
 	casilla[f][c].Casilla_seleccionada();										//Imprime casilla seleccionada
 
-	tablero.draw();
-	fondo.draw();
+	Sprite* tablero = Imagen::crearImagen										//Imprime tablero
+	("imagenes/Tablero_Fondo_1.png", x, y, tam_x, tam_y);
 
 }
 
@@ -139,3 +140,4 @@ void Tablero::seleccion(int f1, int c1)											//Funcion de seleccion de la c
 	f = f1;
 	c = c1;
 }
+

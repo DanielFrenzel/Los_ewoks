@@ -84,56 +84,12 @@ void mouseMotion(int x, int y)
 
 void OnMouseClick(int button, int state, int x, int y) 
 {
-	if (button == GLUT_LEFT_BUTTON && state == GLUT_DOWN && flag == false)
-	{
-		cout << x << "," << y << endl;
-		if ((x >= 441 || x <= 1478) && (y >= 151 || y <= 933))
-		{
-			for (int i = 0;i < 8;i++)
-			{
-				if ((x >= 441 + (129.625 * (i))) && (x <= 441 + (129.625 * (i + 1))))
-				{
-					flag = true;
-					col1 = i;
-				}
-				if ((y >= 151 + (97.75 * (i))) && (y <= 151 + (97.75 * (i + 1))))
-				{
-					fil1 = (7 - i);
-				}
-			}
-			coordinador.seleccion(fil1, col1);
-		}
-	}
 
-
-	else if (button == GLUT_LEFT_BUTTON && state == GLUT_DOWN && flag == true)
-	{
-		if ((x >= 441 || x <= 1478) && (y >= 151 || y <= 933))
-		{
-			for (int i = 0;i < 8;i++)
-			{
-				if ((x >= 441 + (129.625 * (i))) && (x <= 441 + (129.625 * (i + 1))))
-				{
-					flag = true;
-					col2 = i;
-				}
-				if ((y >= 151 + (97.75 * (i))) && (y <= 151 + (97.75 * (i + 1))))
-				{
-					fil2 = (7 - i);
-				}
-			}
-			coordinador.mueve(fil1, col1, fil2, col2);
-		}
-
-	}
-
-	if (button == GLUT_RIGHT_BUTTON && state == GLUT_DOWN && flag == true)
-	{
-		flag = false;
-	}
+	coordinador.calcular_Casilla(button, state, x, y);
 	coordinador.mouse(button, state, x, y);
 
 	glutPostRedisplay();
+	
 }
 
 void OnKeyboardDown(unsigned char key, int x, int y)

@@ -22,11 +22,15 @@ public:
 	void setSize(float nuevoAncho, float nuevoAlto);
 	void setRegion(float x1, float x2, float y1, float y2);
 
+	//getters
+	float getX() const { return x; }
+	float getY() const { return y; }
+
 	//Metodo que commprueba si el raton esta encima o no
-	bool ratonEncima(float rx, float ry) ;
+	bool ratonEncima(int rx, int ry) ;
 	
 	//Metodo que actualiza el resaltado
-	void actualizaResaltado(float rx, float ry);
+	void actualizaResaltado(int rx, int ry);
 
 	//Para dibujar
 	void draw() ;

@@ -6,7 +6,7 @@ Alfil::Alfil(char col)
 	color = col;
 }
 
-bool Alfil::comprobarMov(TABLERO& casillas, Casilla& cas1, Casilla& cas2)
+State Alfil::comprobarMov(TABLERO& casillas, Casilla& cas1, Casilla& cas2)
 {
 	int filaOrigen = cas1.getfila();
 	int filaDestino = cas2.getfila();
@@ -29,23 +29,23 @@ bool Alfil::comprobarMov(TABLERO& casillas, Casilla& cas1, Casilla& cas2)
 		while (i != filaDestino && j != columnaDestino)
 		{
 			if (casillas[i][j].getficha() != 0)
-				return false;
+				return INVALIDO;
 			i += direccionFil;
 			j += direccionCol;
 		}
 		if (fichaDestino == 0)
 		{
-			return 1;
+			return NORMAL;
 		}
 		if (color != colorDestino)
 		{
-			return 1;
+			return NORMAL;
 		}
 		else
-			return 0;
+			return INVALIDO;
 
 	}
-	return 0;
+	return INVALIDO;
 }
 
 void Alfil::dibujar(float x, float y)
@@ -64,4 +64,9 @@ void Alfil::dibujar(float x, float y)
 char Alfil::getColor()
 {
 	return color;
+}
+
+Tipo_pieza Alfil::getTipo()
+{
+	return tipo;
 }

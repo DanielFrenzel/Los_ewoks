@@ -12,18 +12,19 @@ Movimiento::Movimiento()
 void Movimiento::mover(TABLERO& casillas, Casilla& cas1, Casilla& cas2)
 {
 	//Hacemos los movimientos intercambiando fichas
-	// 
-	//auto fichaPaso = casillas[cas1.getfila()][cas2.getcolumna()].getficha();
-	//Peon* peonPaso = dynamic_cast<Peon*>(fichaPaso);
+
 	if (pieza != nullptr)
 	{
-		if (pieza->comprobarMov(casillas, cas1, cas2))
+		State estadoMovimiento = pieza->comprobarMov(casillas, cas1, cas2);//Importante hacer esto para no ejecutar compMov 2 veces
+		if (estadoMovimiento == PASANTE)
 		{
-			/*if (fichaPaso != nullptr)
-			{
-				casillas[cas2.getfila()][cas2.getcolumna()].setficha(pieza);
-				casillas[cas1.getfila()][cas2.getcolumna()].setficha(0);
-			}*/
+			casillas[cas2.getfila()][cas2.getcolumna()].setficha(pieza);
+			casillas[cas1.getfila()][cas2.getcolumna()].setficha(nullptr);
+			casillas[cas1.getfila()][cas1.getcolumna()].setficha(nullptr);
+
+		}
+		if (estadoMovimiento == NORMAL)
+		{
 			casillas[cas2.getfila()][cas2.getcolumna()].setficha(pieza);
 			casillas[cas1.getfila()][cas1.getcolumna()].setficha(nullptr);
 		}

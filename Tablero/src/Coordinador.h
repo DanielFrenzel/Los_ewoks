@@ -1,5 +1,4 @@
 #pragma once
-#include <string>
 #include "Tablero.h"
 #include "Casilla.h"
 #include "Peon.h"
@@ -10,6 +9,7 @@
 #include "ETSIDI.h"
 #include <vector>
 #include "Boton.h"
+#include "Vineta.h"
 
 using namespace ETSIDI;							//Para no tener que poner ETSIDI:: siempre
 using TABLERO = array<array<Casilla, 8>, 8>;	//Decimos que TABLERO equivale a el array de arrays (ahorramos escribir mucho)
@@ -37,9 +37,13 @@ private:
 	Sprite Volumen50{ "imagenes/recursos/Volumen50.png", 0,0,15,15 };
 	Sprite Volumen75{ "imagenes/recursos/Volumen75.png", 0,0,15,15 };
 	Sprite Volumen100{ "imagenes/recursos/Volumen100.png", 0,0,15,15 };
+	//viñeta
+	//Sprite vineta{ "imagenes/vineta.png", -4,3,70,75 };
 	
+	//Biomas
+	Sprite recuadroBioma{ "imagenes/recuadro_biomas3.png", 0, 0, 10, 9 };
 protected:
-	enum Estado { INICIO, DUELO, IA, AJUSTES, SONIDO, MUSICA, AYUDA, CREDITOS, NORMAS, MOVIMIENTOS };
+	enum Estado { INICIO, DUELO, BIOMA, AJUSTES, SONIDO, MUSICA, AYUDA, CREDITOS, NORMAS, MOVIMIENTOS, VINETA };
 
 private:
 	Estado estado;
@@ -49,11 +53,17 @@ private:
 	Boton botonAtras{ "imagenes/inicio/BOTON_ATRAS.png", "imagenes/inicio/BOTON_ATRAS2.png", 4, 4 };
 	Boton botonAltavozON{ "imagenes/inicio/BOTON_ALTAVOZ.png", "imagenes/inicio/BOTON_ALTAVOZ1.5.png", 5, 5 };
 	Boton botonAltavozOFF{ "imagenes/inicio/BOTON_ALTAVOZ2.png", "imagenes/inicio/BOTON_ALTAVOZ2.5.png", 5, 5 };
-
 	//Inicio
 	Boton botonDuelo{ "imagenes/inicio/BOTON_DUELO.png", "imagenes/inicio/BOTON_DUELO2.png", 15, 15 };
-	Boton botonIA{ "imagenes/inicio/BOTON_IA.png", "imagenes/inicio/BOTON_IA2.png", 15, 15 };
+	Boton botonBioma{ "imagenes/inicio/BOTON_BIOMA.png", "imagenes/inicio/BOTON_BIOMA2.png", 15, 15 };
 	Boton botonAjustes{ "imagenes/inicio/BOTON_AJUSTES.png", "imagenes/inicio/BOTON_AJUSTES2.png", 15, 15 };
+	//Duelo
+	Boton botonInterrogacion{ "imagenes/inicio/BOTON_INTERROGACION.png","imagenes/inicio/BOTON_INTERROGACION2.png", 4, 4 };
+	//Bioma
+	Boton botonMapa1{ "imagenes/Tablero_Fondo_Hoch.png", "imagenes/Tablero_Fondo_Hoch2.png", 10, 9 };
+	Boton botonMapa2{ "imagenes/Fondo_tablero_Tatooine.png", "imagenes/Fondo_tablero_Tatooine2.png", 10, 9 };
+	Boton botonMapa3{ "imagenes/Fondo_tablero_sorgan.png", "imagenes/Fondo_tablero_sorgan2.png",  10, 9 };
+	Boton botonMapa4{ "imagenes/Tablero_Fondo_Hoch.png", "imagenes/Tablero_Fondo_Hoch2.png",  10, 9 };
 	//Ajustes
 	Boton botonSonidoGeneral{ "imagenes/inicio/BOTON_SONIDO.png", "imagenes/inicio/BOTON_SONIDO2.png", 15, 15 };
 	Boton botonMusica{ "imagenes/inicio/BOTON_MUSICA.png", "imagenes/inicio/BOTON_MUSICA2.png", 15, 15 };
@@ -66,9 +76,27 @@ private:
 	Boton botonMusica1{ "imagenes/inicio/cancion1.png", "imagenes/inicio/Cancion1Seleccionada.png", 15, 15 };
 	Boton botonMusica2{ "imagenes/inicio/cancion2.png", "imagenes/inicio/Cancion2Seleccionada.png", 15, 15 };
 	Boton botonMusica3{ "imagenes/inicio/cancion3.png", "imagenes/inicio/Cancion3Seleccionada.png", 15, 15 };
+	//Movimientos
+	Boton botonPeonB{ "imagenes/inicio/R2D2(1).png", "imagenes/WhitePawn.png", 10, 10 };
+	Boton botonPeonN{ "imagenes/Droide_or.png", "imagenes/BlackPawn.png", 10, 10 };
+	Boton botonAlfilB{ "imagenes/Yoda.png", "imagenes/WhiteBishop.png", 10, 10 };
+	Boton botonAlfilN{ "imagenes/Doku_or.png", "imagenes/BlackBishop.png", 10, 10 };
+	Boton botonCaballoB{ "imagenes/Windu.png", "imagenes/WhiteKnight.png", 10, 10 };
+	Boton botonCaballoN{ "imagenes/BobaFet_or.png", "imagenes/BlackKnight.png", 10, 10 };
+	Boton botonReinaB{ "imagenes/Rey(1).png", "imagenes/WhiteQueen.png", 10, 10 };
+	Boton botonReinaN{ "imagenes/Vader_or.png", "imagenes/BlackQueen.png", 10, 10 };
+	Boton botonReyB{ "imagenes/Obiwan(1).png", "imagenes/WhiteKing.png", 10, 10 };
+	Boton botonReyN{ "imagenes/Palpatine(1).png", "imagenes/BlackKing.png", 10, 10 };
+	Boton botonTorreB{ "imagenes/Chewy(1).png", "imagenes/WhiteRook.png", 10, 10 };
+	Boton botonTorreN{ "imagenes/Superdroide_or.png", "imagenes/BlackRook.png", 10, 10 };
+	Boton botonReglas{ "imagenes/inicio/Boton_Reglas.png", "imagenes/inicio/Boton_Reglas2.png", 15,15 };
+	
+
 		
 private:
-	Tablero tablero;							//Creamos matriz de casillas
+	int mapaSeleccionado = 1;
+	Tablero tablero;	//Creamos matriz de casillas
+	Vineta vineta;
 	int ficha;
 	Peon peon;
 	Rey rey;
@@ -76,6 +104,8 @@ private:
 	Caballo caballo;
 	Alfil alfil;
 	bool turno = 0;
+	int fil1, fil2, col1, col2, fil3, col3;
+	bool flag = false;
 	//bool resaltar_altavoz = 0;
 	bool pulsado_sonido = 0; //Servira para cambiar el icono de sonido
 	//Variables para las animaciones
@@ -100,7 +130,7 @@ private:
 	float escalaX = 1.0f;
 	float escalaY = 1.0f;
 	//Variables volumen
-	int volumen=100;
+	int volumen = 100;
 	Sprite volumenes[5] = {
 		Sprite("imagenes/recursos/Volumen0.png",  0,0,30,30),
 		Sprite("imagenes/recursos/Volumen25.png", 0,0,30,30),
@@ -114,18 +144,25 @@ private:
 		"sonidos/BLASTER75.mp3",
 		"sonidos/BLASTER100.mp3"
 	};
-	std::string rutasMenu[4] = {    
+	std::string rutasMenu[4] = {
 	  "sonidos/Musica125.mp3",
 	  "sonidos/Musica150.mp3",
 	  "sonidos/Musica175.mp3",
 	  "sonidos/Musica1100.mp3",
 	};
-
+	//Array para fondos
+	std::string rutasFondo[4] = {
+	  "imagenes/Tablero_Fondo_Hoch.png",
+	  "imagenes/Fondo_tablero_Tatooine.png.png",
+	  "imagenes/Fondo_tablero_Sorgan.png.png",
+	  "imagenes/Tablero_Fondo_Hoch.png",
+	};
 	vector <Estado> memoria_Estado;
 	
 public:
 	Coordinador();
 	void MovRaton(int x, int y);
+	void calcular_Casilla(int button, int state, int x, int y);
 	void mouse(int button, int state, int x, int y);
 	void mueve(int fil1, int col1, int fil2, int col2); //movimiento del tablero pasado a través del coordinador
 	void seleccion(int f1, int c1);				//pasar la casilla seleccionada al tablero

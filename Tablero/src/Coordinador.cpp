@@ -2,7 +2,7 @@
 #include "freeglut.h"
 #include "ETSIDI.h"
 #include <cstdlib>
-
+#include <iostream>
 
 //Movimiento del raton----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 void Coordinador::MovRaton(int x, int y)  //Indica que casilla se ha pulsado según 
@@ -33,9 +33,11 @@ void Coordinador::MovRaton(int x, int y)  //Indica que casilla se ha pulsado seg
 	{
 	case INICIO:
 		botonDuelo.actualizaResaltado(x_base, y_base);
-		botonIA.actualizaResaltado(x_base, y_base);
+		botonBioma.actualizaResaltado(x_base, y_base);
 		botonAjustes.actualizaResaltado(x_base, y_base);
 		break;
+	case DUELO:
+		botonInterrogacion.actualizaResaltado(x_base, y_base);
 	case AJUSTES:
 		botonSonidoGeneral.actualizaResaltado(x_base, y_base);
 		botonMusica.actualizaResaltado(x_base, y_base);
@@ -52,6 +54,27 @@ void Coordinador::MovRaton(int x, int y)  //Indica que casilla se ha pulsado seg
 		botonMusica2.actualizaResaltado(x_base, y_base);
 		botonMusica3.actualizaResaltado(x_base, y_base);
 		break;
+	case BIOMA:
+		botonMapa1.actualizaResaltado(x_base, y_base);
+		botonMapa2.actualizaResaltado(x_base, y_base);
+		botonMapa3.actualizaResaltado(x_base, y_base);
+		botonMapa4.actualizaResaltado(x_base, y_base);
+		break;
+	case MOVIMIENTOS:
+		botonAlfilB.actualizaResaltado(x_base, y_base);
+		botonAlfilN.actualizaResaltado(x_base, y_base);
+		botonCaballoB.actualizaResaltado(x_base, y_base);
+		botonCaballoN.actualizaResaltado(x_base, y_base);
+		botonPeonB.actualizaResaltado(x_base, y_base);
+		botonPeonN.actualizaResaltado(x_base, y_base);
+		botonReinaB.actualizaResaltado(x_base, y_base);
+		botonReinaN.actualizaResaltado(x_base, y_base);
+		botonReyB.actualizaResaltado(x_base, y_base);
+		botonReyN.actualizaResaltado(x_base, y_base);
+		botonTorreB.actualizaResaltado(x_base, y_base);
+		botonTorreN.actualizaResaltado(x_base, y_base);
+		botonReglas.actualizaResaltado(x_base, y_base);
+		break;
 	}
 
 
@@ -61,8 +84,10 @@ void Coordinador::mouse(int button, int state, int x, int y)
 {
 	float x_base = x / escalaX;
 	float y_base = y / escalaY;
+	//std::cout << "Click en pos juego: (" << x_base << ", " << y_base << ")" << std::endl;
 	if (button == GLUT_LEFT_BUTTON && state == GLUT_DOWN)
 	{
+		
 		if (botonSalida.ratonEncima(x_base,y_base)) exit(0);
 		if (!pulsado_sonido && botonAltavozON.ratonEncima(x_base, y_base)) {
 			pulsado_sonido = true;
@@ -85,14 +110,14 @@ void Coordinador::mouse(int button, int state, int x, int y)
 			if (botonDuelo.ratonEncima(x_base, y_base))
 			{
 				memoria_Estado.push_back(INICIO);
-				estado = DUELO;
+				estado = VINETA;
 				return;
 			}
-			if (botonIA.ratonEncima(x_base, y_base))
+			if (botonBioma.ratonEncima(x_base, y_base))
 			{
 				memoria_Estado.push_back(INICIO);
 				estado_anterior = estado;
-				estado = IA;
+				estado = BIOMA;
 				return;
 			}
 			if (x_base >= 1466 && x_base <= 1796 && y_base >= 917 && y_base <= 1025)
@@ -103,6 +128,12 @@ void Coordinador::mouse(int button, int state, int x, int y)
 				return;
 			}
 		}
+
+		if (estado == VINETA)
+		{
+			estado = DUELO;
+		}
+		
 		if (estado == AJUSTES)
 		{			
 			
@@ -157,15 +188,113 @@ void Coordinador::mouse(int button, int state, int x, int y)
 				return;
 			}
 		}
+		if (estado == BIOMA)
+		{
+			if (botonMapa1.ratonEncima(x_base, y_base)) {
+				mapaSeleccionado = 1;
+			}
+			else if (botonMapa2.ratonEncima(x_base, y_base)) {
+				mapaSeleccionado = 2;
+			}
+			else if (botonMapa3.ratonEncima(x_base, y_base)) {
+				mapaSeleccionado = 3;
+			}
+			else if (botonMapa4.ratonEncima(x_base, y_base)) {
+				mapaSeleccionado = 4;
+			}
+			switch (mapaSeleccionado) {
+			case 1: recuadroBioma.setPos(botonMapa1.getX(), botonMapa1.getY()); break;
+			case 2: recuadroBioma.setPos(botonMapa2.getX(), botonMapa2.getY()); break;
+			case 3: recuadroBioma.setPos(botonMapa3.getX(), botonMapa3.getY()); break;
+			case 4: recuadroBioma.setPos(botonMapa4.getX(), botonMapa4.getY()); break;
+			}
+			return;
+		}
 
+		if (estado == MOVIMIENTOS) {
 
-		
+			if (botonReglas.ratonEncima(x_base, y_base))
+			{
+				estado = MOVIMIENTOS;
+				system("start https://www.chess.com/es/como-jugar-ajedrez#mover-piezas-ajedrez"); //Comando para abrir el navegador
+				return;
+			}
+		}
 	}
 }
 //Movimiento fichas----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 void Coordinador::mueve(int fil1, int col1, int fil2, int col2)  //mueve la ficha de la selección 1 a la 2
 {
 	tablero.mueve(fil1, col1, fil2, col2);
+}
+
+void Coordinador::calcular_Casilla(int button, int state, int x, int y)		//se ha hecho para que al cambiar de resolucion de pantalla no de problema
+{
+	
+	const float tableroXInicio = 441.0f;
+	const float tableroXFin = 1478.0f;
+	const float tableroYInicio = 151.0f;
+	const float tableroYFin = 933.0f;
+	const float pasoX = 129.625f;
+	const float pasoY = 97.75f;
+
+	if (button == GLUT_LEFT_BUTTON && state == GLUT_DOWN && flag == false)		//pieza que se quiere mover
+	{
+	
+		if ((x >= escalarX(tableroXInicio) && x <= escalarX(tableroXFin)) &&
+			(y >= escalarY(tableroYInicio) && y <= escalarY(tableroYFin)))
+		{
+			for (int i = 0; i < 8; i++)
+			{
+				if ((x >= escalarX(tableroXInicio + (pasoX * i))) &&
+					(x <= escalarX(tableroXInicio + (pasoX * (i + 1)))))
+				{
+					flag = true;
+					col1 = i;
+				}
+				if ((y >= escalarY(tableroYInicio + (pasoY * i))) &&
+					(y <= escalarY(tableroYInicio + (pasoY * (i + 1)))))
+				{
+					fil1 = (7 - i);
+				}
+			}
+			//playMusica("sonidos/Sonido_Seleccion.mp3", true);
+			tablero.seleccion(fil1, col1);
+		}
+		
+		//playMusica("sonidos/Sonido_Seleccion.mp3", false);
+	}
+
+	else if (button == GLUT_LEFT_BUTTON && state == GLUT_DOWN && flag == true)		//casilla a la que se quiere mover la pieza
+	{
+	   if ((x >= escalarX(tableroXInicio) && x <= escalarX(tableroXFin)) && (y >= escalarY(tableroYInicio) && y <= escalarY(tableroYFin)))
+	{
+		for (int i = 0; i < 8; i++)
+		{
+			if ((x >= escalarX(tableroXInicio + (pasoX * i))) &&
+				(x <= escalarX(tableroXInicio + (pasoX * (i + 1)))))
+			{
+				flag = true;
+				col2 = i;
+			}
+			if ((y >= escalarY(tableroYInicio + (pasoY * i))) &&
+				(y <= escalarY(tableroYInicio + (pasoY * (i + 1)))))
+			{
+				fil2 = (7 - i);
+			}
+		}
+		tablero.mueve(fil1, col1, fil2, col2);
+	}
+	   flag = false;
+
+	}
+	
+
+	if (button == GLUT_RIGHT_BUTTON && state == GLUT_DOWN && flag == true)  //sirve para cancelar la seleccion de una pieza
+	{
+		flag = false;
+	}
+	
 }
 
 void Coordinador::seleccion(int f1, int c1)
@@ -191,10 +320,14 @@ Coordinador::Coordinador()
 	//botones Inicio
 	botonDuelo.setPos(-30, -25);
 	botonDuelo.setRegion(122.0f, 452.0f, 915.0f, 1024.0f);
-	botonIA.setPos(0, -25);
-	botonIA.setRegion(795.0f, 1125.0f, 916.0f, 1025.0f);
+	botonBioma.setPos(0, -25);
+	botonBioma.setRegion(795.0f, 1125.0f, 916.0f, 1025.0f);
 	botonAjustes.setPos(30, -25);
 	botonAjustes.setRegion(1466.0f, 1796.0f, 917.0f, 1025.0f);
+
+	//btones Duelo
+	botonInterrogacion.setPos(30, 29);
+	botonInterrogacion.setRegion(1588.0f, 1669.0f, 26.0f, 74.0f);
 
 	//botones Ajustes
 	botonSonidoGeneral.setPos(-30, -25);
@@ -220,7 +353,46 @@ Coordinador::Coordinador()
 	botonMusica3.setPos(30, -25);
 	botonMusica3.setRegion(1464.0f, 1790.0f, 874.0f, 1025.0f);
 
-	//varios
+	//Botones Bioma
+	botonMapa1.setPos(-30, -20);
+	botonMapa1.setRegion(175.0f, 400.0f, 800.0f, 950.0f);
+	botonMapa2.setPos(-10, -20);
+	botonMapa2.setRegion(620.0f, 845.0f, 800.0f, 950.0f);
+	botonMapa3.setPos(10, -20);
+	botonMapa3.setRegion(1075.0f, 1295.0f, 800.0f, 950.0f);
+	botonMapa4.setPos(30, -20);
+	botonMapa4.setRegion(1520.0f, 1745.0f, 800.0f, 950.0f);
+
+	recuadroBioma.setPos(botonMapa1.getX(), botonMapa1.getY());
+
+	//Botones MOVIMIENTOS
+	botonPeonB.setPos(-30, -20);
+	botonPeonB.setRegion(175.0f, 400.0f, 800.0f, 950.0f);
+	botonPeonN.setPos(-10, -20);
+	botonPeonN.setRegion(620.0f, 845.0f, 800.0f, 950.0f);
+	botonTorreB.setPos(10, -20);
+	botonTorreB.setRegion(1075.0f, 1295.0f, 800.0f, 950.0f);
+	botonTorreN.setPos(30, -20);
+	botonTorreN.setRegion(1520.0f, 1745.0f, 800.0f, 950.0f);
+	botonCaballoB.setPos(-30, -5);
+	botonCaballoB.setRegion(175.0f, 400.0f, 550.0f, 700.0f);
+	botonCaballoN.setPos(-10, -5);
+	botonCaballoN.setRegion(620.0f, 845.0f, 550.0f, 700.0f); 
+	botonAlfilB.setPos(10, -5);
+	botonAlfilB.setRegion(1075.0f, 1295.0f, 550.0f, 700.0f);
+	botonAlfilN.setPos(30, -5);
+	botonAlfilN.setRegion(1520.0f, 1745.0f, 550.0f, 700.0f);
+	botonReyB.setPos(-30, 10);
+	botonReyB.setRegion(175.0f, 400.0f, 300.0f, 450.0f);
+	botonReyN.setPos(-10, 10);
+	botonReyN.setRegion(620.0f, 845.0f, 300.0f, 450.0f);
+	botonReinaB.setPos(10, 10);
+	botonReinaB.setRegion(1075.0f, 1295.0f, 300.0f, 450.0f);
+	botonReinaN.setPos(30, 10);
+	botonReinaN.setRegion(1520.0f, 1745.0f, 300.0f, 450.0f);
+	botonReglas.setPos(0, 25);
+	botonReglas.setRegion(795.0f, 1125.0f, 50.0f, 200.0f);
+
 	pulsado_sonido = false;
 	activacion_titulo2 = false;
 	tamx = 0, tamy = 0;
@@ -277,44 +449,48 @@ void Coordinador::animaciones()
 //Musica-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 void Coordinador::musica()
 {
+
 	if (pulsado_sonido != 0)
 	{
 		stopMusica();
+		musica_actual = -1;
+		return;
 	}
-	else if (estado != CREDITOS)
+
+	if (estado == CREDITOS &&  musica_actual != 1)
 	{
-		playMusica("sonidos/Musica1100.mp3", true);
+		stopMusica();
+		musica_actual = 1;
 	}
+	else if (estado != CREDITOS && musica_actual != 0)
+	{
+		playMusica("sonidos/Musica1_100.mp3", true);
+		musica_actual = 0;
+	}
+
 	
 }
-
+ 
 
 //Control de volumen
-void Coordinador::subirVolumen(){
+void Coordinador::subirVolumen() {
 	if (volumen < 100) {
 		volumen += 25;
 		stopMusica();
-		playMusica(rutasVolumen[(volumen / 25)-1].c_str(), false);
+		playMusica(rutasVolumen[(volumen / 25) - 1].c_str(), false);
 	}
 }
-void Coordinador::bajarVolumen(){
-	if (volumen > 0){
+void Coordinador::bajarVolumen() {
+	if (volumen > 0) {
 		volumen -= 25;
 		stopMusica();
-		playMusica(rutasVolumen[(volumen / 25)-1].c_str(), false);
+		playMusica(rutasVolumen[(volumen / 25) - 1].c_str(), false);
 	}
 }
- 
+
 //Para dibujar-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 void Coordinador::dibuja()
-{	
-	//Estella de la muerte
-	if (estado != CREDITOS && estado != DUELO)
-	{
-		Estrella.setPos(-16, 0 + bote);
-		Estrella.draw();
-		Estrella.setSize(20, 25);
-	}
+{
 
 	//Boton de sonido
 	if (pulsado_sonido == 0)
@@ -334,12 +510,21 @@ void Coordinador::dibuja()
 	//Botones Inicio
 	if (estado == INICIO) {
 		botonDuelo.draw();
-		botonIA.draw();
+		botonBioma.draw();
 		botonAjustes.draw();
 	}
 
 	if (estado == DUELO) {
+		stopMusica();
+		playMusica("sonidos/Musica1_100.mp3", true);
+		botonInterrogacion.draw();
 		tablero.dibuja();
+		
+	}
+
+	if (estado == VINETA)
+	{
+		vineta.dibujar();
 	}
 
 	//Botones AJUSTES
@@ -348,6 +533,13 @@ void Coordinador::dibuja()
 		botonMusica.draw();
 		botonAyuda.draw();
 		botonCreditos.draw();
+	}
+	if (estado == BIOMA){
+		recuadroBioma.draw();
+		botonMapa1.draw();
+		botonMapa2.draw();
+		botonMapa3.draw();
+		botonMapa4.draw();
 	}
 
 	//Botones AYUDA
@@ -365,16 +557,11 @@ void Coordinador::dibuja()
 	}
 
 	//Volumen
-	if (estado == SONIDO){
-		TextoVolumen.setPos(0, - 26);
+	if (estado == SONIDO) {
+		TextoVolumen.setPos(0, -26);
 		TextoVolumen.draw();
 		volumenes[volumen / 25].setPos(0, -25);
 		volumenes[volumen / 25].draw();
-	}
-
-	//Fondo
-	if (estado != CREDITOS) {
-		MenuInicial.draw();	
 	}
 	
 
@@ -409,7 +596,38 @@ void Coordinador::dibuja()
 
 	}
 
-	
+	if (estado == MOVIMIENTOS) {
+		botonPeonB.draw();
+		botonPeonN.draw();
+		botonTorreB.draw();
+		botonTorreN.draw();
+		botonCaballoB.draw();
+		botonCaballoN.draw();
+		botonAlfilB.draw();
+		botonAlfilN.draw();
+		botonReyB.draw();
+		botonReyN.draw();
+		botonReinaB.draw();
+		botonReinaN.draw();
+		botonReglas.draw();
+
+		FondoEstrellas.draw();
+	}
+
+	//estado = DUELO;
+	//Estella de la muerte
+	if (estado != CREDITOS && estado != DUELO && estado != VINETA)
+	{
+		Estrella.setPos(-16, 0 + bote);
+		Estrella.draw();
+		Estrella.setSize(20, 25);
+	}
+
+	//Fondo
+	if (estado != CREDITOS)
+	{
+		MenuInicial.draw();
+	}
 }
 //Getters (Por si hiciera falta)---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 Coordinador::Estado Coordinador::getEstado() const 

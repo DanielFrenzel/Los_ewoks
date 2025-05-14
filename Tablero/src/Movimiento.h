@@ -9,7 +9,7 @@ using TABLERO = array<array<Casilla, 8>, 8>;
 class Movimiento
 {
 private:
-	static Piezas *pieza;													/*Creamos objeto de piezas(static) ya que usamos
+	static Piezas* pieza;													/*Creamos objeto de piezas(static) ya que usamos
 																					funciones estáticas*/
 
 public:
@@ -19,4 +19,3 @@ public:
 
 	static void setPieza(Piezas* p);										//Setter
 };
-
