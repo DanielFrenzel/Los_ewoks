@@ -49,7 +49,7 @@ void Boton::actualizaResaltado(int rx, int ry)
 
 void Boton::draw() 
 {
-	if (resaltado == 1)
+	if (resaltado)
 	{
 		spriteResaltado.draw();
 	}

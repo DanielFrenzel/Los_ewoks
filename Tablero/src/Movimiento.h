@@ -4,6 +4,7 @@
 #include"Piezas.h"
 #include<array>
 
+
 using TABLERO = array<array<Casilla, 8>, 8>;
 
 class Movimiento
@@ -16,6 +17,7 @@ public:
 	Movimiento();															//Constructor
 
 	static void mover(TABLERO& casillas, Casilla& cas1, Casilla& cas2);		//Funcion de movimiento de piezas
+	static std::vector<Casilla*> obtenerMovimientosPosibles(const TABLERO& tablero, Casilla& origen);
 
 	static void setPieza(Piezas* p);										//Setter
 };

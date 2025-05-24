@@ -36,3 +36,13 @@ void Movimiento::setPieza(Piezas* p)
 {
 	pieza = p;
 }
+
+
+std::vector<Casilla*> Movimiento::obtenerMovimientosPosibles(const TABLERO& tablero, Casilla& origen) {
+	Piezas* pieza_seleccionada = origen.getficha();
+	if (pieza_seleccionada != nullptr) {
+		// Llama a la función polimórfica de la pieza
+		return pieza_seleccionada->movimientosPosibles(tablero, origen);
+	}
+	return {}; // Retorna un vector vacío si no hay pieza
+}

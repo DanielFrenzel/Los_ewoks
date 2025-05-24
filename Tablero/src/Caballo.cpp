@@ -3,6 +3,7 @@
 Caballo::Caballo(char col)
 {
 	color = col;
+	tipo = CABALLO;
 }
 
 State Caballo::comprobarMov(TABLERO& casillas, Casilla& cas1, Casilla& cas2)
@@ -23,6 +24,36 @@ State Caballo::comprobarMov(TABLERO& casillas, Casilla& cas1, Casilla& cas2)
 
 	}
 	return INVALIDO;
+}
+
+std::vector<Casilla*> Caballo::movimientosPosibles(const TABLERO& tablero, Casilla& origen) {
+	std::vector<Casilla*> posibles;
+	int fila = origen.getfila();
+	int col = origen.getcolumna();
+
+	// Movimientos del caballo (L-shape): {fila_offset, col_offset}
+	const int dirs[8][2] = {
+		{-2, -1}, {-2, 1},  // 2 arriba, 1 izq/der
+		{-1, -2}, {-1, 2},  // 1 arriba, 2 izq/der
+		{1, -2},  {1, 2},   // 1 abajo, 2 izq/der
+		{2, -1},  {2, 1}    // 2 abajo, 1 izq/der
+	};
+
+	for (auto& dir : dirs) {
+		int f_destino = fila + dir[0];
+		int c_destino = col + dir[1];
+
+		// Verificar si la casilla de destino está dentro del tablero
+		if (f_destino >= 0 && f_destino < 8 && c_destino >= 0 && c_destino < 8) {
+			Piezas* ficha_en_destino = tablero[f_destino][c_destino].getficha();
+
+			if (ficha_en_destino == nullptr || ficha_en_destino->getColor() != this->getColor()) {
+				// Casilla vacía o con pieza del oponente, es un movimiento posible
+				posibles.push_back(const_cast<Casilla*>(&tablero[f_destino][c_destino]));
+			}
+		}
+	}
+	return posibles;
 }
 
 void Caballo::dibujar(float x, float y)

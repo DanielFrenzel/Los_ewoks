@@ -7,7 +7,7 @@ using namespace ETSIDI;
 class Imagen
 {
 private:
-	static Sprite* nombreImagen;							/*Creamos objeto Sprite y lo hacemos static*/
+	static Sprite* nombreImagen;							//Creamos objeto Sprite y lo hacemos static
 public:
 	static Sprite* crearImagen(const char* nom,				//Creamos la imagen
 		float& x, float& y, float& tam_x, float& tam_y);

@@ -94,6 +94,45 @@ State Peon::comprobarMov(TABLERO& casillas, Casilla& cas1, Casilla& cas2)
 	}
 }
 
+std::vector<Casilla*> Peon::movimientosPosibles(const TABLERO& tablero, Casilla& origen) {
+	std::vector<Casilla*> posibles;
+	int fila = origen.getfila();
+	int col = origen.getcolumna();
+	int direccion_avance = (color == 'B') ? 1 : -1; // +1 para blancas, -1 para negras
+
+	// 1. Avance normal (1 casilla)
+	int f_avance1 = fila + direccion_avance;
+	if (f_avance1 >= 0 && f_avance1 < 8) {
+		if (tablero[f_avance1][col].getficha() == nullptr) {
+			posibles.push_back(const_cast<Casilla*>(&tablero[f_avance1][col]));
+
+			// 2. Avance inicial de 2 casillas (solo si es el primer movimiento del peón)
+			if (this->getMemoria()) { // getMemoria() indica si es el primer movimiento
+				int f_avance2 = fila + 2 * direccion_avance;
+				if (f_avance2 >= 0 && f_avance2 < 8 && tablero[f_avance2][col].getficha() == nullptr) {
+					posibles.push_back(const_cast<Casilla*>(&tablero[f_avance2][col]));
+				}
+			}
+		}
+	}
+
+	// 3. Capturas diagonales
+	const int cols_captura[2] = { col - 1, col + 1 };
+	for (int c_cap : cols_captura) {
+		if (f_avance1 >= 0 && f_avance1 < 8 && c_cap >= 0 && c_cap < 8) {
+			Piezas* ficha_en_destino = tablero[f_avance1][c_cap].getficha();
+			if (ficha_en_destino != nullptr && ficha_en_destino->getColor() != this->getColor()) {
+				posibles.push_back(const_cast<Casilla*>(&tablero[f_avance1][c_cap]));
+			}
+		}
+	}
+
+	// 4. Captura al paso (En Passant) - Queda por implementar
+
+	return posibles;
+}
+
+
 void Peon::dibujar(float x, float y)
 {
 	//Dibujamos los peones

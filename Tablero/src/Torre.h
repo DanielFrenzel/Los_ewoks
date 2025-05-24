@@ -13,6 +13,7 @@ public:
 		else return NORMAL;
 	}
 	State comprobarMov(TABLERO& casillas, Casilla& cas1, Casilla& cas2) override;
+	std::vector<Casilla*> movimientosPosibles(const TABLERO& tablero, Casilla& origen) override;
 	void dibujar(float x, float y) override;
 	char getColor() override;
 	bool getMemoria() override { return false; }

@@ -42,12 +42,22 @@ private:
 	
 	//Biomas
 	Sprite recuadroBioma{ "imagenes/recuadro_biomas3.png", 0, 0, 10, 9 };
+
+	GLdouble modelviewMatrix[16];
+	GLdouble projectionMatrix[16];
+	GLint viewportCoords[4];
+
+
 protected:
 	enum Estado { INICIO, DUELO, BIOMA, AJUSTES, SONIDO, MUSICA, AYUDA, CREDITOS, NORMAS, MOVIMIENTOS, VINETA };
+
+	
 
 private:
 	Estado estado;
 	Estado estado_anterior;
+	char turnoActual; // 'B' para blancas, 'N' para negras
+
 	//Botone varios
 	Boton botonSalida{ "imagenes/inicio/Boton_salida.png", "imagenes/inicio/Boton_salida2.png", 20, 20 };
 	Boton botonAtras{ "imagenes/inicio/BOTON_ATRAS.png", "imagenes/inicio/BOTON_ATRAS2.png", 4, 4 };
@@ -113,6 +123,16 @@ private:
 	int alto_ventana = 1080;
 	float escalaX = 1.0f;
 	float escalaY = 1.0f;
+
+	 const float TABLERO_X_INICIO = 441.0f;
+	 const float TABLERO_Y_INICIO = 151.0f;
+	 const float CASILLA_ANCHO = 116.625f; // Ancho de una casilla
+	 const float CASILLA_ALTO = 85.75f;    // Alto de una casilla
+	// También podemos calcular el ancho y alto total del tablero para los límites
+	 const float TABLERO_ANCHO_TOTAL = CASILLA_ANCHO * 8; // 129.625 * 8 = 1037.0
+	 const float TABLERO_ALTO_TOTAL = CASILLA_ALTO * 8;   // 97.75 * 8 = 782.0		
+
+
 	//Variables volumen
 	int volumen = 100;
 	Sprite volumenes[5] = {
@@ -148,15 +168,16 @@ public:
 	void MovRaton(int x, int y);
 	void calcular_Casilla(int button, int state, int x, int y);
 	void mouse(int button, int state, int x, int y);
-	void mueve(int fil1, int col1, int fil2, int col2); //movimiento del tablero pasado a través del coordinador
 	void seleccion(int f1, int c1);				//pasar la casilla seleccionada al tablero
-	void dibuja();								//dibujar el juego
+	void dibuja();//dibujar el juego
+	void dibujaTurno();
 	void animaciones();
 	void musica();
 
 	//Getters
 	Estado getEstado() const;
-	Estado getEstadoAnterior() const;
+	char getTurnoActual() const { return turnoActual; }
+	void cambiarTurno();
 
 	//Setters
 	void setEstado(Estado nuevo_estado);
@@ -165,6 +186,7 @@ public:
 	//Control de volumen
 	void subirVolumen();
 	void bajarVolumen();
+
 
 	//Funcions para el escalado de las coordenadas(nos permite que funcione en pantalla completa en cualquier pantalla)
 	void actualizarEscalaVentana(int ancho_actual, int alto_actual);

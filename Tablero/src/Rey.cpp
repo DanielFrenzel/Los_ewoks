@@ -25,6 +25,38 @@ State Rey::comprobarMov(TABLERO& casillas, Casilla& cas1, Casilla& cas2)
 	else return INVALIDO;
 }
 
+std::vector<Casilla*> Rey::movimientosPosibles(const TABLERO& tablero, Casilla& origen) {
+    std::vector<Casilla*> posibles;
+    int fila = origen.getfila();
+    int col = origen.getcolumna();
+
+    // Todas las 8 direcciones posibles (1 casilla)
+    const int dirs[8][2] = {
+        {-1, -1}, {-1, 0}, {-1, 1},  // Arriba
+        {0, -1},            {0, 1},   // Lados
+        {1, -1},  {1, 0},  {1, 1}    // Abajo
+    };
+
+    for (auto& dir : dirs) {
+        int f_destino = fila + dir[0];
+        int c_destino = col + dir[1];
+
+        // Verificar límites del tablero
+        if (f_destino >= 0 && f_destino < 8 && c_destino >= 0 && c_destino < 8) {
+            Piezas* ficha_en_destino = tablero[f_destino][c_destino].getficha();
+
+            if (ficha_en_destino == nullptr || ficha_en_destino->getColor() != this->getColor()) {
+                // Casilla vacía o con pieza del oponente
+                posibles.push_back(const_cast<Casilla*>(&tablero[f_destino][c_destino]));
+            }
+        }
+    }
+    
+    return posibles;
+}
+
+
+
 void Rey::dibujar(float x, float y)
 {
 	if (color == 'B')

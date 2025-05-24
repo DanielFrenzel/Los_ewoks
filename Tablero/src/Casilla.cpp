@@ -7,6 +7,8 @@ Casilla::Casilla()
 	fila = 0;
 	columna = 0;
 	pieza = nullptr;
+	esta_resaltada = false; // Inicializar
+
 }
 
 void Casilla::dibuja()
@@ -15,30 +17,23 @@ void Casilla::dibuja()
 
 	//Coordenadas en x e y en la pantallas
 
-	float x = (columna * 5.8) - 20;
-	float y = (fila * 5.8) - 20.5;
+	float x = (columna * 4) - 14;
+	float y = (fila * 4.75) - 16.5;
 
 	if (pieza != nullptr)
 	{
 		pieza->dibujar(x, y);
+		if (esta_resaltada) {
+			Sprite* sprite_resaltado = Imagen::crearImagen("imagenes/casilla_seleccionada.png", x, y, tam, tam);
+		}
 	}
-}
-
-void Casilla::Casilla_seleccionada()
-{
-	//Dibujamos la casilla seleccionada
-
-	float x = -8.7;
-	float y = -9;
-	float tam_x = 6, tam_y = 6;
-
-	//Sprite* casilla_seleccionada = Imagen::crearImagen("imagenes/casilla_seleccionada_1.png", x, y, tam_x, tam_y);
 
 }
+
 
 //-------------------------------------------Getters
 
-Piezas* Casilla::getficha()
+Piezas* Casilla::getficha() const
 {
 	return pieza;
 }
@@ -59,6 +54,7 @@ char Casilla::getcolor()
 	{
 		return pieza->getColor();
 	}
+	return ' ';
 }
 
 bool Casilla::getMemoria()
@@ -67,6 +63,7 @@ bool Casilla::getMemoria()
 	{
 		return pieza->getMemoria();
 	}
+	return false;
 }
 
 Tipo_pieza Casilla::getTipo()
@@ -75,6 +72,7 @@ Tipo_pieza Casilla::getTipo()
 	{
 		return pieza->getTipo();
 	}
+	return NADA;
 }
 
 //-------------------------------------------Setters
@@ -87,6 +85,6 @@ void Casilla::setPosicion(int fil, int col)
 
 void Casilla::setficha(Piezas* p)
 {
-	pieza = p;
+	pieza = p; 
 }
 

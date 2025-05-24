@@ -4,6 +4,7 @@
 Alfil::Alfil(char col)
 {
 	color = col;
+	tipo = ALFIL;
 }
 
 State Alfil::comprobarMov(TABLERO& casillas, Casilla& cas1, Casilla& cas2)
@@ -46,6 +47,45 @@ State Alfil::comprobarMov(TABLERO& casillas, Casilla& cas1, Casilla& cas2)
 
 	}
 	return INVALIDO;
+}
+
+std::vector<Casilla*> Alfil::movimientosPosibles(const TABLERO& tablero, Casilla& origen) {
+	std::vector<Casilla*> posibles;
+	int fila = origen.getfila();
+	int col = origen.getcolumna();
+
+	// Direcciones diagonales: {fila_offset, col_offset}
+	const int dirs[4][2] = {
+		{-1, -1}, {-1, 1},  // Arriba-izquierda, Arriba-derecha
+		{1, -1},  {1, 1}    // Abajo-izquierda, Abajo-derecha
+	};
+
+	for (auto& dir : dirs) {
+		int f = fila + dir[0];
+		int c = col + dir[1];
+
+		// Recorrer la diagonal hasta el borde del tablero o una pieza
+		while (f >= 0 && f < 8 && c >= 0 && c < 8) {
+			Piezas* ficha_en_destino = tablero[f][c].getficha();
+
+			if (ficha_en_destino == nullptr) {
+				// Casilla vacía, es un movimiento posible
+				posibles.push_back(const_cast<Casilla*>(&tablero[f][c]));
+			}
+			else {
+				// Casilla ocupada
+				if (ficha_en_destino->getColor() != this->getColor()) {
+					// Es una pieza del oponente, se puede capturar
+					posibles.push_back(const_cast<Casilla*>(&tablero[f][c]));
+				}
+				// Si es del mismo color o se captura, no se puede seguir avanzando en esta dirección
+				break;
+			}
+			f += dir[0];
+			c += dir[1];
+		}
+	}
+	return posibles;
 }
 
 void Alfil::dibujar(float x, float y)

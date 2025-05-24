@@ -14,9 +14,12 @@ private:
 
 	int fila;									//fila del tablero
 	int columna;								//columna del tablero
+	bool esta_resaltada;
+	bool esta_resaltada_mouse_over;
+	float tam = 5.0;
 
 public:
-	Casilla();									//Constructor
+	Casilla(); //Constructor
 	~Casilla()									//Destructor
 	{
 		if (pieza != nullptr) {
@@ -26,13 +29,17 @@ public:
 	}
 
 	void dibuja();								//Funcion de dibujar piezas
-	void Casilla_seleccionada();				//Funcion para dibujar casilla seleccionada
+	void setResaltada(bool resaltada) { esta_resaltada = resaltada; }
+	bool getResaltada() const { return esta_resaltada; }
+
+	void setResaltadaMouseOver(bool resaltada) { esta_resaltada_mouse_over = resaltada; }
+	bool getResaltadaMouseOver() const { return esta_resaltada_mouse_over; }
 
 	//Getters
 	char getcolor();
 	int& getfila();
 	int& getcolumna();
-	Piezas* getficha();
+	Piezas* getficha() const;
 	bool getMemoria();
 	Tipo_pieza getTipo();
 

@@ -3,28 +3,47 @@
 #include "ETSIDI.h"
 #include <cstdlib>
 #include <iostream>
+#include <cmath>
 
 //Movimiento del raton----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 void Coordinador::MovRaton(int x, int y)  //Indica que casilla se ha pulsado según 
 {
 	float x_base = x / escalaX;
 	float y_base = y / escalaY;
-	int fil3 = 0, col3 = 0;
-	if ((x >= 100 || x <= 700) && (y >= 0 || y <= 600))
+	
+	int fil_tablero_resaltar = -1;
+	int col_tablero_resaltar = -1;
+
+
+	// Verificar si el ratón está sobre el área del tablero usando TUS COORDENADAS
+	if (x_base >= TABLERO_X_INICIO && x_base < (TABLERO_X_INICIO + TABLERO_ANCHO_TOTAL) &&
+		y_base >= TABLERO_Y_INICIO && y_base < (TABLERO_Y_INICIO + TABLERO_ALTO_TOTAL))
 	{
-		for (int i = 0;i < 8;i++)
-		{
-			if ((x >= 100 + (75 * (i))) && (x <= 100 + (75 * (i + 1))))
-			{
-				col3 = i;
-			}
-			if ((y >= 0 + (75 * (i))) && (y <= 0 + (75 * (i + 1))))
-			{
-				fil3 = (7 - i);
-			}
+		// Calcular coordenadas relativas dentro del tablero
+		float relative_x = x_base - TABLERO_X_INICIO;
+		float relative_y = y_base - TABLERO_Y_INICIO;
+
+		// Calcular columna usando ancho de casilla
+		col_tablero_resaltar = static_cast<int>(relative_x / CASILLA_ANCHO);
+		// Calcular fila invirtiendo Y, usando Talto de casilla
+		fil_tablero_resaltar = 7 - static_cast<int>(relative_y / CASILLA_ALTO);
+
+		// Asegurarse de que los índices estén dentro de los límites (0-7)
+		if (col_tablero_resaltar >= 0 && col_tablero_resaltar < 8 &&
+			fil_tablero_resaltar >= 0 && fil_tablero_resaltar < 8) {
+			
+			tablero.seleccion(fil_tablero_resaltar, col_tablero_resaltar);
 		}
-		tablero.seleccion(fil3, col3);
+		else {
+			// Si el cálculo da fuera de rango por algún error de float, deseleccionar
+			tablero.deseleccionar(); 
+		}
 	}
+	else {
+		// Si el ratón no está sobre el tablero, deseleccionar cualquier resaltado
+		tablero.deseleccionar();
+	}
+
 	botonSalida.actualizaResaltado(x_base, y_base);
 	botonAtras.actualizaResaltado(x_base, y_base);
 	botonAltavozON.actualizaResaltado(x_base, y_base);
@@ -67,7 +86,7 @@ void Coordinador::mouse(int button, int state, int x, int y)
 {
 	float x_base = x / escalaX;
 	float y_base = y / escalaY;
-	//std::cout << "Click en pos juego: (" << x_base << ", " << y_base << ")" << std::endl;
+	
 	if (button == GLUT_LEFT_BUTTON && state == GLUT_DOWN)
 	{
 		
@@ -103,7 +122,7 @@ void Coordinador::mouse(int button, int state, int x, int y)
 				estado = BIOMA;
 				return;
 			}
-			if (x_base >= 1466 && x_base <= 1796 && y_base >= 917 && y_base <= 1025)
+			if (botonAjustes.ratonEncima(x_base, y_base))
 			{
 				memoria_Estado.push_back(INICIO);
 				estado_anterior = estado;
@@ -115,8 +134,9 @@ void Coordinador::mouse(int button, int state, int x, int y)
 		if (estado == VINETA)
 		{
 			estado = DUELO;
+			turnoActual = 'B';
 		}
-		
+				
 		if (estado == AJUSTES)
 		{			
 			
@@ -193,83 +213,92 @@ void Coordinador::mouse(int button, int state, int x, int y)
 			}
 			return;
 		}
-
-		
 	}
 }
-//Movimiento fichas----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-void Coordinador::mueve(int fil1, int col1, int fil2, int col2)  //mueve la ficha de la selección 1 a la 2
-{
-	tablero.mueve(fil1, col1, fil2, col2);
-}
 
-void Coordinador::calcular_Casilla(int button, int state, int x, int y)		//se ha hecho para que al cambiar de resolucion de pantalla no de problema
+void Coordinador::calcular_Casilla(int button, int state, int x, int y)
 {
-	
-	const float tableroXInicio = 441.0f;
-	const float tableroXFin = 1478.0f;
-	const float tableroYInicio = 151.0f;
-	const float tableroYFin = 933.0f;
-	const float pasoX = 129.625f;
-	const float pasoY = 97.75f;
+	float x_base = x / escalaX;
+	float y_base = y / escalaY;
 
-	if (button == GLUT_LEFT_BUTTON && state == GLUT_DOWN && flag == false)		//pieza que se quiere mover
+	int fil_clic = -1;
+	int col_clic = -1;
+
+	// Calcular la casilla clickeada (asegura que está dentro del tablero)
+	bool clicEnTablero = false;
+	if (x_base >= TABLERO_X_INICIO && x_base < (TABLERO_X_INICIO + TABLERO_ANCHO_TOTAL) &&
+		y_base >= TABLERO_Y_INICIO && y_base < (TABLERO_Y_INICIO + TABLERO_ALTO_TOTAL))
 	{
-	
-		if ((x >= escalarX(tableroXInicio) && x <= escalarX(tableroXFin)) &&
-			(y >= escalarY(tableroYInicio) && y <= escalarY(tableroYFin)))
-		{
-			for (int i = 0; i < 8; i++)
-			{
-				if ((x >= escalarX(tableroXInicio + (pasoX * i))) &&
-					(x <= escalarX(tableroXInicio + (pasoX * (i + 1)))))
-				{
-					flag = true;
-					col1 = i;
-				}
-				if ((y >= escalarY(tableroYInicio + (pasoY * i))) &&
-					(y <= escalarY(tableroYInicio + (pasoY * (i + 1)))))
-				{
-					fil1 = (7 - i);
-				}
-			}
-			//playMusica("sonidos/Sonido_Seleccion.mp3", true);
-			tablero.seleccion(fil1, col1);
+		float relative_x = x_base - TABLERO_X_INICIO;
+		float relative_y = y_base - TABLERO_Y_INICIO;
+
+		col_clic = static_cast<int>(relative_x / CASILLA_ANCHO);
+		fil_clic = 7 - static_cast<int>(relative_y / CASILLA_ALTO);
+
+		if (col_clic >= 0 && col_clic < 8 && fil_clic >= 0 && fil_clic < 8) {
+			clicEnTablero = true;
 		}
-		
-		//playMusica("sonidos/Sonido_Seleccion.mp3", false);
 	}
 
-	else if (button == GLUT_LEFT_BUTTON && state == GLUT_DOWN && flag == true)		//casilla a la que se quiere mover la pieza
+	// --- Manejo de clics del ratón ---
+	if (button == GLUT_LEFT_BUTTON && state == GLUT_DOWN) // Clic izquierdo: Selección o Movimiento
 	{
-	   if ((x >= escalarX(tableroXInicio) && x <= escalarX(tableroXFin)) && (y >= escalarY(tableroYInicio) && y <= escalarY(tableroYFin)))
-	{
-		for (int i = 0; i < 8; i++)
+		if (flag == false) // No hay pieza seleccionada aún (PRIMER CLIC)
 		{
-			if ((x >= escalarX(tableroXInicio + (pasoX * i))) &&
-				(x <= escalarX(tableroXInicio + (pasoX * (i + 1)))))
-			{
-				flag = true;
-				col2 = i;
+			if (clicEnTablero) {
+				Piezas* piezaClickeada = tablero.getCasilla(fil_clic, col_clic).getficha();
+
+				//  Solo seleccionar si hay una pieza y es del turno actual 
+				if (piezaClickeada != nullptr && piezaClickeada->getColor() == turnoActual) {
+					flag = true;        // Se activa el flag: hay una pieza seleccionada
+					col1 = col_clic;    // Guardar origen
+					fil1 = fil_clic;
+					tablero.seleccion(fil1, col1); // Resalta la pieza seleccionada y sus posibles destinos
+					
+				}
+				else {
+					// Clic en casilla vacía, pieza del oponente, o clic inválido para seleccionar:
+					// Asegurarse de que no haya nada seleccionado ni resaltado de un intento previo.
+					tablero.deseleccionar();
+					
+				}
 			}
-			if ((y >= escalarY(tableroYInicio + (pasoY * i))) &&
-				(y <= escalarY(tableroYInicio + (pasoY * (i + 1)))))
-			{
-				fil2 = (7 - i);
+			else {
+				// Clic izquierdo fuera del tablero y no hay pieza seleccionada: deseleccionar por si acaso.
+				tablero.deseleccionar();
+				
 			}
 		}
-		tablero.mueve(fil1, col1, fil2, col2);
+		else // Ya hay una pieza seleccionada (flag == true) (SEGUNDO CLIC: Intentar mover)
+		{
+			if (clicEnTablero) {
+				col2 = col_clic;    // Guardar destino
+				fil2 = fil_clic;
+				// Delegar el movimiento al tablero; el tablero ya valida el turno.
+				if (tablero.mueve(fil1, col1, fil2, col2, turnoActual)) {
+					cambiarTurno(); // Solo cambia el turno si el movimiento fue válido y exitoso
+					
+				}
+				else {
+				
+				}
+				flag = false;           // Reiniciar el flag después de intentar mover (siempre)
+				tablero.deseleccionar(); // Siempre deseleccionar después de un intento de movimiento
+			}
+			else {
+				// Clic izquierdo fuera del tablero mientras una pieza está seleccionada:
+				// Se interpreta como cancelar la selección actual.
+				flag = false;
+				tablero.deseleccionar();
+				
+			}
+		}
 	}
-	   flag = false;
-
-	}
-	
-
-	if (button == GLUT_RIGHT_BUTTON && state == GLUT_DOWN && flag == true)  //sirve para cancelar la seleccion de una pieza
+	else if (button == GLUT_RIGHT_BUTTON && state == GLUT_DOWN) // Clic derecho: Siempre cancelar la selección
 	{
 		flag = false;
+		tablero.deseleccionar();
 	}
-	
 }
 
 void Coordinador::seleccion(int f1, int c1)
@@ -277,8 +306,23 @@ void Coordinador::seleccion(int f1, int c1)
 	tablero.seleccion(f1, c1);
 }
 
+void Coordinador::cambiarTurno()
+{
+	 {
+		if (turnoActual == 'B')
+		{
+			turnoActual = 'N';
+		}
+		else
+		{
+			turnoActual = 'B';
+		}
+	}
+}
+
+
 //Constructor-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-Coordinador::Coordinador()
+Coordinador::Coordinador() 
 {
 	estado = INICIO;
 	//botones Varios
@@ -464,13 +508,15 @@ void Coordinador::dibuja()
 		botonDuelo.draw();
 		botonBioma.draw();
 		botonAjustes.draw();
+		dibujaTurno();
 	}
 
 	if (estado == DUELO) {
 		stopMusica();
 		playMusica("sonidos/Musica1_100.mp3", true);
 		tablero.dibuja();
-		
+		dibujaTurno();
+
 	}
 
 	if (estado == VINETA)
@@ -551,39 +597,56 @@ void Coordinador::dibuja()
 		
 		FondoEstrellas.draw();
 
+		}
 	}
-}
-//Getters (Por si hiciera falta)---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-Coordinador::Estado Coordinador::getEstado() const 
-{
-	return estado;
-}
 
-Coordinador::Estado Coordinador::getEstadoAnterior() const 
-{
-	return estado_anterior;
-}
+	void Coordinador::dibujaTurno()
+	{
+		glPushMatrix();
+		glTranslatef(0, 0, 0); // Ajusta la posición según donde quieras mostrar el texto
 
-//Setters (Por si hicera falta)---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-void Coordinador::setEstado(Estado nuevo_estado) {
-	estado = nuevo_estado;
-}
+		if (turnoActual == 'B')
+		{
+			ETSIDI::setTextColor(1.0, 1.0, 1.0); // Blanco
+			ETSIDI::setFont("fuentes/STARWARS.ttf", 16);
+			ETSIDI::printxy("Turno de los Jedi", -5.0, 25.0); // Ajusta coordenadas
+		}
+		else
+		{
+			ETSIDI::setTextColor(1.0, 1.0, 1.0); // Negro (o el color que represente a las negras)
+			ETSIDI::setFont("fuentes/STARWARS.ttf", 16);
+			ETSIDI::printxy("Turno de los Sith", -5.0, 25.0); // Ajusta coordenadas
+		}
+		glPopMatrix();
+	}
 
-void Coordinador::setEstadoAnterior(Estado nuevo_estado_anterior) {
-	estado_anterior = nuevo_estado_anterior;
-}
+	//Getters (Por si hiciera falta)---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+	Coordinador::Estado Coordinador::getEstado() const 
+	{
+		return estado;
+	}
 
-void Coordinador::actualizarEscalaVentana(int ancho_actual, int alto_actual) {
-	escalaX = ancho_actual / 1920.0f;
-	escalaY = alto_actual / 1080.0f;
-	ancho_ventana = ancho_actual;
-	alto_ventana = alto_actual;
-}
 
-float Coordinador::escalarX(float x) const {
-	return x * escalaX;
-}
+	//Setters (Por si hicera falta)---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+	void Coordinador::setEstado(Estado nuevo_estado) {
+		estado = nuevo_estado;
+	}
 
-float Coordinador::escalarY(float y) const {
-	return y * escalaY;
-}
+	void Coordinador::setEstadoAnterior(Estado nuevo_estado_anterior) {
+		estado_anterior = nuevo_estado_anterior;
+	}
+
+	void Coordinador::actualizarEscalaVentana(int ancho_actual, int alto_actual) {
+		escalaX = ancho_actual / 1920.0f;
+		escalaY = alto_actual / 1080.0f;
+		ancho_ventana = ancho_actual;
+		alto_ventana = alto_actual;
+	}
+
+	float Coordinador::escalarX(float x) const {
+		return x * escalaX;
+	}
+
+	float Coordinador::escalarY(float y) const {
+		return y * escalaY;
+	}

@@ -44,6 +44,41 @@ State Torre::comprobarMov(TABLERO& casillas, Casilla& cas1, Casilla& cas2)
 	else return INVALIDO;
 }
 
+std::vector<Casilla*> Torre::movimientosPosibles( const TABLERO& tablero,  Casilla& origen) {
+	std::vector<Casilla*> posibles;
+	int fila = origen.getfila();
+	int col = origen.getcolumna();
+
+	const int dirs[4][2] = {
+		{1, 0}, {-1, 0},  // vertical (abajo, arriba)
+		{0, 1}, {0, -1}   // horizontal (derecha, izquierda)
+	};
+
+	for (auto& dir : dirs) {
+		int f = fila + dir[0];
+		int c = col + dir[1];	
+		while (f >= 0 && f < 8 && c >= 0 && c < 8) {
+			Piezas* ficha = tablero[f][c].getficha();
+			if (ficha == nullptr) {
+				posibles.push_back(const_cast<Casilla*>(&tablero[f][c]));
+			}
+			else {
+				if (ficha->getColor() != this->getColor()) {
+					posibles.push_back(const_cast<Casilla*>(&tablero[f][c]));  // Comer
+				}
+				break;  // Obstrucción encontrada
+			}
+			f += dir[0];
+			c += dir[1];
+		}
+	}
+
+	return posibles;
+}
+
+
+
+
 void Torre::dibujar(float x, float y)
 {
 	if (color == 'B')
