@@ -19,6 +19,7 @@ public:
 	void dibujar(float x, float y) override;		//Funcion de dibujar de la clase Peon
 	char getColor() override;						//Funcion de devolver color de la clase Peon
 	bool getMemoria() override;
+	void setMemoria(bool val); 
 	Tipo_pieza getTipo() override;
 };
 

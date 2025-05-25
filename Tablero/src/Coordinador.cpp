@@ -14,36 +14,38 @@ void Coordinador::MovRaton(int x, int y)  //Indica que casilla se ha pulsado seg
 	int fil_tablero_resaltar = -1;
 	int col_tablero_resaltar = -1;
 
+	
+		// Verificar si el ratón está sobre el área del tablero usando TUS COORDENADAS
+		if (x_base >= TABLERO_X_INICIO && x_base < (TABLERO_X_INICIO + TABLERO_ANCHO_TOTAL) &&
+			y_base >= TABLERO_Y_INICIO && y_base < (TABLERO_Y_INICIO + TABLERO_ALTO_TOTAL))
+		{
+			// Calcular coordenadas relativas dentro del tablero
+			float relative_x = x_base - TABLERO_X_INICIO;
+			float relative_y = y_base - TABLERO_Y_INICIO;
 
-	// Verificar si el ratón está sobre el área del tablero usando TUS COORDENADAS
-	if (x_base >= TABLERO_X_INICIO && x_base < (TABLERO_X_INICIO + TABLERO_ANCHO_TOTAL) &&
-		y_base >= TABLERO_Y_INICIO && y_base < (TABLERO_Y_INICIO + TABLERO_ALTO_TOTAL))
-	{
-		// Calcular coordenadas relativas dentro del tablero
-		float relative_x = x_base - TABLERO_X_INICIO;
-		float relative_y = y_base - TABLERO_Y_INICIO;
+			// Calcular columna usando ancho de casilla
+			col_tablero_resaltar = static_cast<int>(relative_x / CASILLA_ANCHO);
+			// Calcular fila invirtiendo Y, usando Talto de casilla
+			fil_tablero_resaltar = 7 - static_cast<int>(relative_y / CASILLA_ALTO);
 
-		// Calcular columna usando ancho de casilla
-		col_tablero_resaltar = static_cast<int>(relative_x / CASILLA_ANCHO);
-		// Calcular fila invirtiendo Y, usando Talto de casilla
-		fil_tablero_resaltar = 7 - static_cast<int>(relative_y / CASILLA_ALTO);
+			if (estado == DUELO) { // Solo si estamos en el estado de juego
+				if (col_tablero_resaltar >= 0 && col_tablero_resaltar < 8 &&
+					fil_tablero_resaltar >= 0 && fil_tablero_resaltar < 8) {
 
-		// Asegurarse de que los índices estén dentro de los límites (0-7)
-		if (col_tablero_resaltar >= 0 && col_tablero_resaltar < 8 &&
-			fil_tablero_resaltar >= 0 && fil_tablero_resaltar < 8) {
-			
-			tablero.seleccion(fil_tablero_resaltar, col_tablero_resaltar);
+					// Solo actualiza la casilla sobre el ratón
+					tablero.setMouseOver(fil_tablero_resaltar, col_tablero_resaltar);
+				}
+				else {
+					// Si el ratón está fuera del tablero, limpiar cualquier resaltado de mouse-over
+					tablero.clearMouseOver();
+				}
+			}
+			else {
+				// Si no estamos en el estado de duelo, limpiar mouse-over del tablero
+				tablero.clearMouseOver();
+			}
 		}
-		else {
-			// Si el cálculo da fuera de rango por algún error de float, deseleccionar
-			tablero.deseleccionar(); 
-		}
-	}
-	else {
-		// Si el ratón no está sobre el tablero, deseleccionar cualquier resaltado
-		tablero.deseleccionar();
-	}
-
+	
 	botonSalida.actualizaResaltado(x_base, y_base);
 	botonAtras.actualizaResaltado(x_base, y_base);
 	botonAltavozON.actualizaResaltado(x_base, y_base);
@@ -216,8 +218,30 @@ void Coordinador::mouse(int button, int state, int x, int y)
 	}
 }
 
+
+
+void Coordinador::seleccion(int f1, int c1, char turnoActual)
+{
+	tablero.seleccion(f1, c1, turnoActual);
+}
+
+void Coordinador::cambiarTurno()
+{
+	 {
+		if (turnoActual == 'B')
+		{
+			turnoActual = 'N';
+		}
+		else
+		{
+			turnoActual = 'B';
+		}
+	}
+}
+
 void Coordinador::calcular_Casilla(int button, int state, int x, int y)
 {
+
 	float x_base = x / escalaX;
 	float y_base = y / escalaY;
 
@@ -243,54 +267,108 @@ void Coordinador::calcular_Casilla(int button, int state, int x, int y)
 	// --- Manejo de clics del ratón ---
 	if (button == GLUT_LEFT_BUTTON && state == GLUT_DOWN) // Clic izquierdo: Selección o Movimiento
 	{
-		if (flag == false) // No hay pieza seleccionada aún (PRIMER CLIC)
+		// Determinar si el jugador actual tiene capturas obligatorias en el tablero.
+		std::vector<std::pair<Casilla*, Casilla*>> todas_las_capturas_jugador_actual =
+			Movimiento::obtenerTodasLasCapturasPosibles(tablero.getTableroConst(), turnoActual);
+		bool hay_captura_obligatoria = !todas_las_capturas_jugador_actual.empty();
+
+		if (flag == false) // No hay pieza seleccionada aún (primer clic)
 		{
 			if (clicEnTablero) {
-				Piezas* piezaClickeada = tablero.getCasilla(fil_clic, col_clic).getficha();
+				Casilla& casillaClickeada = tablero.getCasilla(fil_clic, col_clic);
+				Piezas* piezaClickeada = casillaClickeada.getficha();
 
-				//  Solo seleccionar si hay una pieza y es del turno actual 
+				// Validar la selección según la regla de captura obligatoria
 				if (piezaClickeada != nullptr && piezaClickeada->getColor() == turnoActual) {
-					flag = true;        // Se activa el flag: hay una pieza seleccionada
-					col1 = col_clic;    // Guardar origen
-					fil1 = fil_clic;
-					tablero.seleccion(fil1, col1); // Resalta la pieza seleccionada y sus posibles destinos
-					
+					bool esta_pieza_puede_capturar = false;
+					if (hay_captura_obligatoria) {
+						// Si hay captura obligatoria, esta pieza solo puede ser seleccionada si puede capturar.
+						for (const auto& par : todas_las_capturas_jugador_actual) {
+							if (par.first->getfila() == fil_clic && par.first->getcolumna() == col_clic) {
+								esta_pieza_puede_capturar = true;
+								break;
+							}
+						}
+					}
+					else {
+						// Si no hay captura obligatoria, cualquier pieza del turno actual puede ser seleccionada.
+						esta_pieza_puede_capturar = true;
+					}
+
+					if (esta_pieza_puede_capturar) {
+						flag = true;
+						col1 = col_clic;
+						fil1 = fil_clic;
+						tablero.seleccion(fil1, col1, turnoActual); 
+					}
+					else {
+						// Clic en una pieza propia que no puede capturar, pero hay otra que sí puede.
+						// Deseleccionar y no hacer nada.
+						tablero.deseleccionar();
+					}
 				}
 				else {
-					// Clic en casilla vacía, pieza del oponente, o clic inválido para seleccionar:
-					// Asegurarse de que no haya nada seleccionado ni resaltado de un intento previo.
+					// Clic en casilla vacía, pieza del oponente, o clic inválido para seleccionar
 					tablero.deseleccionar();
-					
 				}
 			}
 			else {
 				// Clic izquierdo fuera del tablero y no hay pieza seleccionada: deseleccionar por si acaso.
 				tablero.deseleccionar();
-				
 			}
 		}
-		else // Ya hay una pieza seleccionada (flag == true) (SEGUNDO CLIC: Intentar mover)
+		else // Ya hay una pieza seleccionada (flag == true) (Segundo clic: Intentar mover)
 		{
 			if (clicEnTablero) {
-				col2 = col_clic;    // Guardar destino
+				col2 = col_clic;
 				fil2 = fil_clic;
-				// Delegar el movimiento al tablero; el tablero ya valida el turno.
-				if (tablero.mueve(fil1, col1, fil2, col2, turnoActual)) {
-					cambiarTurno(); // Solo cambia el turno si el movimiento fue válido y exitoso
-					
+
+				Casilla& origen_seleccionada = tablero.getCasilla(fil1, col1);
+				Casilla& destino_clickeado = tablero.getCasilla(fil2, col2);
+
+				bool movimiento_valido_por_regla = false;
+				// Obtener los movimientos "válidos" para la pieza seleccionada, según la regla de captura obligatoria.
+				std::vector<Casilla*> movimientos_filtrados_para_esta_pieza =
+					Movimiento::obtenerMovimientosFiltrados(tablero.getTableroConst(), origen_seleccionada, turnoActual); 
+
+				for (Casilla* destino_posible : movimientos_filtrados_para_esta_pieza) {
+					if (destino_posible->getfila() == fil2 && destino_posible->getcolumna() == col2) {
+						movimiento_valido_por_regla = true;
+						break;
+					}
+				}
+
+				if (movimiento_valido_por_regla) {
+					if (tablero.mueve(fil1, col1, fil2, col2, turnoActual)) {
+						char oponenteColor = (turnoActual == 'B') ? 'N' : 'B';
+						// Contar las piezas del oponente después de que se haya movido la pieza y potencialmente capturado
+						if (tablero.contarPiezas(oponenteColor) == 0) {
+							estado = FIN_JUEGO;
+							if (turnoActual == 'B') {
+								mensajeFinJuego = "¡Han ganado los Jedi!";
+								colorGanador = 'B';
+							}
+							else {
+								mensajeFinJuego = "¡Han ganado los Sith!";
+								colorGanador = 'N';
+							}
+						}
+						else {
+							cambiarTurno(); // Solo cambia el turno si el juego no ha terminado
+						}
+					}
 				}
 				else {
-				
+					// Movimiento inválido (no se movió)
 				}
-				flag = false;           // Reiniciar el flag después de intentar mover (siempre)
-				tablero.deseleccionar(); // Siempre deseleccionar después de un intento de movimiento
-			}
-			else {
-				// Clic izquierdo fuera del tablero mientras una pieza está seleccionada:
-				// Se interpreta como cancelar la selección actual.
+
 				flag = false;
 				tablero.deseleccionar();
-				
+			}
+			else {
+				// Clic izquierdo fuera del tablero
+				flag = false;
+				tablero.deseleccionar();
 			}
 		}
 	}
@@ -299,94 +377,79 @@ void Coordinador::calcular_Casilla(int button, int state, int x, int y)
 		flag = false;
 		tablero.deseleccionar();
 	}
-}
 
-void Coordinador::seleccion(int f1, int c1)
-{
-	tablero.seleccion(f1, c1);
 }
-
-void Coordinador::cambiarTurno()
-{
-	 {
-		if (turnoActual == 'B')
-		{
-			turnoActual = 'N';
-		}
-		else
-		{
-			turnoActual = 'B';
-		}
-	}
-}
-
 
 //Constructor-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-Coordinador::Coordinador() 
-{
-	estado = INICIO;
-	//botones Varios
-	botonSalida.setPos(-32, 38);
-	botonSalida.setRegion(21.0f, 127.0f, 18.0f, 38.0f);
-	botonSalida.setSize(5.0f, 5.0f);
-	botonAtras.setPos(35, 29);
-	botonAtras.setRegion(1702.0f, 1783.0f, 26.0f, 74.0f);
-	botonAltavozON.setPos(40, 29);
-	botonAltavozON.setRegion(1816.0f, 1895.0f, 23.0f, 76.0f);
-	botonAltavozOFF.setPos(40, 29);
-	botonAltavozOFF.setRegion(1816.0f, 1895.0f, 23.0f, 76.0f);
+	Coordinador::Coordinador()
+	{
+		estado = INICIO;
+		turnoActual = 'B'; 
+		mensajeFinJuego = "";
+		colorGanador = '\0';
 
-	//botones Inicio
-	botonDuelo.setPos(-30, -25);
-	botonDuelo.setRegion(122.0f, 452.0f, 915.0f, 1024.0f);
-	botonBioma.setPos(0, -25);
-	botonBioma.setRegion(795.0f, 1125.0f, 916.0f, 1025.0f);
-	botonAjustes.setPos(30, -25);
-	botonAjustes.setRegion(1466.0f, 1796.0f, 917.0f, 1025.0f);
+		//botones Varios
+		botonSalida.setPos(-32, 38);
+		botonSalida.setRegion(21.0f, 127.0f, 18.0f, 38.0f);
+		botonSalida.setSize(5.0f, 5.0f);
+		botonAtras.setPos(35, 29);
+		botonAtras.setRegion(1702.0f, 1783.0f, 26.0f, 74.0f);
+		botonAltavozON.setPos(40, 29);
+		botonAltavozON.setRegion(1816.0f, 1895.0f, 23.0f, 76.0f);
+		botonAltavozOFF.setPos(40, 29);
+		botonAltavozOFF.setRegion(1816.0f, 1895.0f, 23.0f, 76.0f);
 
-	//botones Ajustes
-	botonSonidoGeneral.setPos(-30, -25);
-	botonSonidoGeneral.setRegion(122.0f, 452.0f, 915.0f, 1024.0f);
-	botonMusica.setPos(0, -25);
-	botonMusica.setRegion(795.0f, 1125.0f, 916.0f, 1025.0f);
-	botonAyuda.setPos(30, -25);
-	botonAyuda.setRegion(1466.0f, 1796.0f, 917.0f, 1025.0f);
-	botonCreditos.setPos(0, -10);
-	botonCreditos.setRegion(795.0f, 1125.0f, 664.0f, 773.0f);
+		//botones Inicio
+		botonDuelo.setPos(-30, -25);
+		botonDuelo.setRegion(122.0f, 452.0f, 915.0f, 1024.0f);
+		botonBioma.setPos(0, -25);
+		botonBioma.setRegion(795.0f, 1125.0f, 916.0f, 1025.0f);
+		botonAjustes.setPos(30, -25);
+		botonAjustes.setRegion(1466.0f, 1796.0f, 917.0f, 1025.0f);
 
-	//Botones Ayuda
-	botonNormas.setPos(-30, -25);
-	botonNormas.setRegion(122.0f, 452.0f, 915.0f, 1024.0f);
-	botonMovimientos.setPos(30, -25);
-	botonMovimientos.setRegion(1466.0f, 1796.0f, 917.0f, 1025.0f);
+		//botones Ajustes
+		botonSonidoGeneral.setPos(-30, -25);
+		botonSonidoGeneral.setRegion(122.0f, 452.0f, 915.0f, 1024.0f);
+		botonMusica.setPos(0, -25);
+		botonMusica.setRegion(795.0f, 1125.0f, 916.0f, 1025.0f);
+		botonAyuda.setPos(30, -25);
+		botonAyuda.setRegion(1466.0f, 1796.0f, 917.0f, 1025.0f);
+		botonCreditos.setPos(0, -10);
+		botonCreditos.setRegion(795.0f, 1125.0f, 664.0f, 773.0f);
 
-	//Botones Musica
-	botonMusica1.setPos(-30, -25);
-	botonMusica1.setRegion(105.0f, 450.0f, 874.0f, 1025.0f);
-	botonMusica2.setPos(0, -25);
-	botonMusica2.setRegion(794.0f, 1120.0f, 874.0f, 1025.0f);
-	botonMusica3.setPos(30, -25);
-	botonMusica3.setRegion(1464.0f, 1790.0f, 874.0f, 1025.0f);
+		//Botones Ayuda
+		botonNormas.setPos(-30, -25);
+		botonNormas.setRegion(122.0f, 452.0f, 915.0f, 1024.0f);
+		botonMovimientos.setPos(30, -25);
+		botonMovimientos.setRegion(1466.0f, 1796.0f, 917.0f, 1025.0f);
 
-	//Botones Bioma
-	botonMapa1.setPos(-30, -20);
-	botonMapa1.setRegion(175.0f, 400.0f, 800.0f, 950.0f);
-	botonMapa2.setPos(-10, -20);
-	botonMapa2.setRegion(620.0f, 845.0f, 800.0f, 950.0f);
-	botonMapa3.setPos(10, -20);
-	botonMapa3.setRegion(1075.0f, 1295.0f, 800.0f, 950.0f);
-	botonMapa4.setPos(30, -20);
-	botonMapa4.setRegion(1520.0f, 1745.0f, 800.0f, 950.0f);
+		//Botones Musica
+		botonMusica1.setPos(-30, -25);
+		botonMusica1.setRegion(105.0f, 450.0f, 874.0f, 1025.0f);
+		botonMusica2.setPos(0, -25);
+		botonMusica2.setRegion(794.0f, 1120.0f, 874.0f, 1025.0f);
+		botonMusica3.setPos(30, -25);
+		botonMusica3.setRegion(1464.0f, 1790.0f, 874.0f, 1025.0f);
 
-	recuadroBioma.setPos(botonMapa1.getX(), botonMapa1.getY());
+		//Botones Bioma
+		botonMapa1.setPos(-30, -20);
+		botonMapa1.setRegion(175.0f, 400.0f, 800.0f, 950.0f);
+		botonMapa2.setPos(-10, -20);
+		botonMapa2.setRegion(620.0f, 845.0f, 800.0f, 950.0f);
+		botonMapa3.setPos(10, -20);
+		botonMapa3.setRegion(1075.0f, 1295.0f, 800.0f, 950.0f);
+		botonMapa4.setPos(30, -20);
+		botonMapa4.setRegion(1520.0f, 1745.0f, 800.0f, 950.0f);
 
-	pulsado_sonido = false;
-	activacion_titulo2 = false;
-	tamx = 0, tamy = 0;
-	activacion_titulo1 = false;
-	musica_creditos_activada = false;
-	activacion_titulo3 = false;
-}
+		recuadroBioma.setPos(botonMapa1.getX(), botonMapa1.getY());
+
+		pulsado_sonido = false;
+		activacion_titulo2 = false;
+		tamx = 0, tamy = 0;
+		activacion_titulo1 = false;
+		musica_creditos_activada = false;
+		activacion_titulo3 = false;
+	}
 //Animaciones varias de los menus-----------------------------------------------------------------------------------------------------------------------------------------------------------------
 void Coordinador::animaciones()
 {
@@ -519,6 +582,13 @@ void Coordinador::dibuja()
 
 	}
 
+	if (estado == FIN_JUEGO) {
+		ETSIDI::setTextColor(1.0, 0.0, 0.0); // Rojo
+		ETSIDI::setFont("fuentes/STARWARS.ttf", 16);
+		ETSIDI::printxy(mensajeFinJuego.c_str(), -5.0, 25.0); // Ajusta coordenadas
+
+	}
+
 	if (estado == VINETA)
 	{
 		vineta.dibujar();
@@ -605,17 +675,24 @@ void Coordinador::dibuja()
 		glPushMatrix();
 		glTranslatef(0, 0, 0); // Ajusta la posición según donde quieras mostrar el texto
 
-		if (turnoActual == 'B')
+		if (estado == DUELO) // Si el juego está en curso, muestra el turno
 		{
 			ETSIDI::setTextColor(1.0, 1.0, 1.0); // Blanco
-			ETSIDI::setFont("fuentes/STARWARS.ttf", 16);
-			ETSIDI::printxy("Turno de los Jedi", -5.0, 25.0); // Ajusta coordenadas
+			ETSIDI::setFont("fuentes/STARWARS.ttf", 16); // Fuente para el turno
+			if (turnoActual == 'B')
+			{
+				ETSIDI::printxy("Turno de los Jedi", -5.0, 25.0); 
+			}
+			else
+			{
+				ETSIDI::printxy("Turno de los Sith", -5.0, 25.0); 
+			}
 		}
-		else
+		else if (estado == FIN_JUEGO) // Si el juego ha terminado, muestra el mensaje de victoria
 		{
-			ETSIDI::setTextColor(1.0, 1.0, 1.0); // Negro (o el color que represente a las negras)
-			ETSIDI::setFont("fuentes/STARWARS.ttf", 16);
-			ETSIDI::printxy("Turno de los Sith", -5.0, 25.0); // Ajusta coordenadas
+			ETSIDI::setTextColor(1.0f, 0.0f, 0.0f); // Color rojo para el mensaje de victoria
+			ETSIDI::setFont("fuentes/STARWARS.ttf", 20); // Fuente más grande para el mensaje final
+			ETSIDI::printxy(mensajeFinJuego.c_str(), -15.0f, 15.0f); 
 		}
 		glPopMatrix();
 	}

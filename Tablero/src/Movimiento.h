@@ -17,7 +17,8 @@ public:
 	Movimiento();															//Constructor
 
 	static void mover(TABLERO& casillas, Casilla& cas1, Casilla& cas2);		//Funcion de movimiento de piezas
-	static std::vector<Casilla*> obtenerMovimientosPosibles(const TABLERO& tablero, Casilla& origen);
+	static std::vector<std::pair<Casilla*, Casilla*>> obtenerTodasLasCapturasPosibles(const TABLERO& tablero, char colorQueDebeMover);
+	static std::vector<Casilla*> obtenerMovimientosFiltrados(const TABLERO& tablero, Casilla& origen, char turnoActual);
 
 	static void setPieza(Piezas* p);										//Setter
 };

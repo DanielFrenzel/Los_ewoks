@@ -13,23 +13,33 @@ Casilla::Casilla()
 
 void Casilla::dibuja()
 {
-	//Dibujamos las piezas
-
-	//Coordenadas en x e y en la pantallas
-
+	// Coordenadas en x e y en la pantalla
 	float x = (columna * 4) - 14;
 	float y = (fila * 4.75) - 16.5;
 
+	// Dibuja la pieza si existe
 	if (pieza != nullptr)
 	{
 		pieza->dibujar(x, y);
-		if (esta_resaltada) {
-			Sprite* sprite_resaltado = Imagen::crearImagen("imagenes/casilla_seleccionada.png", x, y, tam, tam);
+	}
+	// Resaltado si la casilla es parte de los movimientos posibles de la pieza seleccionada
+	if (esta_resaltada) {
+		// Indicación de los movimientos posibles y la casilla de origen seleccionada
+		Sprite* sprite_mov_posible = Imagen::crearImagen("imagenes/casilla_seleccionada.png", x, y, tam, tam);
+		if (sprite_mov_posible) {
+			sprite_mov_posible->draw();
 		}
 	}
-
+	//  Resaltado de mouse-over (solo si no está ya resaltada como movimiento posible/seleccionada)
+	else if (esta_resaltada_mouse_over) {
+		// sprite para el efecto de pasar el ratón por encima
+		Sprite* sprite_mouse_over = Imagen::crearImagen("imagenes/casilla_de_paso.png", x, y, tam, tam); 
+		if (sprite_mouse_over) {
+			sprite_mouse_over->draw();
+			
+		}
+	}
 }
-
 
 //-------------------------------------------Getters
 

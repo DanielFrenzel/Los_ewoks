@@ -24,7 +24,8 @@ class Tablero
 private:
 	TABLERO casilla;							//Creamos matriz de casillas
 	int f, c;					//Esto es para la casilla seleccionada(se puede cambiar)
-	int fil_mouse_over, col_mouse_over;
+	int fil_mouse_over = -1; // Almacena la última casilla con mouse over
+	int col_mouse_over = -1;
 	float x, y, tam_x, tam_y;					//Esto es para el tamaño y posicion del tablero solamente
 	//Sprite fondo{ "imagenes/fondo_esapcio_negro.png", 0, 0, 96, 64 };
 	Sprite fondo_tablero_sprite{ "imagenes/Tablero_Fondo_1.png", 0, 0, 96, 64 };
@@ -39,11 +40,18 @@ public:
 	//Creamos las funciones de dibujar, mover y de seleccion de casilla(hay que moverla al coordinador)
 	void dibuja();
 	bool mueve(int fil1, int col1, int fil2, int col2, char turnoActual);
-	void seleccion(int f1, int c1);
+	void seleccion(int fil, int col, char turnoActual); 
+	void actualizarMovimientosPosibles(int fil, int col, char turnoActual); 
 	void deseleccionar();
-	void actualizarMovimientosPosibles(int fil, int col); // Actualizar la lista de casillas resaltadas
 	const Casilla& getCasilla(int fil, int col) const { return casilla[fil][col]; }
 	char getPiezaColor(int fila, int columna) const;
+	Casilla& getCasilla(int fil, int col);
+	const TABLERO& getTableroConst() const { return casilla; } 
+	void resaltarCapturasObligatorias(const std::vector<std::pair<Casilla*, Casilla*>>& capturas_list);
+	
+	int contarPiezas(char color_a_contar) const; 
 
+	void setMouseOver(int fil, int col);
+	void clearMouseOver();
 	
 };

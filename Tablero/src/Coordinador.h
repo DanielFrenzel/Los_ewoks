@@ -49,8 +49,9 @@ private:
 
 
 protected:
-	enum Estado { INICIO, DUELO, BIOMA, AJUSTES, SONIDO, MUSICA, AYUDA, CREDITOS, NORMAS, MOVIMIENTOS, VINETA };
-
+	enum Estado { INICIO, DUELO, BIOMA, AJUSTES, SONIDO, MUSICA, AYUDA, CREDITOS, NORMAS, MOVIMIENTOS, VINETA,FIN_JUEGO };
+	std::string mensajeFinJuego{ "" }; // Para almacenar el mensaje de victoria
+	char colorGanador{ '\0' };           // 'B' o 'N'
 	
 
 private:
@@ -85,9 +86,6 @@ private:
 	Boton botonMusica2{ "imagenes/inicio/cancion2.png", "imagenes/inicio/Cancion2Seleccionada.png", 15, 15 };
 	Boton botonMusica3{ "imagenes/inicio/cancion3.png", "imagenes/inicio/Cancion3Seleccionada.png", 15, 15 };
 	
-
-		
-private:
 	int mapaSeleccionado = 1;
 	Tablero tablero;	//Creamos matriz de casillas
 	Vineta vineta;
@@ -162,13 +160,14 @@ private:
 	  "imagenes/Tablero_Fondo_Hoch.png",
 	};
 	vector <Estado> memoria_Estado;
-	
+	std::vector<std::pair<Casilla*, Casilla*>> capturas_oponente_pendientes;
+
 public:
 	Coordinador();
 	void MovRaton(int x, int y);
 	void calcular_Casilla(int button, int state, int x, int y);
 	void mouse(int button, int state, int x, int y);
-	void seleccion(int f1, int c1);				//pasar la casilla seleccionada al tablero
+	void seleccion(int f1, int c1, char turnoActual);				//pasar la casilla seleccionada al tablero
 	void dibuja();//dibujar el juego
 	void dibujaTurno();
 	void animaciones();

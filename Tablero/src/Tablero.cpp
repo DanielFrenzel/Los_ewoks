@@ -177,20 +177,14 @@ bool Tablero::mueve(int fil1, int col1, int fil2, int col2, char turnoActual)
 	}
 }
 
-
-void Tablero::seleccion(int fil, int col) {
-	deseleccionar(); // Esto limpia la selección anterior y los movimientos posibles.
-
-	// Marca la nueva casilla como seleccionada 
+void Tablero::seleccion(int fil, int col, char turnoActual) { 
+	deseleccionar(); // Limpiar cualquier resaltado anterior.
 	this->f = fil;
 	this->c = col;
-	// Establece que esta casilla específica debe resaltarse
-	if (f >= 0 && f < 8 && c >= 0 && c < 8) { // Asegurarse de que sea una casilla válida
-		casilla[f][c].setResaltada(true);
+	if (f >= 0 && f < 8 && c >= 0 && c < 8) {
+		casilla[f][c].setResaltada(true); // Resaltar la casilla seleccionada
 	}
-
-	// Actualiza y resalta los movimientos posibles para la pieza en (fil, col)
-	actualizarMovimientosPosibles(fil, col);
+	actualizarMovimientosPosibles(fil, col, turnoActual); 
 }
 
 void Tablero::deseleccionar() {
@@ -208,28 +202,44 @@ void Tablero::deseleccionar() {
 	casillas_resaltadas.clear();
 }
 	
+void Tablero::actualizarMovimientosPosibles(int fil, int col, char turnoActual) { 
 
-void Tablero::actualizarMovimientosPosibles(int fil, int col) {
-	// Limpiar la lista anterior de movimientos posibles.
-	casillas_resaltadas.clear(); // Esto limpia el vector, pero no desresalta las casillas visualmente.
+	Casilla& origen = casilla[fil][col];
+	Piezas* pieza_seleccionada = origen.getficha();
 
-	// Si hay una pieza en la casilla seleccionada, obtener sus movimientos posibles
-	if (fil >= 0 && fil < 8 && col >= 0 && col < 8) {
-		Casilla& origen = casilla[fil][col];
-		if (origen.getficha() != nullptr) {
-			// Obtener la lista de Casilla* que son movimientos posibles
-			std::vector<Casilla*> posibles_movs = Movimiento::obtenerMovimientosPosibles(this->casilla, origen);
+	if (pieza_seleccionada == nullptr || pieza_seleccionada->getColor() != turnoActual) {
+		return; // No hay pieza del turno actual seleccionada o es inválida para mostrar movimientos.
+	}
 
-			// Iterar sobre los movimientos posibles y marcarlos para resaltado
-			for (Casilla* c_posible : posibles_movs) {
-				if (c_posible != nullptr) {
-					c_posible->setResaltada(true); 
-					casillas_resaltadas.push_back(c_posible);
-				}
+	// Obtener todas las posibles capturas en el tablero para el turno actual
+	std::vector<std::pair<Casilla*, Casilla*>> todas_las_capturas_disponibles =
+		Movimiento::obtenerTodasLasCapturasPosibles(this->casilla, turnoActual); 
+
+	// Obtener todos los movimientos posibles (brutos) de la pieza seleccionada
+	std::vector<Casilla*> movimientos_brutos_de_pieza = pieza_seleccionada->movimientosPosibles(this->casilla, origen);
+
+	// Aplicar la regla de captura obligatoria y resaltar
+	if (!todas_las_capturas_disponibles.empty()) {
+		// Si hay al menos una captura disponible en el tablero para este jugador:
+		// Solo resaltar movimientos de captura de la pieza seleccionada.
+		for (Casilla* destino : movimientos_brutos_de_pieza) {
+			// Verificar si este movimiento es una captura (destino ocupado por pieza enemiga)
+			if (destino->getficha() != nullptr && destino->getficha()->getColor() != turnoActual) {
+				destino->setResaltada(true);
+				casillas_resaltadas.push_back(destino);
 			}
 		}
 	}
+	else {
+		// Si no hay capturas disponibles en el tablero para este jugador:
+		// Resaltar todos los movimientos posibles (vacíos o capturas) de la pieza seleccionada.
+		for (Casilla* destino : movimientos_brutos_de_pieza) {
+			destino->setResaltada(true);
+			casillas_resaltadas.push_back(destino);
+		}
+	}
 }
+
 
 char Tablero::getPiezaColor(int fila, int columna) const {
 	if (fila < 0 || fila >= 8 || columna < 0 || columna >= 8) {
@@ -242,3 +252,50 @@ char Tablero::getPiezaColor(int fila, int columna) const {
 	return ' '; // Casilla vacía
 }
 
+void Tablero::setMouseOver(int fil, int col) {
+	// Desactiva el mouse over en la casilla anterior, si es diferente
+	if (fil_mouse_over != -1 && (fil_mouse_over != fil || col_mouse_over != col)) {
+		casilla[fil_mouse_over][col_mouse_over].setResaltadaMouseOver(false);
+	}
+	// Activa el mouse over en la nueva casilla
+	if (fil >= 0 && fil < 8 && col >= 0 && col < 8) {
+		casilla[fil][col].setResaltadaMouseOver(true);
+		fil_mouse_over = fil;
+		col_mouse_over = col;
+	}
+}
+
+void Tablero::clearMouseOver() {
+	if (fil_mouse_over != -1) {
+		casilla[fil_mouse_over][col_mouse_over].setResaltadaMouseOver(false);
+		fil_mouse_over = -1;
+		col_mouse_over = -1;
+	}
+}
+
+
+void Tablero::resaltarCapturasObligatorias(const std::vector<std::pair<Casilla*, Casilla*>>& capturas_list) {
+	deseleccionar(); // Limpia cualquier resaltado previo
+	// Marca las casillas de origen y destino de cada par de captura
+	for (const auto& par : capturas_list) {
+		par.first->setResaltada(true);  // La pieza que debe moverse
+		par.second->setResaltada(true); // La casilla donde está la pieza a ser capturada
+	}
+}
+
+Casilla& Tablero::getCasilla(int fil, int col) {
+	return casilla[fil][col];
+}
+
+// Contar piezas de un color
+int Tablero::contarPiezas(char color_a_contar) const {
+	int contador = 0;
+	for (int i = 0; i < 8; ++i) {
+		for (int j = 0; j < 8; ++j) {
+			if (casilla[i][j].getficha() != nullptr && casilla[i][j].getficha()->getColor() == color_a_contar) {
+				contador++;
+			}
+		}
+	}
+	return contador;
+}

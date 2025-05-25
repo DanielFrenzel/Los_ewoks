@@ -16,7 +16,7 @@ private:
 	int columna;								//columna del tablero
 	bool esta_resaltada;
 	bool esta_resaltada_mouse_over;
-	float tam = 5.0;
+	float tam = 4.0;
 
 public:
 	Casilla(); //Constructor
@@ -30,10 +30,7 @@ public:
 
 	void dibuja();								//Funcion de dibujar piezas
 	void setResaltada(bool resaltada) { esta_resaltada = resaltada; }
-	bool getResaltada() const { return esta_resaltada; }
-
-	void setResaltadaMouseOver(bool resaltada) { esta_resaltada_mouse_over = resaltada; }
-	bool getResaltadaMouseOver() const { return esta_resaltada_mouse_over; }
+	bool getResaltada() const { return esta_resaltada; } 
 
 	//Getters
 	char getcolor();
@@ -42,9 +39,11 @@ public:
 	Piezas* getficha() const;
 	bool getMemoria();
 	Tipo_pieza getTipo();
+	bool getResaltadaMouseOver() const { return esta_resaltada_mouse_over; }
 
 	//Setters
 	void setficha(Piezas* p);
 	void setPosicion(int fil, int col);
+	void setResaltadaMouseOver(bool resaltada) { esta_resaltada_mouse_over = resaltada; }
 };
 
