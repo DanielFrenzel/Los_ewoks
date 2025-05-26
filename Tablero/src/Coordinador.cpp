@@ -57,6 +57,9 @@ void Coordinador::MovRaton(int x, int y)  //Indica que casilla se ha pulsado seg
 		botonBioma.actualizaResaltado(x_base, y_base);
 		botonAjustes.actualizaResaltado(x_base, y_base);
 		break;
+	case DUELO:
+		botonInterrogacion.actualizaResaltado(x_base, y_base);
+		break;
 	case AJUSTES:
 		botonSonidoGeneral.actualizaResaltado(x_base, y_base);
 		botonMusica.actualizaResaltado(x_base, y_base);
@@ -78,6 +81,21 @@ void Coordinador::MovRaton(int x, int y)  //Indica que casilla se ha pulsado seg
 		botonMapa2.actualizaResaltado(x_base, y_base);
 		botonMapa3.actualizaResaltado(x_base, y_base);
 		botonMapa4.actualizaResaltado(x_base, y_base);
+		break;
+	case MOVIMIENTOS:
+		botonAlfilB.actualizaResaltado(x_base, y_base);
+		botonAlfilN.actualizaResaltado(x_base, y_base);
+		botonCaballoB.actualizaResaltado(x_base, y_base);
+		botonCaballoN.actualizaResaltado(x_base, y_base);
+		botonPeonB.actualizaResaltado(x_base, y_base);
+		botonPeonN.actualizaResaltado(x_base, y_base);
+		botonReinaB.actualizaResaltado(x_base, y_base);
+		botonReinaN.actualizaResaltado(x_base, y_base);
+		botonReyB.actualizaResaltado(x_base, y_base);
+		botonReyN.actualizaResaltado(x_base, y_base);
+		botonTorreB.actualizaResaltado(x_base, y_base);
+		botonTorreN.actualizaResaltado(x_base, y_base);
+		botonReglas.actualizaResaltado(x_base, y_base);
 		break;
 	}
 
@@ -177,6 +195,33 @@ void Coordinador::mouse(int button, int state, int x, int y)
 				return;
 			}
 		}
+		if (estado == MUSICA) {
+
+			if (botonMusica1.ratonEncima(x_base, y_base))
+			{
+				estado = MUSICA;
+				cancion_anterior = cancion;
+				cancion = CANCION1;
+				stopMusica();
+				playMusica("sonidos/Musica1.mp3", true);
+			}
+			if (botonMusica2.ratonEncima(x_base, y_base))
+			{
+				estado = MUSICA;
+				cancion_anterior = cancion;
+				cancion = CANCION2;
+				stopMusica();
+				playMusica("sonidos/Musica2.mp3", true);
+			}
+			if (botonMusica3.ratonEncima(x_base, y_base))
+			{
+				estado = MUSICA;
+				cancion_anterior = cancion;
+				cancion = CANCION3;
+				stopMusica();
+				playMusica("sonidos/Musica3.mp3", true);
+			}
+		}
 		if (estado == AYUDA)
 		{
 			if (botonNormas.ratonEncima(x_base, y_base))
@@ -214,6 +259,16 @@ void Coordinador::mouse(int button, int state, int x, int y)
 			case 4: recuadroBioma.setPos(botonMapa4.getX(), botonMapa4.getY()); break;
 			}
 			return;
+		}
+
+		if (estado == MOVIMIENTOS) {
+
+			if (botonReglas.ratonEncima(x_base, y_base))
+			{
+				estado = MOVIMIENTOS;
+				system("start https://www.chess.com/es/como-jugar-ajedrez#mover-piezas-ajedrez"); //Comando para abrir el navegador
+				return;
+			}
 		}
 	}
 }
@@ -407,6 +462,10 @@ void Coordinador::calcular_Casilla(int button, int state, int x, int y)
 		botonAjustes.setPos(30, -25);
 		botonAjustes.setRegion(1466.0f, 1796.0f, 917.0f, 1025.0f);
 
+		//btones Duelo
+		botonInterrogacion.setPos(30, 29);
+		botonInterrogacion.setRegion(1588.0f, 1669.0f, 26.0f, 74.0f);
+
 		//botones Ajustes
 		botonSonidoGeneral.setPos(-30, -25);
 		botonSonidoGeneral.setRegion(122.0f, 452.0f, 915.0f, 1024.0f);
@@ -442,6 +501,34 @@ void Coordinador::calcular_Casilla(int button, int state, int x, int y)
 		botonMapa4.setRegion(1520.0f, 1745.0f, 800.0f, 950.0f);
 
 		recuadroBioma.setPos(botonMapa1.getX(), botonMapa1.getY());
+
+		//Botones MOVIMIENTOS
+		botonPeonB.setPos(-30, -20);
+		botonPeonB.setRegion(175.0f, 400.0f, 800.0f, 950.0f);
+		botonPeonN.setPos(-10, -20);
+		botonPeonN.setRegion(620.0f, 845.0f, 800.0f, 950.0f);
+		botonTorreB.setPos(10, -20);
+		botonTorreB.setRegion(1075.0f, 1295.0f, 800.0f, 950.0f);
+		botonTorreN.setPos(30, -20);
+		botonTorreN.setRegion(1520.0f, 1745.0f, 800.0f, 950.0f);
+		botonCaballoB.setPos(-30, -5);
+		botonCaballoB.setRegion(175.0f, 400.0f, 550.0f, 700.0f);
+		botonCaballoN.setPos(-10, -5);
+		botonCaballoN.setRegion(620.0f, 845.0f, 550.0f, 700.0f);
+		botonAlfilB.setPos(10, -5);
+		botonAlfilB.setRegion(1075.0f, 1295.0f, 550.0f, 700.0f);
+		botonAlfilN.setPos(30, -5);
+		botonAlfilN.setRegion(1520.0f, 1745.0f, 550.0f, 700.0f);
+		botonReyB.setPos(-30, 10);
+		botonReyB.setRegion(175.0f, 400.0f, 300.0f, 450.0f);
+		botonReyN.setPos(-10, 10);
+		botonReyN.setRegion(620.0f, 845.0f, 300.0f, 450.0f);
+		botonReinaB.setPos(10, 10);
+		botonReinaB.setRegion(1075.0f, 1295.0f, 300.0f, 450.0f);
+		botonReinaN.setPos(30, 10);
+		botonReinaN.setRegion(1520.0f, 1745.0f, 300.0f, 450.0f);
+		botonReglas.setPos(0, 25);
+		botonReglas.setRegion(795.0f, 1125.0f, 50.0f, 200.0f);
 
 		pulsado_sonido = false;
 		activacion_titulo2 = false;
@@ -512,10 +599,23 @@ void Coordinador::musica()
 		stopMusica();
 		musica_actual = 1;
 	}
-	else if (estado != CREDITOS && musica_actual != 0)
+	else if (estado != CREDITOS && musica_actual != 0 && cancion == CANCION1)
 	{
 		playMusica("sonidos/Musica1_100.mp3", true);
 		musica_actual = 0;
+		cancion = CANCION1;
+	}
+	else if (estado != CREDITOS && musica_actual != 0 && cancion == CANCION2)
+	{
+		playMusica("sonidos/Musica2_100.mp3", true);
+		musica_actual = 0;
+		cancion = CANCION2;
+	}
+	else if (estado != CREDITOS && musica_actual != 0 && cancion == CANCION3)
+	{
+		playMusica("sonidos/Musica3_100.mp3", true);
+		musica_actual = 0;
+		cancion = CANCION3;
 	}
 
 	
@@ -524,33 +624,72 @@ void Coordinador::musica()
 
 //Control de volumen
 void Coordinador::subirVolumen() {
-	if (volumen < 100) {
-		volumen += 25;
-		stopMusica();
-		playMusica(rutasVolumen[(volumen / 25) - 1].c_str(), false);
+
+	if (cancion == CANCION1) {
+		if (volumen < 100) {
+			volumen += 25;
+			stopMusica();
+			play(rutasVolumen[(volumen / 25) - 1].c_str());
+			playMusica(rutasMenu1[(volumen / 25) - 1].c_str(), true);
+			cancion = CANCION1;
+		}
+	}
+	else if (cancion == CANCION2) {
+		if (volumen < 100) {
+			volumen += 25;
+			stopMusica();
+			play(rutasVolumen[(volumen / 25) - 1].c_str());
+			playMusica(rutasMenu2[(volumen / 25) - 1].c_str(), true);
+			cancion = CANCION2;
+		}
+	}
+	else if (cancion == CANCION3) {
+		if (volumen < 100) {
+			volumen += 25;
+			stopMusica();
+			play(rutasVolumen[(volumen / 25) - 1].c_str());
+			playMusica(rutasMenu3[(volumen / 25) - 1].c_str(), true);
+			cancion = CANCION3;
+		}
 	}
 }
 void Coordinador::bajarVolumen() {
-	if (volumen > 0) {
-		volumen -= 25;
-		stopMusica();
-		playMusica(rutasVolumen[(volumen / 25) - 1].c_str(), false);
+
+	if (cancion == CANCION1) {
+		if (volumen > 0) {
+			volumen -= 25;
+			stopMusica();
+			play(rutasVolumen[(volumen / 25) - 1].c_str());
+			playMusica(rutasMenu1[(volumen / 25) - 1].c_str(), true);
+			cancion = CANCION1;
+		}
 	}
+	else if (cancion == CANCION2) {
+		if (volumen > 0) {
+			volumen -= 25;
+			stopMusica();
+			play(rutasVolumen[(volumen / 25) - 1].c_str());
+			playMusica(rutasMenu2[(volumen / 25) - 1].c_str(), true);
+			cancion = CANCION2;
+		}
+	}
+	else if (cancion == CANCION3) {
+		if (volumen > 0) {
+			volumen -= 25;
+			stopMusica();
+			play(rutasVolumen[(volumen / 25) - 1].c_str());
+			playMusica(rutasMenu3[(volumen / 25) - 1].c_str(), true);
+			cancion = CANCION3;
+		}
+	}
+
+
 }
+
 
 //Para dibujar-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 void Coordinador::dibuja()
 {
-	
-	//estado = DUELO;
-	//Estella de la muerte
-	if (estado != CREDITOS && estado != DUELO && estado != VINETA)
-	{
-		Estrella.setPos(-16, 0 + bote);
-		Estrella.draw();
-		Estrella.setSize(20, 25);
-	}
-
 	//Boton de sonido
 	if (pulsado_sonido == 0)
 	{
@@ -577,6 +716,8 @@ void Coordinador::dibuja()
 	if (estado == DUELO) {
 		stopMusica();
 		playMusica("sonidos/Musica1_100.mp3", true);
+		cancion = CANCION1;
+		botonInterrogacion.draw();
 		tablero.dibuja();
 		dibujaTurno();
 
@@ -631,13 +772,6 @@ void Coordinador::dibuja()
 		volumenes[volumen / 25].draw();
 	}
 
-	//Fondo
-	if (estado != CREDITOS)
-	{
-		MenuInicial.draw();	
-	}
-	
-
 	//Creditos (toda la secuencia)
 	if (estado == CREDITOS)
 	{
@@ -668,7 +802,41 @@ void Coordinador::dibuja()
 		FondoEstrellas.draw();
 
 		}
+
+	if (estado == MOVIMIENTOS) {
+		botonPeonB.draw();
+		botonPeonN.draw();
+		botonTorreB.draw();
+		botonTorreN.draw();
+		botonCaballoB.draw();
+		botonCaballoN.draw();
+		botonAlfilB.draw();
+		botonAlfilN.draw();
+		botonReyB.draw();
+		botonReyN.draw();
+		botonReinaB.draw();
+		botonReinaN.draw();
+		botonReglas.draw();
+
+		FondoEstrellas.draw();
 	}
+
+	//estado = DUELO;
+	//Estella de la muerte
+	if (estado != CREDITOS && estado != DUELO && estado != VINETA)
+	{
+		Estrella.setPos(-16, 0 + bote);
+		Estrella.draw();
+		Estrella.setSize(20, 25);
+	}
+
+	//Fondo
+	if (estado != CREDITOS)
+	{
+		MenuInicial.draw();
+	}
+
+}
 
 	void Coordinador::dibujaTurno()
 	{
@@ -703,6 +871,20 @@ void Coordinador::dibuja()
 		return estado;
 	}
 
+	Coordinador::Estado Coordinador::getEstadoAnterior() const
+	{
+		return estado_anterior;
+	}
+
+	Coordinador::Cancion Coordinador::getCancion() const
+	{
+		return cancion;
+	}
+
+	Coordinador::Cancion Coordinador::getCancionAnterior() const
+	{
+		return cancion_anterior;
+	}
 
 	//Setters (Por si hicera falta)---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 	void Coordinador::setEstado(Estado nuevo_estado) {
@@ -712,6 +894,15 @@ void Coordinador::dibuja()
 	void Coordinador::setEstadoAnterior(Estado nuevo_estado_anterior) {
 		estado_anterior = nuevo_estado_anterior;
 	}
+
+	void Coordinador::setCancion(Cancion nueva_cancion) {
+		cancion = nueva_cancion;
+	}
+
+	void Coordinador::setCancionAnterior(Cancion nueva_cancion_anterior) {
+		cancion_anterior = nueva_cancion_anterior;
+	}
+
 
 	void Coordinador::actualizarEscalaVentana(int ancho_actual, int alto_actual) {
 		escalaX = ancho_actual / 1920.0f;

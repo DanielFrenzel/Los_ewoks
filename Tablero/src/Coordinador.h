@@ -50,6 +50,7 @@ private:
 
 protected:
 	enum Estado { INICIO, DUELO, BIOMA, AJUSTES, SONIDO, MUSICA, AYUDA, CREDITOS, NORMAS, MOVIMIENTOS, VINETA,FIN_JUEGO };
+	enum Cancion { CANCION1, CANCION2, CANCION3 };
 	std::string mensajeFinJuego{ "" }; // Para almacenar el mensaje de victoria
 	char colorGanador{ '\0' };           // 'B' o 'N'
 	
@@ -57,6 +58,8 @@ protected:
 private:
 	Estado estado;
 	Estado estado_anterior;
+	Cancion cancion;
+	Cancion cancion_anterior;
 	char turnoActual; // 'B' para blancas, 'N' para negras
 
 	//Botone varios
@@ -68,6 +71,8 @@ private:
 	Boton botonDuelo{ "imagenes/inicio/BOTON_DUELO.png", "imagenes/inicio/BOTON_DUELO2.png", 15, 15 };
 	Boton botonBioma{ "imagenes/inicio/BOTON_BIOMA.png", "imagenes/inicio/BOTON_BIOMA2.png", 15, 15 };
 	Boton botonAjustes{ "imagenes/inicio/BOTON_AJUSTES.png", "imagenes/inicio/BOTON_AJUSTES2.png", 15, 15 };
+	//Duelo
+	Boton botonInterrogacion{ "imagenes/inicio/BOTON_INTERROGACION.png","imagenes/inicio/BOTON_INTERROGACION2.png", 4, 4 };
 	//Bioma
 	Boton botonMapa1{ "imagenes/Tablero_Fondo_Hoch.png", "imagenes/Tablero_Fondo_Hoch2.png", 10, 9 };
 	Boton botonMapa2{ "imagenes/Fondo_tablero_Tatooine.png", "imagenes/Fondo_tablero_Tatooine2.png", 10, 9 };
@@ -85,7 +90,21 @@ private:
 	Boton botonMusica1{ "imagenes/inicio/cancion1.png", "imagenes/inicio/Cancion1Seleccionada.png", 15, 15 };
 	Boton botonMusica2{ "imagenes/inicio/cancion2.png", "imagenes/inicio/Cancion2Seleccionada.png", 15, 15 };
 	Boton botonMusica3{ "imagenes/inicio/cancion3.png", "imagenes/inicio/Cancion3Seleccionada.png", 15, 15 };
-	
+	//Movimientos
+	Boton botonPeonB{ "imagenes/R2D2(1).png", "imagenes/WhitePawn.png", 10, 10 };
+	Boton botonPeonN{ "imagenes/Droide_or.png", "imagenes/BlackPawn.png", 10, 10 };
+	Boton botonAlfilB{ "imagenes/Yoda.png", "imagenes/WhiteBishop.png", 10, 10 };
+	Boton botonAlfilN{ "imagenes/Doku_or.png", "imagenes/BlackBishop.png", 10, 10 };
+	Boton botonCaballoB{ "imagenes/Windu.png", "imagenes/WhiteKnight.png", 10, 10 };
+	Boton botonCaballoN{ "imagenes/BobaFet_or.png", "imagenes/BlackKnight.png", 10, 10 };
+	Boton botonReinaB{ "imagenes/Rey(1).png", "imagenes/WhiteQueen.png", 10, 10 };
+	Boton botonReinaN{ "imagenes/Vader_or.png", "imagenes/BlackQueen.png", 10, 10 };
+	Boton botonReyB{ "imagenes/Obiwan(1).png", "imagenes/WhiteKing.png", 10, 10 };
+	Boton botonReyN{ "imagenes/Palpatine(1).png", "imagenes/BlackKing.png", 10, 10 };
+	Boton botonTorreB{ "imagenes/Chewy(1).png", "imagenes/WhiteRook.png", 10, 10 };
+	Boton botonTorreN{ "imagenes/Superdroide_or.png", "imagenes/BlackRook.png", 10, 10 };
+	Boton botonReglas{ "imagenes/inicio/Boton_Reglas.png", "imagenes/inicio/Boton_Reglas2.png", 15,15 };
+
 	int mapaSeleccionado = 1;
 	Tablero tablero;	//Creamos matriz de casillas
 	Vineta vineta;
@@ -146,11 +165,23 @@ private:
 		"sonidos/BLASTER75.mp3",
 		"sonidos/BLASTER100.mp3"
 	};
-	std::string rutasMenu[4] = {
-	  "sonidos/Musica125.mp3",
-	  "sonidos/Musica150.mp3",
-	  "sonidos/Musica175.mp3",
-	  "sonidos/Musica1100.mp3",
+	std::string rutasMenu1[4] = {
+	  "sonidos/Musica1_25.mp3",
+	  "sonidos/Musica1_50.mp3",
+	  "sonidos/Musica1_75.mp3",
+	  "sonidos/Musica1_100.mp3",
+	};
+	std::string rutasMenu2[4] = {
+		"sonidos/Musica2_25.mp3",
+		"sonidos/Musica2_50.mp3",
+		"sonidos/Musica2_75.mp3",
+		"sonidos/Musica2_100.mp3",
+	};
+	std::string rutasMenu3[4] = {
+		"sonidos/Musica3_25.mp3",
+		"sonidos/Musica3_50.mp3",
+		"sonidos/Musica3_75.mp3",
+		"sonidos/Musica3_100.mp3",
 	};
 	//Array para fondos
 	std::string rutasFondo[4] = {
@@ -175,12 +206,17 @@ public:
 
 	//Getters
 	Estado getEstado() const;
+	Estado getEstadoAnterior() const;
+	Cancion getCancion() const;
+	Cancion getCancionAnterior() const;
 	char getTurnoActual() const { return turnoActual; }
 	void cambiarTurno();
 
 	//Setters
 	void setEstado(Estado nuevo_estado);
 	void setEstadoAnterior(Estado nuevo_estado_anterior);
+	void setCancion(Cancion nueva_cancion);
+	void setCancionAnterior(Cancion nueva_cancion_anterior);
 
 	//Control de volumen
 	void subirVolumen();
