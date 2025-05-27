@@ -62,6 +62,21 @@ std::vector<std::pair<Casilla*, Casilla*>> Movimiento::obtenerTodasLasCapturasPo
     return capturas_detectadas;
 }
 
+bool Movimiento::esCapturaAlPaso(const TABLERO& casillas, Casilla& origen, Casilla& destino) {
+    if (origen.getficha() == nullptr || origen.getficha()->getTipo() != PEON) {
+        return false; // Solo los peones pueden hacer captura al paso
+    }
+    // Crear una copia temporal del peón para no modificar su estado 'memoria' al llamar a comprobarMov.
+    Peon temp_pawn(origen.getficha()->getColor());
+    // Establecer la memoria del peón temporal para simular su estado real
+    temp_pawn.setMemoria(origen.getficha()->getMemoria());
+
+    // La casilla de destino debe estar vacía para un en passant y el estado devuelto por comprobarMov debe ser PASANTE
+    return temp_pawn.comprobarMov(const_cast<TABLERO&>(casillas), origen, destino) == PASANTE;
+}
+    
+
+
 // Obtener movimientos filtrados para una pieza según la regla de captura 
 std::vector<Casilla*> Movimiento::obtenerMovimientosFiltrados(const TABLERO& tablero, Casilla& origen, char turnoActual) {
     std::vector<Casilla*> movimientos_validos;
@@ -71,24 +86,53 @@ std::vector<Casilla*> Movimiento::obtenerMovimientosFiltrados(const TABLERO& tab
         return movimientos_validos; // No hay pieza o no es del color correcto.
     }
 
-    //Obtener todas las posibles capturas en el tablero para el jugador actual
-    std::vector<std::pair<Casilla*, Casilla*>> todas_las_capturas_disponibles =
-        Movimiento::obtenerTodasLasCapturasPosibles(tablero, turnoActual);
+    // Obtener todas las posibles capturas en el tablero para el jugador actual, esto incluye capturas normales y potenciales capturas al paso
+    std::vector<std::pair<Casilla*, Casilla*>> todas_las_capturas_disponibles;
+
+    for (int r_origen_tablero = 0; r_origen_tablero < 8; ++r_origen_tablero) {
+        for (int c_origen_tablero = 0; c_origen_tablero < 8; ++c_origen_tablero) {
+            Casilla& casilla_tablero_origen = const_cast<Casilla&>(tablero[r_origen_tablero][c_origen_tablero]);
+            Piezas* pieza_en_tablero_origen = casilla_tablero_origen.getficha();
+
+            if (pieza_en_tablero_origen != nullptr && pieza_en_tablero_origen->getColor() == turnoActual) {
+                std::vector<Casilla*> movs_brutos_pieza_tablero = pieza_en_tablero_origen->movimientosPosibles(tablero, casilla_tablero_origen);
+
+                for (Casilla* destino_tablero : movs_brutos_pieza_tablero) {
+                    // Verificar si es una captura normal
+                    if (destino_tablero->getficha() != nullptr && destino_tablero->getficha()->getColor() != turnoActual) {
+                        todas_las_capturas_disponibles.push_back({ &casilla_tablero_origen, destino_tablero });
+                    }
+                    // Verificar si es una captura al paso (solo para peones)
+                    else if (pieza_en_tablero_origen->getTipo() == PEON &&
+                        Movimiento::esCapturaAlPaso(tablero, casilla_tablero_origen, *destino_tablero)) {
+                        todas_las_capturas_disponibles.push_back({ &casilla_tablero_origen, destino_tablero });
+                    }
+                }
+            }
+        }
+    }
+
 
     // Obtener todos los movimientos posibles (brutos) de la pieza seleccionada
     std::vector<Casilla*> movimientos_brutos_de_pieza = pieza_seleccionada->movimientosPosibles(tablero, origen);
 
     // Aplicar la regla de captura obligatoria
     if (!todas_las_capturas_disponibles.empty()) {
-        // Si hay captura obligatoria, solo movimientos de captura
+        // Si hay al menos una captura disponible en el tablero para este jugador: Solo permitir movimientos de captura de la pieza seleccionada.
         for (Casilla* destino : movimientos_brutos_de_pieza) {
+            // Es una captura normal
             if (destino->getficha() != nullptr && destino->getficha()->getColor() != turnoActual) {
+                movimientos_validos.push_back(destino);
+            }
+            //Es una captura al paso con este peón
+            else if (pieza_seleccionada->getTipo() == PEON &&
+                Movimiento::esCapturaAlPaso(tablero, origen, *destino)) { 
                 movimientos_validos.push_back(destino);
             }
         }
     }
     else {
-        // Si no hay captura obligatoria, todos los movimientos posibles
+        // Si no hay capturas disponibles en el tablero para este jugador todos los movimientos posibles son válidos.
         movimientos_validos = movimientos_brutos_de_pieza;
     }
     return movimientos_validos;

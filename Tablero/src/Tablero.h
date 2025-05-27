@@ -29,7 +29,9 @@ private:
 	float x, y, tam_x, tam_y;					//Esto es para el tamaño y posicion del tablero solamente
 	//Sprite fondo{ "imagenes/fondo_esapcio_negro.png", 0, 0, 96, 64 };
 	Sprite fondo_tablero_sprite{ "imagenes/Tablero_Fondo_1.png", 0, 0, 96, 64 };
-	
+
+	int peon_doble_avance_columna_anterior;
+	int peon_doble_avance_fila_anterior;
 
 
 	std::vector<Casilla*> casillas_resaltadas; // Para almacenar los movimientos posibles de la pieza seleccionada
@@ -49,6 +51,10 @@ public:
 	const TABLERO& getTableroConst() const { return casilla; } 
 	void resaltarCapturasObligatorias(const std::vector<std::pair<Casilla*, Casilla*>>& capturas_list);
 	
+	
+	void resetPeonDobleAvance();
+	void setPeonDobleAvance(int fil, int col);
+
 	int contarPiezas(char color_a_contar) const; 
 
 	void setMouseOver(int fil, int col);

@@ -67,7 +67,7 @@ char Casilla::getcolor()
 	return ' ';
 }
 
-bool Casilla::getMemoria()
+bool Casilla::getMemoria() const
 {
 	if (pieza != nullptr)
 	{
@@ -76,7 +76,7 @@ bool Casilla::getMemoria()
 	return false;
 }
 
-Tipo_pieza Casilla::getTipo()
+Tipo_pieza Casilla::getTipo() const
 {
 	if (pieza != nullptr)
 	{

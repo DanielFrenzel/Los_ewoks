@@ -385,7 +385,6 @@ void Coordinador::calcular_Casilla(int button, int state, int x, int y)
 				// Obtener los movimientos "válidos" para la pieza seleccionada, según la regla de captura obligatoria.
 				std::vector<Casilla*> movimientos_filtrados_para_esta_pieza =
 					Movimiento::obtenerMovimientosFiltrados(tablero.getTableroConst(), origen_seleccionada, turnoActual); 
-
 				for (Casilla* destino_posible : movimientos_filtrados_para_esta_pieza) {
 					if (destino_posible->getfila() == fil2 && destino_posible->getcolumna() == col2) {
 						movimiento_valido_por_regla = true;

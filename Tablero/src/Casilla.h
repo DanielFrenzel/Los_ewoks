@@ -37,8 +37,8 @@ public:
 	int& getfila();
 	int& getcolumna();
 	Piezas* getficha() const;
-	bool getMemoria();
-	Tipo_pieza getTipo();
+	bool getMemoria() const;
+	Tipo_pieza getTipo() const;
 	bool getResaltadaMouseOver() const { return esta_resaltada_mouse_over; }
 
 	//Setters

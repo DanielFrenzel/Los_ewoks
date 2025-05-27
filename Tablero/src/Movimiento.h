@@ -2,6 +2,8 @@
 //Hacemos include de la casilla (para movernos sin saltar piezas) y de las Piezas
 #include"Casilla.h"
 #include"Piezas.h"
+#include"Peon.h"
+#include"Tablero.h"
 #include<array>
 
 
@@ -19,6 +21,6 @@ public:
 	static void mover(TABLERO& casillas, Casilla& cas1, Casilla& cas2);		//Funcion de movimiento de piezas
 	static std::vector<std::pair<Casilla*, Casilla*>> obtenerTodasLasCapturasPosibles(const TABLERO& tablero, char colorQueDebeMover);
 	static std::vector<Casilla*> obtenerMovimientosFiltrados(const TABLERO& tablero, Casilla& origen, char turnoActual);
-
+	static bool esCapturaAlPaso(const TABLERO& casillas, Casilla& origen, Casilla& destino); //Método para gestionar la captura al paso de peón pasante
 	static void setPieza(Piezas* p);										//Setter
 };

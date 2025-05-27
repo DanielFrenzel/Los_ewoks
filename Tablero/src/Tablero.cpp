@@ -10,8 +10,8 @@ Tablero::Tablero()																//Constructor
 	y = 0;
 	tam_x = 96;
 	tam_y = 64;
-	
-	
+	peon_doble_avance_columna_anterior = -1;
+	peon_doble_avance_fila_anterior = -1;
 	 
 	for (int i = 0;i < 8;i++)
 	{
@@ -160,20 +160,38 @@ bool Tablero::mueve(int fil1, int col1, int fil2, int col2, char turnoActual)
 	}
 	
 	else {
-		
-		destino.setficha(fichaOrigen);
-		origen.setficha(nullptr); // Vaciar la casilla de origen
-
-		
-		if (estadoMovimiento == PASANTE) {
-			 if (fichaOrigen->getTipo() == PEON) {
-			    int fila_peon_capturado = (fichaOrigen->getColor() == 'B') ? fil2 - 1 : fil2 + 1;
-			    casilla[fila_peon_capturado][col2].setficha(nullptr);
-			 }
-			
+		// Antes de mover, verificar si este movimiento es un avance de peón de dos casillas para marcarlo como susceptible de captura al paso.
+		if (fichaOrigen->getTipo() == PEON && abs(fil2 - fil1) == 2) {
+			setPeonDobleAvance(fil2, col2); // Este peón acaba de avanzar 2 casillas
 		}
-		
-		return true;
+		// Si el movimiento es PASANTE, se realiza la captura especial
+		if (estadoMovimiento == PASANTE) {
+			// El peón se mueve a la casilla detrás del peón capturado
+			destino.setficha(fichaOrigen);
+			origen.setficha(nullptr); // Vaciar la casilla de origen
+
+			// Eliminar el peón capturado, que está en la misma columna de destino pero en la fila de origen del peón capturado.
+			int fila_peon_capturado = (fichaOrigen->getColor() == 'B') ? fil2 - 1 : fil2 + 1;
+			// Asegurarse de que el peón a capturar es de hecho un peón del color correcto y que está en la posición esperada para en passant.
+			if (casilla[fila_peon_capturado][col2].getficha() != nullptr &&
+				casilla[fila_peon_capturado][col2].getficha()->getTipo() == PEON &&
+				casilla[fila_peon_capturado][col2].getficha()->getColor() != fichaOrigen->getColor())
+			{
+				delete casilla[fila_peon_capturado][col2].getficha(); // Libera la memoria
+				casilla[fila_peon_capturado][col2].setficha(nullptr); // Quita el peón
+			}
+			return true;
+		}
+		// Si es un movimiento NORMAL (avance de 1, 2 o captura diagonal)
+		else if (estadoMovimiento == NORMAL) {
+			// Si había una ficha en destino, liberamos su memoria antes de sobreescribir
+			if (destino.getficha() != nullptr) {
+				delete destino.getficha();
+			}
+			destino.setficha(fichaOrigen); // Mueve la pieza
+			origen.setficha(nullptr); // Vaciar la casilla de origen
+			return true;
+		}
 	}
 }
 
@@ -211,32 +229,14 @@ void Tablero::actualizarMovimientosPosibles(int fil, int col, char turnoActual) 
 		return; // No hay pieza del turno actual seleccionada o es inválida para mostrar movimientos.
 	}
 
-	// Obtener todas las posibles capturas en el tablero para el turno actual
-	std::vector<std::pair<Casilla*, Casilla*>> todas_las_capturas_disponibles =
-		Movimiento::obtenerTodasLasCapturasPosibles(this->casilla, turnoActual); 
+	// Delegamos completamente la lógica de filtrado a Movimiento::obtenerMovimientosFiltrados.
+	std::vector<Casilla*> movimientos_filtrados_y_validos =
+		Movimiento::obtenerMovimientosFiltrados(this->casilla, origen, turnoActual);
 
-	// Obtener todos los movimientos posibles (brutos) de la pieza seleccionada
-	std::vector<Casilla*> movimientos_brutos_de_pieza = pieza_seleccionada->movimientosPosibles(this->casilla, origen);
-
-	// Aplicar la regla de captura obligatoria y resaltar
-	if (!todas_las_capturas_disponibles.empty()) {
-		// Si hay al menos una captura disponible en el tablero para este jugador:
-		// Solo resaltar movimientos de captura de la pieza seleccionada.
-		for (Casilla* destino : movimientos_brutos_de_pieza) {
-			// Verificar si este movimiento es una captura (destino ocupado por pieza enemiga)
-			if (destino->getficha() != nullptr && destino->getficha()->getColor() != turnoActual) {
-				destino->setResaltada(true);
-				casillas_resaltadas.push_back(destino);
-			}
-		}
-	}
-	else {
-		// Si no hay capturas disponibles en el tablero para este jugador:
-		// Resaltar todos los movimientos posibles (vacíos o capturas) de la pieza seleccionada.
-		for (Casilla* destino : movimientos_brutos_de_pieza) {
-			destino->setResaltada(true);
-			casillas_resaltadas.push_back(destino);
-		}
+	// Ahora, simplemente resaltamos todas las casillas que nos ha devuelto la función filtrada.
+	for (Casilla* destino : movimientos_filtrados_y_validos) {
+		destino->setResaltada(true);
+		casillas_resaltadas.push_back(destino);
 	}
 }
 
@@ -298,4 +298,15 @@ int Tablero::contarPiezas(char color_a_contar) const {
 		}
 	}
 	return contador;
+}
+
+// Implementación de los nuevos métodos
+void Tablero::resetPeonDobleAvance() {
+	peon_doble_avance_columna_anterior = -1;
+	peon_doble_avance_fila_anterior = -1;
+}
+
+void Tablero::setPeonDobleAvance(int fil, int col) {
+	peon_doble_avance_fila_anterior = fil;
+	peon_doble_avance_columna_anterior = col;
 }
