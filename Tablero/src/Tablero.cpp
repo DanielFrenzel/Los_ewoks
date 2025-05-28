@@ -121,7 +121,8 @@ void Tablero::dibuja()															//Dibujamos las piezas y el tablero
 	}
 
 
-	fondo_tablero_sprite.draw();
+	Sprite fondoTablero(rutasFondo[bioma].c_str(), 0, 0, 96, 64);
+	fondoTablero.draw();
 
 }
 
@@ -309,4 +310,9 @@ void Tablero::resetPeonDobleAvance() {
 void Tablero::setPeonDobleAvance(int fil, int col) {
 	peon_doble_avance_fila_anterior = fil;
 	peon_doble_avance_columna_anterior = col;
+}
+
+void Tablero::set_Bioma(int i)
+{
+	bioma = i;
 }

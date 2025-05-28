@@ -141,10 +141,12 @@ private:
 	float escalaX = 1.0f;
 	float escalaY = 1.0f;
 
-	 const float TABLERO_X_INICIO = 441.0f;
-	 const float TABLERO_Y_INICIO = 151.0f;
-	 const float CASILLA_ANCHO = 116.625f; // Ancho de una casilla
-	 const float CASILLA_ALTO = 85.75f;    // Alto de una casilla
+	 const float TABLERO_X_INICIO = escalarX(604.0f);
+	 const float TABLERO_X_FIN = escalarX(1318.0f);
+	 const float TABLERO_Y_INICIO = escalarY(223.0f);
+	 const float TABLERO_Y_FIN = escalarY(855.0f);
+	 const float CASILLA_ANCHO = escalarX(89.25f); // Ancho de una casilla
+	 const float CASILLA_ALTO = escalarY(79.0f);    // Alto de una casilla
 	// También podemos calcular el ancho y alto total del tablero para los límites
 	 const float TABLERO_ANCHO_TOTAL = CASILLA_ANCHO * 8; // 129.625 * 8 = 1037.0
 	 const float TABLERO_ALTO_TOTAL = CASILLA_ALTO * 8;   // 97.75 * 8 = 782.0		

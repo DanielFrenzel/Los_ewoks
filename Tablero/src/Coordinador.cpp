@@ -242,15 +242,19 @@ void Coordinador::mouse(int button, int state, int x, int y)
 		{
 			if (botonMapa1.ratonEncima(x_base, y_base)) {
 				mapaSeleccionado = 1;
+				tablero.set_Bioma(0);
 			}
 			else if (botonMapa2.ratonEncima(x_base, y_base)) {
 				mapaSeleccionado = 2;
+				tablero.set_Bioma(1);
 			}
 			else if (botonMapa3.ratonEncima(x_base, y_base)) {
 				mapaSeleccionado = 3;
+				tablero.set_Bioma(2);
 			}
 			else if (botonMapa4.ratonEncima(x_base, y_base)) {
 				mapaSeleccionado = 4;
+				tablero.set_Bioma(3);
 			}
 			switch (mapaSeleccionado) {
 			case 1: recuadroBioma.setPos(botonMapa1.getX(), botonMapa1.getY()); break;

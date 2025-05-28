@@ -22,11 +22,11 @@ protected:
 	char color;
 
 	//Esto hay que cambiarlo
-	float tam = 5.075;					//tamaño estandar
-	float tam3 = 5.27075, tam2 = 2.9;	//tamaño del droide
-	float tam5 = tam, tam6 = 5.4375;		//Tamaño de vader
-	float tam7 = 4.7125, tam8 = tam6;	//Tamaño superdroide
-	float tam9 = 5.1475, tam10 = 5.5825;	//Tamaño Doku
+	float tam = 4;					//tamaño estandar
+	float tam3 = 4.16389, tam2 = 2.291;	//tamaño del droide
+	float tam5 = tam, tam6 = 4.29523;		//Tamaño de vader
+	float tam7 = 3.7316, tam8 = tam6;	//Tamaño superdroide
+	float tam9 = 4.07, tam10 = 4.41;	//Tamaño Doku
 
 public:
 	virtual void dibujar(float x, float y) {};		//Funcion para dibujar de la clase base
