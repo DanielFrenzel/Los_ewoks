@@ -6,7 +6,7 @@ Caballo::Caballo(char col)
 	tipo = CABALLO;
 }
 
-State Caballo::comprobarMov(TABLERO& casillas, Casilla& cas1, Casilla& cas2)
+State Caballo::comprobarMov(TABLERO& casillas, Casilla& cas1, Casilla& cas2, int peon_doble_avance_fila_anterior, int peon_doble_avance_clomuna_anterior)
 {
 	int filaOrigen = cas1.getfila();
 	int filaDestino = cas2.getfila();

@@ -47,7 +47,7 @@ public:
 	~Tablero();
 	//Creamos las funciones de dibujar, mover y de seleccion de casilla(hay que moverla al coordinador)
 	void dibuja();
-	bool mueve(int fil1, int col1, int fil2, int col2, char turnoActual);
+	bool mueve(int fil1, int col1, int fil2, int col2, char turnoActual, int peon_doble_avance_fila_anterior_param, int peon_doble_avance_columna_anterior_param);
 	void seleccion(int fil, int col, char turnoActual); 
 	void actualizarMovimientosPosibles(int fil, int col, char turnoActual); 
 	void deseleccionar();
@@ -60,6 +60,8 @@ public:
 	
 	void resetPeonDobleAvance();
 	void setPeonDobleAvance(int fil, int col);
+	int getPeonDobleAvanceFila() const { return peon_doble_avance_fila_anterior; }
+	int getPeonDobleAvanceColumna() const { return peon_doble_avance_columna_anterior; }
 
 	int contarPiezas(char color_a_contar) const; 
 

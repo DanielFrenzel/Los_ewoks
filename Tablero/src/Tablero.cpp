@@ -127,83 +127,123 @@ void Tablero::dibuja()															//Dibujamos las piezas y el tablero
 }
 
 
-bool Tablero::mueve(int fil1, int col1, int fil2, int col2, char turnoActual)
+bool Tablero::mueve(int fil1, int col1, int fil2, int col2, char turnoActual, int peon_doble_avance_fila_anterior_param, int peon_doble_avance_columna_anterior_param)
 {
+	resetPeonDobleAvance();
 	Casilla& origen = casilla[fil1][col1];
 	Casilla& destino = casilla[fil2][col2];
 	Piezas* fichaOrigen = origen.getficha();
 
-	// Validar que hay una pieza en la casilla de origen
-	if (fichaOrigen == nullptr) {
-		
-		return false;
-	}
-
-	// Validar que la pieza en origen pertenece al turno actual
-	if (fichaOrigen->getColor() != turnoActual) {
-		
-		return false;
-	}
-
-	// Validar que la casilla de destino no está ocupada por una pieza del mismo color
-	Piezas* fichaDestino = destino.getficha();
-	if (fichaDestino != nullptr && fichaDestino->getColor() == turnoActual) {
-		
+	if (fichaOrigen == nullptr || fichaOrigen->getColor() != turnoActual) {
 		return false;
 	}
 
 	// Delegar la comprobación del movimiento específico de la pieza
-	State estadoMovimiento = fichaOrigen->comprobarMov(casilla, origen, destino);
+	State estadoMovimiento = fichaOrigen->comprobarMov(casilla, origen, destino,
+		peon_doble_avance_fila_anterior_param,
+		peon_doble_avance_columna_anterior_param);
 
 	if (estadoMovimiento == INVALIDO) {
-		
 		return false;
 	}
-	
 	else {
-		// Antes de mover, verificar si este movimiento es un avance de peón de dos casillas para marcarlo como susceptible de captura al paso.
-		if (fichaOrigen->getTipo() == PEON && abs(fil2 - fil1) == 2) {
-			setPeonDobleAvance(fil2, col2); // Este peón acaba de avanzar 2 casillas
-		}
-		// Si el movimiento es PASANTE, se realiza la captura especial
+		// Si el movimiento es válido, actualiza la memoria de la pieza (primer movimiento)
+		fichaOrigen->setMemoria(false);
+
+		// Manejo específico de la captura al paso 
 		if (estadoMovimiento == PASANTE) {
-			// El peón se mueve a la casilla detrás del peón capturado
 			destino.setficha(fichaOrigen);
 			origen.setficha(nullptr); // Vaciar la casilla de origen
 
-			// Eliminar el peón capturado, que está en la misma columna de destino pero en la fila de origen del peón capturado.
-			int fila_peon_capturado = (fichaOrigen->getColor() == 'B') ? fil2 - 1 : fil2 + 1;
-			// Asegurarse de que el peón a capturar es de hecho un peón del color correcto y que está en la posición esperada para en passant.
-			if (casilla[fila_peon_capturado][col2].getficha() != nullptr &&
-				casilla[fila_peon_capturado][col2].getficha()->getTipo() == PEON &&
-				casilla[fila_peon_capturado][col2].getficha()->getColor() != fichaOrigen->getColor())
+			int fila_peon_capturado = fil1; // El peón capturado está en la fila de origen del atacante
+			int col_peon_capturado = col2;  // Y en la columna de destino del atacante
+
+			if (fila_peon_capturado >= 0 && fila_peon_capturado < 8 &&
+				col_peon_capturado >= 0 && col_peon_capturado < 8)
 			{
-				delete casilla[fila_peon_capturado][col2].getficha(); // Libera la memoria
-				casilla[fila_peon_capturado][col2].setficha(nullptr); // Quita el peón
+				Casilla& casilla_peon_capturado = casilla[fila_peon_capturado][col_peon_capturado];
+				Piezas* peon_a_eliminar = casilla_peon_capturado.getficha();
+
+				if (peon_a_eliminar != nullptr &&
+					peon_a_eliminar->getTipo() == PEON &&
+					peon_a_eliminar->getColor() != fichaOrigen->getColor())
+				{
+					delete peon_a_eliminar; // Libera la memoria
+					casilla_peon_capturado.setficha(nullptr); // Quita el peón
+				}
 			}
+			// Después de un movimiento exitoso (incluido al paso), reseteamos el doble avance.
+			// Esto es para que la oportunidad de al paso solo dure un turno.
+			resetPeonDobleAvance(); 
 			return true;
 		}
 		// Si es un movimiento NORMAL (avance de 1, 2 o captura diagonal)
 		else if (estadoMovimiento == NORMAL) {
-			// Si había una ficha en destino, liberamos su memoria antes de sobreescribir
 			if (destino.getficha() != nullptr) {
 				delete destino.getficha();
 			}
-			destino.setficha(fichaOrigen); // Mueve la pieza
-			origen.setficha(nullptr); // Vaciar la casilla de origen
+			destino.setficha(fichaOrigen);
+			origen.setficha(nullptr);
+
+			// Si la pieza movida es un peón y realizó un avance de 2 casillas, actualiza la información
+			if (fichaOrigen->getTipo() == PEON && abs(fil2 - fil1) == 2) {
+				setPeonDobleAvance(fil2, col2); // Este peón acaba de avanzar 2 casillas
+			}
+			else {
+				// Si no fue un doble avance, reseteamos el registro para 'al paso'.
+			}
 			return true;
 		}
 	}
+	// Si por alguna razón no se gestionó el movimiento (aunque los if/else if ya deberían cubrirlo)
+	resetPeonDobleAvance();
+	return false;
+	
 }
+
 
 void Tablero::seleccion(int fil, int col, char turnoActual) { 
 	deseleccionar(); // Limpiar cualquier resaltado anterior.
+
+	Casilla& casilla_seleccionada_actual = casilla[fil][col];
+	Piezas* pieza_en_casilla_seleccionada = casilla_seleccionada_actual.getficha();
+
+	// Verificar si la pieza seleccionada pertenece al jugador actual.
+	if (pieza_en_casilla_seleccionada == nullptr || pieza_en_casilla_seleccionada->getColor() != turnoActual) {
+		return; // No hay pieza del turno actual o es inválida para seleccionar.
+	}
+
+	// Obtener todas posibles capturas en el tablero para el jugador actual.
+	std::vector<std::pair<Casilla*, Casilla*>> todas_las_capturas_disponibles =
+		Movimiento::obtenerTodasLasCapturasPosibles(this->casilla, turnoActual,peon_doble_avance_fila_anterior,peon_doble_avance_columna_anterior);
+
+	//  Aplicar la regla de captura obligatoria estricta a la selección de la pieza.
+	if (!todas_las_capturas_disponibles.empty()) {
+		// Hay capturas obligatorias en el tablero.
+		// Solo queremos permitir la selección de una pieza que puede realizar esas capturas.
+		bool pieza_seleccionada_puede_realizar_captura_obligatoria = false;
+		for (const auto& captura_par : todas_las_capturas_disponibles) {
+			if (captura_par.first == &casilla_seleccionada_actual) {
+				pieza_seleccionada_puede_realizar_captura_obligatoria = true;
+				break;
+			}
+		}
+
+		if (!pieza_seleccionada_puede_realizar_captura_obligatoria) {
+			// Si hay capturas obligatorias, pero la pieza seleccionada no es una de las que puede capturar, no permitimos la selección.
+			return;
+		}
+	}
+
+	// Si llegamos hasta aquí, la selección es válida.
 	this->f = fil;
 	this->c = col;
 	if (f >= 0 && f < 8 && c >= 0 && c < 8) {
 		casilla[f][c].setResaltada(true); // Resaltar la casilla seleccionada
 	}
-	actualizarMovimientosPosibles(fil, col, turnoActual); 
+
+	// Finalmente, actualizamos y resaltamos los movimientos posibles para la pieza seleccionada.
+	actualizarMovimientosPosibles(fil, col, turnoActual);
 }
 
 void Tablero::deseleccionar() {
@@ -227,14 +267,13 @@ void Tablero::actualizarMovimientosPosibles(int fil, int col, char turnoActual) 
 	Piezas* pieza_seleccionada = origen.getficha();
 
 	if (pieza_seleccionada == nullptr || pieza_seleccionada->getColor() != turnoActual) {
-		return; // No hay pieza del turno actual seleccionada o es inválida para mostrar movimientos.
+		return;
 	}
 
 	// Delegamos completamente la lógica de filtrado a Movimiento::obtenerMovimientosFiltrados.
 	std::vector<Casilla*> movimientos_filtrados_y_validos =
-		Movimiento::obtenerMovimientosFiltrados(this->casilla, origen, turnoActual);
+		Movimiento::obtenerMovimientosFiltrados(this->casilla, origen, turnoActual,peon_doble_avance_fila_anterior,peon_doble_avance_columna_anterior);
 
-	// Ahora, simplemente resaltamos todas las casillas que nos ha devuelto la función filtrada.
 	for (Casilla* destino : movimientos_filtrados_y_validos) {
 		destino->setResaltada(true);
 		casillas_resaltadas.push_back(destino);
@@ -301,7 +340,6 @@ int Tablero::contarPiezas(char color_a_contar) const {
 	return contador;
 }
 
-// Implementación de los nuevos métodos
 void Tablero::resetPeonDobleAvance() {
 	peon_doble_avance_columna_anterior = -1;
 	peon_doble_avance_fila_anterior = -1;

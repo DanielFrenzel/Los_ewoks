@@ -13,8 +13,7 @@ public:
 	Peon() = default;
 	Peon(char col);									//Constructor
 
-	State comprobarMov(TABLERO& casillas,			//Funcion de comprobar movimiento de la clase Peon
-		Casilla& cas1, Casilla& cas2) override;
+	State comprobarMov(TABLERO& casillas,Casilla& cas1, Casilla& cas2,int peon_doble_avance_fila_anterior,int peon_doble_avance_columna_anterior) override;
 	std::vector<Casilla*> movimientosPosibles(const TABLERO& tablero, Casilla& origen) override;
 	void dibujar(float x, float y) override;		//Funcion de dibujar de la clase Peon
 	char getColor() override;						//Funcion de devolver color de la clase Peon

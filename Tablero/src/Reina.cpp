@@ -5,15 +5,15 @@ Reina::Reina(char col)
 	color = col;
 }
 
-State Reina::comprobarMov(TABLERO& casillas, Casilla& cas1, Casilla& cas2)
+State Reina::comprobarMov(TABLERO& casillas, Casilla& cas1, Casilla& cas2, int peon_doble_avance_fila_anterior, int peon_doble_avance_clomuna_anterior)
 {
 	Alfil alfilTemp(color);  // Puedes pasar color si lo necesitas
 	Torre torreTemp(color);
 
-	State movimiento = alfilTemp.comprobarMov(casillas, cas1, cas2);
+	State movimiento = alfilTemp.comprobarMov(casillas, cas1, cas2,peon_doble_avance_fila_anterior,peon_doble_avance_clomuna_anterior);
 	if (movimiento != INVALIDO)
 		return movimiento;
-	return (torreTemp.comprobarMov(casillas, cas1, cas2));
+	return (torreTemp.comprobarMov(casillas, cas1, cas2,peon_doble_avance_fila_anterior,peon_doble_avance_clomuna_anterior));
 }
 
 

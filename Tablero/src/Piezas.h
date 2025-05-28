@@ -30,12 +30,12 @@ protected:
 
 public:
 	virtual void dibujar(float x, float y) {};		//Funcion para dibujar de la clase base
-	virtual State comprobarMov(TABLERO& casillas,	//Funcion de comprobar movimiento de la clase base
-		Casilla& cas1, Casilla& cas2) = 0;
+	virtual State comprobarMov(TABLERO& casillas, Casilla& cas1, Casilla& cas2,int peon_doble_avance_fila_anterior,int peon_doble_avance_columna_anterior) = 0;
 	virtual std::vector<Casilla*> movimientosPosibles(const TABLERO& tablero, Casilla& origen) = 0;
 	virtual char getColor() = 0;						//Funcion de devolver color de la clase base
 	virtual bool getMemoria() = 0;
 	virtual Tipo_pieza getTipo() = 0;
+	virtual void setMemoria(bool val) {};
 };
 
 

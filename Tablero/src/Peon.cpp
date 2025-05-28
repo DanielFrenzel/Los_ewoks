@@ -10,7 +10,9 @@ Peon::Peon(char col)
 	tipo = PEON;
 }
 
-State Peon::comprobarMov(TABLERO& casillas, Casilla& cas1, Casilla& cas2)
+State Peon::comprobarMov(TABLERO& casillas, Casilla& cas1, Casilla& cas2,
+	int peon_doble_avance_fila_anterior,
+	int peon_doble_avance_columna_anterior)
 {
 	int filaOrigen = cas1.getfila();
 	int filaDestino = cas2.getfila();
@@ -20,82 +22,70 @@ State Peon::comprobarMov(TABLERO& casillas, Casilla& cas1, Casilla& cas2)
 	Piezas* fichaDestino = casillas[filaDestino][columnaDestino].getficha();
 	bool esPrimerMovimiento = this->getMemoria();
 
-	this->capturaPaso = false; // Reiniciar para esta comprobación
-
-	State resultadoMovimiento = INVALIDO; // Inicializar a INVALIDO
+	State resultadoMovimiento = INVALIDO;
 
 	if (color == 'B') // Para peones blancos
 	{
-		// Lógica de Captura al Paso (Blanco)
-		if (filaDestino == (filaOrigen + 1) && abs(columnaDestino - columnaOrigen) == 1 &&
-			fichaDestino == nullptr && // El destino debe estar vacío para la captura al paso
-			casillas[filaOrigen][columnaDestino].getficha() != nullptr &&
-			casillas[filaOrigen][columnaDestino].getficha()->getTipo() == PEON &&
-			casillas[filaOrigen][columnaDestino].getficha()->getColor() == 'N' &&
-			(filaOrigen == 4)) // El peón blanco debe estar en la 5ª fila (índice 4)
-		{
-			// La comprobación real de si el peón del oponente se movió 2 casillas justo ahora
-			// se hará en la función `mueve` del Tablero con `peon_doble_avance_columna_anterior`.
-			// Aquí solo validamos la forma del movimiento.
-			resultadoMovimiento = PASANTE;
-		}
 		// Lógica de Movimiento Normal (1 o 2 casillas) - Avance recto
-		else if (columnaOrigen == columnaDestino && fichaDestino == nullptr) {
+		if (columnaOrigen == columnaDestino && fichaDestino == nullptr) {
 			if (filaDestino == (filaOrigen + 1)) { // Mover 1 casilla
 				resultadoMovimiento = NORMAL;
 			}
 			else if (esPrimerMovimiento && filaDestino == (filaOrigen + 2)) { // Mover 2 casillas (primer movimiento)
-				// Verificar que la casilla intermedia también esté vacía
-				if (casillas[filaOrigen + 1][columnaOrigen].getficha() == nullptr) {
+				if (filaOrigen + 1 < 8 && casillas[filaOrigen + 1][columnaOrigen].getficha() == nullptr) {
 					resultadoMovimiento = NORMAL;
 				}
 			}
 		}
 		// Lógica de Captura Diagonal (Blanco)
-		else if (filaDestino == (filaOrigen + 1) && (abs(columnaDestino - columnaOrigen) == 1) &&
-			(fichaDestino != nullptr) && (fichaDestino->getColor() == 'N'))
+		else if (filaDestino == (filaOrigen + 1) && (abs(columnaDestino - columnaOrigen) == 1))
 		{
-			resultadoMovimiento = NORMAL; // Un movimiento de captura también es normal
+			if ((fichaDestino != nullptr) && (fichaDestino->getColor() == 'N')) {
+				resultadoMovimiento = NORMAL; // Un movimiento de captura también es normal
+			}
+			else if (fichaDestino == nullptr && // Destino vacío para en passant
+				casillas[filaOrigen][columnaDestino].getficha() != nullptr && // Peón adyacente
+				casillas[filaOrigen][columnaDestino].getficha()->getTipo() == PEON &&
+				casillas[filaOrigen][columnaDestino].getficha()->getColor() == 'N' &&
+				(filaOrigen == 4) && // Peón blanco en la 5ª fila (índice 4)
+				peon_doble_avance_fila_anterior == filaOrigen &&
+				peon_doble_avance_columna_anterior == columnaDestino)
+			{
+				resultadoMovimiento = PASANTE;
+			}
 		}
 	}
 	else if (color == 'N') // Para peones negros
 	{
-		// Lógica de Captura al Paso (Negro)
-		if (filaDestino == (filaOrigen - 1) && abs(columnaDestino - columnaOrigen) == 1 &&
-			fichaDestino == nullptr && // El destino debe estar vacío para la captura al paso
-			casillas[filaOrigen][columnaDestino].getficha() != nullptr &&
-			casillas[filaOrigen][columnaDestino].getficha()->getTipo() == PEON &&
-			casillas[filaOrigen][columnaDestino].getficha()->getColor() == 'B' &&
-			(filaOrigen == 3)) // El peón negro debe estar en la 4ª fila (índice 3)
-		{
-			// Similar al blanco, el Tablero confirmará la parte de 'recién movido 2 casillas'.
-			resultadoMovimiento = PASANTE;
-		}
 		// Lógica de Movimiento Normal (1 o 2 casillas) - Avance recto
-		else if (columnaOrigen == columnaDestino && fichaDestino == nullptr) {
+		if (columnaOrigen == columnaDestino && fichaDestino == nullptr) {
 			if (filaDestino == (filaOrigen - 1)) { // Mover 1 casilla
 				resultadoMovimiento = NORMAL;
 			}
 			else if (esPrimerMovimiento && filaDestino == (filaOrigen - 2)) { // Mover 2 casillas (primer movimiento)
-				// Verificar que la casilla intermedia también esté vacía
-				if (casillas[filaOrigen - 1][columnaOrigen].getficha() == nullptr) {
+				if (filaOrigen - 1 >= 0 && casillas[filaOrigen - 1][columnaOrigen].getficha() == nullptr) {
 					resultadoMovimiento = NORMAL;
 				}
 			}
 		}
 		// Lógica de Captura Diagonal (Negro)
-		else if (filaDestino == (filaOrigen - 1) && (abs(columnaDestino - columnaOrigen) == 1) &&
-			(fichaDestino != nullptr) && (fichaDestino->getColor() == 'B'))
+		else if (filaDestino == (filaOrigen - 1) && (abs(columnaDestino - columnaOrigen) == 1))
 		{
-			resultadoMovimiento = NORMAL; // Un movimiento de captura también es normal
+			if ((fichaDestino != nullptr) && (fichaDestino->getColor() == 'B')) {
+				resultadoMovimiento = NORMAL; // Un movimiento de captura también es normal
+			}
+			else if (fichaDestino == nullptr && // Destino vacío para en passant
+				casillas[filaOrigen][columnaDestino].getficha() != nullptr && // Peón adyacente
+				casillas[filaOrigen][columnaDestino].getficha()->getTipo() == PEON &&
+				casillas[filaOrigen][columnaDestino].getficha()->getColor() == 'B' &&
+				(filaOrigen == 3) && // Peón negro en la 4ª fila (índice 3)
+				peon_doble_avance_fila_anterior == filaOrigen &&
+				peon_doble_avance_columna_anterior == columnaDestino)
+			{
+				resultadoMovimiento = PASANTE;
+			}
 		}
 	}
-
-	// Si el movimiento es válido (no es INVALIDO), entonces consume la memoria del peón.
-	if (resultadoMovimiento != INVALIDO) {
-		this->setMemoria(false);
-	}
-
 	return resultadoMovimiento;
 }
 
@@ -112,7 +102,7 @@ std::vector<Casilla*> Peon::movimientosPosibles(const TABLERO& tablero, Casilla&
 			posibles.push_back(const_cast<Casilla*>(&tablero[f_avance1][col]));
 
 			// Avance inicial de 2 casillas (solo si es el primer movimiento del peón)
-			if (this->getMemoria()) { // getMemoria() indica si es el primer movimiento
+			if (this->getMemoria()) {
 				int f_avance2 = fila + 2 * direccion_avance;
 				// Verificar que la casilla intermedia también esté vacía para el avance de 2 casillas
 				if (f_avance2 >= 0 && f_avance2 < 8 && tablero[f_avance2][col].getficha() == nullptr && tablero[f_avance1][col].getficha() == nullptr) {
@@ -127,29 +117,26 @@ std::vector<Casilla*> Peon::movimientosPosibles(const TABLERO& tablero, Casilla&
 	for (int c_cap : cols_captura) {
 		if (f_avance1 >= 0 && f_avance1 < 8 && c_cap >= 0 && c_cap < 8) {
 			Piezas* ficha_en_destino_diagonal = tablero[f_avance1][c_cap].getficha();
-			Piezas* ficha_adyacente_en_fila_origen = tablero[fila][c_cap].getficha(); // Peón a su lado en su misma fila
+			Piezas* ficha_adyacente_en_fila_origen = tablero[fila][c_cap].getficha();
 
 			// Condición para captura normal diagonal
 			if (ficha_en_destino_diagonal != nullptr && ficha_en_destino_diagonal->getColor() != this->getColor()) {
 				posibles.push_back(const_cast<Casilla*>(&tablero[f_avance1][c_cap]));
 			}
 			// Condición para posible captura al paso (la casilla destino está vacía)
-			else if (ficha_en_destino_diagonal == nullptr && // La casilla diagonal de destino debe estar vacía
-				ficha_adyacente_en_fila_origen != nullptr && // Debe haber una pieza adyacente en la fila de origen
-				ficha_adyacente_en_fila_origen->getTipo() == PEON && // Debe ser un peón
-				ficha_adyacente_en_fila_origen->getColor() != this->getColor() && // Debe ser un peón enemigo
-				((color == 'B' && fila == 4) || (color == 'N' && fila == 3)) // Peón en la fila correcta para en passant
-				)
+			else if (ficha_en_destino_diagonal == nullptr &&
+				ficha_adyacente_en_fila_origen != nullptr &&
+				ficha_adyacente_en_fila_origen->getTipo() == PEON &&
+				ficha_adyacente_en_fila_origen->getColor() != this->getColor() &&
+				((color == 'B' && fila == 4) || (color == 'N' && fila == 3)))
 			{
 				// Agregamos la casilla de destino vacía donde movería el peón que captura al paso
 				posibles.push_back(const_cast<Casilla*>(&tablero[f_avance1][c_cap]));
 			}
 		}
 	}
-	return posibles;	
+	return posibles;
 }
-
-
 
 void Peon::dibujar(float x, float y)
 {

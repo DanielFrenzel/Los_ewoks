@@ -17,10 +17,7 @@ private:
 
 public:
 	Movimiento();															//Constructor
-
-	static void mover(TABLERO& casillas, Casilla& cas1, Casilla& cas2);		//Funcion de movimiento de piezas
-	static std::vector<std::pair<Casilla*, Casilla*>> obtenerTodasLasCapturasPosibles(const TABLERO& tablero, char colorQueDebeMover);
-	static std::vector<Casilla*> obtenerMovimientosFiltrados(const TABLERO& tablero, Casilla& origen, char turnoActual);
-	static bool esCapturaAlPaso(const TABLERO& casillas, Casilla& origen, Casilla& destino); //Método para gestionar la captura al paso de peón pasante
+	static std::vector<std::pair<Casilla*, Casilla*>> obtenerTodasLasCapturasPosibles(const TABLERO& tablero, char colorQueDebeMover,int peon_doble_avance_fila_anterior, int peon_doble_avance_columna_anterior);
+	static std::vector<Casilla*> obtenerMovimientosFiltrados(const TABLERO& tablero, Casilla& origen, char turnoActual,int peon_doble_avance_fila_anterior, int peon_doble_avance_columna_anterior);
 	static void setPieza(Piezas* p);										//Setter
 };

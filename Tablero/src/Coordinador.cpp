@@ -300,6 +300,8 @@ void Coordinador::cambiarTurno()
 
 void Coordinador::calcular_Casilla(int button, int state, int x, int y)
 {
+	int peon_doble_avance_fila = tablero.getPeonDobleAvanceFila();
+	int peon_doble_avance_col = tablero.getPeonDobleAvanceColumna();
 
 	float x_base = x / escalaX;
 	float y_base = y / escalaY;
@@ -328,7 +330,7 @@ void Coordinador::calcular_Casilla(int button, int state, int x, int y)
 	{
 		// Determinar si el jugador actual tiene capturas obligatorias en el tablero.
 		std::vector<std::pair<Casilla*, Casilla*>> todas_las_capturas_jugador_actual =
-			Movimiento::obtenerTodasLasCapturasPosibles(tablero.getTableroConst(), turnoActual);
+			Movimiento::obtenerTodasLasCapturasPosibles(tablero.getTableroConst(), turnoActual,peon_doble_avance_fila,peon_doble_avance_col);
 		bool hay_captura_obligatoria = !todas_las_capturas_jugador_actual.empty();
 
 		if (flag == false) // No hay pieza seleccionada aún (primer clic)
@@ -388,7 +390,7 @@ void Coordinador::calcular_Casilla(int button, int state, int x, int y)
 				bool movimiento_valido_por_regla = false;
 				// Obtener los movimientos "válidos" para la pieza seleccionada, según la regla de captura obligatoria.
 				std::vector<Casilla*> movimientos_filtrados_para_esta_pieza =
-					Movimiento::obtenerMovimientosFiltrados(tablero.getTableroConst(), origen_seleccionada, turnoActual); 
+					Movimiento::obtenerMovimientosFiltrados(tablero.getTableroConst(), origen_seleccionada, turnoActual,peon_doble_avance_fila,peon_doble_avance_col); 
 				for (Casilla* destino_posible : movimientos_filtrados_para_esta_pieza) {
 					if (destino_posible->getfila() == fil2 && destino_posible->getcolumna() == col2) {
 						movimiento_valido_por_regla = true;
@@ -397,7 +399,7 @@ void Coordinador::calcular_Casilla(int button, int state, int x, int y)
 				}
 
 				if (movimiento_valido_por_regla) {
-					if (tablero.mueve(fil1, col1, fil2, col2, turnoActual)) {
+					if (tablero.mueve(fil1, col1, fil2, col2, turnoActual, peon_doble_avance_fila, peon_doble_avance_col)) {
 						char oponenteColor = (turnoActual == 'B') ? 'N' : 'B';
 						// Contar las piezas del oponente después de que se haya movido la pieza y potencialmente capturado
 						if (tablero.contarPiezas(oponenteColor) == 0) {
