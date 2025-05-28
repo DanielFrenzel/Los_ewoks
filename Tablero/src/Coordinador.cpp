@@ -132,7 +132,17 @@ void Coordinador::mouse(int button, int state, int x, int y)
 			if (botonDuelo.ratonEncima(x_base, y_base))
 			{
 				memoria_Estado.push_back(INICIO);
-				estado = VINETA;
+				memoria_Estado.push_back(INICIO);
+				if (vineta_activar)
+				{
+					estado = VINETA;
+					vineta_activar = false;
+				}
+				else
+				{
+					estado = DUELO;
+				}
+
 				return;
 			}
 			if (botonBioma.ratonEncima(x_base, y_base))
@@ -737,7 +747,7 @@ void Coordinador::dibuja()
 
 	if (estado == VINETA)
 	{
-		vineta.dibujar();
+		vineta.dibujar(escalaX, escalaY);
 	}
 
 	//Botones AJUSTES

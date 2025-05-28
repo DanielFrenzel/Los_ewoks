@@ -140,6 +140,7 @@ private:
 	int alto_ventana = 1080;
 	float escalaX = 1.0f;
 	float escalaY = 1.0f;
+	bool vineta_activar = true;
 
 	 const float TABLERO_X_INICIO = escalarX(604.0f);
 	 const float TABLERO_X_FIN = escalarX(1318.0f);
