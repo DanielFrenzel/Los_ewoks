@@ -1,7 +1,7 @@
 ## Ajedrez Los_Ewoks
 
 #### Participantes
-- Daviz Arnaiz Antón
+- David Arnaiz Antón
 - Ángel Canosa Sánchez
 - Daniel Frenzel Zarza
 - Emilio Rodríguez Sáenz De Tejada
