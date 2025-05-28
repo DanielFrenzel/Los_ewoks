@@ -95,7 +95,7 @@ void OnMouseClick(int button, int state, int x, int y)
 void OnKeyboardDown(unsigned char key, int x, int y)
 {
 	//poner aqui el código de teclado
-
+	coordinador.teclado(key,x,y);
 
 	glutPostRedisplay();
 }

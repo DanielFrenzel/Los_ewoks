@@ -12,6 +12,10 @@ Tablero::Tablero()																//Constructor
 	tam_y = 64;
 	peon_doble_avance_columna_anterior = -1;
 	peon_doble_avance_fila_anterior = -1;
+	promocion_pendiente = false;
+	promocion_fila_pendiente = -1;
+	promocion_columna_pendiente = -1;
+	turnoActual = 'B';
 	 
 	for (int i = 0;i < 8;i++)
 	{
@@ -105,9 +109,16 @@ Tablero::Tablero()																//Constructor
 }
 
 Tablero::~Tablero() {
-
+	// Itera por todas las casillas del tablero
+	for (int i = 0; i < 8; ++i) {
+		for (int j = 0; j < 8; ++j) {
+			// Si hay una ficha en la casilla, la elimina (libera la memoria)
+			if (casilla[i][j].getficha() != nullptr) {
+				delete casilla[i][j].getficha();
+			}
+		}
+	}
 }
-
 
 void Tablero::dibuja()															//Dibujamos las piezas y el tablero
 {
@@ -126,10 +137,9 @@ void Tablero::dibuja()															//Dibujamos las piezas y el tablero
 
 }
 
-
 bool Tablero::mueve(int fil1, int col1, int fil2, int col2, char turnoActual, int peon_doble_avance_fila_anterior_param, int peon_doble_avance_columna_anterior_param)
 {
-	resetPeonDobleAvance();
+	
 	Casilla& origen = casilla[fil1][col1];
 	Casilla& destino = casilla[fil2][col2];
 	Piezas* fichaOrigen = origen.getficha();
@@ -144,6 +154,7 @@ bool Tablero::mueve(int fil1, int col1, int fil2, int col2, char turnoActual, in
 		peon_doble_avance_columna_anterior_param);
 
 	if (estadoMovimiento == INVALIDO) {
+		resetPeonDobleAvance();
 		return false;
 	}
 	else {
@@ -172,8 +183,7 @@ bool Tablero::mueve(int fil1, int col1, int fil2, int col2, char turnoActual, in
 					casilla_peon_capturado.setficha(nullptr); // Quita el peón
 				}
 			}
-			// Después de un movimiento exitoso (incluido al paso), reseteamos el doble avance.
-			// Esto es para que la oportunidad de al paso solo dure un turno.
+			// Después de un movimiento exitoso (incluido al paso), reseteamos el doble avance.Esto es para que la oportunidad de al paso solo dure un turno.
 			resetPeonDobleAvance(); 
 			return true;
 		}
@@ -185,17 +195,26 @@ bool Tablero::mueve(int fil1, int col1, int fil2, int col2, char turnoActual, in
 			destino.setficha(fichaOrigen);
 			origen.setficha(nullptr);
 
+			//Detección de promoción de peón
+			if (fichaOrigen->getTipo() == PEON && (fil2 == 0 || fil2 == 7)) {
+				promocion_pendiente = true;
+				promocion_fila_pendiente = fil2;
+				promocion_columna_pendiente = col2;
+				return true; // Movimiento exitoso, pero con promoción pendiente.
+			}
+
 			// Si la pieza movida es un peón y realizó un avance de 2 casillas, actualiza la información
 			if (fichaOrigen->getTipo() == PEON && abs(fil2 - fil1) == 2) {
 				setPeonDobleAvance(fil2, col2); // Este peón acaba de avanzar 2 casillas
 			}
 			else {
 				// Si no fue un doble avance, reseteamos el registro para 'al paso'.
+				resetPeonDobleAvance();
 			}
 			return true;
 		}
 	}
-	// Si por alguna razón no se gestionó el movimiento (aunque los if/else if ya deberían cubrirlo)
+	// Si por alguna razón no se gestionó el movimiento 
 	resetPeonDobleAvance();
 	return false;
 	
@@ -219,8 +238,7 @@ void Tablero::seleccion(int fil, int col, char turnoActual) {
 
 	//  Aplicar la regla de captura obligatoria estricta a la selección de la pieza.
 	if (!todas_las_capturas_disponibles.empty()) {
-		// Hay capturas obligatorias en el tablero.
-		// Solo queremos permitir la selección de una pieza que puede realizar esas capturas.
+		// Hay capturas obligatorias en el tablero.Solo queremos permitir la selección de una pieza que puede realizar esas capturas.
 		bool pieza_seleccionada_puede_realizar_captura_obligatoria = false;
 		for (const auto& captura_par : todas_las_capturas_disponibles) {
 			if (captura_par.first == &casilla_seleccionada_actual) {
@@ -353,4 +371,51 @@ void Tablero::setPeonDobleAvance(int fil, int col) {
 void Tablero::set_Bioma(int i)
 {
 	bioma = i;
+}
+
+void Tablero::promocionarPeon(int fila, int columna, char tipo_pieza_elegida, char color_peon) {
+	if (fila < 0 || fila >= 8 || columna < 0 || columna >= 8) return;
+
+	Piezas* peon_a_promocionar = casilla[fila][columna].getficha();
+	if (peon_a_promocionar == nullptr || peon_a_promocionar->getTipo() != PEON || peon_a_promocionar->getColor() != color_peon) {
+		// Puede que se intente promocionar una casilla incorrecta
+		return;
+	}
+
+	delete peon_a_promocionar; // Libera la memoria del peón actual
+	casilla[fila][columna].setficha(nullptr); // Vaciar la casilla
+
+	Piezas* nueva_pieza = nullptr;
+	switch (tipo_pieza_elegida) {
+	case 'A': nueva_pieza = new Alfil(color_peon); break;
+	case 'C': nueva_pieza = new Caballo(color_peon); break;
+	case 'R': nueva_pieza = new Reina(color_peon); break;
+	case 'T': nueva_pieza = new Torre(color_peon); break;
+	default: nueva_pieza = new Reina(color_peon); // Por defecto si hay un error
+	}
+
+	casilla[fila][columna].setficha(nueva_pieza);
+
+	resetPromocionPendiente(); // Resetear el flag de promoción
+}
+
+bool Tablero::tieneMovimientosPosibles(char colorJugador) const {
+	// Iterar por todas las casillas del tablero
+	for (int fila = 0; fila < 8; ++fila) {
+		for (int col = 0; col < 8; ++col) {
+			const Casilla& casilla_origen = casilla[fila][col];
+			Piezas* pieza = casilla_origen.getficha();
+
+			// Si hay una pieza en esta casilla y es del color del jugador actual
+			if (pieza != nullptr && pieza->getColor() == colorJugador) {
+				// Obtener todos los movimientos legales (incluyendo capturas obligatorias). Se usan los getters del tablero para el peón de doble avance si es necesario.
+				std::vector<Casilla*> movimientos_legales = Movimiento::obtenerMovimientosFiltrados(casilla,const_cast<Casilla&>(casilla_origen), colorJugador,peon_doble_avance_fila_anterior,peon_doble_avance_columna_anterior 
+				);
+				if (!movimientos_legales.empty()) {
+					return true; // Se encontró al menos un movimiento posible para esta pieza
+				}
+			}
+		}
+	}
+	return false; // No se encontraron movimientos posibles para ninguna pieza del jugador
 }

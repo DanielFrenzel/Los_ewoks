@@ -15,7 +15,7 @@ void Coordinador::MovRaton(int x, int y)  //Indica que casilla se ha pulsado seg
 	int col_tablero_resaltar = -1;
 
 	
-		// Verificar si el ratón está sobre el área del tablero usando TUS COORDENADAS
+		// Verificar si el ratón está sobre el área del tablero usando las coordenadas
 		if (x_base >= TABLERO_X_INICIO && x_base < (TABLERO_X_INICIO + TABLERO_ANCHO_TOTAL) &&
 			y_base >= TABLERO_Y_INICIO && y_base < (TABLERO_Y_INICIO + TABLERO_ALTO_TOTAL))
 		{
@@ -167,6 +167,18 @@ void Coordinador::mouse(int button, int state, int x, int y)
 			turnoActual = 'B';
 		}
 				
+		if (estado == DUELO)
+		{
+			if (botonInterrogacion.ratonEncima(x_base, y_base))
+			{
+				memoria_Estado.push_back(DUELO);
+				estado_anterior = estado;
+				estado = MOVIMIENTOS;
+				return;
+			}
+			musica();
+		}
+
 		if (estado == AJUSTES)
 		{			
 			
@@ -296,15 +308,18 @@ void Coordinador::seleccion(int f1, int c1, char turnoActual)
 
 void Coordinador::cambiarTurno()
 {
-	 {
-		if (turnoActual == 'B')
-		{
-			turnoActual = 'N';
-		}
-		else
-		{
-			turnoActual = 'B';
-		}
+	char siguienteTurno = (turnoActual == 'B') ? 'N' : 'B';
+
+	// Antes de cambiar realmente el turno, verifica si el siguiente jugaor tiene movimientos posibles.
+	if (!tablero.tieneMovimientosPosibles(siguienteTurno)) {
+		// Si el siguiente jugador no tiene movimientos posibles, es un ahogado.
+		estado = FIN_JUEGO;
+		mensajeFinJuego = "¡La partida ha terminado en tablas por ahogado!";
+		colorGanador = 'E'; 
+	}
+	else {
+		// Si el siguiente jugador sí tiene movimientos, entonces se cambia el turno normalmente
+		turnoActual = siguienteTurno;
 	}
 }
 
@@ -373,8 +388,7 @@ void Coordinador::calcular_Casilla(int button, int state, int x, int y)
 						tablero.seleccion(fil1, col1, turnoActual); 
 					}
 					else {
-						// Clic en una pieza propia que no puede capturar, pero hay otra que sí puede.
-						// Deseleccionar y no hacer nada.
+						// Clic en una pieza propia que no puede capturar, pero hay otra que sí puede, deseleccionar y no hacer nada.
 						tablero.deseleccionar();
 					}
 				}
@@ -410,40 +424,44 @@ void Coordinador::calcular_Casilla(int button, int state, int x, int y)
 
 				if (movimiento_valido_por_regla) {
 					if (tablero.mueve(fil1, col1, fil2, col2, turnoActual, peon_doble_avance_fila, peon_doble_avance_col)) {
-						char oponenteColor = (turnoActual == 'B') ? 'N' : 'B';
-						// Contar las piezas del oponente después de que se haya movido la pieza y potencialmente capturado
-						if (tablero.contarPiezas(oponenteColor) == 0) {
-							estado = FIN_JUEGO;
-							if (turnoActual == 'B') {
-								mensajeFinJuego = "¡Han ganado los Jedi!";
-								colorGanador = 'B';
-							}
-							else {
-								mensajeFinJuego = "¡Han ganado los Sith!";
-								colorGanador = 'N';
-							}
+						// Después de un movimiento exitoso, verificar si hay promoción pendiente
+						if (tablero.getPromocionPendiente()) {
+							estado = PROMOCION_PEON; // ¡Cambiar al nuevo estado de promoción!
+							// Guardar la posición del peón a promocionar para usarla en teclado()
+							promocion_fila = tablero.getPromocionFilaPendiente();
+							promocion_columna = tablero.getPromocionColumnaPendiente();
 						}
 						else {
-							cambiarTurno(); // Solo cambia el turno si el juego no ha terminado
+							// Si no hay promoción, procede con la lógica normal de fin de juego o cambio de turno
+							char oponenteColor = (turnoActual == 'B') ? 'N' : 'B';
+							if (tablero.contarPiezas(oponenteColor) == 0) {
+								estado = FIN_JUEGO;
+								if (turnoActual == 'N') {
+									mensajeFinJuego = "¡Han ganado los Jedi!";
+									colorGanador = 'B';
+								}
+								else {
+									mensajeFinJuego = "¡Han ganado los Sith!";
+									colorGanador = 'N';
+								}
+							}
+							else {
+								cambiarTurno(); // Solo cambia el turno si no hay promoción y el juego no ha terminado
+							}
 						}
 					}
 				}
-				else {
-					// Movimiento inválido (no se movió)
-				}
-
+				// Limpiar la selección y el resaltado siempre después del segundo clic
 				flag = false;
 				tablero.deseleccionar();
 			}
-			else {
-				// Clic izquierdo fuera del tablero
+			else { // Clic fuera del tablero con una pieza seleccionada
 				flag = false;
 				tablero.deseleccionar();
 			}
 		}
 	}
-	else if (button == GLUT_RIGHT_BUTTON && state == GLUT_DOWN) // Clic derecho: Siempre cancelar la selección
-	{
+	else if (button == GLUT_RIGHT_BUTTON && state == GLUT_DOWN) {
 		flag = false;
 		tablero.deseleccionar();
 	}
@@ -457,6 +475,9 @@ void Coordinador::calcular_Casilla(int button, int state, int x, int y)
 		turnoActual = 'B'; 
 		mensajeFinJuego = "";
 		colorGanador = '\0';
+		tablero.resetPromocionPendiente(); 
+		tablero.resetPeonDobleAvance(); 
+
 
 		//botones Varios
 		botonSalida.setPos(-32, 38);
@@ -577,31 +598,30 @@ void Coordinador::animaciones()
 				playMusica("sonidos/MusicaCreditos.mp3", true);
 			}
 		}
-		if(activacion_titulo2==1)
+		if (activacion_titulo2 == 1)
 		{
 			flote_titulo += 0.25f;
 			if (flote_titulo >= 60.0f)
 			{
-				activacion_titulo2 = false;    
-			
+				activacion_titulo2 = false;
+
 			}
 		}
 		if (activacion_titulo3 == 1)
 		{
 			movimiento_titulo3 += 0.07f;
-			if (-120+movimiento_titulo3>100)
+			if (-120 + movimiento_titulo3 > 100)
 			{
 				activacion_titulo3 = false;
 			}
-		
+
 		}
 	}
-	
+
 }
 //Musica-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 void Coordinador::musica()
 {
-
 	if (pulsado_sonido != 0)
 	{
 		stopMusica();
@@ -609,33 +629,27 @@ void Coordinador::musica()
 		return;
 	}
 
-	if (estado == CREDITOS &&  musica_actual != 1)
+	if (estado == CREDITOS && musica_actual != 0)
 	{
-		stopMusica();
-		musica_actual = 1;
+		if (cancion == CANCION1) {
+			playMusica(rutasMenu1[(volumen / 25) - 1].c_str(), true);
+			musica_actual = 0;
+			cancion = CANCION1;
+		}
+		else if (cancion == CANCION2) {
+			playMusica(rutasMenu2[(volumen / 25) - 1].c_str(), true);
+			musica_actual = 0;
+			cancion = CANCION1;
+		}
+		else if (cancion == CANCION3)
+		{
+			playMusica(rutasMenu1[(volumen / 25) - 1].c_str(), true);
+			musica_actual = 0;
+			cancion = CANCION1;
+		}
 	}
-	else if (estado != CREDITOS && musica_actual != 0 && cancion == CANCION1)
-	{
-		playMusica("sonidos/Musica1_100.mp3", true);
-		musica_actual = 0;
-		cancion = CANCION1;
-	}
-	else if (estado != CREDITOS && musica_actual != 0 && cancion == CANCION2)
-	{
-		playMusica("sonidos/Musica2_100.mp3", true);
-		musica_actual = 0;
-		cancion = CANCION2;
-	}
-	else if (estado != CREDITOS && musica_actual != 0 && cancion == CANCION3)
-	{
-		playMusica("sonidos/Musica3_100.mp3", true);
-		musica_actual = 0;
-		cancion = CANCION3;
-	}
-
-	
 }
- 
+
 
 //Control de volumen
 void Coordinador::subirVolumen() {
@@ -673,34 +687,41 @@ void Coordinador::bajarVolumen() {
 	if (cancion == CANCION1) {
 		if (volumen > 0) {
 			volumen -= 25;
+			if (volumen > 0){
+				play(rutasVolumen[(volumen / 25) - 1].c_str());
+			}
 			stopMusica();
-			play(rutasVolumen[(volumen / 25) - 1].c_str());
-			playMusica(rutasMenu1[(volumen / 25) - 1].c_str(), true);
-			cancion = CANCION1;
+			if (volumen > 0) {
+				play(rutasVolumen[(volumen / 25) - 1].c_str());
+			}
 		}
 	}
 	else if (cancion == CANCION2) {
 		if (volumen > 0) {
 			volumen -= 25;
+			if (volumen > 0) {
+				play(rutasVolumen[(volumen / 25) - 1].c_str());
+			}
 			stopMusica();
-			play(rutasVolumen[(volumen / 25) - 1].c_str());
-			playMusica(rutasMenu2[(volumen / 25) - 1].c_str(), true);
-			cancion = CANCION2;
+			if (volumen > 0) {
+				play(rutasVolumen[(volumen / 25) - 1].c_str());
+			}
 		}
+	
 	}
 	else if (cancion == CANCION3) {
 		if (volumen > 0) {
 			volumen -= 25;
+			if (volumen > 0) {
+				play(rutasVolumen[(volumen / 25) - 1].c_str());
+			}
 			stopMusica();
-			play(rutasVolumen[(volumen / 25) - 1].c_str());
-			playMusica(rutasMenu3[(volumen / 25) - 1].c_str(), true);
-			cancion = CANCION3;
+			if (volumen > 0) {
+				play(rutasVolumen[(volumen / 25) - 1].c_str());
+			}
 		}
 	}
-
-
 }
-
 
 //Para dibujar-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 void Coordinador::dibuja()
@@ -737,12 +758,29 @@ void Coordinador::dibuja()
 		dibujaTurno();
 
 	}
+	if (estado == DUELO || estado == FIN_JUEGO || estado == PROMOCION_PEON) { // <-- ¡CAMBIO AQUÍ!
+		tablero.dibuja();
+	}
 
 	if (estado == FIN_JUEGO) {
-		ETSIDI::setTextColor(1.0, 0.0, 0.0); // Rojo
+		ETSIDI::setTextColor(255.0, 0.0, 0.0); // Rojo
 		ETSIDI::setFont("fuentes/STARWARS.ttf", 16);
-		ETSIDI::printxy(mensajeFinJuego.c_str(), -5.0, 25.0); // Ajusta coordenadas
+		ETSIDI::printxy(mensajeFinJuego.c_str(), -17.0, 25.0); // Ajusta coordenadas
 
+	}
+
+	else if (estado == PROMOCION_PEON) { 
+
+		ETSIDI::setTextColor(255.0, 0.0, 0.0); // Rojo
+		ETSIDI::setFont("fuentes/STARWARS.ttf", 15);
+		std::string mensajePromocion = "";
+		if (turnoActual == 'B') {
+			mensajePromocion = "Los Jedi pueden elegir nueva pieza: [A]-Alfil, [C]-Caballo, [R]-Reina, [T]-Torre";
+		}
+		else {
+			mensajePromocion = "Los Sith pueden elegir nueva pieza: [A]-Alfil, [C]-Caballo, [R]-Reina, [T]-Torre";
+		}
+		ETSIDI::printxy(mensajePromocion.c_str(), -23.75f, 25.0f); // Ajustar posición
 	}
 
 	if (estado == VINETA)
@@ -860,7 +898,7 @@ void Coordinador::dibuja()
 
 		if (estado == DUELO) // Si el juego está en curso, muestra el turno
 		{
-			ETSIDI::setTextColor(1.0, 1.0, 1.0); // Blanco
+			ETSIDI::setTextColor(255.0, 0.0, 0.0); // Rojo
 			ETSIDI::setFont("fuentes/STARWARS.ttf", 16); // Fuente para el turno
 			if (turnoActual == 'B')
 			{
@@ -871,11 +909,11 @@ void Coordinador::dibuja()
 				ETSIDI::printxy("Turno de los Sith", -5.0, 25.0); 
 			}
 		}
-		else if (estado == FIN_JUEGO) // Si el juego ha terminado, muestra el mensaje de victoria
+		else if (estado == FIN_JUEGO) // Si el juego ha terminado, muestra el mensaje de victoria o de empate
 		{
-			ETSIDI::setTextColor(1.0f, 0.0f, 0.0f); // Color rojo para el mensaje de victoria
+			ETSIDI::setTextColor(255.0f, 0.0f, 0.0f); // Color rojo para el mensaje de victoria
 			ETSIDI::setFont("fuentes/STARWARS.ttf", 20); // Fuente más grande para el mensaje final
-			ETSIDI::printxy(mensajeFinJuego.c_str(), -15.0f, 15.0f); 
+			ETSIDI::printxy(mensajeFinJuego.c_str(), 0.0f, 25.0f); 
 		}
 		glPopMatrix();
 	}
@@ -932,4 +970,25 @@ void Coordinador::dibuja()
 
 	float Coordinador::escalarY(float y) const {
 		return y * escalaY;
+	}
+
+	void Coordinador::teclado(unsigned char key, int x, int y)
+	{
+
+		if (estado == PROMOCION_PEON) { 
+			char tipo_elegido = ' ';
+			switch (key) {
+			case 'a': case 'A': tipo_elegido = 'A'; break;
+			case 'c': case 'C': tipo_elegido = 'C'; break;
+			case 'r': case 'R': tipo_elegido = 'R'; break;
+			case 't': case 'T': tipo_elegido = 'T'; break;
+			}
+
+			if (tipo_elegido != ' ') { // Si se ha elegido una pieza válida, llamar a la función de promoción del tablero
+				tablero.promocionarPeon(promocion_fila, promocion_columna, tipo_elegido, turnoActual);
+				// Una vez promocionado, cambiar el turno y volver al estado DUELO
+				cambiarTurno();
+				estado = DUELO; 
+			}
+		}
 	}

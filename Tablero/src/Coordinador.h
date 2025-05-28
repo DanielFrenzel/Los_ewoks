@@ -49,11 +49,13 @@ private:
 
 
 protected:
-	enum Estado { INICIO, DUELO, BIOMA, AJUSTES, SONIDO, MUSICA, AYUDA, CREDITOS, NORMAS, MOVIMIENTOS, VINETA,FIN_JUEGO };
+	enum Estado { INICIO, DUELO, BIOMA, AJUSTES, SONIDO, MUSICA, AYUDA, CREDITOS, NORMAS, MOVIMIENTOS, VINETA,FIN_JUEGO,PROMOCION_PEON };
 	enum Cancion { CANCION1, CANCION2, CANCION3 };
 	std::string mensajeFinJuego{ "" }; // Para almacenar el mensaje de victoria
 	char colorGanador{ '\0' };           // 'B' o 'N'
-	
+	int promocion_fila;    // Fila donde se encuentra el peón a promocionar
+	int promocion_columna; // Columna donde se encuentra el peón a promocionar
+
 
 private:
 	Estado estado;
@@ -224,7 +226,7 @@ public:
 	//Control de volumen
 	void subirVolumen();
 	void bajarVolumen();
-
+	void teclado(unsigned char key, int x, int y);
 
 	//Funcions para el escalado de las coordenadas(nos permite que funcione en pantalla completa en cualquier pantalla)
 	void actualizarEscalaVentana(int ancho_actual, int alto_actual);

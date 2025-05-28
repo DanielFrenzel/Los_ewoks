@@ -38,8 +38,10 @@ private:
 
 	int peon_doble_avance_columna_anterior;
 	int peon_doble_avance_fila_anterior;
-
-
+	char turnoActual;
+	bool promocion_pendiente; 
+	int promocion_fila_pendiente; 
+	int promocion_columna_pendiente; 
 	std::vector<Casilla*> casillas_resaltadas; // Para almacenar los movimientos posibles de la pieza seleccionada
 
 public:
@@ -48,6 +50,7 @@ public:
 	//Creamos las funciones de dibujar, mover y de seleccion de casilla(hay que moverla al coordinador)
 	void dibuja();
 	bool mueve(int fil1, int col1, int fil2, int col2, char turnoActual, int peon_doble_avance_fila_anterior_param, int peon_doble_avance_columna_anterior_param);
+	void promocionarPeon(int fila, int columna, char tipo_pieza_elegida, char color_peon);
 	void seleccion(int fil, int col, char turnoActual); 
 	void actualizarMovimientosPosibles(int fil, int col, char turnoActual); 
 	void deseleccionar();
@@ -56,12 +59,17 @@ public:
 	Casilla& getCasilla(int fil, int col);
 	const TABLERO& getTableroConst() const { return casilla; } 
 	void resaltarCapturasObligatorias(const std::vector<std::pair<Casilla*, Casilla*>>& capturas_list);
-	
+	bool tieneMovimientosPosibles(char colorJugador) const; // <-- Nueva función
 	
 	void resetPeonDobleAvance();
 	void setPeonDobleAvance(int fil, int col);
 	int getPeonDobleAvanceFila() const { return peon_doble_avance_fila_anterior; }
 	int getPeonDobleAvanceColumna() const { return peon_doble_avance_columna_anterior; }
+
+	bool getPromocionPendiente() const { return promocion_pendiente; }
+	int getPromocionFilaPendiente() const { return promocion_fila_pendiente; }
+	int getPromocionColumnaPendiente() const { return promocion_columna_pendiente; }
+	void resetPromocionPendiente() { promocion_pendiente = false; promocion_fila_pendiente = -1; promocion_columna_pendiente = -1; }
 
 	int contarPiezas(char color_a_contar) const; 
 

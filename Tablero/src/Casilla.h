@@ -23,7 +23,6 @@ public:
 	~Casilla()									//Destructor
 	{
 		if (pieza != nullptr) {
-			delete pieza;
 			pieza = nullptr;
 		}
 	}
