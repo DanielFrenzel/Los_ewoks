@@ -629,7 +629,12 @@ void Coordinador::musica()
 		return;
 	}
 
-	if (estado == CREDITOS && musica_actual != 0)
+	if (estado == CREDITOS && musica_actual != 1)
+	{
+		stopMusica();
+		musica_actual = 1;
+	}
+	else if (estado != CREDITOS && musica_actual != 0)
 	{
 		if (cancion == CANCION1) {
 			playMusica(rutasMenu1[(volumen / 25) - 1].c_str(), true);
@@ -639,13 +644,13 @@ void Coordinador::musica()
 		else if (cancion == CANCION2) {
 			playMusica(rutasMenu2[(volumen / 25) - 1].c_str(), true);
 			musica_actual = 0;
-			cancion = CANCION1;
+			cancion = CANCION2;
 		}
 		else if (cancion == CANCION3)
 		{
-			playMusica(rutasMenu1[(volumen / 25) - 1].c_str(), true);
+			playMusica(rutasMenu3[(volumen / 25) - 1].c_str(), true);
 			musica_actual = 0;
-			cancion = CANCION1;
+			cancion = CANCION3;
 		}
 	}
 }
@@ -692,7 +697,7 @@ void Coordinador::bajarVolumen() {
 			}
 			stopMusica();
 			if (volumen > 0) {
-				play(rutasVolumen[(volumen / 25) - 1].c_str());
+				playMusica(rutasMenu1[(volumen / 25) - 1].c_str());
 			}
 		}
 	}
@@ -704,7 +709,7 @@ void Coordinador::bajarVolumen() {
 			}
 			stopMusica();
 			if (volumen > 0) {
-				play(rutasVolumen[(volumen / 25) - 1].c_str());
+				playMusica(rutasMenu2[(volumen / 25) - 1].c_str());
 			}
 		}
 	
@@ -717,7 +722,7 @@ void Coordinador::bajarVolumen() {
 			}
 			stopMusica();
 			if (volumen > 0) {
-				play(rutasVolumen[(volumen / 25) - 1].c_str());
+				playMusica(rutasMenu3[(volumen / 25) - 1].c_str());
 			}
 		}
 	}
