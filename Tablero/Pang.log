@@ -1,365 +1,364 @@
 ﻿  Ajedrez.cpp
-C:\Users\emilito2003\Documents\GitHub\Los_ewoks\Tablero\src\Piezas.h(24,16): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
+C:\Users\danie\Desktop\Tablero_Angel\src\Piezas.h(24,16): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
   (compilando archivo de origen "src/Ajedrez.cpp")
   
-C:\Users\emilito2003\Documents\GitHub\Los_ewoks\Tablero\src\Piezas.h(24,32): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
+C:\Users\danie\Desktop\Tablero_Angel\src\Piezas.h(24,32): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
   (compilando archivo de origen "src/Ajedrez.cpp")
   
-C:\Users\emilito2003\Documents\GitHub\Los_ewoks\Tablero\src\Piezas.h(25,28): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
+C:\Users\danie\Desktop\Tablero_Angel\src\Piezas.h(25,28): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
   (compilando archivo de origen "src/Ajedrez.cpp")
   
-C:\Users\emilito2003\Documents\GitHub\Los_ewoks\Tablero\src\Piezas.h(26,16): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
+C:\Users\danie\Desktop\Tablero_Angel\src\Piezas.h(26,16): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
   (compilando archivo de origen "src/Ajedrez.cpp")
   
-C:\Users\emilito2003\Documents\GitHub\Los_ewoks\Tablero\src\Piezas.h(27,16): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
+C:\Users\danie\Desktop\Tablero_Angel\src\Piezas.h(27,16): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
   (compilando archivo de origen "src/Ajedrez.cpp")
   
-C:\Users\emilito2003\Documents\GitHub\Los_ewoks\Tablero\src\Piezas.h(27,30): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
+C:\Users\danie\Desktop\Tablero_Angel\src\Piezas.h(27,30): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
   (compilando archivo de origen "src/Ajedrez.cpp")
   
   Alfil.cpp
-C:\Users\emilito2003\Documents\GitHub\Los_ewoks\Tablero\src\Piezas.h(24,16): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
+C:\Users\danie\Desktop\Tablero_Angel\src\Piezas.h(24,16): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
   (compilando archivo de origen "src/Alfil.cpp")
   
-C:\Users\emilito2003\Documents\GitHub\Los_ewoks\Tablero\src\Piezas.h(24,32): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
+C:\Users\danie\Desktop\Tablero_Angel\src\Piezas.h(24,32): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
   (compilando archivo de origen "src/Alfil.cpp")
   
-C:\Users\emilito2003\Documents\GitHub\Los_ewoks\Tablero\src\Piezas.h(25,28): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
+C:\Users\danie\Desktop\Tablero_Angel\src\Piezas.h(25,28): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
   (compilando archivo de origen "src/Alfil.cpp")
   
-C:\Users\emilito2003\Documents\GitHub\Los_ewoks\Tablero\src\Piezas.h(26,16): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
+C:\Users\danie\Desktop\Tablero_Angel\src\Piezas.h(26,16): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
   (compilando archivo de origen "src/Alfil.cpp")
   
-C:\Users\emilito2003\Documents\GitHub\Los_ewoks\Tablero\src\Piezas.h(27,16): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
+C:\Users\danie\Desktop\Tablero_Angel\src\Piezas.h(27,16): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
   (compilando archivo de origen "src/Alfil.cpp")
   
-C:\Users\emilito2003\Documents\GitHub\Los_ewoks\Tablero\src\Piezas.h(27,30): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
+C:\Users\danie\Desktop\Tablero_Angel\src\Piezas.h(27,30): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
   (compilando archivo de origen "src/Alfil.cpp")
   
-  Boton.cpp
   Caballo.cpp
-C:\Users\emilito2003\Documents\GitHub\Los_ewoks\Tablero\src\Piezas.h(24,16): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
+C:\Users\danie\Desktop\Tablero_Angel\src\Piezas.h(24,16): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
   (compilando archivo de origen "src/Caballo.cpp")
   
-C:\Users\emilito2003\Documents\GitHub\Los_ewoks\Tablero\src\Piezas.h(24,32): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
+C:\Users\danie\Desktop\Tablero_Angel\src\Piezas.h(24,32): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
   (compilando archivo de origen "src/Caballo.cpp")
   
-C:\Users\emilito2003\Documents\GitHub\Los_ewoks\Tablero\src\Piezas.h(25,28): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
+C:\Users\danie\Desktop\Tablero_Angel\src\Piezas.h(25,28): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
   (compilando archivo de origen "src/Caballo.cpp")
   
-C:\Users\emilito2003\Documents\GitHub\Los_ewoks\Tablero\src\Piezas.h(26,16): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
+C:\Users\danie\Desktop\Tablero_Angel\src\Piezas.h(26,16): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
   (compilando archivo de origen "src/Caballo.cpp")
   
-C:\Users\emilito2003\Documents\GitHub\Los_ewoks\Tablero\src\Piezas.h(27,16): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
+C:\Users\danie\Desktop\Tablero_Angel\src\Piezas.h(27,16): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
   (compilando archivo de origen "src/Caballo.cpp")
   
-C:\Users\emilito2003\Documents\GitHub\Los_ewoks\Tablero\src\Piezas.h(27,30): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
+C:\Users\danie\Desktop\Tablero_Angel\src\Piezas.h(27,30): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
   (compilando archivo de origen "src/Caballo.cpp")
   
   Casilla.cpp
-C:\Users\emilito2003\Documents\GitHub\Los_ewoks\Tablero\src\Piezas.h(24,16): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
+C:\Users\danie\Desktop\Tablero_Angel\src\Piezas.h(24,16): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
   (compilando archivo de origen "src/Casilla.cpp")
   
-C:\Users\emilito2003\Documents\GitHub\Los_ewoks\Tablero\src\Piezas.h(24,32): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
+C:\Users\danie\Desktop\Tablero_Angel\src\Piezas.h(24,32): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
   (compilando archivo de origen "src/Casilla.cpp")
   
-C:\Users\emilito2003\Documents\GitHub\Los_ewoks\Tablero\src\Piezas.h(25,28): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
+C:\Users\danie\Desktop\Tablero_Angel\src\Piezas.h(25,28): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
   (compilando archivo de origen "src/Casilla.cpp")
   
-C:\Users\emilito2003\Documents\GitHub\Los_ewoks\Tablero\src\Piezas.h(26,16): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
+C:\Users\danie\Desktop\Tablero_Angel\src\Piezas.h(26,16): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
   (compilando archivo de origen "src/Casilla.cpp")
   
-C:\Users\emilito2003\Documents\GitHub\Los_ewoks\Tablero\src\Piezas.h(27,16): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
+C:\Users\danie\Desktop\Tablero_Angel\src\Piezas.h(27,16): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
   (compilando archivo de origen "src/Casilla.cpp")
   
-C:\Users\emilito2003\Documents\GitHub\Los_ewoks\Tablero\src\Piezas.h(27,30): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
+C:\Users\danie\Desktop\Tablero_Angel\src\Piezas.h(27,30): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
   (compilando archivo de origen "src/Casilla.cpp")
   
-C:\Users\emilito2003\Documents\GitHub\Los_ewoks\Tablero\src\Casilla.cpp(17,10): warning C4244: 'inicializando': conversión de 'int' a 'float'; posible pérdida de datos
-C:\Users\emilito2003\Documents\GitHub\Los_ewoks\Tablero\src\Casilla.cpp(18,10): warning C4244: 'inicializando': conversión de 'double' a 'float'; posible pérdida de datos
+C:\Users\danie\Desktop\Tablero_Angel\src\Casilla.cpp(17,10): warning C4244: 'inicializando': conversión de 'int' a 'float'; posible pérdida de datos
+C:\Users\danie\Desktop\Tablero_Angel\src\Casilla.cpp(18,10): warning C4244: 'inicializando': conversión de 'double' a 'float'; posible pérdida de datos
   Coordinador.cpp
-C:\Users\emilito2003\Documents\GitHub\Los_ewoks\Tablero\src\Piezas.h(24,16): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
+C:\Users\danie\Desktop\Tablero_Angel\src\Piezas.h(24,16): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
   (compilando archivo de origen "src/Coordinador.cpp")
   
-C:\Users\emilito2003\Documents\GitHub\Los_ewoks\Tablero\src\Piezas.h(24,32): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
+C:\Users\danie\Desktop\Tablero_Angel\src\Piezas.h(24,32): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
   (compilando archivo de origen "src/Coordinador.cpp")
   
-C:\Users\emilito2003\Documents\GitHub\Los_ewoks\Tablero\src\Piezas.h(25,28): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
+C:\Users\danie\Desktop\Tablero_Angel\src\Piezas.h(25,28): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
   (compilando archivo de origen "src/Coordinador.cpp")
   
-C:\Users\emilito2003\Documents\GitHub\Los_ewoks\Tablero\src\Piezas.h(26,16): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
+C:\Users\danie\Desktop\Tablero_Angel\src\Piezas.h(26,16): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
   (compilando archivo de origen "src/Coordinador.cpp")
   
-C:\Users\emilito2003\Documents\GitHub\Los_ewoks\Tablero\src\Piezas.h(27,16): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
+C:\Users\danie\Desktop\Tablero_Angel\src\Piezas.h(27,16): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
   (compilando archivo de origen "src/Coordinador.cpp")
   
-C:\Users\emilito2003\Documents\GitHub\Los_ewoks\Tablero\src\Piezas.h(27,30): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
+C:\Users\danie\Desktop\Tablero_Angel\src\Piezas.h(27,30): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
   (compilando archivo de origen "src/Coordinador.cpp")
   
-C:\Users\emilito2003\Documents\GitHub\Los_ewoks\Tablero\src\Coordinador.cpp(49,41): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
-C:\Users\emilito2003\Documents\GitHub\Los_ewoks\Tablero\src\Coordinador.cpp(49,33): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
-C:\Users\emilito2003\Documents\GitHub\Los_ewoks\Tablero\src\Coordinador.cpp(50,40): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
-C:\Users\emilito2003\Documents\GitHub\Los_ewoks\Tablero\src\Coordinador.cpp(50,32): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
-C:\Users\emilito2003\Documents\GitHub\Los_ewoks\Tablero\src\Coordinador.cpp(51,44): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
-C:\Users\emilito2003\Documents\GitHub\Los_ewoks\Tablero\src\Coordinador.cpp(51,36): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
-C:\Users\emilito2003\Documents\GitHub\Los_ewoks\Tablero\src\Coordinador.cpp(52,45): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
-C:\Users\emilito2003\Documents\GitHub\Los_ewoks\Tablero\src\Coordinador.cpp(52,37): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
-C:\Users\emilito2003\Documents\GitHub\Los_ewoks\Tablero\src\Coordinador.cpp(56,41): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
-C:\Users\emilito2003\Documents\GitHub\Los_ewoks\Tablero\src\Coordinador.cpp(56,33): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
-C:\Users\emilito2003\Documents\GitHub\Los_ewoks\Tablero\src\Coordinador.cpp(57,41): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
-C:\Users\emilito2003\Documents\GitHub\Los_ewoks\Tablero\src\Coordinador.cpp(57,33): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
-C:\Users\emilito2003\Documents\GitHub\Los_ewoks\Tablero\src\Coordinador.cpp(58,43): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
-C:\Users\emilito2003\Documents\GitHub\Los_ewoks\Tablero\src\Coordinador.cpp(58,35): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
-C:\Users\emilito2003\Documents\GitHub\Los_ewoks\Tablero\src\Coordinador.cpp(61,49): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
-C:\Users\emilito2003\Documents\GitHub\Los_ewoks\Tablero\src\Coordinador.cpp(61,41): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
-C:\Users\emilito2003\Documents\GitHub\Los_ewoks\Tablero\src\Coordinador.cpp(64,49): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
-C:\Users\emilito2003\Documents\GitHub\Los_ewoks\Tablero\src\Coordinador.cpp(64,41): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
-C:\Users\emilito2003\Documents\GitHub\Los_ewoks\Tablero\src\Coordinador.cpp(65,42): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
-C:\Users\emilito2003\Documents\GitHub\Los_ewoks\Tablero\src\Coordinador.cpp(65,34): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
-C:\Users\emilito2003\Documents\GitHub\Los_ewoks\Tablero\src\Coordinador.cpp(66,41): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
-C:\Users\emilito2003\Documents\GitHub\Los_ewoks\Tablero\src\Coordinador.cpp(66,33): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
-C:\Users\emilito2003\Documents\GitHub\Los_ewoks\Tablero\src\Coordinador.cpp(67,44): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
-C:\Users\emilito2003\Documents\GitHub\Los_ewoks\Tablero\src\Coordinador.cpp(67,36): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
-C:\Users\emilito2003\Documents\GitHub\Los_ewoks\Tablero\src\Coordinador.cpp(70,42): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
-C:\Users\emilito2003\Documents\GitHub\Los_ewoks\Tablero\src\Coordinador.cpp(70,34): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
-C:\Users\emilito2003\Documents\GitHub\Los_ewoks\Tablero\src\Coordinador.cpp(71,47): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
-C:\Users\emilito2003\Documents\GitHub\Los_ewoks\Tablero\src\Coordinador.cpp(71,39): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
-C:\Users\emilito2003\Documents\GitHub\Los_ewoks\Tablero\src\Coordinador.cpp(75,43): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
-C:\Users\emilito2003\Documents\GitHub\Los_ewoks\Tablero\src\Coordinador.cpp(75,35): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
-C:\Users\emilito2003\Documents\GitHub\Los_ewoks\Tablero\src\Coordinador.cpp(76,43): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
-C:\Users\emilito2003\Documents\GitHub\Los_ewoks\Tablero\src\Coordinador.cpp(76,35): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
-C:\Users\emilito2003\Documents\GitHub\Los_ewoks\Tablero\src\Coordinador.cpp(77,43): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
-C:\Users\emilito2003\Documents\GitHub\Los_ewoks\Tablero\src\Coordinador.cpp(77,35): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
-C:\Users\emilito2003\Documents\GitHub\Los_ewoks\Tablero\src\Coordinador.cpp(80,41): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
-C:\Users\emilito2003\Documents\GitHub\Los_ewoks\Tablero\src\Coordinador.cpp(80,33): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
-C:\Users\emilito2003\Documents\GitHub\Los_ewoks\Tablero\src\Coordinador.cpp(81,41): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
-C:\Users\emilito2003\Documents\GitHub\Los_ewoks\Tablero\src\Coordinador.cpp(81,33): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
-C:\Users\emilito2003\Documents\GitHub\Los_ewoks\Tablero\src\Coordinador.cpp(82,41): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
-C:\Users\emilito2003\Documents\GitHub\Los_ewoks\Tablero\src\Coordinador.cpp(82,33): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
-C:\Users\emilito2003\Documents\GitHub\Los_ewoks\Tablero\src\Coordinador.cpp(83,41): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
-C:\Users\emilito2003\Documents\GitHub\Los_ewoks\Tablero\src\Coordinador.cpp(83,33): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
-C:\Users\emilito2003\Documents\GitHub\Los_ewoks\Tablero\src\Coordinador.cpp(86,42): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
-C:\Users\emilito2003\Documents\GitHub\Los_ewoks\Tablero\src\Coordinador.cpp(86,34): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
-C:\Users\emilito2003\Documents\GitHub\Los_ewoks\Tablero\src\Coordinador.cpp(87,42): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
-C:\Users\emilito2003\Documents\GitHub\Los_ewoks\Tablero\src\Coordinador.cpp(87,34): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
-C:\Users\emilito2003\Documents\GitHub\Los_ewoks\Tablero\src\Coordinador.cpp(88,44): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
-C:\Users\emilito2003\Documents\GitHub\Los_ewoks\Tablero\src\Coordinador.cpp(88,36): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
-C:\Users\emilito2003\Documents\GitHub\Los_ewoks\Tablero\src\Coordinador.cpp(89,44): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
-C:\Users\emilito2003\Documents\GitHub\Los_ewoks\Tablero\src\Coordinador.cpp(89,36): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
-C:\Users\emilito2003\Documents\GitHub\Los_ewoks\Tablero\src\Coordinador.cpp(90,41): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
-C:\Users\emilito2003\Documents\GitHub\Los_ewoks\Tablero\src\Coordinador.cpp(90,33): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
-C:\Users\emilito2003\Documents\GitHub\Los_ewoks\Tablero\src\Coordinador.cpp(91,41): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
-C:\Users\emilito2003\Documents\GitHub\Los_ewoks\Tablero\src\Coordinador.cpp(91,33): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
-C:\Users\emilito2003\Documents\GitHub\Los_ewoks\Tablero\src\Coordinador.cpp(92,42): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
-C:\Users\emilito2003\Documents\GitHub\Los_ewoks\Tablero\src\Coordinador.cpp(92,34): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
-C:\Users\emilito2003\Documents\GitHub\Los_ewoks\Tablero\src\Coordinador.cpp(93,42): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
-C:\Users\emilito2003\Documents\GitHub\Los_ewoks\Tablero\src\Coordinador.cpp(93,34): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
-C:\Users\emilito2003\Documents\GitHub\Los_ewoks\Tablero\src\Coordinador.cpp(94,40): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
-C:\Users\emilito2003\Documents\GitHub\Los_ewoks\Tablero\src\Coordinador.cpp(94,32): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
-C:\Users\emilito2003\Documents\GitHub\Los_ewoks\Tablero\src\Coordinador.cpp(95,40): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
-C:\Users\emilito2003\Documents\GitHub\Los_ewoks\Tablero\src\Coordinador.cpp(95,32): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
-C:\Users\emilito2003\Documents\GitHub\Los_ewoks\Tablero\src\Coordinador.cpp(96,42): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
-C:\Users\emilito2003\Documents\GitHub\Los_ewoks\Tablero\src\Coordinador.cpp(96,34): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
-C:\Users\emilito2003\Documents\GitHub\Los_ewoks\Tablero\src\Coordinador.cpp(97,42): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
-C:\Users\emilito2003\Documents\GitHub\Los_ewoks\Tablero\src\Coordinador.cpp(97,34): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
-C:\Users\emilito2003\Documents\GitHub\Los_ewoks\Tablero\src\Coordinador.cpp(98,42): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
-C:\Users\emilito2003\Documents\GitHub\Los_ewoks\Tablero\src\Coordinador.cpp(98,34): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
-C:\Users\emilito2003\Documents\GitHub\Los_ewoks\Tablero\src\Coordinador.cpp(113,38): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
-C:\Users\emilito2003\Documents\GitHub\Los_ewoks\Tablero\src\Coordinador.cpp(113,31): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
-C:\Users\emilito2003\Documents\GitHub\Los_ewoks\Tablero\src\Coordinador.cpp(114,61): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
-C:\Users\emilito2003\Documents\GitHub\Los_ewoks\Tablero\src\Coordinador.cpp(114,53): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
-C:\Users\emilito2003\Documents\GitHub\Los_ewoks\Tablero\src\Coordinador.cpp(120,61): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
-C:\Users\emilito2003\Documents\GitHub\Los_ewoks\Tablero\src\Coordinador.cpp(120,53): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
-C:\Users\emilito2003\Documents\GitHub\Los_ewoks\Tablero\src\Coordinador.cpp(125,37): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
-C:\Users\emilito2003\Documents\GitHub\Los_ewoks\Tablero\src\Coordinador.cpp(125,30): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
-C:\Users\emilito2003\Documents\GitHub\Los_ewoks\Tablero\src\Coordinador.cpp(132,39): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
-C:\Users\emilito2003\Documents\GitHub\Los_ewoks\Tablero\src\Coordinador.cpp(132,31): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
-C:\Users\emilito2003\Documents\GitHub\Los_ewoks\Tablero\src\Coordinador.cpp(148,39): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
-C:\Users\emilito2003\Documents\GitHub\Los_ewoks\Tablero\src\Coordinador.cpp(148,31): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
-C:\Users\emilito2003\Documents\GitHub\Los_ewoks\Tablero\src\Coordinador.cpp(155,41): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
-C:\Users\emilito2003\Documents\GitHub\Los_ewoks\Tablero\src\Coordinador.cpp(155,33): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
-C:\Users\emilito2003\Documents\GitHub\Los_ewoks\Tablero\src\Coordinador.cpp(172,47): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
-C:\Users\emilito2003\Documents\GitHub\Los_ewoks\Tablero\src\Coordinador.cpp(172,39): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
-C:\Users\emilito2003\Documents\GitHub\Los_ewoks\Tablero\src\Coordinador.cpp(185,47): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
-C:\Users\emilito2003\Documents\GitHub\Los_ewoks\Tablero\src\Coordinador.cpp(185,39): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
-C:\Users\emilito2003\Documents\GitHub\Los_ewoks\Tablero\src\Coordinador.cpp(192,40): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
-C:\Users\emilito2003\Documents\GitHub\Los_ewoks\Tablero\src\Coordinador.cpp(192,32): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
-C:\Users\emilito2003\Documents\GitHub\Los_ewoks\Tablero\src\Coordinador.cpp(199,39): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
-C:\Users\emilito2003\Documents\GitHub\Los_ewoks\Tablero\src\Coordinador.cpp(199,31): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
-C:\Users\emilito2003\Documents\GitHub\Los_ewoks\Tablero\src\Coordinador.cpp(206,42): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
-C:\Users\emilito2003\Documents\GitHub\Los_ewoks\Tablero\src\Coordinador.cpp(206,34): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
-C:\Users\emilito2003\Documents\GitHub\Los_ewoks\Tablero\src\Coordinador.cpp(222,41): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
-C:\Users\emilito2003\Documents\GitHub\Los_ewoks\Tablero\src\Coordinador.cpp(222,33): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
-C:\Users\emilito2003\Documents\GitHub\Los_ewoks\Tablero\src\Coordinador.cpp(230,41): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
-C:\Users\emilito2003\Documents\GitHub\Los_ewoks\Tablero\src\Coordinador.cpp(230,33): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
-C:\Users\emilito2003\Documents\GitHub\Los_ewoks\Tablero\src\Coordinador.cpp(238,41): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
-C:\Users\emilito2003\Documents\GitHub\Los_ewoks\Tablero\src\Coordinador.cpp(238,33): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
-C:\Users\emilito2003\Documents\GitHub\Los_ewoks\Tablero\src\Coordinador.cpp(249,40): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
-C:\Users\emilito2003\Documents\GitHub\Los_ewoks\Tablero\src\Coordinador.cpp(249,32): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
-C:\Users\emilito2003\Documents\GitHub\Los_ewoks\Tablero\src\Coordinador.cpp(255,45): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
-C:\Users\emilito2003\Documents\GitHub\Los_ewoks\Tablero\src\Coordinador.cpp(255,37): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
-C:\Users\emilito2003\Documents\GitHub\Los_ewoks\Tablero\src\Coordinador.cpp(265,39): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
-C:\Users\emilito2003\Documents\GitHub\Los_ewoks\Tablero\src\Coordinador.cpp(265,31): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
-C:\Users\emilito2003\Documents\GitHub\Los_ewoks\Tablero\src\Coordinador.cpp(269,44): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
-C:\Users\emilito2003\Documents\GitHub\Los_ewoks\Tablero\src\Coordinador.cpp(269,36): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
-C:\Users\emilito2003\Documents\GitHub\Los_ewoks\Tablero\src\Coordinador.cpp(273,44): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
-C:\Users\emilito2003\Documents\GitHub\Los_ewoks\Tablero\src\Coordinador.cpp(273,36): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
-C:\Users\emilito2003\Documents\GitHub\Los_ewoks\Tablero\src\Coordinador.cpp(277,44): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
-C:\Users\emilito2003\Documents\GitHub\Los_ewoks\Tablero\src\Coordinador.cpp(277,36): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
-C:\Users\emilito2003\Documents\GitHub\Los_ewoks\Tablero\src\Coordinador.cpp(292,40): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
-C:\Users\emilito2003\Documents\GitHub\Los_ewoks\Tablero\src\Coordinador.cpp(292,32): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
-C:\Users\emilito2003\Documents\GitHub\Los_ewoks\Tablero\src\Coordinador.cpp(773,51): warning C4244: 'argumento': conversión de 'double' a 'int'; posible pérdida de datos
-C:\Users\emilito2003\Documents\GitHub\Los_ewoks\Tablero\src\Coordinador.cpp(773,44): warning C4244: 'argumento': conversión de 'double' a 'int'; posible pérdida de datos
-C:\Users\emilito2003\Documents\GitHub\Los_ewoks\Tablero\src\Coordinador.cpp(788,54): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
-C:\Users\emilito2003\Documents\GitHub\Los_ewoks\Tablero\src\Coordinador.cpp(788,45): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
-C:\Users\emilito2003\Documents\GitHub\Los_ewoks\Tablero\src\Coordinador.cpp(910,48): warning C4244: 'argumento': conversión de 'double' a 'int'; posible pérdida de datos
-C:\Users\emilito2003\Documents\GitHub\Los_ewoks\Tablero\src\Coordinador.cpp(910,42): warning C4244: 'argumento': conversión de 'double' a 'int'; posible pérdida de datos
-C:\Users\emilito2003\Documents\GitHub\Los_ewoks\Tablero\src\Coordinador.cpp(914,48): warning C4244: 'argumento': conversión de 'double' a 'int'; posible pérdida de datos
-C:\Users\emilito2003\Documents\GitHub\Los_ewoks\Tablero\src\Coordinador.cpp(914,42): warning C4244: 'argumento': conversión de 'double' a 'int'; posible pérdida de datos
-C:\Users\emilito2003\Documents\GitHub\Los_ewoks\Tablero\src\Coordinador.cpp(921,51): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
-C:\Users\emilito2003\Documents\GitHub\Los_ewoks\Tablero\src\Coordinador.cpp(921,45): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
+C:\Users\danie\Desktop\Tablero_Angel\src\Coordinador.cpp(49,41): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
+C:\Users\danie\Desktop\Tablero_Angel\src\Coordinador.cpp(49,33): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
+C:\Users\danie\Desktop\Tablero_Angel\src\Coordinador.cpp(50,40): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
+C:\Users\danie\Desktop\Tablero_Angel\src\Coordinador.cpp(50,32): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
+C:\Users\danie\Desktop\Tablero_Angel\src\Coordinador.cpp(51,44): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
+C:\Users\danie\Desktop\Tablero_Angel\src\Coordinador.cpp(51,36): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
+C:\Users\danie\Desktop\Tablero_Angel\src\Coordinador.cpp(52,45): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
+C:\Users\danie\Desktop\Tablero_Angel\src\Coordinador.cpp(52,37): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
+C:\Users\danie\Desktop\Tablero_Angel\src\Coordinador.cpp(56,41): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
+C:\Users\danie\Desktop\Tablero_Angel\src\Coordinador.cpp(56,33): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
+C:\Users\danie\Desktop\Tablero_Angel\src\Coordinador.cpp(57,41): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
+C:\Users\danie\Desktop\Tablero_Angel\src\Coordinador.cpp(57,33): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
+C:\Users\danie\Desktop\Tablero_Angel\src\Coordinador.cpp(58,43): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
+C:\Users\danie\Desktop\Tablero_Angel\src\Coordinador.cpp(58,35): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
+C:\Users\danie\Desktop\Tablero_Angel\src\Coordinador.cpp(61,49): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
+C:\Users\danie\Desktop\Tablero_Angel\src\Coordinador.cpp(61,41): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
+C:\Users\danie\Desktop\Tablero_Angel\src\Coordinador.cpp(64,49): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
+C:\Users\danie\Desktop\Tablero_Angel\src\Coordinador.cpp(64,41): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
+C:\Users\danie\Desktop\Tablero_Angel\src\Coordinador.cpp(65,42): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
+C:\Users\danie\Desktop\Tablero_Angel\src\Coordinador.cpp(65,34): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
+C:\Users\danie\Desktop\Tablero_Angel\src\Coordinador.cpp(66,41): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
+C:\Users\danie\Desktop\Tablero_Angel\src\Coordinador.cpp(66,33): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
+C:\Users\danie\Desktop\Tablero_Angel\src\Coordinador.cpp(67,44): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
+C:\Users\danie\Desktop\Tablero_Angel\src\Coordinador.cpp(67,36): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
+C:\Users\danie\Desktop\Tablero_Angel\src\Coordinador.cpp(70,42): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
+C:\Users\danie\Desktop\Tablero_Angel\src\Coordinador.cpp(70,34): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
+C:\Users\danie\Desktop\Tablero_Angel\src\Coordinador.cpp(71,47): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
+C:\Users\danie\Desktop\Tablero_Angel\src\Coordinador.cpp(71,39): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
+C:\Users\danie\Desktop\Tablero_Angel\src\Coordinador.cpp(75,43): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
+C:\Users\danie\Desktop\Tablero_Angel\src\Coordinador.cpp(75,35): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
+C:\Users\danie\Desktop\Tablero_Angel\src\Coordinador.cpp(76,43): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
+C:\Users\danie\Desktop\Tablero_Angel\src\Coordinador.cpp(76,35): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
+C:\Users\danie\Desktop\Tablero_Angel\src\Coordinador.cpp(77,43): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
+C:\Users\danie\Desktop\Tablero_Angel\src\Coordinador.cpp(77,35): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
+C:\Users\danie\Desktop\Tablero_Angel\src\Coordinador.cpp(80,41): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
+C:\Users\danie\Desktop\Tablero_Angel\src\Coordinador.cpp(80,33): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
+C:\Users\danie\Desktop\Tablero_Angel\src\Coordinador.cpp(81,41): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
+C:\Users\danie\Desktop\Tablero_Angel\src\Coordinador.cpp(81,33): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
+C:\Users\danie\Desktop\Tablero_Angel\src\Coordinador.cpp(82,41): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
+C:\Users\danie\Desktop\Tablero_Angel\src\Coordinador.cpp(82,33): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
+C:\Users\danie\Desktop\Tablero_Angel\src\Coordinador.cpp(83,41): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
+C:\Users\danie\Desktop\Tablero_Angel\src\Coordinador.cpp(83,33): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
+C:\Users\danie\Desktop\Tablero_Angel\src\Coordinador.cpp(86,42): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
+C:\Users\danie\Desktop\Tablero_Angel\src\Coordinador.cpp(86,34): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
+C:\Users\danie\Desktop\Tablero_Angel\src\Coordinador.cpp(87,42): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
+C:\Users\danie\Desktop\Tablero_Angel\src\Coordinador.cpp(87,34): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
+C:\Users\danie\Desktop\Tablero_Angel\src\Coordinador.cpp(88,44): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
+C:\Users\danie\Desktop\Tablero_Angel\src\Coordinador.cpp(88,36): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
+C:\Users\danie\Desktop\Tablero_Angel\src\Coordinador.cpp(89,44): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
+C:\Users\danie\Desktop\Tablero_Angel\src\Coordinador.cpp(89,36): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
+C:\Users\danie\Desktop\Tablero_Angel\src\Coordinador.cpp(90,41): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
+C:\Users\danie\Desktop\Tablero_Angel\src\Coordinador.cpp(90,33): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
+C:\Users\danie\Desktop\Tablero_Angel\src\Coordinador.cpp(91,41): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
+C:\Users\danie\Desktop\Tablero_Angel\src\Coordinador.cpp(91,33): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
+C:\Users\danie\Desktop\Tablero_Angel\src\Coordinador.cpp(92,42): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
+C:\Users\danie\Desktop\Tablero_Angel\src\Coordinador.cpp(92,34): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
+C:\Users\danie\Desktop\Tablero_Angel\src\Coordinador.cpp(93,42): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
+C:\Users\danie\Desktop\Tablero_Angel\src\Coordinador.cpp(93,34): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
+C:\Users\danie\Desktop\Tablero_Angel\src\Coordinador.cpp(94,40): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
+C:\Users\danie\Desktop\Tablero_Angel\src\Coordinador.cpp(94,32): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
+C:\Users\danie\Desktop\Tablero_Angel\src\Coordinador.cpp(95,40): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
+C:\Users\danie\Desktop\Tablero_Angel\src\Coordinador.cpp(95,32): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
+C:\Users\danie\Desktop\Tablero_Angel\src\Coordinador.cpp(96,42): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
+C:\Users\danie\Desktop\Tablero_Angel\src\Coordinador.cpp(96,34): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
+C:\Users\danie\Desktop\Tablero_Angel\src\Coordinador.cpp(97,42): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
+C:\Users\danie\Desktop\Tablero_Angel\src\Coordinador.cpp(97,34): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
+C:\Users\danie\Desktop\Tablero_Angel\src\Coordinador.cpp(98,42): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
+C:\Users\danie\Desktop\Tablero_Angel\src\Coordinador.cpp(98,34): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
+C:\Users\danie\Desktop\Tablero_Angel\src\Coordinador.cpp(113,38): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
+C:\Users\danie\Desktop\Tablero_Angel\src\Coordinador.cpp(113,31): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
+C:\Users\danie\Desktop\Tablero_Angel\src\Coordinador.cpp(114,61): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
+C:\Users\danie\Desktop\Tablero_Angel\src\Coordinador.cpp(114,53): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
+C:\Users\danie\Desktop\Tablero_Angel\src\Coordinador.cpp(120,61): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
+C:\Users\danie\Desktop\Tablero_Angel\src\Coordinador.cpp(120,53): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
+C:\Users\danie\Desktop\Tablero_Angel\src\Coordinador.cpp(125,37): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
+C:\Users\danie\Desktop\Tablero_Angel\src\Coordinador.cpp(125,30): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
+C:\Users\danie\Desktop\Tablero_Angel\src\Coordinador.cpp(132,39): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
+C:\Users\danie\Desktop\Tablero_Angel\src\Coordinador.cpp(132,31): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
+C:\Users\danie\Desktop\Tablero_Angel\src\Coordinador.cpp(148,39): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
+C:\Users\danie\Desktop\Tablero_Angel\src\Coordinador.cpp(148,31): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
+C:\Users\danie\Desktop\Tablero_Angel\src\Coordinador.cpp(155,41): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
+C:\Users\danie\Desktop\Tablero_Angel\src\Coordinador.cpp(155,33): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
+C:\Users\danie\Desktop\Tablero_Angel\src\Coordinador.cpp(172,47): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
+C:\Users\danie\Desktop\Tablero_Angel\src\Coordinador.cpp(172,39): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
+C:\Users\danie\Desktop\Tablero_Angel\src\Coordinador.cpp(185,47): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
+C:\Users\danie\Desktop\Tablero_Angel\src\Coordinador.cpp(185,39): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
+C:\Users\danie\Desktop\Tablero_Angel\src\Coordinador.cpp(192,40): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
+C:\Users\danie\Desktop\Tablero_Angel\src\Coordinador.cpp(192,32): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
+C:\Users\danie\Desktop\Tablero_Angel\src\Coordinador.cpp(199,39): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
+C:\Users\danie\Desktop\Tablero_Angel\src\Coordinador.cpp(199,31): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
+C:\Users\danie\Desktop\Tablero_Angel\src\Coordinador.cpp(206,42): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
+C:\Users\danie\Desktop\Tablero_Angel\src\Coordinador.cpp(206,34): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
+C:\Users\danie\Desktop\Tablero_Angel\src\Coordinador.cpp(222,41): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
+C:\Users\danie\Desktop\Tablero_Angel\src\Coordinador.cpp(222,33): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
+C:\Users\danie\Desktop\Tablero_Angel\src\Coordinador.cpp(230,41): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
+C:\Users\danie\Desktop\Tablero_Angel\src\Coordinador.cpp(230,33): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
+C:\Users\danie\Desktop\Tablero_Angel\src\Coordinador.cpp(238,41): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
+C:\Users\danie\Desktop\Tablero_Angel\src\Coordinador.cpp(238,33): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
+C:\Users\danie\Desktop\Tablero_Angel\src\Coordinador.cpp(249,40): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
+C:\Users\danie\Desktop\Tablero_Angel\src\Coordinador.cpp(249,32): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
+C:\Users\danie\Desktop\Tablero_Angel\src\Coordinador.cpp(255,45): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
+C:\Users\danie\Desktop\Tablero_Angel\src\Coordinador.cpp(255,37): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
+C:\Users\danie\Desktop\Tablero_Angel\src\Coordinador.cpp(265,39): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
+C:\Users\danie\Desktop\Tablero_Angel\src\Coordinador.cpp(265,31): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
+C:\Users\danie\Desktop\Tablero_Angel\src\Coordinador.cpp(269,44): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
+C:\Users\danie\Desktop\Tablero_Angel\src\Coordinador.cpp(269,36): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
+C:\Users\danie\Desktop\Tablero_Angel\src\Coordinador.cpp(273,44): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
+C:\Users\danie\Desktop\Tablero_Angel\src\Coordinador.cpp(273,36): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
+C:\Users\danie\Desktop\Tablero_Angel\src\Coordinador.cpp(277,44): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
+C:\Users\danie\Desktop\Tablero_Angel\src\Coordinador.cpp(277,36): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
+C:\Users\danie\Desktop\Tablero_Angel\src\Coordinador.cpp(292,40): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
+C:\Users\danie\Desktop\Tablero_Angel\src\Coordinador.cpp(292,32): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
+C:\Users\danie\Desktop\Tablero_Angel\src\Coordinador.cpp(773,51): warning C4244: 'argumento': conversión de 'double' a 'int'; posible pérdida de datos
+C:\Users\danie\Desktop\Tablero_Angel\src\Coordinador.cpp(773,44): warning C4244: 'argumento': conversión de 'double' a 'int'; posible pérdida de datos
+C:\Users\danie\Desktop\Tablero_Angel\src\Coordinador.cpp(788,54): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
+C:\Users\danie\Desktop\Tablero_Angel\src\Coordinador.cpp(788,45): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
+C:\Users\danie\Desktop\Tablero_Angel\src\Coordinador.cpp(910,48): warning C4244: 'argumento': conversión de 'double' a 'int'; posible pérdida de datos
+C:\Users\danie\Desktop\Tablero_Angel\src\Coordinador.cpp(910,42): warning C4244: 'argumento': conversión de 'double' a 'int'; posible pérdida de datos
+C:\Users\danie\Desktop\Tablero_Angel\src\Coordinador.cpp(914,48): warning C4244: 'argumento': conversión de 'double' a 'int'; posible pérdida de datos
+C:\Users\danie\Desktop\Tablero_Angel\src\Coordinador.cpp(914,42): warning C4244: 'argumento': conversión de 'double' a 'int'; posible pérdida de datos
+C:\Users\danie\Desktop\Tablero_Angel\src\Coordinador.cpp(921,51): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
+C:\Users\danie\Desktop\Tablero_Angel\src\Coordinador.cpp(921,45): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
   Imagen.cpp
   Movimiento.cpp
-C:\Users\emilito2003\Documents\GitHub\Los_ewoks\Tablero\src\Piezas.h(24,16): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
+C:\Users\danie\Desktop\Tablero_Angel\src\Piezas.h(24,16): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
   (compilando archivo de origen "src/Movimiento.cpp")
   
-C:\Users\emilito2003\Documents\GitHub\Los_ewoks\Tablero\src\Piezas.h(24,32): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
+C:\Users\danie\Desktop\Tablero_Angel\src\Piezas.h(24,32): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
   (compilando archivo de origen "src/Movimiento.cpp")
   
-C:\Users\emilito2003\Documents\GitHub\Los_ewoks\Tablero\src\Piezas.h(25,28): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
+C:\Users\danie\Desktop\Tablero_Angel\src\Piezas.h(25,28): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
   (compilando archivo de origen "src/Movimiento.cpp")
   
-C:\Users\emilito2003\Documents\GitHub\Los_ewoks\Tablero\src\Piezas.h(26,16): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
+C:\Users\danie\Desktop\Tablero_Angel\src\Piezas.h(26,16): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
   (compilando archivo de origen "src/Movimiento.cpp")
   
-C:\Users\emilito2003\Documents\GitHub\Los_ewoks\Tablero\src\Piezas.h(27,16): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
+C:\Users\danie\Desktop\Tablero_Angel\src\Piezas.h(27,16): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
   (compilando archivo de origen "src/Movimiento.cpp")
   
-C:\Users\emilito2003\Documents\GitHub\Los_ewoks\Tablero\src\Piezas.h(27,30): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
+C:\Users\danie\Desktop\Tablero_Angel\src\Piezas.h(27,30): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
   (compilando archivo de origen "src/Movimiento.cpp")
   
   Peon.cpp
-C:\Users\emilito2003\Documents\GitHub\Los_ewoks\Tablero\src\Piezas.h(24,16): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
+C:\Users\danie\Desktop\Tablero_Angel\src\Piezas.h(24,16): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
   (compilando archivo de origen "src/Peon.cpp")
   
-C:\Users\emilito2003\Documents\GitHub\Los_ewoks\Tablero\src\Piezas.h(24,32): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
+C:\Users\danie\Desktop\Tablero_Angel\src\Piezas.h(24,32): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
   (compilando archivo de origen "src/Peon.cpp")
   
-C:\Users\emilito2003\Documents\GitHub\Los_ewoks\Tablero\src\Piezas.h(25,28): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
+C:\Users\danie\Desktop\Tablero_Angel\src\Piezas.h(25,28): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
   (compilando archivo de origen "src/Peon.cpp")
   
-C:\Users\emilito2003\Documents\GitHub\Los_ewoks\Tablero\src\Piezas.h(26,16): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
+C:\Users\danie\Desktop\Tablero_Angel\src\Piezas.h(26,16): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
   (compilando archivo de origen "src/Peon.cpp")
   
-C:\Users\emilito2003\Documents\GitHub\Los_ewoks\Tablero\src\Piezas.h(27,16): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
+C:\Users\danie\Desktop\Tablero_Angel\src\Piezas.h(27,16): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
   (compilando archivo de origen "src/Peon.cpp")
   
-C:\Users\emilito2003\Documents\GitHub\Los_ewoks\Tablero\src\Piezas.h(27,30): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
+C:\Users\danie\Desktop\Tablero_Angel\src\Piezas.h(27,30): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
   (compilando archivo de origen "src/Peon.cpp")
   
   Piezas.cpp
-C:\Users\emilito2003\Documents\GitHub\Los_ewoks\Tablero\src\Piezas.h(24,16): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
+C:\Users\danie\Desktop\Tablero_Angel\src\Piezas.h(24,16): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
   (compilando archivo de origen "src/Piezas.cpp")
   
-C:\Users\emilito2003\Documents\GitHub\Los_ewoks\Tablero\src\Piezas.h(24,32): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
+C:\Users\danie\Desktop\Tablero_Angel\src\Piezas.h(24,32): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
   (compilando archivo de origen "src/Piezas.cpp")
   
-C:\Users\emilito2003\Documents\GitHub\Los_ewoks\Tablero\src\Piezas.h(25,28): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
+C:\Users\danie\Desktop\Tablero_Angel\src\Piezas.h(25,28): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
   (compilando archivo de origen "src/Piezas.cpp")
   
-C:\Users\emilito2003\Documents\GitHub\Los_ewoks\Tablero\src\Piezas.h(26,16): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
+C:\Users\danie\Desktop\Tablero_Angel\src\Piezas.h(26,16): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
   (compilando archivo de origen "src/Piezas.cpp")
   
-C:\Users\emilito2003\Documents\GitHub\Los_ewoks\Tablero\src\Piezas.h(27,16): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
+C:\Users\danie\Desktop\Tablero_Angel\src\Piezas.h(27,16): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
   (compilando archivo de origen "src/Piezas.cpp")
   
-C:\Users\emilito2003\Documents\GitHub\Los_ewoks\Tablero\src\Piezas.h(27,30): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
+C:\Users\danie\Desktop\Tablero_Angel\src\Piezas.h(27,30): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
   (compilando archivo de origen "src/Piezas.cpp")
   
   Reina.cpp
-C:\Users\emilito2003\Documents\GitHub\Los_ewoks\Tablero\src\Piezas.h(24,16): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
+C:\Users\danie\Desktop\Tablero_Angel\src\Piezas.h(24,16): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
   (compilando archivo de origen "src/Reina.cpp")
   
-C:\Users\emilito2003\Documents\GitHub\Los_ewoks\Tablero\src\Piezas.h(24,32): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
+C:\Users\danie\Desktop\Tablero_Angel\src\Piezas.h(24,32): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
   (compilando archivo de origen "src/Reina.cpp")
   
-C:\Users\emilito2003\Documents\GitHub\Los_ewoks\Tablero\src\Piezas.h(25,28): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
+C:\Users\danie\Desktop\Tablero_Angel\src\Piezas.h(25,28): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
   (compilando archivo de origen "src/Reina.cpp")
   
-C:\Users\emilito2003\Documents\GitHub\Los_ewoks\Tablero\src\Piezas.h(26,16): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
+C:\Users\danie\Desktop\Tablero_Angel\src\Piezas.h(26,16): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
   (compilando archivo de origen "src/Reina.cpp")
   
-C:\Users\emilito2003\Documents\GitHub\Los_ewoks\Tablero\src\Piezas.h(27,16): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
+C:\Users\danie\Desktop\Tablero_Angel\src\Piezas.h(27,16): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
   (compilando archivo de origen "src/Reina.cpp")
   
-C:\Users\emilito2003\Documents\GitHub\Los_ewoks\Tablero\src\Piezas.h(27,30): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
+C:\Users\danie\Desktop\Tablero_Angel\src\Piezas.h(27,30): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
   (compilando archivo de origen "src/Reina.cpp")
   
   Rey.cpp
-C:\Users\emilito2003\Documents\GitHub\Los_ewoks\Tablero\src\Piezas.h(24,16): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
+C:\Users\danie\Desktop\Tablero_Angel\src\Piezas.h(24,16): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
   (compilando archivo de origen "src/Rey.cpp")
   
-C:\Users\emilito2003\Documents\GitHub\Los_ewoks\Tablero\src\Piezas.h(24,32): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
+C:\Users\danie\Desktop\Tablero_Angel\src\Piezas.h(24,32): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
   (compilando archivo de origen "src/Rey.cpp")
   
-C:\Users\emilito2003\Documents\GitHub\Los_ewoks\Tablero\src\Piezas.h(25,28): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
+C:\Users\danie\Desktop\Tablero_Angel\src\Piezas.h(25,28): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
   (compilando archivo de origen "src/Rey.cpp")
   
-C:\Users\emilito2003\Documents\GitHub\Los_ewoks\Tablero\src\Piezas.h(26,16): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
+C:\Users\danie\Desktop\Tablero_Angel\src\Piezas.h(26,16): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
   (compilando archivo de origen "src/Rey.cpp")
   
-C:\Users\emilito2003\Documents\GitHub\Los_ewoks\Tablero\src\Piezas.h(27,16): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
+C:\Users\danie\Desktop\Tablero_Angel\src\Piezas.h(27,16): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
   (compilando archivo de origen "src/Rey.cpp")
   
-C:\Users\emilito2003\Documents\GitHub\Los_ewoks\Tablero\src\Piezas.h(27,30): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
+C:\Users\danie\Desktop\Tablero_Angel\src\Piezas.h(27,30): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
   (compilando archivo de origen "src/Rey.cpp")
   
   Tablero.cpp
-C:\Users\emilito2003\Documents\GitHub\Los_ewoks\Tablero\src\Piezas.h(24,16): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
+C:\Users\danie\Desktop\Tablero_Angel\src\Piezas.h(24,16): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
   (compilando archivo de origen "src/Tablero.cpp")
   
-C:\Users\emilito2003\Documents\GitHub\Los_ewoks\Tablero\src\Piezas.h(24,32): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
+C:\Users\danie\Desktop\Tablero_Angel\src\Piezas.h(24,32): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
   (compilando archivo de origen "src/Tablero.cpp")
   
-C:\Users\emilito2003\Documents\GitHub\Los_ewoks\Tablero\src\Piezas.h(25,28): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
+C:\Users\danie\Desktop\Tablero_Angel\src\Piezas.h(25,28): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
   (compilando archivo de origen "src/Tablero.cpp")
   
-C:\Users\emilito2003\Documents\GitHub\Los_ewoks\Tablero\src\Piezas.h(26,16): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
+C:\Users\danie\Desktop\Tablero_Angel\src\Piezas.h(26,16): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
   (compilando archivo de origen "src/Tablero.cpp")
   
-C:\Users\emilito2003\Documents\GitHub\Los_ewoks\Tablero\src\Piezas.h(27,16): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
+C:\Users\danie\Desktop\Tablero_Angel\src\Piezas.h(27,16): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
   (compilando archivo de origen "src/Tablero.cpp")
   
-C:\Users\emilito2003\Documents\GitHub\Los_ewoks\Tablero\src\Piezas.h(27,30): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
+C:\Users\danie\Desktop\Tablero_Angel\src\Piezas.h(27,30): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
   (compilando archivo de origen "src/Tablero.cpp")
   
   Torre.cpp
-C:\Users\emilito2003\Documents\GitHub\Los_ewoks\Tablero\src\Piezas.h(24,16): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
+C:\Users\danie\Desktop\Tablero_Angel\src\Piezas.h(24,16): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
   (compilando archivo de origen "src/Torre.cpp")
   
-C:\Users\emilito2003\Documents\GitHub\Los_ewoks\Tablero\src\Piezas.h(24,32): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
+C:\Users\danie\Desktop\Tablero_Angel\src\Piezas.h(24,32): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
   (compilando archivo de origen "src/Torre.cpp")
   
-C:\Users\emilito2003\Documents\GitHub\Los_ewoks\Tablero\src\Piezas.h(25,28): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
+C:\Users\danie\Desktop\Tablero_Angel\src\Piezas.h(25,28): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
   (compilando archivo de origen "src/Torre.cpp")
   
-C:\Users\emilito2003\Documents\GitHub\Los_ewoks\Tablero\src\Piezas.h(26,16): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
+C:\Users\danie\Desktop\Tablero_Angel\src\Piezas.h(26,16): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
   (compilando archivo de origen "src/Torre.cpp")
   
-C:\Users\emilito2003\Documents\GitHub\Los_ewoks\Tablero\src\Piezas.h(27,16): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
+C:\Users\danie\Desktop\Tablero_Angel\src\Piezas.h(27,16): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
   (compilando archivo de origen "src/Torre.cpp")
   
-C:\Users\emilito2003\Documents\GitHub\Los_ewoks\Tablero\src\Piezas.h(27,30): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
+C:\Users\danie\Desktop\Tablero_Angel\src\Piezas.h(27,30): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
   (compilando archivo de origen "src/Torre.cpp")
   
   Vineta.cpp
-C:\Users\emilito2003\Documents\GitHub\Los_ewoks\Tablero\src\Vineta.cpp(9,18): warning C4244: 'inicializando': conversión de 'double' a 'float'; posible pérdida de datos
-C:\Users\emilito2003\Documents\GitHub\Los_ewoks\Tablero\src\Vineta.cpp(9,42): warning C4244: 'inicializando': conversión de 'double' a 'float'; posible pérdida de datos
-C:\Users\emilito2003\Documents\GitHub\Los_ewoks\Tablero\src\Vineta.cpp(9,86): warning C4244: 'inicializando': conversión de 'double' a 'float'; posible pérdida de datos
-C:\Users\emilito2003\Documents\GitHub\Los_ewoks\Tablero\src\Vineta.cpp(16,379): warning C4305: 'argumento': truncamiento de 'double' a 'float'
-C:\Users\emilito2003\Documents\GitHub\Los_ewoks\Tablero\src\Vineta.cpp(19,82): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
-C:\Users\emilito2003\Documents\GitHub\Los_ewoks\Tablero\src\Vineta.cpp(19,69): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
-C:\Users\emilito2003\Documents\GitHub\Los_ewoks\Tablero\src\Vineta.cpp(66,51): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
-C:\Users\emilito2003\Documents\GitHub\Los_ewoks\Tablero\src\Vineta.cpp(66,40): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
+C:\Users\danie\Desktop\Tablero_Angel\src\Vineta.cpp(9,18): warning C4244: 'inicializando': conversión de 'double' a 'float'; posible pérdida de datos
+C:\Users\danie\Desktop\Tablero_Angel\src\Vineta.cpp(9,42): warning C4244: 'inicializando': conversión de 'double' a 'float'; posible pérdida de datos
+C:\Users\danie\Desktop\Tablero_Angel\src\Vineta.cpp(9,86): warning C4244: 'inicializando': conversión de 'double' a 'float'; posible pérdida de datos
+C:\Users\danie\Desktop\Tablero_Angel\src\Vineta.cpp(16,379): warning C4305: 'argumento': truncamiento de 'double' a 'float'
+C:\Users\danie\Desktop\Tablero_Angel\src\Vineta.cpp(19,82): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
+C:\Users\danie\Desktop\Tablero_Angel\src\Vineta.cpp(19,69): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
+C:\Users\danie\Desktop\Tablero_Angel\src\Vineta.cpp(66,51): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
+C:\Users\danie\Desktop\Tablero_Angel\src\Vineta.cpp(66,40): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
   Generando código...
-  Pang.vcxproj -> C:\Users\emilito2003\Documents\GitHub\Los_ewoks\Tablero\bin\Pang.exe
+  Pang.vcxproj -> C:\Users\danie\Desktop\Tablero_Angel\bin\Pang.exe
