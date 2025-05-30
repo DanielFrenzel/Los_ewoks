@@ -1009,20 +1009,24 @@ void Coordinador::dibuja()
 
 	void Coordinador::activarCancion()
 	{
-		if (cancion == CANCION1) {
-			playMusica(rutasMenu1[(volumen / 25) - 1].c_str(), true);
-			musica_actual = 0;
-			cancion = CANCION1;
-		}
-		else if (cancion == CANCION2) {
-			playMusica(rutasMenu2[(volumen / 25) - 1].c_str(), true);
-			musica_actual = 0;
-			cancion = CANCION2;
-		}
-		else if (cancion == CANCION3)
+		if (pulsado_sonido == false)
 		{
-			playMusica(rutasMenu3[(volumen / 25) - 1].c_str(), true);
-			musica_actual = 0;
-			cancion = CANCION3;
+			if (cancion == CANCION1) {
+				playMusica(rutasMenu1[(volumen / 25) - 1].c_str(), true);
+				musica_actual = 0;
+				cancion = CANCION1;
+			}
+			else if (cancion == CANCION2) {
+				playMusica(rutasMenu2[(volumen / 25) - 1].c_str(), true);
+				musica_actual = 0;
+				cancion = CANCION2;
+			}
+			else if (cancion == CANCION3)
+			{
+				playMusica(rutasMenu3[(volumen / 25) - 1].c_str(), true);
+				musica_actual = 0;
+				cancion = CANCION3;
+			}
 		}
+		
 	}
