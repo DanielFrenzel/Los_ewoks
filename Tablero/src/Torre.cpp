@@ -28,7 +28,9 @@ State Torre::comprobarMov(TABLERO& casillas, Casilla& cas1, Casilla& cas2, int p
 				return INVALIDO;
 
 		}
-		return comer(color, colorDestino);
+		if (color == colorDestino) return INVALIDO;
+		else return NORMAL;
+		//return comer(color, colorDestino);
 
 	}
 	if (filaOrigen == filaDestino)
@@ -39,7 +41,9 @@ State Torre::comprobarMov(TABLERO& casillas, Casilla& cas1, Casilla& cas2, int p
 			if (casillas[filaOrigen][i].getficha() != 0)
 				return INVALIDO; // obstáculo
 		}
-		return comer(color, colorDestino);
+		if (color == colorDestino) return INVALIDO;
+		else return NORMAL;
+		//return comer(color, colorDestino);
 	}
 	else return INVALIDO;
 }
