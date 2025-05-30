@@ -13,7 +13,7 @@ private:
 	
 	//Sprite vineta{ "imagenes/vineta.png", xv,yv,tamv_x,tamv_y };
 	//Sprite fondo{ "imagenes/fondo_esapcio_negro.png",xf,yf,tamf_x,tamf_y };
-	Sprite tablero{ "imagenes/Tablero_Futurista.png", 0, 0, 56, 56 };
+	//Sprite tablero{ "imagenes/Tablero_Futurista.png", 0, 0, 56, 56 };
 	std::string textoCompleto;
 	std::string textoMostrado;
 	size_t indiceTexto = 0;

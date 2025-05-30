@@ -26,18 +26,18 @@ void Casilla::dibuja()
 	if (esta_resaltada) {
 		// Indicación de los movimientos posibles y la casilla de origen seleccionada
 		Sprite* sprite_mov_posible = Imagen::crearImagen("imagenes/casilla_seleccionada.png", x, y, tam, tam);
-		if (sprite_mov_posible) {
+		/*if (sprite_mov_posible) {
 			sprite_mov_posible->draw();
-		}
+		}*/
 	}
 	//  Resaltado de mouse-over (solo si no está ya resaltada como movimiento posible/seleccionada)
 	else if (esta_resaltada_mouse_over) {
 		// sprite para el efecto de pasar el ratón por encima
 		Sprite* sprite_mouse_over = Imagen::crearImagen("imagenes/casilla_de_paso.png", x, y, tam, tam); 
-		if (sprite_mouse_over) {
+		/*if (sprite_mouse_over) {
 			sprite_mouse_over->draw();
 			
-		}
+		}*/
 	}
 }
 

@@ -20,12 +20,13 @@ private:
 
 public:
 	Casilla(); //Constructor
-	~Casilla()									//Destructor
+	/*~Casilla()									//Destructor
 	{
 		if (pieza != nullptr) {
+			delete pieza;
 			pieza = nullptr;
 		}
-	}
+	}*/
 
 	void dibuja();								//Funcion de dibujar piezas
 	void setResaltada(bool resaltada) { esta_resaltada = resaltada; }

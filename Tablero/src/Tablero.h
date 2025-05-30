@@ -30,10 +30,10 @@ private:
 	//Sprite fondo{ "imagenes/fondo_esapcio_negro.png", 0, 0, 96, 64 };
 
 	std::string rutasFondo[4] = {
-  "imagenes/Tablero_Fondo_Hoch.png",
-  "imagenes/Fondo_tablero_Tatooine.png",
-  "imagenes/Fondo_tablero_Sorgan.png",
-  "imagenes/Tablero_Fondo_Hoch.png",
+	  "imagenes/Fondo_tablero_Hoch.png",
+	  "imagenes/Fondo_tablero_Tatooine.png",
+	  "imagenes/Fondo_tablero_sorgan.png",
+	  "imagenes/Fondo_tablero_naboo.png",
 	};
 
 	int peon_doble_avance_columna_anterior;
@@ -46,7 +46,7 @@ private:
 
 public:
 	Tablero();									//Creamos un constructor para inicializar todo
-	~Tablero();
+	//~Tablero();
 	//Creamos las funciones de dibujar, mover y de seleccion de casilla(hay que moverla al coordinador)
 	void dibuja();
 	bool mueve(int fil1, int col1, int fil2, int col2, char turnoActual, int peon_doble_avance_fila_anterior_param, int peon_doble_avance_columna_anterior_param);

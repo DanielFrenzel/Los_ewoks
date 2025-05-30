@@ -124,6 +124,11 @@ void Coordinador::mouse(int button, int state, int x, int y)
 		}
 		if (botonAtras.ratonEncima(x_base,y_base)&&estado!=INICIO)
 		{
+			if (estado == CREDITOS || estado==VINETA)
+			{
+				stopMusica();
+				activarCancion();
+			}
 			estado = memoria_Estado.back();
 			memoria_Estado.pop_back();			
 		}
@@ -164,11 +169,14 @@ void Coordinador::mouse(int button, int state, int x, int y)
 		if (estado == VINETA)
 		{
 			estado = DUELO;
+			activarCancion();
 			turnoActual = 'B';
 		}
 				
 		if (estado == DUELO)
 		{
+			//activarCancion();
+
 			if (botonInterrogacion.ratonEncima(x_base, y_base))
 			{
 				memoria_Estado.push_back(DUELO);
@@ -177,6 +185,7 @@ void Coordinador::mouse(int button, int state, int x, int y)
 				return;
 			}
 			musica();
+		
 		}
 
 		if (estado == AJUSTES)
@@ -595,7 +604,7 @@ void Coordinador::animaciones()
 				activacion_titulo2 = true;
 				activacion_titulo3 = true;
 				movimiento_titulo3 = 0.0f;
-				playMusica("sonidos/MusicaCreditos.mp3", true);
+				playMusica("sonidos/MusicaCreditos.mp3", false);
 			}
 		}
 		if (activacion_titulo2 == 1)
@@ -755,15 +764,13 @@ void Coordinador::dibuja()
 	}
 
 	if (estado == DUELO) {
-		stopMusica();
-		playMusica("sonidos/Musica1_100.mp3", true);
-		cancion = CANCION1;
+		//cancion = CANCION1;
 		botonInterrogacion.draw();
 		tablero.dibuja();
 		dibujaTurno();
 
 	}
-	if (estado == DUELO || estado == FIN_JUEGO || estado == PROMOCION_PEON) { // <-- ¡CAMBIO AQUÍ!
+	if (estado == DUELO || estado == FIN_JUEGO || estado == PROMOCION_PEON) {
 		tablero.dibuja();
 	}
 
@@ -791,6 +798,7 @@ void Coordinador::dibuja()
 	if (estado == VINETA)
 	{
 		vineta.dibujar(escalaX, escalaY);
+		
 	}
 
 	//Botones AJUSTES
@@ -894,6 +902,7 @@ void Coordinador::dibuja()
 		MenuInicial.draw();
 	}
 
+	Imagen::eliminarImagenes();
 }
 
 	void Coordinador::dibujaTurno()
@@ -995,5 +1004,25 @@ void Coordinador::dibuja()
 				cambiarTurno();
 				estado = DUELO; 
 			}
+		}
+	}
+
+	void Coordinador::activarCancion()
+	{
+		if (cancion == CANCION1) {
+			playMusica(rutasMenu1[(volumen / 25) - 1].c_str(), true);
+			musica_actual = 0;
+			cancion = CANCION1;
+		}
+		else if (cancion == CANCION2) {
+			playMusica(rutasMenu2[(volumen / 25) - 1].c_str(), true);
+			musica_actual = 0;
+			cancion = CANCION2;
+		}
+		else if (cancion == CANCION3)
+		{
+			playMusica(rutasMenu3[(volumen / 25) - 1].c_str(), true);
+			musica_actual = 0;
+			cancion = CANCION3;
 		}
 	}

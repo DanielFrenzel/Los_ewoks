@@ -76,10 +76,10 @@ private:
 	//Duelo
 	Boton botonInterrogacion{ "imagenes/inicio/BOTON_INTERROGACION.png","imagenes/inicio/BOTON_INTERROGACION2.png", 4, 4 };
 	//Bioma
-	Boton botonMapa1{ "imagenes/Tablero_Fondo_Hoch.png", "imagenes/Tablero_Fondo_Hoch2.png", 10, 9 };
-	Boton botonMapa2{ "imagenes/Fondo_tablero_Tatooine.png", "imagenes/Fondo_tablero_Tatooine2.png", 10, 9 };
-	Boton botonMapa3{ "imagenes/Fondo_tablero_sorgan.png", "imagenes/Fondo_tablero_sorgan2.png",  10, 9 };
-	Boton botonMapa4{ "imagenes/Tablero_Fondo_Hoch.png", "imagenes/Tablero_Fondo_Hoch2.png",  10, 9 };
+	Boton botonMapa1{ "imagenes/Fondo_tablero_Hoch_reducido.png", "imagenes/Fondo_tablero_Hoch_reducido2.png", 10, 9 };
+	Boton botonMapa2{ "imagenes/Fondo_tablero_Tatooine_reducido.png", "imagenes/Fondo_tablero_Tatooine_reducido2.png", 10, 9 };
+	Boton botonMapa3{ "imagenes/Fondo_tablero_sorgan_reducido.png", "imagenes/Fondo_tablero_sorgan_reducido2.png",  10, 9 };
+	Boton botonMapa4{ "imagenes/Fondo_tablero_naboo_reducido.png", "imagenes/Fondo_tablero_naboo_reducido2.png",  10, 9 };
 	//Ajustes
 	Boton botonSonidoGeneral{ "imagenes/inicio/BOTON_SONIDO.png", "imagenes/inicio/BOTON_SONIDO2.png", 15, 15 };
 	Boton botonMusica{ "imagenes/inicio/BOTON_MUSICA.png", "imagenes/inicio/BOTON_MUSICA2.png", 15, 15 };
@@ -190,10 +190,10 @@ private:
 	};
 	//Array para fondos
 	std::string rutasFondo[4] = {
-	  "imagenes/Tablero_Fondo_Hoch.png",
-	  "imagenes/Fondo_tablero_Tatooine.png.png",
-	  "imagenes/Fondo_tablero_Sorgan.png.png",
-	  "imagenes/Tablero_Fondo_Hoch.png",
+	  "imagenes/Fondo_tablero_Hoch.png",
+	  "imagenes/Fondo_tablero_Tatooine.png",
+	  "imagenes/Fondo_tablero_sorgan.png",
+	  "imagenes/Fondo_tablero_naboo.png",
 	};
 	vector <Estado> memoria_Estado;
 	std::vector<std::pair<Casilla*, Casilla*>> capturas_oponente_pendientes;
@@ -208,6 +208,7 @@ public:
 	void dibujaTurno();
 	void animaciones();
 	void musica();
+	void activarCancion();
 
 	//Getters
 	Estado getEstado() const;

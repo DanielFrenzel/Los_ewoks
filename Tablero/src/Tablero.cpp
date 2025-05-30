@@ -108,7 +108,7 @@ Tablero::Tablero()																//Constructor
 
 }
 
-Tablero::~Tablero() {
+/*Tablero::~Tablero() {
 	// Itera por todas las casillas del tablero
 	for (int i = 0; i < 8; ++i) {
 		for (int j = 0; j < 8; ++j) {
@@ -118,7 +118,7 @@ Tablero::~Tablero() {
 			}
 		}
 	}
-}
+}*/
 
 void Tablero::dibuja()															//Dibujamos las piezas y el tablero
 {
@@ -391,7 +391,7 @@ void Tablero::promocionarPeon(int fila, int columna, char tipo_pieza_elegida, ch
 	case 'C': nueva_pieza = new Caballo(color_peon); break;
 	case 'R': nueva_pieza = new Reina(color_peon); break;
 	case 'T': nueva_pieza = new Torre(color_peon); break;
-	default: nueva_pieza = new Reina(color_peon); // Por defecto si hay un error
+	//default: nueva_pieza = new Reina(color_peon); // Por defecto si hay un error
 	}
 
 	casilla[fila][columna].setficha(nueva_pieza);
