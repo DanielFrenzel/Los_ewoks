@@ -943,7 +943,7 @@ void Coordinador::dibuja()
 		return estado_anterior;
 	}
 
-	Coordinador::Cancion Coordinador::getCancion() const
+	/*Coordinador::Cancion Coordinador::getCancion() const
 	{
 		return cancion;
 	}
@@ -951,7 +951,7 @@ void Coordinador::dibuja()
 	Coordinador::Cancion Coordinador::getCancionAnterior() const
 	{
 		return cancion_anterior;
-	}
+	}*/
 
 	//Setters (Por si hicera falta)---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 	void Coordinador::setEstado(Estado nuevo_estado) {
@@ -962,13 +962,13 @@ void Coordinador::dibuja()
 		estado_anterior = nuevo_estado_anterior;
 	}
 
-	void Coordinador::setCancion(Cancion nueva_cancion) {
+	/*void Coordinador::setCancion(Cancion nueva_cancion) {
 		cancion = nueva_cancion;
 	}
 
 	void Coordinador::setCancionAnterior(Cancion nueva_cancion_anterior) {
 		cancion_anterior = nueva_cancion_anterior;
-	}
+	}*/
 
 
 	void Coordinador::actualizarEscalaVentana(int ancho_actual, int alto_actual) {

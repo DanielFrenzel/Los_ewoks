@@ -59,7 +59,7 @@ public:
 	Casilla& getCasilla(int fil, int col);
 	const TABLERO& getTableroConst() const { return casilla; } 
 	void resaltarCapturasObligatorias(const std::vector<std::pair<Casilla*, Casilla*>>& capturas_list);
-	bool tieneMovimientosPosibles(char colorJugador) const; // <-- Nueva función
+	bool tieneMovimientosPosibles(char colorJugador) const;
 	
 	void resetPeonDobleAvance();
 	void setPeonDobleAvance(int fil, int col);

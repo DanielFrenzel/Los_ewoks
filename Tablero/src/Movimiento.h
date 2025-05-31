@@ -2,7 +2,6 @@
 //Hacemos include de la casilla (para movernos sin saltar piezas) y de las Piezas
 #include"Casilla.h"
 #include"Piezas.h"
-#include"Peon.h"
 #include"Tablero.h"
 #include<array>
 

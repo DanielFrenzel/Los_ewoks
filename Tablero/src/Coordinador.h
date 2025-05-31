@@ -1,11 +1,7 @@
 #pragma once
 #include "Tablero.h"
 #include "Casilla.h"
-#include "Peon.h"
-#include "Rey.h"
-#include "Torre.h"
-#include "Caballo.h"
-#include "Alfil.h"
+#include "Piezas.h"
 #include "ETSIDI.h"
 #include <vector>
 #include "Boton.h"
@@ -213,16 +209,16 @@ public:
 	//Getters
 	Estado getEstado() const;
 	Estado getEstadoAnterior() const;
-	Cancion getCancion() const;
-	Cancion getCancionAnterior() const;
+	//Cancion getCancion() const;
+	//Cancion getCancionAnterior() const;
 	char getTurnoActual() const { return turnoActual; }
 	void cambiarTurno();
 
 	//Setters
 	void setEstado(Estado nuevo_estado);
 	void setEstadoAnterior(Estado nuevo_estado_anterior);
-	void setCancion(Cancion nueva_cancion);
-	void setCancionAnterior(Cancion nueva_cancion_anterior);
+	//void setCancion(Cancion nueva_cancion);
+	//void setCancionAnterior(Cancion nueva_cancion_anterior);
 
 	//Control de volumen
 	void subirVolumen();
